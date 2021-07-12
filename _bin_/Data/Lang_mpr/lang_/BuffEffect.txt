@@ -1,0 +1,329 @@
+////////////////////////////////////////////////////////////////////////////////											
+//	[ Text  Version ]	0.0.7.8									
+//	[ 최종 작업자 ]	사재일									
+//	[ 최종 작업일 ]	2015-08-11-04:53 PM									
+//	[ 작 업 내 용 ]	대천사의무기 버프 스킬 추가									
+////////////////////////////////////////////////////////////////////////////////											
+//버프. 디버프에 상관없이 추가시 제일 뒤에 순차적으로 추가											
+// 인벤 장착 아이템 관련 부분은 서버와 클라이언트가 다르게 적용되고 있으며											
+// 클라이언트 용은 인벤장착 아이템부분 주석 처리, 서버용은 인벤장착 아이템 주석 해재 할것											
+											
+									
+//Index	Viewport index	Item Index	Item Code	Name (ENG)	Type	알림	Clear type	설명 (ENG)	
+0	//버프 효과								
+1	1	255	255	"Increase Attack Power"	0	1	1	"Attack power increases."	//공격력향상
+2	2	255	255	"Increase Defense"	0	1	1	"Defensibility increases."	//방어력향상
+3	3	255	255	"Shadow Phantom effect"	0	1	1	"Attack power and Defensibility increases"	//공방증가
+4	4	255	255	"Soul Barrier"	0	1	1	"Manna absorbs the damage."	//물리공격방어
+5	5	255	255	"Critical Damage increase"	0	1	1	"Critical damage increases."	//크리티컬데미지
+6	6	255	255	"Infinity Arrow"	0	0	1	"Arrows do not become consumed."	//인피니티애로우
+7	7	255	255	"AG recovery speed increase"	0	0	1	"Arrows do not become consumed."	//AG회복 속도 증가
+8	8	255	255	"Swell Life"	0	1	1	"Health stat increases to maximum."	//체력증가
+9	9	255	255	"Swell Mana"	0	0	1	"Mana stat increases to maximum."	//마나증가
+10	10	255	255	"Potion of Blessing"	0	0	1	"Attack power +20%% increase"	//축복의물약
+11	11	255	255	"Potion of Soul"	0	0	1	"AG recovery speed increase +8/Lightning and Ice resistance increase/attack speed increase +20"	//영혼의물약
+12	12	255	255	"Abolish Magic"	0	0	1	""	//마법해제
+13	13	255	255	"Gate Open/Close Status"	0	1	1	""	//성물 개/패 상태
+14	14	255	255	"Watchtower"	0	1	1	"Watching over the castle."	//수성마크
+15	14	255	255	"Besiegement Guild1"	0	1	1	"In the process of attacking the castle"	//공성마크
+16	14	255	255	"Besiegement Guild2"	0	1	1	"In the process of attacking the castle"	//공성마크2
+17	14	255	255	"Besiegement Guild3"	0	1	1	"In the process of attacking the castle"	//공성마크3
+18	15	255	255	"Invisibility"	0	1	1	"Transparency Status"	//투명
+19	16	255	255	"Dark Rod Battle Skill"	0	0	1	""	//다크로드 공성스킬
+20	17	255	255	"Crown Registration Status"	0	1	1	""	//왕관 등록 상태
+21	18	255	255	"Altar of Wolf contract enabled"	0	1	1	""	//늑대의 제단 계약가능
+22	18	255	255	"Altar of Wolf contract disabled"	0	1	1	""	//늑대의 제단 계약불능
+23	18	255	255	"Altar of Wolf contract Status"	0	1	1	""	//늑대의 제단 계약상태
+24	18	255	255	"Altar of Wolf contract attempt"	0	1	1	""	//늑대의 제단 계약시도
+25	18	255	255	"Altar of Wolf besiegement Status"	0	1	1	""	//늑대의 제단 점령상태
+26	18	255	255	"Altar of Wolf hero contract Status"	0	1	1	""	//늑대의 제단 영웅 계약상태
+27	19	255	255	"Cry Wolf NPC transparency"	0	1	1	""	//크라이울프 NPC투명
+28	20	255	255	"GM"	0	1	1	""	//GM마크
+29	60	13	43	"Seal of Ascension"	0	0	1	"EXP gain increase 50%%"	//PC방 포인트인장1
+30	61	13	44	"Seal of Wealth"	0	0	1	"EXP gain increase 100%%/item gain increase 150%%"	//PC방 포인트인장2
+31	62	13	45	"Seal of Sustenance"	0	0	1	"EXP gain disabled"	//PC방 포인트인장3
+32	22	255	255	"Temple - Spell of Quickness"	0	0	1	""	//사원 - 신속의 주문
+33	22	255	255	"Temple - Spell of Sublimation"	0	0	1	""	//사원 - 승화의주문
+34	22	255	255	"Spell of Protection"	0	1	1	"Damage absorbed at 100%%."	//사원 - 보호의 주문
+35	23	14	46	"Jack O'Lantern Blessings"	0	0	1	"Attack speed increase +10"	//잭오랜턴의축복
+36	23	14	47	"Wrath of Jack O' Lantern"	0	0	1	"Attack Power, Magical Damage Increased by  +25"	//잭오랜턴의분노
+37	23	14	48	"Jack O'Lantern Cry"	0	0	1	"Defensibility increase +100"	//잭오랜턴의외침
+38	23	14	49	"Jack O'Lantern Food"	0	0	1	"Maximum Life increase +500"	//잭오랜턴의음식
+39	23	14	50	"Jack O'Lantern Drink"	0	0	1	"Maximum Mana increase +500"	//잭오랜턴의음료
+40	60	13	43	"Seal of Ascension"	0	1	1	"EXP gain increase 50%%"	//인장1
+41	61	13	44	"Seal of Wealth"	0	1	1	"EXP gain increase 100%%/Item gain increase 150%%"	//인장2
+42	65	13	45	"Seal of Sustenance"	0	1	1	"EXP gain disabled"	//인장3
+43	57	13	59	"Seal of Mobility"	0	1	1	"Mobility enabled"	//인장4
+44	67	14	72	"Scroll of Quickness"	0	1	1	"Attack speed increase +15"	//신속의스크롤
+45	68	14	73	"Scroll of Defense"	0	1	1	"Defensibility increase +60"	//방어의스크롤
+46	69	14	74	"Scroll of Wrath"	0	1	1	"Attack power increase +30"	//분노의스크롤
+47	70	14	75	"Scroll of Wizardry"	0	1	1	"Wizardry increase +30"	//마력의스크롤
+48	71	14	76	"Scroll of Health"	0	1	1	"HP increase +200"	//체력의스크롤
+49	72	14	77	"Scroll of Mana"	0	1	1	"Mana increase +300"	//마나의스크롤
+50	26	14	78	"Elixir of Strength"	0	1	1	"Strength Status +50"	//힘의비약
+51	26	14	79	"Elixir of Agility"	0	1	1	"Agility Status +50"	//민첩의비약
+52	26	14	80	"Elixir of Health"	0	1	1	"Health Status +50"	//체력의비약
+53	26	14	81	"Elixir of Energy"	0	1	1	"Energy Status +50"	//에너지의비약
+54	26	14	82	"Elixir of Control"	0	1	1	"Control Status +50"	//통솔의비약
+55	27	255	255	"Poison"	1	1	1	"Poisoned status of condition"	//독
+56	28	255	255	"Ice"	1	1	1	"Mobility speed decreases."	//얼음
+57	29	255	255	"Iced Arrow"	1	1	1	"Mobility disabled"	//석화
+58	30	255	255	"Defensibility reduction"	1	1	1	"Random defensibility decreases at 10%%."	//방어력감소
+59	31	255	255	"Attack power reduction"	1	0	1	""	//공격력감소
+60	32	255	255	"Wizardry increase reduction"	1	0	1	""	//마력감소
+61	33	255	255	"Stun"	1	1	1	"Mobility disabled"	//스턴
+62	34	255	255	"Magic Defense"	1	0	1	""	//마법방어
+63	35	255	255	"Monster Magic Attack Resistance"	1	1	1	""	//몬스터저항효과
+64	36	255	255	"Monster Chemistry Attack Resistance"	1	1	1	""	//몬스터저항효과
+65	37	255	255	"Spell of Restriction"	1	1	1	"Mobility disabled"	//사원 - 속박의주문
+66	38	255	255	"Cry Wolf Divine Protection Status"	0	1	1	"Cry Wolf Divine Protection Status"	//크라이울프 신상 상태
+67	38	255	255	"Cry Wolf Divine Protection Status"	0	1	1	"Cry Wolf Divine Protection Status"	//크라이울프 신상 상태
+68	38	255	255	"Cry Wolf Divine Protection Status"	0	1	1	"Cry Wolf Divine Protection Status"	//크라이울프 신상 상태
+69	38	255	255	"Cry Wolf Divine Protection Status"	0	1	1	"Cry Wolf Divine Protection Status"	//크라이울프 신상 상태
+70	38	255	255	"Cry Wolf Divine Protection Status"	0	1	1	"Cry Wolf Divine Protection Status"	//크라이울프 신상 상태
+71	39	255	255	"Damage Reflection"	0	1	1	"Partial damage reflected out."	//신규캐릭터스킬
+72	40	255	255	"Sleep"	1	1	1	"Short period of nap"	//신규캐릭터스킬
+73	40	255	255	"Blind"	1	1	1	"Shortened view and the attack accuracy decreases."	//신규캐릭터스킬
+74	41	255	255	"Requiem"	1	1	1	"Summoner Neil attack"	//환수 스킬
+75	42	255	255	"Explosion"	1	1	1	"Summoner Shamut attack"	//환수스킬
+76	43	255	255	"Weakness"	1	1	1	"Attack power reduction"	//소환술사 신규스킬
+77	44	255	255	"Innovation"	1	1	1	"Defensibility reduction"	//소환술사 신규스킬
+78	23	14	85	"Cherry Blossom Wine"	0	0	1	"Maximum Mana increase +700"	//벚꽃이벤트 
+79	23	14	86	"Cherry Blossom Rice Cake"	0	0	1	"Maximum Life increase +700"	//벚꽃이벤트 
+80	23	14	87	"Cherry Blossom Flower Petal"	0	0	1	"Attack power increase +40"	//벚꽃이벤트 
+81	1	255	255	"Berserker"	0	1	1	"Curse spell, Wizardry, Attack power and Maximum Mana increases, Defense and Maximum Life decreases"	//소환술사신규스킬
+82	45	255	255	"Expansion of Wizardry"	0	1	1	"Minimum Wizardry increases."	//흑마법사 신규스킬
+83	46	255	255	"Flame Strike"	1	1	1	""	//마검사 신규스킬
+84	47	255	255	"Gigantic Storm"	1	1	1	""	//마검사 신규스킬
+85	48	255	255	"Lightning Shock"	1	1	1	""	//소환술사 신규스킬
+86	49	255	255	"Cold"	1	1	1	"Detrimental cold reduces /the mobility speed."	//흑기사 신규 스킬
+87	13	13	62	"Seal of Healing"	0	0	1	"EXP gain increase 50%%/Automatic Life recovery at 5%%"	//4차과금
+88	13	13	63	"Seal of Divinity"	0	0	1	"Item gain increase at 150%%/Automatic Mana recovery at 5%%"	//4차과금
+89	73	14	97	"Scroll of Battle"	0	1	1	"Critical damage increase at 20%%"	//4차과금
+90	74	14	98	"Scroll of Strength"	0	1	1	"Excellent damage increase at 20%%"	//4차과금
+91	23	255	255	"Blessing of Christmas"	0	1	1	"Attack power and Defensibility increases"	//크리스마스이벤트
+92	23	255	255	"Santa Healing"	0	1	1	"Maximum Life increase +500"	//크리스마스이벤트
+93	23	255	255	"Santa Protection"	0	1	1	"Maximum Mana increase +500"	//크리스마스이벤트
+94	23	255	255	"Santa Strengthener"	0	1	1	"Attack power +30"	//크리스마스이벤트
+95	23	255	255	"Santa Defense"	0	1	1	"Defensibility +100"	//크리스마스이벤트
+96	23	255	255	"Santa Quickness"	0	1	1	"Attack speed +15"	//크리스마스이벤트
+97	23	255	255	"Santa Fortune"	0	1	1	"AG recovery speed increase +10"	//크리스마스이벤트
+98	50	255	255	"Watch"	0	0	1	"You may enter and watch a duel in Arena."	//PK필드 관전버프
+99	52	13	81	"Talisman of Protection"	0	0	1	"You receive no penalties when dying../Cannot receive this effect when you are  in outlaw status."	//6차과금
+100	53	13	82	"Talisman of Item Protection"	0	0	1	"Keeps item durable"	//6차과금
+101	60	13	93	"Master Seal of Ascension"	0	0	1	"EXP gain increase 50%%"	//6차과금
+102	61	13	94	"Master Seal of Wealth"	0	0	1	"EXP gain increase 100%%/Item gain increase 150%%"	//6차과금
+103	51	13	95	"Gladiator's Honor"	0	0	1	"Increases EXP by 20%% /Rare Item drop rate/can be used in Vulcanus only."	//결투 승자 보상
+104	21	13	96	"Seal of Strength"	0	0	1	"Increases Attack Rate and Defense Rate"	//해외 PC방용 인장
+105	54	255	255	"Ascension"	0	0	1	""	//도플갱어몬스터승천
+106	55	63	254	"PK Penalty"	1	0	1	"Warp Command Window access restricted for five minutes."	//PK패널티
+107	56	255	255	"You feel tired."	1	0	1	"50%% EXP Gain /50%% Item Drop Rate "	//피로도
+108	56	255	255	"You feel exhausted."	1	0	1	"50%% EXP Gain /0%% Item Drop Rate "	//피로도
+112	24	13	103	"Party EXP Bonus Item"	0	1	1	"Up to 30%% EXP gain, depending on the number of members in the party."	//7차과금
+113	58	13	104	"Max AG Boost Aura"	0	1	1	"Increases your max AG."	//7차과금
+114	58	13	105	"Max SD Boost Aura"	0	1	1	"Increases your max SD."	//7차과금
+115	56	13	117	"Minimum Vitality"	0	0	1	"100%% EXP Gain/100%% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time."	//피로도(유료아이템)
+116	56	13	118	"Low Vitality"	0	0	1	"100%% EXP Gain/100%% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time."	//피로도(유료아이템)
+117	56	13	119	"Medium Vitality"	0	0	1	"100%% EXP Gain/100%% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time."	//피로도(유료아이템)
+118	56	13	120	"High Vitality"	0	0	1	"100%% EXP Gain/100%% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time."	//피로도(유료아이템)
+119	61	13	116	"Seal of Wealth"	0	0	1	"Increases Item Drop Rate to 150%%."	//혼합유료화아이템
+120	59	255	255	"Punishment for Illicit Software Use"	1	0	1	"50%% EXP Gain /0%% Item Drop Rate "	//피로도
+121	75	14	140	"Scroll of Healing"	0	1	1	"+3%% HP Regen/+100 HP"	//치유의스크롤
+//인벤 장착 아이템 부분 클라용은 주석 처리, 서버용은 주석 해재 (임시처리)									
+122	76	13	128	"Hawk Figurine"	0	1	1	"Critical Damage +10%%"	//매조각상
+123	76	13	129	"Goat Figurine"	0	1	1	"Excellent Damage +10%%"	//산양조각상
+124	77	13	130	"Oak Charm"	0	1	1	"Maximum Life +50"	//오크참
+125	77	13	131	"Maple Charm"	0	1	1	"Maximum Mana +50"	//메이플참
+126	77	13	132	"Golden Oak Charm"	0	1	1	"Maximum Life +150 / Maximum SD +500"	//골든오크참
+127	77	13	133	"Golden Maple Charm"	0	1	1	"Maximum Mana +150 / Maximum AG +50"	//골든메이플참
+128	78	13	134	"Worn Horseshoe"	0	1	1	"Item Drop Rate increase"	//낡은편자
+129	79	255	255	"Ignore Enemy's Defense"	0	1	1	"Increases chance to ignore enemy's defense and inflict damage."	//레이지
+130	80	255	255	"Increase Health"	0	1	1	"Increases health stat."	//레이지
+131	81	255	255	"Increase Defense Rate"	0	1	1	"Increases maximum defend rate."	//레이지
+132	82	255	255	"Defense success rate decrease"	1	0	1	"Decreases defense success rate."	//레이지
+// 마스터 스킬 버프 추가 (2010-12-29 홍승욱)									
+//Index	Viewport index	Item Index			Type	알림	Clear type		
+133	83	255	255	"Invincibility"	0	1	1	"Invincible"	// 패시브 무적 시전 버프 (skill index : 314)
+134	84	255	255	"Iron Defense"	0	1	1	"Significantly increases defense and HP."	// 아이언 디펜스 스킬 버프 (skill index : 521)
+135	8	255	255	"Swell Life"	0	1	1	"Increases max life and Mana."	// 스웰라이프 숙련 버프 (skill index : 360)
+136	8	255	255	"Swell Life"	0	1	1	"Increases max life, Mana, and AG."	// 스웰라이프 마스터리 버프 (skill index : 363)
+137	85	255	255	"Bleeding"	1	1	1	"HP is reduced continually."	// 블로우 숙련 스킬에 대한 디버프 (skill index : 339)
+138	45	255	255	"Expansion of Wizardry"	0	1	1	"Increases min Wizardry and max Wizardry."	// 마력 증대 강화 버프 (skill index : 380)
+139	45	255	255	"Expansion of Wizardry"	0	1	1	"Increases min Wizardry, max Wizardry,/ and critical damage rate."	// 마력 증대 마스터리 버프 (skill index : 383)
+140	4	255	255	"Soul Barrier"	0	1	1	"Uses Mana to absorb damage,/ and increases max Mana."	// 소울 바리어 마스터리 버프 (skill index : 406)
+141	86	255	255	"Reduce attack speed"	1	1	1	"Reduces Attack speed."	// 파괴의 일격 마스터리 공격 속도 감소 디버프(skill index : 343)
+142	87	255	255	"Bless"	0	1	1	"Increases all stats"	// 블레스 스킬 버프 (skill index : 430)
+143	6	255	255	"Infinity Arrow"	0	0	1	"Arrows are not consumed,/ and increases your damage."	// 인피니티 애로우 버프 (skill index : 441)
+144	88	255	255	"Blind"	0	1	1	"You are blinded./Decreases attack success rate."	// 블라인드 스킬 버프 (skill index : 461)
+145	89	255	255	"Vampiric"	1	1	1	"HP is drained every second and transferred to the target."	// 드레인 라이프 마스터리 디버프 (skill index : 462)
+146	90	255	255	"Freeze"	1	1	1	"Immobilized when you are frozen."	// 써든아이스 마스터리, 얼음 마스터리 이동 불가 디버프 (skill index : 393, 491)
+147	91	255	255	"Earth Binds"	1	1	1	"Earth Binds"	// 어스 프리즌 스킬 디버프 (skill index : 497)
+148	5	255	255	"Critical Damage increase"	0	1	1	"Increases critical damage and critical damage rate."	// 크리티컬데미지 증가 강화 (3) 버프 (skill index : 517)
+149	5	255	255	"Critical Damage increase"	0	1	1	"Increases critical damage and critical damage rate,/ and also increases excellent damage rate."	// 크리티컬데미지 증가 강화 (4) 버프 (skill index : 522)
+150	1	255	255	"Berserker"	0	1	1	"Curse spell, Wizardry, Attack power and Maximum Mana increases, Defense and Maximum Life decreases"	// 버서커 강화 (skill index : 469)
+151	1	255	255	"Berserker"	0	1	1	"Curse spell, Wizardry, Attack power and Maximum Mana increases, Defense and Maximum Life decreases"	// 버서커 숙련 (skill index : 470)
+152	1	255	255	"Berserker"	0	1	1	"Curse spell, Wizardry, Attack power and Maximum Mana increases, Defense and Maximum Life decreases"	// 버서커 마스터리 (skill index : 472)
+153	81	255	255	"Increase Defense Success Rate"	0	1	1	"Increases defense success rate."	// 방어 성공율 향상 강화 (skill index : 569)
+154	81	255	255	"Increase Defense Success Rate"	0	1	1	"Increases maximum defense and defense success rate."	// 방어 성공율 향상 마스터리 (skill index : 572)
+155	80	255	255	"Increase HP"	0	1	1	"Increases HP."	// 체력 향상 강화 (skill index : 573)
+156	79	255	255	"Ignore Enemy's Defense"	0	1	1	"Increases defense ignore rate. If successful, a chance to ignore defense increase."	// 적 방어력 무시 강화 (skill index : 575)
+// Expansion 추가 마스터 스킬 버프 이펙트 (2011-03-21 홍승욱)									
+157	92	255	255	"Fire"	1	1	1	"HP is reduced for every second of fire damage."	// 드래곤로어 마스터리 디버프 (skill index : 561)
+158	93	255	255	"Frost"	1	1	1	"HP is reduced for every second of frost damage."	// 체인 드라이브 마스터리 디버프 (skill index : 562)
+159	94	255	255	"Poison"	1	1	1	"HP is reduced for every second of poison damage."	// 포이즌애로우 독 데미지 디버프 (skill index : 427)
+160	94	255	255	"Poison"	1	1	1	"HP is reduced for every second of poison damage."	// 포이즌애로우 강화 독 데미지 디버프 (skill index : 434)
+161	87	255	255	"Bless"	0	1	1	"Increases all stats by %d."	// 블레스 강화 버프 (skill index : 433)
+162	43	255	255	"Weaken"	1	1	1	"Decreases attack rate."	// 위크니스 강화 디버프 (skill index : 459)
+163	44	255	255	"Innovate"	1	1	1	"Decreases defense rate."	// 이너베이편 강화 디버프 (skill index : 460)
+164	30	255	255	"Decrease Defense Rate"	1	1	1	"Decreases defense rate."	// 블러드어택 마스터리 디버프 (skill index : 493)
+165	84	255	255	"Iron Defense"	0	1	1	"Significantly increases defense rate and HP."	// 아이언 디펜스 강화 스킬 버프 (skill index : 524)
+166	95	255	255	"Blood Howl"	0	1	1	"HP is reduced every second."	// 블러드 하울링 디버프 (skill index : 565)
+167	95	255	255	"Blood Howl"	0	1	1	"HP is reduced every second."	// 블러드 하울링 강화 디버프 (skill index : 567)
+//168	79	255	255	"Ignore Enemy's Defense"	0	1	1	"Increases the chance of ignoring Enemy Armor. If successful, this decreases the enemy's defense and defense success rate with a fixed probability. "	// 적 방어력 무시 마스터리 (skill index : 577)
+169	96	255	255	"Penetrate Armor"	1	1	1	"Decreases defense and defense success rate."	// 적 방어력 무시 강화, 마스터리 공격 시 디버프
+// 일본 마법 배낭 추가 (2011-08-08)									
+170	109	14	172	"Magic Backpack1"	0	1	1	"Magic Backpack1"	//마법배낭1확장
+171	110	14	173	"Magic Backpack2"	0	1	1	"Magic Backpack2"	//마법배낭2확장
+172	111	14	174	"Magic Backpack3"	0	1	1	"Magic Backpack3"	//마법배낭3확장
+173	112	14	175	"Magic Backpack4"	0	1	1	"Magic Backpack4"	//마법배낭4확장
+//Expansion 속성 시스템 사용 버프 추가 (2011-08-08)									
+174	98	255	255	"Fire"	1	0	1	"Total amount of SD is reduced to half."	// 오닉스 5랭크 스킬 디버프
+175	99	255	255	"Frost"	1	0	1	"Total amount of MP is reduced to half."	// 오닉스 5랭크 스킬 디버프
+176	100	255	255	"Tornado"	1	0	1	"Attack speed is reduced to half."	// 오닉스 5랭크 스킬 디버프
+177	101	255	255	"Bind"	1	0	1	"Total amount of HP is reduced to half."	// 오닉스 5랭크 스킬 디버프
+178	102	255	255	"Darkness"	1	0	1	"You can't do anything while you're stunned. "	// 오닉스 5랭크 스킬 디버프
+179	103	255	255	"Fire Tower"	0	0	1	"ATK+25/EXP+20%%/when fire equipped ATK&DEF+5%%/set item drop chance(excludes Debenter)"	// 길드전 아르카쟁 보상 버프
+180	104	255	255	"Water Tower"	0	0	1	"DEF +50/EXP +20%%/when Water equipped, ATK & DEF +5%%/set item drop chance(excludes Debenter)"	// 길드전 아르카쟁 보상 버프
+181	105	255	255	"Earth Tower"	0	0	1	"CRIT+5%%/EXP+20%%/when Earth equipped ATK&DEF+5%%/set item drop chance(excludes Debenter)"	// 길드전 아르카쟁 보상 버프
+182	106	255	255	"Wind Tower"	0	0	1	"ATK+30/EXP+20%%/when Wind equipped, ATK&DEF+5%%/set item drop chance(excludes Debenter)"	// 길드전 아르카쟁 보상 버프
+183	107	255	255	"Darkness Tower"	0	0	1	"DMG Rec.-10%%/EXP+20%%/when Darkness equipped, ATK&DEF+5%%/set item drop chance(excludes Debenter)"	// 길드전 아르카쟁 보상 버프
+184	108	255	255	"Resurrection Penalty"	1	0	1	"Movement speed decreased for a certain period of time."	//길드전 아르카쟁 사망시 페널티
+// 일본 마법 배낭 추가 (2011-08-08)									
+185	97	14	163	"Vault Expansion"	0	1	1	"Vault Expansion"	//마법배낭1확장
+//Expansion 속성 시스템 사용 버프 2차 추가 (2011-08-19)									
+186	109	255	255	"Confusion"	1	0	1	"Movement speed decreased when hit by this."	// 오닉스 1랭크 스킬 디버프
+187	255	255	255	"EXP Rewards"	1	0	1	"EXP increase by 20%%/ possible set item drops."	//클라이언트 표시 안함
+// 도우미 유료화 버프 추가 (2012-04-27)									
+//188	113	14	204	"Helper extension function"	0	0	1	"At level 1, the helper system is enabled and / Acquisition Settings tab is available, and / Hunting range is increased to 8."	// 도우미 유료화 버프
+//189	114	14	205	"Growth support function"	0	0	1	"The helper system allows you to cast various buffs and skills in a state that has no party with other characters. ""	// 도우미 유료화 버프
+// 경험치 상승 아이템 버프 추가 (2013-06-19 홍승욱)									
+//Index	Viewport index	Item Index		Name (ENG)	Type	알림	Clear type	설명 (ENG)	
+190	115	13	177	"Talisman of Ascension I"	0	0	1	"Earning additional 50%% EXP"	// 인벤 장착 아이템 경험치 상승 버프 I
+191	115	13	178	"Talisman of Ascension II"	0	0	1	"Earning additional 100%% EXP"	// 인벤 장착 아이템 경험치 상승 버프 II
+192	115	13	179	"Talisman of Ascension III"	0	0	1	"Earning additional 200%% EXP"	// 인벤 장착 아이템 경험치 상승 버프 III
+193	60	13	180	"Seal of Ascension II"	0	0	1	"Earning additional 100%% EXP"	// 상승의 인장 II 버프
+194	60	13	181	"Seal of Ascension II"	0	0	1	"Earning additional 100%% EXP (For Master Level)"	// 상승의 인장 II 버프 (마스터)
+195	116	14	224	"Bless of Light (Greater)"	0	0	1	"Earning additional 200%% EXP after quick blessing"	// 빛의 축복 버프
+//글로벌 마스터레벨 전용 스크롤 추가 ( 2013-07-01 4:47 PM 최예슬) 									
+196	68	14	225	"Scroll Master of Defense"	0	0	1	"Defense +120"	//방어의스크롤마스터
+197	70	14	226	"Scroll Master of Wizardry"	0	0	1	"Wizardry +60"	//마력의스크롤마스터
+198	71	14	227	"Scroll Master of Health"	0	0	1	"HP +400"	//체력의스크롤마스터
+199	72	14	228	"Scroll Master of Mana"	0	0	1	"MP +600"	//마나의스크롤마스터
+200	69	14	229	"Scroll Master of Wrath"	0	0	1	"Attack Power +60"	//분노의스크롤마스터
+201	75	14	230	"Scroll Master of Recovery"	0	0	1	"Automatic HP Recovery +4%%, HP +200"	//치유의스크롤마스터
+202	14	14	231	"Scroll Master of Battle"	0	0	1	"Critical Damage +25%%"	//전투의스크롤마스터
+203	14	14	232	"Scroll Master of Strenghtener"	0	0	1	"Excellent Damage +25%%"	//강화의스크롤마스터 
+204	67	14	235	"Scroll Master of Quickness"	0	0	1	"Attack speed increase +20"	//신속의스크롤마스터
+// 탈것 아이템 인벤장착 아이템 변경으로 인하여 버프 추가 (2013-10-18 홍승욱)									
+205	117	13	2	"Horn of Uniria"	0	1	1	"Summons Uniria to mount."	
+206	117	13	3	"Horn of Dinorant"	0	1	1	"Summons Dinorant to mount."	
+207	117	13	4	"Horn of Dark Horse"	0	1	1	"Summons Dark Horse to mount."	
+208	117	13	37	"Horn of Fenrir"	0	1	1	"Summons Fenrir to mount."	
+// 마스터 스킬 보완에 따른 디버프 추가 (2014-02-10 홍승욱)									
+209	118	255	255	"Paralyze"	1	1	1	"Reduces your Mvmt SP by 50%% by paralyzing your legs."	
+210	118	255	255	"Paralyze"	1	1	1	"Reduces your Mvmt SP by 50%% by paralyzing your legs, and gives continual DMG."	
+// PC방 혜택 버프로 변경 (2014-02-20 박혜진)									
+211	119	255	255	"Internet Cafe"	0	0	1	"Extra XP/Chaos Castle in PC Cafe/Access to Kalima/Accum. Gob. Pts."	//PC방 혜택 버프 (레드)
+212	116	14	263	"Bless of Light (Low Grade)"	0	0	1	"Receiving the blessing for a short period of time, you acquire 50%% of basic EXP additionally."	// 빛의 축복 버프 (하급)
+213	116	14	264	"Bless of Light (Middle Grade)"	0	0	1	"Receiving the blessing for a short period of time, you acquire 100%% of basic EXP additionally."	// 빛의 축복 버프 (중급)
+// 마스터 스킬 추가 버프 (2014-04-16 홍승욱)									
+//Index	Viewport index	Item Index			Type	알림	Clear type		
+214	120	255	255	"Evasion"	0	1	1	"Increases your block chance and makes you immune to immobilizing effect"	// 마스터 스킬 이베이전 버프
+215	119	255	255	"Internet Cafe"	0	0	1	"Extra XP/Chaos Castle in PC Cafe/Acesss to Kalima/Accum. Gob. Pts./Stam. Sys. Disabled"	//PC방 혜택 버프 (블루)
+// 그로우랜서 버프(2014-05-21 김의건)									
+216	121	255	255	"Circle Shield"	0	1	1	"Chance to decrease opponent's AG by 10"	// 그로우랜서 신규 스킬
+217	122	255	255	"Obsidian"	0	1	1	"Increases Skill Damage"	// 그로우랜서 신규 스킬
+218	123	255	255	"Wrath"	0	1	1	"Decreases Defense by 30%%, increases Damage by 50%%"	// 그로우랜서 신규 스킬
+219	124	255	255	"Burst"	0	1	1	"Increases chance of True Damage"	// 그로우랜서 신규 스킬
+// 그로우랜서 마스터 스킬 버프(2014-07-31 김의건)									
+220	122	255	255	"Obsidian PowUp"	0	1	1	"Increases Skill Damage"	// 그로우랜서 신규 스킬
+221	121	255	255	"Circle Shield PowUp"	0	1	1	"Chance to increase AG reduce effect by %d on hit."	// 그로우랜서 신규 스킬
+222	121	255	255	"Circle Shield Mastery"	0	1	1	"Chance to increase AG reduce effect by %d on hit."	// 그로우랜서 신규 스킬
+223	123	255	255	"Wrath PowUp"	0	1	1	"Decreases Defense by 30%%, increases Damage by 50%%"	// 그로우랜서 신규 스킬
+224	123	255	255	"Wrath Proficiency"	0	1	1	"Decreases Defense by 30%%, increases Damage by 50%%"	// 그로우랜서 신규 스킬
+225	123	255	255	"Wrath Mastery"	0	1	1	"Increases damage by 50%%"	// 그로우랜서 신규 스킬
+226	226	255	255	"Burst PowUp"	0	1	1	"Increases chance of True Damage"	// 그로우랜서 신규 스킬
+227	125	255	255	"Awakening Success Effect"	0	0	1	"This is Evomon Awakening Success Effect."	// 에보몬 각성 성공 이펙트
+228	126	255	255	"Awakening Failure Effect"	0	0	1	"This is Evomon Awakening Failure Effect"	// 에보몬 각성 실패 이펙트
+// 신규맵 나르스 보스몬스터 코어마그리피 버프 (2014-10-06 박혜진)									
+229	227	255	255	"Berserker"	0	1	1	"Increases Damage."	// 코어마그리피 버프
+230	228	255	255	"Clone"	0	1	1	"Summons a clone."	// 코어마그리피 스킬
+231	229	255	255	"Spin"	1	1	1	"Spins the target."	// 코어마그리피 스킬 디버프
+// 다크스피릿의발톱 인벤장착(2016-08-23 사재일) // 사용하지 않는 버프 인덱스 사용 (불속성 방어 상성 저항제)	
+232	230	13	5	"Dark Raven"	0	0	1	"Summoning Dark Raven."	//다크스피릿 인벤장착
+//233	231	14	322	" "	0	0	1	" "	//물속성 방어 상성 저항제
+//234	232	14	323	" "	0	0	1	" "	//땅속성 방어 상성 저항제
+//235	233	14	324	" "	0	0	1	" "	//바람속성 방어 상성 저항제
+//236	234	14	325	" "	0	0	1	" "	//암흑속성 방어 상성 저항제
+//PC방 전용 아이템 추가(2015-03-30 최유진)	
+237	115	13	476	"[PC room] The talisman of rise I"	0	0	1	"PC room only items, 50%% of the basic experience to acquire additional."	// 인벤 장착 아이템 경험치 상승 버프 I(PC방)
+// 에르텔 옵션 버프 및 디버프 추가 (2015-03-26 홍승욱)	
+238	235	255	255	"Bastion"	0	1	1	"Elemental Damage minus 90%%."	// 광휘의 에르텔 2랭크 옵션
+239	236	255	255	"Hemorrhage"	1	1	1	"Bleeding Damage for every second."	// 광휘의 에르텔 3랭크 옵션
+240	237	255	255	"Paralysis"	1	1	1	"Movement speed and regeneration effect will be reduced. / (reduced effectiveness of Potions)"	// 광휘의 에르텔 3랭크 옵션
+241	238	255	255	"Bondage"	1	1	1	"Cannot move while Earth Power is holding the target's leg."	// 광휘의 에르텔 3랭크 옵션
+242	239	255	255	"Blindness"	1	1	1	"Blinds the target and reduces its Attack Success Rate by %d%%."	// 광휘의 에르텔 3랭크 옵션
+243	240	255	255	"Immune I"	0	1	1	"Becomes immune to Elemental Damage."	// 광휘의 에르텔 4랭크 옵션
+244	240	255	255	"Immune II"	0	1	1	"Becomes immune to every Debuff Effect."	// 광휘의 에르텔 4랭크 옵션
+245	241	255	255	"Widened I"	0	1	1	"Greatly increases the Elemental Damage and Elemental Attack Rate temporarily."	// 광휘의 에르텔 5랭크 옵션
+//Index	Viewport index	Item Index		Name	Type	알림	Clear type	설명	
+// 대천사의절대무기 스킬 버프 추가 (2015-08-11 사재일)									
+246	242	255	255	"Archangel's will"	0	1	1	"Attack damage and skill damage is increased."	//대천사의절대무기 무기스킬(버프)
+247	243	255	255	"Ferea Party EXP buff"	0	1	1	"Up to 10%% EXP gain is added on basic EXP/5%% additional EXP per party member."	//페리아 파티 경험치 버프
+248	244	255	255	"Lunedil's Blessing"	0	0	1	"EXP Increase Level 1: 5%%"	//루네딜의 축복 버프
+249	244	255	255	"Lunedil's Blessing"	0	0	1	"EXP Increase Level 2: 10%%"	//루네딜의 축복 버프
+250	244	255	255	"Lunedil's Blessing"	0	0	1	"EXP Increase Level 3: 15%%"	//루네딜의 축복 버프
+251	244	255	255	"Lunedil's Blessing"	0	0	1	"EXP Increase Level 4: 25%%"	//루네딜의 축복 버프
+252	244	255	255	"Lunedil's Blessing"	0	0	1	"EXP Increase Level 5: 35%%"	//루네딜의 축복 버프
+253	116	14	371	"Bless of Light (Greater)"	0	0	1	"Earning additional 200%% EXP after quick blessing"	// 빛의 축복 버프(상급)
+254	116	14	372	"Bless of Light (Middle Grade)"	0	0	1	"Receiving the blessing for a short period of time, you acquire 100%% of basic EXP additionally."	// 빛의 축복 버프 (중급)
+255	116	14	373	"Bless of Light (Low Grade)"	0	0	1	"Receiving the blessing for a short period of time, you acquire 50%% of basic EXP additionally."	// 빛의 축복 버프 (하급)
+//256	245	14	49	"Jack O'Lantern Food"	0	0	1	"Increases maximum health +500"	//빨강
+//257	245	14	50	"Jack O'Lantern Drink"	0	0	1	"Increases maximum health +500"	//하늘
+//258	23	14	46	"Jack O'Lantern Blessings"	0	0	1	"Attack speed increase +10"	//주황
+//259	23	14	47	"Jack O'Lantern Wrath"	0	0	1	"Attack damage increase +30"//붉은
+//260	23	14	47	"Jack O'Lantern Wrath"	0	0	1	"Horsepower +30"	//노랑
+//261	245	14	48	"Jack O'Lantern Cry"	0	0	1	"Defense increase +100"	//보라
+//262	73	14	97	"Scroll of Battle"	0	1	1	"Critical damage increase 5%"	//하늘색
+//263	74	14	98	"Scroll of Strength"	0	1	1	"Excellent Damage Increased by 5%"	//초록
+// 4차 전직 스킬강화트리 버프 등록 (2017-03-14 사재일)									
+264	256	255	255	"Swell Life Enhancement"	0	0	1	"Increases Swell Life HP"	
+265	257	255	255	"Mana Shield Enhancement"	0	0	1	"Increases Mana Shield Damage Reduction"	
+266	258	255	255	"Berserker Enhancement"	0	0	1	"Increases Berserker Attack Power"	
+267	259	255	255	"Berserker Enhancement"	0	0	1	"Eliminated Berserker Defense Reduction"	
+268	260	255	255	"Stamina Enhancement"	0	0	1	"Increases Stamina Effect"	
+269	261	255	255	"Wrath Enhancement"	0	0	1	"Increases Wrath Attack Power"	
+270	262	255	255	"Wrath Enhancement"	0	0	1	"Wrath defense reduction effect reduced"	
+271	263	255	255	"Decrease SD Ratio"	0	0	1	"Decrease SD Ratio"	
+272	264	255	255	"SD Rise"	0	0	1	"SD Rise"	
+273	265	255	255	"Poison"	1	0	1	"Poison"	
+274	266	255	255	"Freezing"	1	0	1	"Freezing"	
+275	267	255	255	"Bleeding"	1	0	1	"Bleeding"	
+276	268	255	255	"Shock"	1	0	1	"Shock"	
+277	269	255	255	"Addicted"	1	0	1	"Addicted"	
+278	270	255	255	"Freezing"	1	0	1	"Freezing"	
+279	271	255	255	"Excessive Bleeding"	1	0	1	"Excessive Bleeding"	
+280	272	255	255	"Shock"	1	0	1	"Shock"	
+281	273	255	255	"Increased SD Reduction"	0	0	1	"Increased SD reduction"																	
+//Season13 Part.1 사이드옵션 등록 (2017-08-02 사재일)								
+282	274	255	255	"Increase Maximum Health"	0	0	1	"Increase Maximum Health"
+283	275	255	255	"Fourth Stats"	0	0	1	"Fourth Stats"
+284	276	255	255	"Base Defense Increase"	0	0	1	"Base Defense Increase"
+285	277	255	255	"Increase Attack Power of 4th Wings"	0	0	1	"Increase Attack Power of 4th Wings"
+286	278	255	255	"Damage Increase"	0	0	1	"Damage Increase"
+287	279	255	255	"Wizadry Power Increase"	0	0	1	"Wizadry Power Increase"
+288	280	255	255	"Fourth Stats"	0	0	1	"Fourth Stats"
+289	281	255	255	"Skill Damage Increase"	0	0	1	"Skill Damage Increase"
+290	282	255	255	"Fourth Blade Damage Increase"	0	0	1	"Fourth Blade Damage Increase"
+291	283	255	255	"Attack/Wizadry Power Increase"	0	0	1	"Attack/Wizadry Power Increase"
+end								

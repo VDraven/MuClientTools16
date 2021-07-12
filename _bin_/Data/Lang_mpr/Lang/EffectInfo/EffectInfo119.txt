@@ -1,0 +1,7 @@
+//Index	File	PosX	PosY	PosZ	RotX	RotY	RotZ	Scale	Node	ParentRotation
+62	Data\Effect\fire01-green01.ein	0	0	0	0	0	0	50	0	1
+63	Data\Effect\fire01-blue01.ein	0	0	0	0	0	0	50	0	1
+64	Data\Effect\fire01-red02.ein	0	0	0	0	0	0	50	0	1
+65	Data\Effect\fire01-magenta01.ein	0	0	0	0	0	0	50	0	1
+66	Data\Effect\fire01-yellow01.ein	0	0	0	0	0	0	50	0	1
+67	Data\Effect\fire01-red01.ein	0	0	0	0	0	0	60	0	1

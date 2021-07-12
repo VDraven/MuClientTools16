@@ -1,0 +1,16 @@
+//Index	File	PosX	PosY	PosZ	RotX	RotY	RotZ	Scale	Node	ParentRotation
+31	Data\Effect\fire01-red04.ein	0	0	0	0	0	0	38	2	1
+32	Data\Effect\fire01-red04.ein	0	0	0	0	0	0	38	1	1
+33	Data\Effect\fire01-red04.ein	0	0	0	0	0	0	38	3	1
+37	Data\Effect\fire01-red04.ein	0	0	0	0	0	0	38	3	1
+38	Data\Effect\fire01-red04.ein	0	0	0	0	0	0	38	3	1
+39	Data\Effect\fire01-red04.ein	0	0	0	0	0	0	38	3	1
+44	Data\Effect\fire01-yellow01.ein	0	0	0	0	0	0	50	0	1
+45	Data\Effect\fire01-red02.ein	0	0	0	0	0	0	50	0	1
+46	Data\Effect\fire01-green01.ein	0	0	0	0	0	0	50	0	1
+47	Data\Effect\fire01-blue01.ein	0	0	0	0	0	0	50	0	1
+44	Data\Effect\Sparkle21-yellow01.ein	0	0	0	0	0	0	70	0	1
+45	Data\Effect\Sparkle21-red01.ein	0	0	0	0	0	0	70	0	1
+46	Data\Effect\Sparkle21-green01.ein	0	0	0	0	0	0	70	0	1
+47	Data\Effect\Sparkle21-blue01.ein	0	0	0	0	0	0	70	0	1
+

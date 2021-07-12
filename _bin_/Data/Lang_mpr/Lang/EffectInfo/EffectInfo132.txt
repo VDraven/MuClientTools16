@@ -1,0 +1,13 @@
+//Index	File	PosX	PosY	PosZ	RotX	RotY	RotZ	Scale	Node	ParentRotation
+160	Data\Effect\smoke11-red01.ein	0	0	0	0	0	0	60	0	1
+160	Data\Effect\fire09-red01.ein	0	0	0	0	0	0	60	0	1
+161	Data\Effect\smoke12-red01.ein	0	0	0	0	0	0	60	0	1
+64	Data\Effect\smoke12-red01.ein	0	0	0	0	-90	0	30	5	1
+64	Data\Effect\fire09-red01.ein	0	0	0	0	-90	0	20	5	1
+90	Data\Effect\smoke12-red01.ein	0	0	0	0	0	0	30	16	1
+162	Data\Effect\fog08-white01.ein	0	0	0	0	0	0	500	0	1
+163	Data\Effect\smoke14-gray01.ein	0	0	0	0	0	0	100	0	1
+164	Data\Effect\fog08-blue01.ein	0	0	0	0	0	0	500	0	1
+165	Data\Effect\smoke15-black01.ein	0	0	0	0	0	0	50	0	1
+167	Data\Effect\fog08-black01.ein	0	0	0	0	0	0	550	0	1
+166	Data\Effect\smoke16-white01.ein	0	0	0	0	0	0	500	0	1

@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////									
+// 	[Text Ver]	0.0.2.8							
+//	[작업자]	박혜진							
+//	[작업일]	2016-07-27 05:24 pm							
+//	[작업 내용]	닉시스 호수 이동명령창 추가							
+////////////////////////////////////////////////////////////////////////////////									
+// 서버용 파일은 로랜협곡 주석을 제외하고 클라이언트용 파일은 로랜협곡 주석처리 해야함									
+// 로랜협곡의 순서는 변경 불가능 (24번째 반드시 유지)									
+//MaxLevel 추가. MinLevel은 최소입장 가능 레벨, MaxLevel은 최대 입장 가능 레벨이다.									
+//index	Movename(kor)	Movename(eng)	Zen	MinLevel	MaxLevel	GateNumber	Difficulty Sort	Alphabetical Sort	몬스터 구분
+1	"Arena"	"Arena"	2000	1	-1	50	0	3	-1
+48	"Event Square"	"Eventmap_square"	20000	1	-1	503	1	26	-1
+44	"Loren Market"	"Loren_Market"	10000	1	-1	333	2	37	-1
+2	"Lorencia"	"Lorencia"	2000	10	-1	17	3	38	7
+3	"Noria"	"Noria"	2000	10	-1	27	4	47	32
+31	"Elbeland"	"Elbeland"	2000	10	-1	267	9	23	418
+32	"Elbeland2"	"Elbeland2"	2500	10	-1	268	10	24	422
+43	"Elbeland3"	"Elbeland3"	3000	10	-1	269	11	25	425
+4	"Devias"	"Devias"	2000	10	-1	22	5	16	24
+5	"Devias2"	"Devias2"	2500	10	-1	72	6	17	19
+6	"Devias3"	"Devias3"	3000	10	-1	73	7	18	20
+7	"Devias4"	"Devias4"	3500	10	-1	74	8	19	20
+8	"Dungeon"	"Dungeon"	3000	30	-1	2	12	20	11
+9	"Dungeon2"	"Dungeon2"	3500	40	-1	6	13	21	13
+10	"Dungeon3"	"Dungeon3"	4000	40	-1	10	14	22	8
+11	"Atlans"	"Atlans"	4000	50	220	49	15	4	45
+12	"Atlans2"	"Atlans2"	4500	80	250	75	23	8	52
+13	"Atlans3"	"Atlans3"	5000	90	300	76	24	9	48
+14	"LostTower"	"LostTower"	5000	50	-1	42	16	39	39
+15	"LostTower2"	"LostTower2"	5500	50	-1	31	17	40	34
+16	"LostTower3"	"LostTower3"	6000	50	-1	33	18	41	41
+17	"LostTower4"	"LostTower4"	6500	50	-1	35	19	42	37
+18	"LostTower5"	"LostTower5"	7000	50	-1	37	20	43	40
+19	"LostTower6"	"LostTower6"	7500	70	-1	39	21	44	35
+20	"LostTower7"	"LostTower7"	8000	70	-1	41	22	45	35
+21	"Tarkan"	"Tarkan"	8000	140	-1	57	25	50	57
+22	"Tarkan2"	"Tarkan2"	8500	160	-1	77	28	51	61
+50	"Ferea"	"Ferea"	50000	400	-1	509	40	27	730
+25	"Aida1"	"Aida1"	8500	150	-1	119	26	1	306
+27	"Aida2"	"Aida2"	8500	380	-1	140	37	2	550
+23	"Icarus"	"Icarus"	10000	160	-1	63	29	28	70
+26	"Crywolf"	"Crywolf"	15000	10	-1	118	56	10	-1
+28	"Kanturu1"	"Kanturu_ruin1"	9000	160	350	138	27	29	353
+29	"Kanturu2"	"Kanturu_ruin2"	9000	160	350	141	30	30	350
+45	"Kanturu3"	"Kanturu_ruin_island"	15000	380	-1	334	38	31	556
+30	"KanturuRelic"	"Kanturu_Remain"	12000	300	-1	139	33	32	360
+46	"Karutan1"	"Karutan1"	13000	280	-1	335	31	33	574
+47	"Karutan2"	"Karutan2"	14000	380	-1	344	36	34	576
+34	"LaCleon"	"Raklion"	15000	380	-1	287	39	36	458
+51	"Nixies Lake"	"Nixies Lake"	50000	700	-1	522	41	46	744
+33	"SwampOfCalmness"	"Swamp_of_Calmness"	15000	380	-1	273	35	49	449
+49	"Acheron"	"Akeron"	50000	300	-1	417	34	0	591
+42	"Vulcanus"	"Vulcanus"	15000	300	-1	294	32	53	490
+24	"ValleyOfLoren"	"LorenDeep"	0	10	-1	104	55	52	-1
+52	"Deep Dungeon 1"	"R-Dungeon1"	50000	770	-1	561	42	11	767
+53	"Deep Dungeon 2"	"R-Dungeon2"	50000	770	-1	562	43	12	772
+54	"Deep Dungeon 3"	"R-Dungeon3"	50000	770	-1	563	44	13	773
+55	"Deep Dungeon 4"	"R-Dungeon4"	50000	770	-1	564	45	14	769
+56	"Deep Dungeon 5"	"R-Dungeon5"	50000	770	-1	565	46	15	777
+57	"Swamp Of Darkness"	"SwampOfDarkness"	50000	800	-1	567	47	48	788
+58	"Kubera Mine"	"KuberaMine"	50000	850	-1	591	57	35	810
+59	"Atlans(Abyss) 1"	"abyss_Atlans1"	50000	1000	-1	617	58	5	832
+60	"Atlans(Abyss) 2"	"abyss_Atlans2"	50000	1020	-1	618	59	6	834
+61	"Atlans(Abyss) 3"	"abyss_Atlans3"	50000	1030	-1	619	60	7	836
+62	"Scorched Canyon"	"Scorched Canyon"	50000	1050	-1	620	61	27	846
+63	"Scarlet Icarus"	"Red Smoke Icarus"	50000	1070	-1	631	62	62	861

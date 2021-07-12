@@ -1,0 +1,5 @@
+//Index	File	PosX	PosY	PosZ	RotX	RotY	RotZ	Scale	Node	ParentRotation
+7	Data\Effect\smoke13-black01.ein 	-25	0	0	-90	90	-90	10	10	1
+161	Data\Effect\sparkle11-white01.ein	0	0	0	0	0	0	60	0	1
+162	Data\Effect\sparkle17-white01.ein	0	0	0	0	0	0	60	0	1
+

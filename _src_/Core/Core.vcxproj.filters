@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{20ca5291-7ad4-4ff2-98a8-69730ae0539f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client\Data">
+      <UniqueIdentifier>{662543aa-dcbc-4814-ab12-16d4f691cf48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client\Graphic">
+      <UniqueIdentifier>{316b3536-7d66-443e-a208-0285e5faacbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseIO.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MuCrypto.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonInstance.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LangMpr.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utls.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientStructures.h">
+      <Filter>Source Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcellentOptionBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="TxtConvertor.h">
+      <Filter>Source Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaDataBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoTooltipBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoTooltipTextBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="PentagramMixNeedSourceBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MuunBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="LazyStruct.h">
+      <Filter>Source Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="MuunExchangeBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="StatOptionBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketItemBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayGuideBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MuRummyBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerListBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="EvoMonsterBoxBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MapCharactersBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MuCommon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSetBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterSkillBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterSkillTreeBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCQuestBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillTooltipTextBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemAddOptionBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="JewelOfHarmonyBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MixBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="OZJ.h">
+      <Filter>Source Files\Client\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="OZT.h">
+      <Filter>Source Files\Client\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="OZB.h">
+      <Filter>Source Files\Client\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="OZD.h">
+      <Filter>Source Files\Client\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="OZG.h">
+      <Filter>Source Files\Client\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicConvertor.h">
+      <Filter>Source Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="OZP.h">
+      <Filter>Source Files\Client\Graphic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MuCrypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LangMpr.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Utls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaDataBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LazyStruct.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="MuunExchangeBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketItemBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerListBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="EvoMonsterBoxBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="MapCharactersBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSetBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCQuestBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemAddOptionBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="JewelOfHarmonyBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="MixBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////					
+//	[ Text  Version ]	0.0.0.1			
+//	[ 최종 작업자 ]	사재일			
+//	[ 최종 작업일 ]	2015-03-02 19:17			
+//	[ 작 업 내 용 ]	ElementalMixList 스크립트 최초생성			
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////					
+					
+// 속성 조합 목록 테이블					
+// 클라이언트 전용 스크립트					
+// 속성 조합 UI의 목록을 보여주는 스크립트. ID 순서대로 목록이 나열된다.					
+// Link A, B 컬럼은 PentagramMixNeedSource의 테이블 번호, Index 순이다.					
+// Name : Text스크립트를 참조하여 조합명을 불러옴					
+// PentagramMixNeedSource의 Index 값이 여러 개일 경우 Link B_Min, Max로 범주를 정할 수 있음.					
+// AttributeList 스크립트는 목록과 조합법만을 이어줄 뿐, 실질적인 조합 재료 및 결과물은  PentagramMixNeedSource 스크립트 의해 결정된다.					
+// PentagramMixNeedSource의 조합오픈 항목과 Link의 값이 반드시 일치 해야 합!					
+//ID	Name	Link A	Link B_Min	Link B_Max	
+1	4722	0	1	1	// Errtel Creation
+2	4715	2	1	10	// Errtel Level Up (Rank 1)
+3	4716	2	1	10	// Errtel Level Up (Rank 2)
+4	4717	2	1	10	// Errtel Level Up (Rank 3)
+5	4718	2	1	10	// Errtel Level Up (Rank 4)
+6	4719	2	1	10	// Errtel Level Up (Rank 5)
+7	4720	3	2	5	// Errtel Rank Up
+8	4725	0	2	2	// Slot of Radiance Assembly
+9	5287	6	0	0	// Add Wing Errtel Attribute
+10	5288	7	0	14	// Wing property level up
+11	4721	0	3	3	// Errtel Element change (event)
+end					

@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////		
+//	[ 버          전 ]	0.0.0.3_1
+//	[ 최종 작업자 ]	노영호
+//	[ 최종 작업일 ]	2014-11-04-11:39:00 AM
+//	[ 내          용 ]	귀걸이용 추가
+//	[ 참          조 ]	클라이언트 전용 스크립트
+////////////////////////////////////////////////////////////////////////////////		
+		
+//SetOption Index	SetOption Name	Operator
+0	"Increases strength"	1
+1	"Increases agility"	1
+2	"Increases energy"	1
+3	"Increases vitality"	1
+4	"Increases leadership"	1
+5	"Increases minimum damage"	1
+6	"Increases maximum damage"	1
+7	"Increases wizardry"	2
+8	"Increases damage"	2
+9	"Increases attack speed"	1
+10	"Increases defense"	1
+11	"Increases maximum HP"	1
+12	"Increases maximum Mana"	1
+13	"Increases maximum AG"	1
+14	"Increases AG automatic recovery"	1
+15	"Increases critical damage rate"	2
+16	"Increases critical damage"	1
+17	"Increases excellent damage rate"	2
+18	"Increases excellent damage"	1
+19	"Increases skill damage"	1
+20	"Increases double damage rate"	2
+21	"Increases ignore enemy defense rate"	2
+22	"Increases shield defense"	2
+23	"Increases damage/wizardry"	1
+//24	"치유력 증가"	0
+//25	"6셀 근처 아군의 대인 방어율 증가"	0
+//26	"저주력 증가"	0
+//27	"트리플 데미지 확률 증가"	0
+24	"Increases all stats"	1
+//25	"기본 방어력 증가"	1
+26	"Increases damage"	1
+27	"Increases wizardry"	1
+28	"Mastery attack/wizardry"	1
+29	"Increases mastery excellent damage"	1
+30	"Increases mastery critical damage"	1
+end		

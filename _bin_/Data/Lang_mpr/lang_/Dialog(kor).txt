@@ -1,0 +1,165 @@
+////////////////////////////////////////////////////////////////////////////////////////////													
+// Text Ver. 0.0.0.7		T 퀘스트 창 2번째 탭 전직관련 대사											
+// Version 0.0.0.3  - T서버		전직 퀘스트											
+// Version 0.0.0.3  - M서버		서버 패킷 (일본에서 사용중)		0xf3 0x40 (cmd 5) // 서버에서 오는 텍스트 번호이다.									
+// 최종 작업일: 2016-07-19 7:13 PM													
+// 최종 작업자: 박혜진													
+// 내용 : 클라이언트 패킹 작업으로 인한 스크립트 구조 수정													
+////////////////////////////////////////////////////////////////////////////////////////////													
+// 답변(클릭) 구문 형식 													
+// 타겟구문번호/구분자													
+// 구분자 분류													
+// -1 : [대사진행] 대상 구분으로 넘어감. 서버에 알리지 않음													
+// 1 : [수락] 대상 구문으로 넘어감. 수락 했음을 서버에 알림													
+// 2 : [거절] 대상 구문 미지정(동일 구분 번호). 거절 했음을 서버에 알림													
+// 3 : [완료] 대상 구문 미지정(동일 구분 번호). 완료 했음을 서버에 알림													
+////////////////////////////////////////////////////////////////////////////////////////////													
+//		구분자1			구분자2			구분자3			구분자4		
+//텍스트 번호	텍스트	링크 텍스트 번호	구분자	구분자 텍스트	링크 텍스트 번호	구분자	구분자 텍스트	링크 텍스트 번호	구분자	구분자 텍스트	링크 텍스트 번호	구분자	구분자 텍스트
+101	어지간한 실력으로는 해낼 수 없는 일이니 좀 더 수련을 쌓은 뒤 찾아오게나.	101	2	End the story						
+1	Good day wanderer. I am Pasi, a Mage . Something feels strange lately. The movement of the stars doesn't seem quite right and your future¡| it seems so cloudy. I wonder why?									
+2	Hello. I'm vault keeper Baz. I can help wherever you go, so don't hesitate to leave your things with me.									
+3	Many adventurers have told me that the sound of my harp soothes their fears and wipes away their fatigue. Do you need my help?									
+4	Hello. I'm vault keeper Baz. I can help wherever you go, so don't hesitate to leave your things with me.									
+5	Do you have enough Zen? Zen is needed for research.  I can't combine items without it. Do you know how much you need?
+// 일본 버전용									
+6	Welcome to MU! Press the F1 key for assistance while traveling around the continent of MU.									
+7	Are you new to Lorencia? Go to the southeast exit in front of the fountain and try hunting Budge Dragons or Spiders. The Skeletons in the Northwest are too dangerous.									
+8	Welcome to Noria. If it's your first time, pass through the vault keeper and go to the south exit. Try hunting low level monsters like Scorpions or Goblins.									
+9	If you need a detailed guide for the continent of MU, check out http://www.yoursite.com
+//1차 전직 퀘스트 텍스트									
+50	The 'Scroll of the Emperor', supposedly holds secrets of Muren, the first emperor of MU. It was lost long ago, but every so often another adventurer appears on a quest to find it. The last rumors had it placed around the Lost Tower, Atlans, and the Dungeon. I wonder if it's really there.	74	-1	I've never heard of it.						
+74	Lugard wants you to find the 'Scroll of the Emperor', but you don't look capable of hurting so much as a fly. Come back when there's some muscle on those bones.	74	2	I'll be back.						
+51	Your offering to the gods isn't enough. I will tell you about the prophecy if you make an offering of 1,000,000 Zen.	51	2	I shall return with 1,000,000 Zen.						
+52	The 'Scroll of the Emperor', is rumored to have been seen around the Lost Tower, Atlans, and the Dungeon.	75	-1	Tell me more.						
+75	The 'Scroll of the Emperor' contains the legacy of the heroes who fought in the battle against the forces of evil. It is an honor that Lugard wants you to find it.	53	-1	Please go on.						
+53	You can accept this quest by offering 1,000,000 Zen to Lugard. Will you accept this quest to bring back the 'Scroll of the Emperor'?	52	-1	Can you repeat that please?	54	1	I will find it.	53	2	No thanks.
+54	According to rumors, you can find the 'Scroll of the Emperor' in one of three places; the Dungeon, the Lost Tower, or Atlans.	54	2	I will go and find it.						
+55	By the gods, you've found it! You've found the 'Scroll of the Emperor'! It contains the historical record of the Mu Empire's unification. They say this scroll has been blessed by a potent magic. He who possesses it possesses great power.	55	3	Tell me about the record.						
+56	The historical record of the first emperor, Muren, contains the commemoration of peace, where Muren created the MU Empire by unifying the continent with his triumph over all the warlords.	57	-1	Please continue.						
+57	Muren was one of the three heroes that ended the chaos brought upon the people by Sekneum's invasion.	56	-1	Tell me the previous story.	80	-1	Please continue.			
+80	After the empire was united, the people swore their loyalty to the emperor. These are some of the treasures offered as a symbol of their loyalty.	57	-1	Tell me the previous story.	58	-1	Please continue.			
+58	They were magical artifacts called the 'Broken Sword,' an 'Tear of Elf,' and the 'Soul shard of Wizards.' A 'Broken Sword' was offered by the dark knights as a symbol of their bravery, loyalty and their wish for prosperity.	57	-1	Tell me the previous story.	81	-1	Please continue.			
+81	An 'Tear of Elf' was offered by the elves as a token of their vow to strengthen the relationship between the elves and humans.	58	-1	Tell me the previous story.	59	-1	Please continue.			
+59	A 'Soul shard of Wizards' was offered by the dark wizards as a symbol of their vow to use their powers for the peace and freedom of the empire. An excerpt from the commemoration of peace archives  (Mu Year 10).	58	-1	Tell me the previous story.	59	2	Stop the story.			
+60	If you've finished reading the 'Scroll of the Emperor', seek out a 'Broken Sword' like the one the ancient dark knights gave at the commemoration of peace. I've heard it can be found somewhere in Atlans, the Lost Tower or Tarkan.	61	1	I will find it.	60	2	No thanks.			
+61	Danger lurks behind every corner in those places and a 'Broken Sword' is not easy to come by. Your efforts will be rewarded, though, for you'll be gifted a power like you've never had before. Return to me once you find a 'Broken Sword.'	61	2	I shall find and return with it.						
+62	Brave knight, you've found a 'Broken Sword'! After the unification of the Mu continent, Muren broke his sword, 'Apocalypse,' as a gesture of hope that there would never be another war.	76	-1	Tell me more.						
+76	From then on, a custom was born where dark knights wishing to become blade knights broke their swords as a symbol of their vow to never wield their weapons unjustly.	63	-1	Tell me more.						
+63	After the war, it became a ritual for dark knights on the path to becoming blade knights to seek the ancient 'Broken Swords' to prove their bravery.	79	-1	Tell me more.						
+79	Since you have found both the 'Scroll of the Emperor' and a 'Broken Sword,' you have earned the right to be called a blade knight from now on.	79	3	I've become a blade knight!						
+64	You've read the 'Scroll of the Emperor,' so you must know about the 3 treasures. Now that you've found the sword, go search for a crystal 'Tear of Elf' made by the ancient elves.	77	-1	Tell me more.						
+77	Some of the elves have said that they have seen an 'Tear of Elf' in the Lost Tower, Atlans and Tarkan.	65	1	I will find it.	77	2	No thanks.			
+65	Danger lurks behind every corner in those places and an 'Tear of Elf' is not easy to come by. Your efforts will be rewarded, though, for you'll be gifted a power like you've never had before. Return to me once you find an 'Tear of Elf.'	65	2	I will go find an 'Tear of Elf!'						
+66	You've found an 'Tear of Elf!' After the war, Lunedil, the elf queen, created a tear stone by casting magic on a spirit stone. They invoked the spirit of their goddess and became some of the most powerful elves in history.	78	-1	Tell me more.						
+78	This is called an 'Tear of Elf,' and the elf that finds this stone becomes a muse elf, able to conjure the power of the elven goddess.	78	3	I've become a muse elf!						
+67	You've read the 'Scroll of the Emperor,' haven't you? Then you must know about the 3 treasures recorded in it.	82	-1	Tell me more.						
+82	Go find a 'Soul shard of Wizards.' According to the ancient dark wizards, a 'Soul shard of Wizards' was last seen around the Lost Tower, Atlans and Tarkan.	68	1	I will find it.	82	2	No thanks.			
+68	With your power, I am sure that you will find a 'Soul shard of Wizards.' Find it and return to me at once.	68	2	I will find it						
+69	I knew you'd find a 'Soul shard of Wizards!' Etramu, the greatest wizard of Arka, worried that the weakened dark knights might falter during and attack by Kundun. To keep them safe, he created a magic stone to guard their souls.	70	-1	Tell me more.						
+70	With this stone, a dark wizard becomes a soul master.	70	3	I've become a soul master!						
+71	Your offering to the gods isn't enough. I will tell you about the prophecy if you make an offering of 2,000,000 Zen.	71	2	I will return with 2,000,000 Zen.						
+72	Your strength of will has earned you new power. May the grace of Lugard be with you at all times.	72	2	May the grace of the gods be with you.						
+73	You already possess great power. I do not have a prophecy for you.	73	2	I will return later.
+//캐릭터 마스터리 퀘스트 텍스트 (3,4차 전직)						
+100	The legendary treasure called the 'Ring of Honor' is needed to acquire the blessing and strength of Muren. It has come to our lands once again, but you are not ready for an undertaking of this magnitude. Wait until you are more experienced.	101	-1	What do I need to do?						
+101	More experience is required to embark on this quest. Return when you have reached level 220, according to the trials of the lost empire.	101	2	I will return when I'm more experienced.						
+102	The legendary treasure called the 'Ring of Honor' is needed to acquire the blessing and strength of Muren. It has come to our lands once again.	103	-1	Tell me more.						
+103	Whoever possesses the 'Ring of Honor' gains the blessing of Muren. It is said to be found in the deserts across the sea.	104	-1	Tell me more.						
+104	The monsters there are quite powerful. They possess the ring.	102	-1	Can you repeat that please?	105	1	I will find it.	104	2	No thanks.
+105	The 'Ring of Honor' may be closer than you think. You'll feel its power when it's near. But be warned: this is no easy task.	105	2	I will find it.						
+108	This is indeed the 'Ring of Honor.' It glows brighter than I imagined. This ring possesses a legendary power, one that you cannot even fathom. It is a true blessing in your hands.	109	-1	Tell me more.						
+109	This ring is said to revive life and grant perpetual youth, but it only works on heroes that possess the power to wield its strength.	110	-1	Tell me more.						
+110	It's because Etramu, the Wizard of Arka, casted a spell in order to prevent any evil from manipulating its powers. But the ring says you are fit for it.	111	-1	Really?						
+111	The 'Ring of Honor' was created when the Secromicon was created with an imperishable metal. The two have been considered sacred, but they went missing during the revolt of the deputy commander, Gaion.	112	-1	Tell me more.						
+112	Now that the 'Ring of Honor' has been found, you will be able to grow even more as a warrior.	112	3	I feel my abilities increasing!						
+113	You are only going to become stronger as time goes on. Please use your powers for the peace of our empire.	113	2	I will.						
+114	You already possess the sacred power.	114	2	I will return later.						
+115	The 'Dark Stone' said to give a warriors incredible strength, but you are not yet ready to use that power.	101	-1	I will return when I am ready.						
+130	It is indeed the 'Ring of Honor'. Look at how it shines. This ring contains a world of history that you cannot even begin to fathom. It's a blessing that you have found it!.	131	-1	Tell me more.						
+131	Yes, the ring is said to have the power to bring life to the dead and grant perpetual youth. It will only perform its best when it is in the hands of a true hero.	132	-1	Is that so?						
+132	It's because Etramu, the Wizard of Arka, casted a spell in order to prevent any evil from manipulating its powers. But it seems as though you are the right person!	133	-1	I see.						
+133	The 'Ring of Honor' was created when the Secromicon was created with an imperishable metal. The two have been considered sacred, but they went missing during the revolt of the deputy commander, Gaion.	134	-1	I see.						
+134	Now that the 'Ring of Honor' has been found, you will be able to grow even more as a warrior.	134	3	I feel my abilities increasing!						
+135	If you would like to acquire new powers, listen to me carefully. The 'Dark Stone' that is said to give warriors new power, was found on the continent of Mu.	136	-1	Tell me more.						
+136	With the 'Dark Stone', you can master a new ability. It won't be an easy task, but since you were able to acquire the 'Ring of Honor' it might be possible for you.	137	-1	What do I need to do?						
+137	Rumor has it that you can find the stone in Tarkan and Icarus. Be careful of the monsters. Those monsters that possess the stone will only react to those who have special abilities and pose a threat to them.	135	-1	Could you repeat that please?	138	1	Then I'll do it!	137	2	I don't feel confident yet.
+138	The 'Dark Stone' is calling on you right now. With it, you will surely become stronger than you've ever been. But many others are searching for it, so hurry.	138	2	I will return with the 'Dark Stone.'						
+139	So you've found the 'Dark Stone.' It is recorded that this stone is the dried blood of the hero, 'Benelope,' who fought in the War of the Gods and Demons.	140	-1	Tell me more.						
+140	Benelope is of a knight descent. After his defeat in the war, he searched for new magic and fighting skills. These skills have been silently passed down to warriors with the blood of a knight in order to fight against Kundun.	141	-1	Please go on.						
+141	Yes, the blood of a warrior runs through you. Thus, the power of Benelope will be granted to you through the Dark Stone.	141	3	I have been granted a new power!						
+142	You have acquired a new power through the 'Ring of Honor,' but there is something that you don't know.	143	-1	What is that?						
+143	It is possible that you might be able to acquire a new power. The 'Dark Stone,' is calling for you.	143	2	Really?						
+116	In order to acquire the full magnitude of this power, you need to prepare yourself by attaining the 'Scroll of the Emperor'. Go to 'Sevina' in Devias.	116	2	I will return when I have attained it.						
+117	You have failed to achieve the status of a blade knight. Return after you have acquired this new power through the 'Ring of Honor.	117	2	I will return when I have the power.						
+118	You must offer 3,000,000 Zen to the gods to sanctify this quest. You do not have enough Zen.	118	2	I will return with the Zen.						
+119	Your offering to the gods isn't enough. I will tell you about the prophecy if you make an offering of 2,000,000 Zen.	119	2	I will return with 2,000,000 Zen.
+//3차 전직 퀘스트 텍스트 추가(07.08.06 이은관)						
+166	You are not qualified yet. Visit Security Guard Mallon, and come back when you are fully qualified for the mission.	166	2	I'll return later.						
+144	Lugard has requested a favor of you, but you're still not qualified yet. I suggest you come back when you've become stronger.	144	2	I'll be back when I'm stronger.						
+145	Lugard has requested a favor of you. However, you're still not qualified yet. Please come back when you've completed the previous quest.	145	2	I'll come back when I've completed it.						
+146	You do not have enough Zen. You may apply for this mission by offering 5,000,000 Zen to Lugard.	146	2	I'll come back when I have enough Zen.						
+147	Lugard has requested a favor of you.	148	-1	What is it?						
+148	He wants you to seek heroes to oppose Balgass' new threat to MU.	149	-1	I'm listening.						
+149	Balgass' army is approaching through the Crywolf Fortress, but we don't know the full extent of their plans yet.	150	-1	Tell me more.						
+150	I'm not sure what Lugard is thinking, entrusting us with something this important. I really don't think we are strong enough.	151	-1	Please go on.						
+151	I believe you've been sent to us for a purpose. Are you interested in working with us?	147	-1	Can you repeat that please?	152	1	I will work with you.	151	2	No thanks.
+152	Before you begin, I need to check that you're powerful enough for the mission.	153	-1	I'm listening.						
+153	Eliminate the Death Beam, Hellmaine, and Dark Phoenix monsters, dominating the lands over Tarkan, Aida and Icarus. Bring back 3 pieces of evidence.	153	2	Good bye.						
+154	Congratulations, you've completed the mission. Here's a small token for your hard work.	155	3	Thank you.						
+155	Balgass is our greatest threat, especially since he's now in league with Eresia. Curse him and the misery he's laid on us.	156	-1	Please go on.						
+156	Balgass is scheming something. I'm sure he's going to attempt to corrupt MU with his sorcery.	156	2	I'll return later.						
+157	You don't have enough Zen. Please offer 7,000,000 Zen to Lugard to apply for this mission.	157	2	I'll return when I have enough Zen.						
+158	Welcome, you are truly ready to help us now.	159	-1	What do you need help with?						
+159	Well, according to our information, Balgass has formed an area called the Barracks. The 12 apostles of Lugard believe that this is the new threat from Balgass.	160	-1	Tell me more.						
+160	To diminish the threat of the further development of Balgass' army, we have to enter the Barrack zone and find more information about the 'Barracks.'	161	-1	Please continue.						
+161	Fortunately Lugar's guardianship has found the way into the Barracks. Enter the zone, destroy the soldiers and collect the information we need. Can you do that for us?	158	-1	Can you repeat that please?	162	1	I will.	161	2	No thanks.
+162	Go to the northern graveyard of the Crywolf zone and find the soldier that escaped from the Barracks. He calls himself, Werewolf Guardsman.	163	-1	Please go on.						
+163	He will lead you to the Barracks. Enter the zone and destroy at least 10 monsters.	163	2	I must go now.						
+164	You've safely completed the mission. I appreciate your hard work and your strong will.	165	3	Thank you.						
+165	You have been great help in bringing peace to the continent of MU and Crywolf by getting the information on the Barracks and destroying all those monsters.	165	2	I must leave now.						
+167	You don't have enough Zen. Please offer 10,000,000 Zen to Lugard to embark on this mission.	167	2	I'll come back when I have enough Zen.						
+168	Your initiative and courage has given hope to us all.	169	-1	Thank you.						
+169	Balgass has gone into hiding while he recovers and rebuilds his army.	170	-1	Please go on.						
+170	In order to carry out Lugar's mission, Balgass' exact location must be found and the army in training destroyed.	171	-1	Tell me more.						
+171	The final mission is going to be a difficult test. Are you still interested?	168	-1	Can you repeat that please?	172	1	I am.	171	2	No thanks.
+172	Enter at the northern edge of the Barracks. Secure the area beforehand so our forces can advance.	172	2	Good bye.						
+173	Congratulations, you've passed Lugard's final test. And now his blessing will be with you wherever you go.	174	3	Tell me more.						
+174	Your hard work to keep peace in the continent of MU and Crywolf from Balgass' has paid off. I cannot thank you enough.	174	2	I must go now.
+//소환술사 2차 퀘스트 대사 추가(07.11.20 이은관)						
+90	You've finished reading the 'Scroll of the Emperor,' but do you know about the confidential contract between Muren, and Semeden, the lead summoner? Smeden promised Muren something instead of transferring Elbe to be under the empire.	91	-1	Please continue.						
+91	The continent of MU has a gate to a dimension under the control of summoners. Semeden wants to give the Eye of the Abyss to satisfy this promise. Please go and bring back the Eye of the Abyss.	92	1	I will find it.	91	2	No thanks.			
+92	I've heard that the Eye of the Abyss could be found around Atlance, Lost Tower and Tarkan. Come back with the Eye of the Abyss as soon as you find it.	92	2	I'll be back.						
+93	You've found the Eye of the Abyss! It is made of materials not of this world. How poetic that such a simple object could contain the history of a whole realm.	94	-1	Please continue.						
+94	The Eye of the Abyss holds a special meaning to me. If you bring it back, I will give you the Blood Summoner title for Semeden.	94	3	Imposition as the Blood Summoner
+// 그로우랜서 서클실드 퀘스트 대사 추가(2014-07-08 김의건)						
+175	There is a battle style called 'Circle Shield' that has been secretly passed down in Temple Knight Royal Guard. Only Grow Lancers can learn this skill. If you are interested, I will let you know about it just this time.	176	-1	Continue listening.						
+176	Good. Before you learn Circle Shield, you need a special magic stone called 'Dark Stone'. That magic stone will amplify the energy in your body to make a new flow of energy.	177	-1	Then, what should I do?						
+177	I heard that those Dark Stones can be found from Tarkan and Icarus. Just pay 2 million Zen, then I will help you. Wanna try?	175	-1	Listen again.	178	1	Accept	177	2	Deny
+178	Come back to me when you find 'Dark Stone'.	178	2	Finish the conversation						
+179	You finally found the 'Dark Stone'! I will amplify the energy in your body. From now on, you will feel the new flow of energy in your body.	180	-1	Continue listening.						
+180	Good. Now you are ready to learn Circle Shield. Circle Shield is a skill that reduces enemy's AG. It's randomly activated when the enemy hits you.	181	-1	Continue listening.						
+181	When enemy's AG is reduced, they cannot perform several skills. This will turn the battle in your favor. Remember that Circle Shield is only activated while you are equipping a shield.	181	3	You learned Circle Shield!						
+182	Remember, Circle Shield is only activated while you are equipping a shield. May Rugard bless you...	182	2	Finish the conversation						
+// 4차 - 1 전직 퀘스트 대사 추가													
+183	You have the conditions to take the test, but you really need to make sure that have the required abilities.	184	-1	How would I prove it?									
+184	First of all, try to defeat me in battle. Of course I will not use all the power and I will fight for you in moderation.	185	1	Good. Let's try it!	184	2	I will refuse.						
+185	Good. Please show your ability in battle with me. Let's begin.	185	4	End the story									
+186	You proved your ability in the first battle with me.	187	3	I keep listening.								
+187	Now you are ready to receive new strength. Now it is up to you to take part in the exam.	187	2	End the story									
+188	You are not ready to take the exam yet. Please come back next time.	188	2	I will come back when I become capable.									
+// 4차 - 2 전직 퀘스트 대사 추가													
+189	Do you know? Mu continent is no longer safe. Powerful monsters are appearing all over Mu-continent as Ferea is discovered and the Knicks revive. We must have the power to deal with them.	190	-1	Sounds like a deep dungeon.									
+190	In fact, the deep dungeon was the place i used to be the guardian of Lugard in the past. You must win a battle against these monsters to be able to take on the battle for the future.	191	1	Summon them!	190	2	Refuse						
+191	Now i will summon deep dungeon monsters. Hunt 5 Deep Dungeon Skeleton Warriors, Larva, and Cyclops each for 5 minutes. Please be sure to survive and get the final exam. I'll summon now.	191	4	End the story									
+192	You survived and won against deep dungeon monsters.	193	3	I keep listening.								
+193	You have the perfect conditions to take the final exam.	193	2	End the story									
+194	You are not qualified yet. I have to win my first fight with me.	194	2	Okay. 									
+// 4차 - 3 전직 퀘스트 대사 추가													
+195	It is the last test i give you now. 	196	-1	If so, what should I do?									
+196	Please defeat me in battle again. This time, you have to deal with me and the deep dungeon monsters that interfere with the battle.	197	1	Accept	196	2	Refuse						
+197	Did you collect all your colleagues? If you do not mind now, let's get started.	197	4	End the story									
+198	You have all the tests. And showed ability. You can be a guardian of Lugard that can be with me one day.	199	3	I keep listening.								
+199	Now that you have passed all the tests, you are qualified to use the new skills. I pay homage to your ability. You can use [Ctrl + A] hotkeys to see the new power you can use.	199	2	End the story									
+200	You are not qualified yet. You can win the battle with the monsters of the deep dungeon and you can fight the last battle.	200	2	Okay. I will prepare for the final battle and come again.									
+201	You do not have enough money. You can perform this test by bringing 100.000 zen as a gift to Lugard.	201	2	I will prepare and come back.															   

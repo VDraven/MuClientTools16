@@ -1,0 +1,93 @@
+//!!  Season11 P.1 이전 해당 스크립트 패치가 필요한 경우 사재일에게 문의 부탁 드립니다																	
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////																	
+//	[ Text  Version ]	0.0.0.5															
+//	[ 최종 작업자 ]	김의건															
+//	[ 최종 작업일 ]	2014-11-10 17:12															
+//	[ 작 업 내 용 ]	초보자용 펜타그램 추가															
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////																	
+// Pentagram item basic option additional script																	
+// Pentagram Options List																	
+//type	Index	Name	Pentagram Rating	Option1	Option2	Option3	Option4	Option5	Option6	Option7	Option Check 1	Option Check 2	Option Check 3	Option Check 4	Option Check 5	Option Check 6	Option Check 7
+// Normal																	
+0																	
+12	200	"Muren's Spellbook"	1	0	0	0	0	0	0	0							
+12	201	"Scroll of Etramu"	1	0	0	0	0	0	0	0							
+12	202	"Lorencia Knights' Iron Shield"	1	0	0	0	0	0	0	0							
+12	203	"Iron Shield of the Magic"	1	3	0	0	0	0	0	0	//"Increase Pentagram Defense+10%%"						
+12	204	"Hero's Elixir"	1	0	0	0	0	0	0	0							
+12	205	"Brave Hero Elixir"	1	4	0	0	0	0	0	0	//"Elemental Critical Damage Probability +10%%"						
+12	206	"Gladiator's Dagger"	1	0	0	0	0	0	0	0							
+12	207	"Merciless Gladiator's Dagger"	1	2	0	0	0	0	0	0	//"Increase Pentagram Damage +10%%"						
+12	217	"Bead of Thoughtful Sage"	1	5	0	0	0	0	0	0	//"Increases the effectiveness of the Ertell 1 Rank option +35"						
+// Rare																	
+12	208	"Kundun's Madness Blade"	2	26	24	0	0	0	0	0	//"Additional Elemental Defense +5%%"	//"Elemental Critical Damage Probability +10%%"					
+12	209	"Kundun's Magic Spell Scroll"	2	27	24	0	0	0	0	0	//"Damage to Elemental Attack +1%%"	//"Elemental Critical Damage Probability +10%%"					
+12	210	"Empire Guardians' Stronghold"	2	26	28	0	0	0	0	0	//"Elemental Defense to Defense +5%%"	//"%s, %s Elemental complete attack resistance +5%%"					
+12	211	"Ancient Icarus Scroll"	2	27	28	0	0	0	0	0	//"Damage to Elemental Attack +1%%"	//"%s, %s Elemental complete attack resistance +5%%"					
+12	218	"Magic Scroll (attributable)"	2	27	24	0	0	0	0	0	//"Damage to Elemental Attack +1%%"	//"Elemental Critical Damage Probability +10%%"					
+12	306	"Golden Line Harp of Lunidel"	2	34	21	29	0	0	0	0	//"Pentagram ATK / DEF +5%%"	//"Increase Pentagram Damage +10%%"	//"Increased Attack Damage +30"				
+12	307	"Orb of the Lemurian"	2	34	22	30	0	0	0	0	//"Pentagram ATK / DEF +5%%"	//"Increase Pentagram Defense +10%%"	//"Increase defense of property +30"				
+12	308	"Colorful Lira of Norwein"	2	23	24	25	0	0	0	0	//"Elemental Critical Damage Probability +5%%"	//"Elemental Critical Damage Probability +10%%"	//"Elemental Critical Damage Probability +25%%"				
+// Unique																	
+12	212	"Arca's Prophecy"	3	41	24	0	0	0	0	0	//"Elemental complete attack resistance +5%%"	//"Elemental Critical Damage Probability+10%%"					
+12	213	"Antonia's Sword"	3	41	42	0	0	0	0	0	//"Elemental complete attack resistance +5%%"	//"Elemental Defense to Defense +5%%"					
+12	214	"Kundun's Seal Scroll"	3	41	43	0	0	0	0	0	//"Elemental complete attack resistance +5%%"	//"Damage to Elemental Attack +1%%"					
+// For beginners																	
+12	215	"Pentagram for Beginners"	1	1	0	0	0	0	0	0	//"Pentagram ATK / DEF +5%%"						
+end																	
+																	
+																	
+// Definitions and active conditions for Pentagram options																	
+// Active condition 1 : Anger(0), Blessing(1), Integrity(2), Divinity(3), Gale(4), Pentagram(5), No condition(-1)																	
+// Active condition 2 : Rank of the corresponding Ertelle, No condition(-1) * In the active condition 1, the pentagram(5)If you do not use it -1Type.																	
+// Active condition 3 : Eltelel or Pentagram level, no conditions(-1)																	
+//29~33For option # 1, the activation condition must include an associated ether.																	
+//!!  Season11 P.1 If you need to patch the previous script, please contact the person in charge!!																	
+// Option definition list																	
+// OptionIndex	OptionName	Condition1-1 (Errtel)	Condition1-2 (Rank)	Condition1-3 (Level)	Condition2-2 (Errtel)	Condition2-3 (Rank)	Condition2-4 (Level)	Condition3-1 (Errtel)	Condition3-2 (Rank)	Condition3-3 (Level)	Condition4-1 (Errtel)	Condition4-2 (Rank)	Condition4-3 (Level)	Condition5-1 (Errtel)	Condition5-2 (Rank)	Condition5-3 (Level)	
+1																	
+//Normal Pentagram Option (Use Index 1~20)																	
+1	"Pentagram Attack/Defense Increase +5%%"	0	1	0	1	1	0	2	1	0	3	1	0	-1	-1	0	
+2	"Pentagram Attack Increase +10%%"	0	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+3	"Pentagram Defense Increase +10%%"	0	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+4	"Elemental Critical Damage Chance +10%%"	0	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+5	"Blessing Errtel 1Rank Option Effect Increase +35"	0	1	0	1	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+																	
+//Rare Pentagram Option (Use Index 21~40)																	
+21	"Pentagram Attack Increase +10%%"	0	2	0	2	2	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+22	"Pentagram Defense Increase +10%%"	1	2	0	3	2	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+23	"Elemental Critical Damage Chance +5%%"	1	1	7	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+24	"Elemental Critical Damage Chance +10%%"	0	2	3	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+25	"Elemental Critical Damage Chance +25%%"	0	3	0	1	3	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+26	"Defense Added to Elemental Defense +5%%"	0	3	0	1	3	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+27	"Damage Added to Elemental Damage +1%%"	0	3	0	1	3	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+28	"%s, %s Elemental Attack Complete Avoid Chance +5%%"	1	2	0	2	1	7	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+29	"Elemental Damage Increase +30"	0	3	0	2	3	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+30	"Elemental Defense Increase +30"	1	3	0	3	3	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+31	"Noble Errtel 1Rank Option Effect Increase +20 (Not Used)"	2	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+32	"Sacred Errtel 1Rank Option Effect Increase +20 (Not Used)"	3	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+33	"Shine Errtel 1Rank Option Effect Increase +20 (Not Used)"	4	1	0	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+34	"Pentagram Attack/Defense Increase +5%%"	0	1	7	1	1	7	4	1	7	-1	-1	-1	-1	-1	-1	
+																	
+//Unique Pentagram Option (Use Index 41~60)																	
+41	"Elemental Attack Complete Avoid Chance +5%%"	1	3	6	2	3	6	3	3	6	-1	-1	-1	-1	-1	-1	
+42	"Defense Added to Elemental Defense +5%%"	0	3	5	1	3	5	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+43	"Damage Added to Elemental Damage +1%%"	0	3	5	1	3	5	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+end																	
+																	
+// Pentagram Socket Per Grade Chance															
+// Socket1, 2, 3, 4, 5 : Chance Per Socket															
+// Petagram Chance Per Grade														
+//Pentagram Rank Socket1 Socket2 Socket3 Socket4 Socket5									
+2																	
+2	0	0	7000	3000	0	// Rare Socket Chance (Total 10000)											
+3	0	0	0	10000	0	// Unique Socekt Chance (Total 10000)											
+end																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	

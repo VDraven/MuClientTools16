@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8E40492C-0659-45C3-B379-345728D6CC96}</ProjectGuid>
+    <RootNamespace>Core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>Core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Core.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet />
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>
+      </TreatSpecificWarningsAsErrors>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ForcedIncludeFiles>Core.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>..\3rdParty\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>cryptlib.lib; bit7z.lib;glfw3.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\3rdParty\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseIO.cpp" />
+    <ClCompile Include="Core.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="EvoMonsterBoxBmd.cpp" />
+    <ClCompile Include="FormulaDataBmd.cpp" />
+    <ClCompile Include="ItemAddOptionBmd.cpp" />
+    <ClCompile Include="ItemSetBmd.cpp" />
+    <ClCompile Include="JewelOfHarmonyBmd.cpp" />
+    <ClCompile Include="LangMpr.cpp" />
+    <ClCompile Include="LazyStruct.cpp" />
+    <ClCompile Include="MapCharactersBmd.cpp" />
+    <ClCompile Include="MixBmd.cpp" />
+    <ClCompile Include="MuCrypto.cpp" />
+    <ClCompile Include="MuunExchangeBmd.cpp" />
+    <ClCompile Include="NPCQuestBmd.cpp" />
+    <ClCompile Include="QuestBmd.cpp" />
+    <ClCompile Include="ServerListBmd.cpp" />
+    <ClCompile Include="SocketItemBmd.cpp" />
+    <ClCompile Include="Utls.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseIO.h" />
+    <ClInclude Include="ClientStructures.h" />
+    <ClInclude Include="Core.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="EvoMonsterBoxBmd.h" />
+    <ClInclude Include="ExcellentOptionBmd.h" />
+    <ClInclude Include="FormulaDataBmd.h" />
+    <ClInclude Include="GraphicConvertor.h" />
+    <ClInclude Include="InfoTooltipBmd.h" />
+    <ClInclude Include="InfoTooltipTextBmd.h" />
+    <ClInclude Include="ItemAddOptionBmd.h" />
+    <ClInclude Include="ItemBmd.h" />
+    <ClInclude Include="ItemSetBmd.h" />
+    <ClInclude Include="JewelOfHarmonyBmd.h" />
+    <ClInclude Include="LangMpr.h" />
+    <ClInclude Include="LazyStruct.h" />
+    <ClInclude Include="MapCharactersBmd.h" />
+    <ClInclude Include="MasterSkillTreeBmd.h" />
+    <ClInclude Include="MixBmd.h" />
+    <ClInclude Include="MonsterSkillBmd.h" />
+    <ClInclude Include="MuCommon.h" />
+    <ClInclude Include="MuCrypto.h" />
+    <ClInclude Include="MuRummyBmd.h" />
+    <ClInclude Include="MuunBmd.h" />
+    <ClInclude Include="MuunExchangeBmd.h" />
+    <ClInclude Include="NPCQuestBmd.h" />
+    <ClInclude Include="OZB.h" />
+    <ClInclude Include="OZD.h" />
+    <ClInclude Include="OZG.h" />
+    <ClInclude Include="OZJ.h" />
+    <ClInclude Include="OZP.h" />
+    <ClInclude Include="OZT.h" />
+    <ClInclude Include="PentagramMixNeedSourceBmd.h" />
+    <ClInclude Include="PlayGuideBmd.h" />
+    <ClInclude Include="QuestBmd.h" />
+    <ClInclude Include="ServerListBmd.h" />
+    <ClInclude Include="SingletonInstance.h" />
+    <ClInclude Include="SkillTooltipTextBmd.h" />
+    <ClInclude Include="SocketItemBmd.h" />
+    <ClInclude Include="StatOptionBmd.h" />
+    <ClInclude Include="TxtConvertor.h" />
+    <ClInclude Include="Utls.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
