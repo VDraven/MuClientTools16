@@ -139,6 +139,9 @@
     <ClInclude Include="OZP.h">
       <Filter>Source Files\Client\Graphic</Filter>
     </ClInclude>
+    <ClInclude Include="ItemToolTipBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">
@@ -193,6 +196,9 @@
       <Filter>Source Files\Client\Data</Filter>
     </ClCompile>
     <ClCompile Include="MixBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemToolTipBmd.cpp">
       <Filter>Source Files\Client\Data</Filter>
     </ClCompile>
   </ItemGroup>

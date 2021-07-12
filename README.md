@@ -20,7 +20,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 
 ### PROJECT'S CHECKLIST:
 
-### Data and Config Files: 77% (34 / 44)
+### Data and Config Files: 86% (38 / 44)
 :heavy_check_mark:	1.	Lang.mpr  
   
 ```cpp
@@ -77,15 +77,15 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	31.	SkillTooltipText.bmd  
 :heavy_check_mark:	32.	ItemAddOption.bmd  
 :heavy_check_mark:	33.	JewelOfHarmonyOption.bmd  
-~~34.	JewelOfHarmonySmelt.bmd~~  
+~~JewelOfHarmonySmelt.bmd~~  
 :heavy_check_mark:	34.	Mix.bmd  
-  
-35.	itemtooltip.bmd  
-36.	itemtooltiptext.bmd  
-37.	petdata.bmd  
-38.	pet.bmd  
-39.	InfoTooltip.bmd  
-40.	InfoTooltipText.bmd  
+:heavy_check_mark:	35.	InfoTooltip.bmd  
+:heavy_check_mark:	36.	InfoTooltipText.bmd  
+:heavy_check_mark:	37.	ItemToolTip.bmd  
+:heavy_check_mark:	38.	ItemToolTipText.bmd  
+
+39.	petdata.bmd  
+40.	pet.bmd  
 41.	RuudShopViewInfo.bmd  
 42.	helpdata.bmd  
 43.	MuunRenderInfo.bmd  

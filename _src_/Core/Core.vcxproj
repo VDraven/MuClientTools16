@@ -78,6 +78,7 @@
     <ClCompile Include="FormulaDataBmd.cpp" />
     <ClCompile Include="ItemAddOptionBmd.cpp" />
     <ClCompile Include="ItemSetBmd.cpp" />
+    <ClCompile Include="ItemToolTipBmd.cpp" />
     <ClCompile Include="JewelOfHarmonyBmd.cpp" />
     <ClCompile Include="LangMpr.cpp" />
     <ClCompile Include="LazyStruct.cpp" />
@@ -106,6 +107,7 @@
     <ClInclude Include="ItemAddOptionBmd.h" />
     <ClInclude Include="ItemBmd.h" />
     <ClInclude Include="ItemSetBmd.h" />
+    <ClInclude Include="ItemToolTipBmd.h" />
     <ClInclude Include="JewelOfHarmonyBmd.h" />
     <ClInclude Include="LangMpr.h" />
     <ClInclude Include="LazyStruct.h" />

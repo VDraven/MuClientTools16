@@ -31,7 +31,7 @@ typedef TxtConvertor<ITEM_SET_OPTION> ItemSetOptionBmdConvert;
 class ItemSetOptionBmd : public ItemSetOptionBmdConvert
 {
 public:
-	ItemSetOptionBmd() : ItemSetOptionBmdConvert(_ITEM_SET_OPTION_BMD_WKEY_) {};
+	ItemSetOptionBmd() : ItemSetOptionBmdConvert(_ITEM_SET_OPTION_BMD_WKEY_) { };
 	virtual ~ItemSetOptionBmd() { };
 	/*
 	BOOL Unpack(const char *szSrcBmd, const char *szDestTxt)

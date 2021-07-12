@@ -84,6 +84,7 @@ BOOL LangMpr::Decrypt()
 {
 	assert(_buf.size());
 
+	/*
 	constexpr static BYTE _xor3key[] = { _MU_XOR3_KEY_ };
 
 	for (size_t i = 0; i < _buf.size(); ++i)
@@ -91,6 +92,10 @@ BOOL LangMpr::Decrypt()
 		_buf[i] ^= _xor3key[i % 3];
 		_buf[i] ^= _wkey & 0xFF;
 	}
+	*/
+
+	Xor3Decrypt(&_buf[0], _buf.size(), _wkey);
+
 	return true;
 }
 

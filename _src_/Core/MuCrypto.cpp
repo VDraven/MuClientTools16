@@ -38,6 +38,17 @@ void MuCrypto::Xor3Byte(BYTE * buf, size_t len)
 	}
 }
 
+void MuCrypto::Xor3Decrypt(BYTE * buf, size_t len, WORD wkey)
+{
+	constexpr static BYTE _xor3key[] = { _MU_XOR3_KEY_ };
+
+	for (size_t i = 0; i < len; ++i)
+	{
+		buf[i] ^= _xor3key[i % 3];
+		buf[i] ^= wkey & 0xFF;
+	}
+}
+
 void MuCrypto::MapFileEncrypt(BYTE * buf, size_t len)
 {
 	constexpr static BYTE key[]{ _MU_MAP_FILE_KEY_ };

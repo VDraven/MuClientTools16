@@ -80,6 +80,7 @@ public:
 protected:
 	DWORD CalculateCRC(BYTE *buf, size_t len, WORD wkey);
 	void Xor3Byte(BYTE *buf, size_t len);
+	void Xor3Decrypt(BYTE *buf, size_t len, WORD wkey);
 
 	void MapFileEncrypt(BYTE* buf, size_t len);
 	void MapFileDecrypt(BYTE* buf, size_t len);

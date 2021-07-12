@@ -1,6 +1,43 @@
 #ifndef CLIENT_STRUCT_H
 #define CLIENT_STRUCT_H
 
+//struct ITEM_TOOLTIP_TEXT
+STRUCT(ITEM_TOOLTIP_TEXT) LAZY
+(
+	WORD ID;
+	char Text[256];
+	short Type;
+);
+
+//struct ITEM_TOOLTIP
+STRUCT(ITEM_TOOLTIP) LAZY
+(
+	WORD Category;
+	WORD Index;
+	char Name[64];
+
+	short Unk_1;	
+	short Unk_2;
+	short Unk_3;
+	short Unk_4;
+
+	short TextID_1;	short Value_1;
+	short TextID_2;	short Value_2;
+	short TextID_3;	short Value_3;
+	short TextID_4;	short Value_4;
+	short TextID_5;	short Value_5;
+	short TextID_6;	short Value_6;
+	short TextID_7;	short Value_7;
+	short TextID_8;	short Value_8;
+	short TextID_9;	short Value_9;
+	short TextID_10;	short Value_10;
+	short TextID_11;	short Value_11;
+	short TextID_12;	short Value_12;
+	short TextID_13;	short Value_13;
+	short TextID_14;	short Value_14;
+	short TextID_15;	short Value_15;
+);
+
 struct MIX_RULE
 {
 	int Rule;

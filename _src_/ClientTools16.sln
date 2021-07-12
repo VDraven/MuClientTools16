@@ -85,6 +85,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatOptionText_bmd", "Tools
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AllInOne", "Tools\Graphic\AllInOne\AllInOne.vcxproj", "{82B64CE9-B757-43E6-A543-5284651FA8FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ItemToolTip_bmd", "Tools\Data\ItemToolTip_bmd\ItemToolTip_bmd.vcxproj", "{D12967EF-F04D-409D-8D79-18F80159C634}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ItemToolTipText_bmd", "Tools\Data\ItemToolTipText_bmd\ItemToolTipText_bmd.vcxproj", "{B7AEE80B-73A7-49B4-A524-40DB6E15D142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x86 = Release|x86
@@ -164,6 +168,10 @@ Global
 		{D4B0F910-DD08-402A-9BF2-4464D3F64CC8}.Release|x86.Build.0 = Release|Win32
 		{82B64CE9-B757-43E6-A543-5284651FA8FC}.Release|x86.ActiveCfg = Release|Win32
 		{82B64CE9-B757-43E6-A543-5284651FA8FC}.Release|x86.Build.0 = Release|Win32
+		{D12967EF-F04D-409D-8D79-18F80159C634}.Release|x86.ActiveCfg = Release|Win32
+		{D12967EF-F04D-409D-8D79-18F80159C634}.Release|x86.Build.0 = Release|Win32
+		{B7AEE80B-73A7-49B4-A524-40DB6E15D142}.Release|x86.ActiveCfg = Release|Win32
+		{B7AEE80B-73A7-49B4-A524-40DB6E15D142}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +216,8 @@ Global
 		{3083D764-1255-4AA0-A22A-1533493F94FB} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{D4B0F910-DD08-402A-9BF2-4464D3F64CC8} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{82B64CE9-B757-43E6-A543-5284651FA8FC} = {6030C4BC-4F69-4318-B13F-81E8CBA2BA05}
+		{D12967EF-F04D-409D-8D79-18F80159C634} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
+		{B7AEE80B-73A7-49B4-A524-40DB6E15D142} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78828549-D639-412A-A60F-6AC294C049AF}
