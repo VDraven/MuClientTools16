@@ -1,6 +1,6 @@
 # MuClientTools16 by VD (Vic)
 Mu Client Tools (Season 16 part 1.1)  
-This project is using test files obtained from client Mu Online Season 13 ep.1 (Webzen).  
+This project is using test files obtained from client Lgd_Test (1.19.46)
 
 ```cpp
 /*
