@@ -503,6 +503,62 @@ STRUCT(STAT_OPTION) LAZY
 	int TextID;
 );
 
+//struct MUUN_MESH_INFO
+STRUCT(MUUN_MESH_INFO) LAZY
+(
+	int MuunID;
+int Flag;
+char Text[256];
+float float_264;
+float float_268;
+float float_272;
+float float_276;
+float float_280;
+float float_284;
+float float_288;
+int int_292;
+BYTE BYTE_296;
+BYTE BYTE_297;
+BYTE BYTE_298;
+BYTE BYTE_299;
+
+);
+
+//struct MUUN_RENDER_INFO
+STRUCT(MUUN_RENDER_INFO) LAZY
+(
+	int ID;
+	int MuunID;
+	BYTE Flag;
+	char SMD[260];
+	//BYTE GAP[3];
+	float float_272;
+	float float_276;
+	float float_280;
+	float float_284;
+	BYTE BYTE_288;
+	BYTE BYTE_289;
+	BYTE BYTE_290;
+	char Texture[260];
+	//BYTE GAP;
+	float float_552;
+	float float_556;
+	float float_560;
+	float float_564;
+	float float_568;
+	float float_572;
+	float float_576;
+	float float_580;
+	float float_584;
+	int int_588;
+	int int_592;
+	float float_596;
+	BYTE BYTE_600;
+	//BYTE GAP[3] 
+	float float_604;
+	float float_608;
+);
+
 //struct MUUN_EXCHANGE
 STRUCT(MUUN_EXCHANGE) LAZY
 (

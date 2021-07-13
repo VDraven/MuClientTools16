@@ -20,7 +20,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 
 ### PROJECT'S CHECKLIST:
 
-### Data and Config Files: 86% (38 / 44)
+### Data and Config Files: 91% (40 / 44)
 :heavy_check_mark:	1.	Lang.mpr  
   
 ```cpp
@@ -45,51 +45,52 @@ EffectInfo/EffectInfoxxx.txt
 */
 ```
   
-:heavy_check_mark:	2.	Item.bmd  
-:heavy_check_mark:	3.	ExcellentCommonOption.bmd  
-:heavy_check_mark:	4.	ExcellentWingOption.bmd  
-:heavy_check_mark:	5.	FormulaData.bmd  
-:heavy_check_mark:	6.	PentagramMixNeedSource.bmd  
-:heavy_check_mark:	7.	MuunOption.bmd  
-:heavy_check_mark:	8.	MuunInfo.bmd  
-:heavy_check_mark:	9.	MuunTooltipInfo.bmd  
-:heavy_check_mark:	10.	MuunExchange.bmd  
-:heavy_check_mark:	11.	StatOption.bmd  
-:heavy_check_mark:	12.	StatOptionText.bmd  
-:heavy_check_mark:	13.	Quest.bmd  
-:heavy_check_mark:	14.	SocketItem.bmd  
-:heavy_check_mark:	15.	PlayGuide.bmd  
-:heavy_check_mark:	16.	EvolutionMonsterBox.bmd  
-:heavy_check_mark:	17.	MuRummyOption.bmd  
-:heavy_check_mark:	18.	MuRummyCard.bmd  
-:heavy_check_mark:	19.	MuRummySlot.bmd  
-:heavy_check_mark:	20.	ServerList.bmd  
-:heavy_check_mark:	21.	MapCharacters.bmd  
-:heavy_check_mark:	22.	ItemSetType.bmd  
-:heavy_check_mark:	23.	ItemSetOption.bmd  
-:heavy_check_mark:	24.	ItemSetOptionText.bmd  
-:heavy_check_mark:	25.	MonsterSkill.bmd  
-:heavy_check_mark:	26.	MasterSkillTreeData.bmd  
-:heavy_check_mark:	27.	MasterSkillTooltip.bmd  
-:heavy_check_mark:	28.	NPCDialogue.bmd  
-:heavy_check_mark:	29.	QuestProgress.bmd  
-:heavy_check_mark:	30.	QuestWords.bmd  
-:heavy_check_mark:	31.	SkillTooltipText.bmd  
-:heavy_check_mark:	32.	ItemAddOption.bmd  
-:heavy_check_mark:	33.	JewelOfHarmonyOption.bmd  
-~~JewelOfHarmonySmelt.bmd~~  
-:heavy_check_mark:	34.	Mix.bmd  
-:heavy_check_mark:	35.	InfoTooltip.bmd  
-:heavy_check_mark:	36.	InfoTooltipText.bmd  
-:heavy_check_mark:	37.	ItemToolTip.bmd  
-:heavy_check_mark:	38.	ItemToolTipText.bmd  
 
-39.	petdata.bmd  
-40.	pet.bmd  
-41.	RuudShopViewInfo.bmd  
-42.	helpdata.bmd  
-43.	MuunRenderInfo.bmd  
-44.	MuunMeshInfo.bmd  
+:heavy_check_mark:	2.	Item.bmd  
+:heavy_check_mark:	3.	ItemToolTip.bmd  
+:heavy_check_mark:	4.	ItemToolTipText.bmd  
+:heavy_check_mark:	5.	ItemAddOption.bmd  
+:heavy_check_mark:	6.	ItemSetType.bmd  
+:heavy_check_mark:	7.	ItemSetOption.bmd  
+:heavy_check_mark:	8.	ItemSetOptionText.bmd  
+:heavy_check_mark:	9.	SocketItem.bmd  
+:heavy_check_mark:	10.	ExcellentCommonOption.bmd  
+:heavy_check_mark:	11.	ExcellentWingOption.bmd  
+:heavy_check_mark:	12.	JewelOfHarmonyOption.bmd  
+~~JewelOfHarmonySmelt.bmd (client does not open/load ?)~~  
+:heavy_check_mark:	13.	StatOption.bmd  
+:heavy_check_mark:	14.	StatOptionText.bmd  
+:heavy_check_mark:	15.	InfoTooltip.bmd  
+:heavy_check_mark:	16.	InfoTooltipText.bmd  
+:heavy_check_mark:	17.	SkillTooltipText.bmd  
+:heavy_check_mark:	18.	MasterSkillTreeData.bmd  
+:heavy_check_mark:	19.	MasterSkillTooltip.bmd  
+:heavy_check_mark:	20.	MonsterSkill.bmd  
+:heavy_check_mark:	21.	Mix.bmd  
+:heavy_check_mark:	22.	PentagramMixNeedSource.bmd  
+:heavy_check_mark:	23.	MuunOption.bmd  
+:heavy_check_mark:	24.	MuunInfo.bmd  
+:heavy_check_mark:	25.	MuunTooltipInfo.bmd  
+:heavy_check_mark:	26.	MuunRenderInfo.bmd  
+:heavy_check_mark:	27.	MuunMeshInfo.bmd  
+:heavy_check_mark:	28.	MuunExchange.bmd  
+:heavy_check_mark:	29.	MuRummyOption.bmd  
+:heavy_check_mark:	30.	MuRummyCard.bmd  
+:heavy_check_mark:	31.	MuRummySlot.bmd  
+:heavy_check_mark:	32.	Quest.bmd  
+:heavy_check_mark:	33.	QuestProgress.bmd  
+:heavy_check_mark:	34.	QuestWords.bmd  
+:heavy_check_mark:	35.	NPCDialogue.bmd  
+:heavy_check_mark:	36.	ServerList.bmd  
+:heavy_check_mark:	37.	FormulaData.bmd  
+:heavy_check_mark:	38.	PlayGuide.bmd  
+:heavy_check_mark:	39.	EvolutionMonsterBox.bmd  
+:heavy_check_mark:	40.	MapCharacters.bmd  
+  
+41.	petdata.bmd  
+42.	pet.bmd  
+43.	RuudShopViewInfo.bmd  
+44.	helpdata.bmd  
 
 ### Image, 3D Model, Interface and Map Files: 56% (5 / 9)
 :heavy_check_mark:	1.	OZJ	(-> .jpg)  

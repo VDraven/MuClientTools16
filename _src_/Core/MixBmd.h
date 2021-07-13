@@ -9,13 +9,6 @@ public:
 	MixBmd() : MixBmdConvert() { hasCounter = false; hasCRC = false; };
 	virtual ~MixBmd() { sizeof(MIX_INFO); sizeof(MIX_ITEM); };
 
-	//BOOL Unpack(const char *szSrcBmd, const char *szDestTxt)
-	//{	
-	//	return FileOpen(szSrcBmd)
-	//		&& Decrypt()
-	//		&& FileWrite(fs::path(szSrcBmd).replace_extension(".debug").string().c_str());
-	//};
-
 private:
 
 	BOOL Decrypt();

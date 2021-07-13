@@ -7,12 +7,6 @@ namespace Utls {
 	{
 		fs::path pParent = fs::_Parse_parent_path(pPath.wstring());
 		fs::create_directories(pParent);
-
-		//if (!pParent.empty() && !fs::exists(pParent))
-		//{
-		//	Utls::CreateParentDir(pParent);
-		//	fs::create_directory(pParent);
-		//}
 	}
 	
 	fs::path RemoveSlashEnd(fs::path path)
