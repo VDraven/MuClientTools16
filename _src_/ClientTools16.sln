@@ -93,6 +93,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MuunRenderInfo_bmd", "Tools
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MuunMeshInfo_bmd", "Tools\Data\MuunMeshInfo_bmd\MuunMeshInfo_bmd.vcxproj", "{9F583965-B501-447E-B2EA-A81D16AA76EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PetData_bmd", "Tools\Data\PetData_bmd\PetData_bmd.vcxproj", "{C3D2E4AC-CFEA-499D-ADDE-F9CC868C154B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pet_bmd", "Tools\Data\Pet_bmd\Pet_bmd.vcxproj", "{198AE303-C142-4085-9354-3AADEA9FAF72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x86 = Release|x86
@@ -180,6 +184,10 @@ Global
 		{0C8A3192-B5EC-4083-900F-A9BD0D319832}.Release|x86.Build.0 = Release|Win32
 		{9F583965-B501-447E-B2EA-A81D16AA76EF}.Release|x86.ActiveCfg = Release|Win32
 		{9F583965-B501-447E-B2EA-A81D16AA76EF}.Release|x86.Build.0 = Release|Win32
+		{C3D2E4AC-CFEA-499D-ADDE-F9CC868C154B}.Release|x86.ActiveCfg = Release|Win32
+		{C3D2E4AC-CFEA-499D-ADDE-F9CC868C154B}.Release|x86.Build.0 = Release|Win32
+		{198AE303-C142-4085-9354-3AADEA9FAF72}.Release|x86.ActiveCfg = Release|Win32
+		{198AE303-C142-4085-9354-3AADEA9FAF72}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +236,8 @@ Global
 		{B7AEE80B-73A7-49B4-A524-40DB6E15D142} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{0C8A3192-B5EC-4083-900F-A9BD0D319832} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{9F583965-B501-447E-B2EA-A81D16AA76EF} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
+		{C3D2E4AC-CFEA-499D-ADDE-F9CC868C154B} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
+		{198AE303-C142-4085-9354-3AADEA9FAF72} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78828549-D639-412A-A60F-6AC294C049AF}

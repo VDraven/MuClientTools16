@@ -142,6 +142,9 @@
     <ClInclude Include="ItemToolTipBmd.h">
       <Filter>Source Files\Client\Data</Filter>
     </ClInclude>
+    <ClInclude Include="PetBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">
@@ -199,6 +202,9 @@
       <Filter>Source Files\Client\Data</Filter>
     </ClCompile>
     <ClCompile Include="ItemToolTipBmd.cpp">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="PetBmd.cpp">
       <Filter>Source Files\Client\Data</Filter>
     </ClCompile>
   </ItemGroup>

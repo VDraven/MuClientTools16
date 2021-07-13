@@ -488,19 +488,43 @@ struct QUEST_INFO
 	static std::vector<OffsetInfo> GetOffset() { return std::vector<OffsetInfo>(); };
 };
 
-//struct STAT_OPTION_TEXT
-STRUCT(STAT_OPTION_TEXT) LAZY
-(
-	int ID;
-	char Text[256];
-);
-
 //struct STAT_OPTION
 STRUCT(STAT_OPTION) LAZY
 (
 	int Class;
 	int StatType;
 	int TextID;
+);
+
+//struct PET_BMD
+STRUCT(PET_BMD) LAZY
+(
+	int PetIndex_Cat13;
+	int int_4;
+	float float_8;
+	int Count;
+	int First[50];
+	float Second[50];
+);
+
+//struct PET_DATA
+STRUCT(PET_DATA) LAZY
+(
+	int ID;
+	int PetIndex_Cat13;
+	BYTE BYTE_8;
+	BYTE BYTE_9;
+	BYTE BYTE_10;
+	BYTE BYTE_11;
+	float float_12;
+	int int_16;
+	float float_20;
+	int int_24;
+	float float_28;
+	float float_32;
+	float float_36;
+	float float_40;
+	float float_44;
 );
 
 //struct MUUN_MESH_INFO

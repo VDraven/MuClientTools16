@@ -20,7 +20,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 
 ### PROJECT'S CHECKLIST:
 
-### Data and Config Files: 91% (40 / 44)
+### Data and Config Files: 95% (42 / 44)
 :heavy_check_mark:	1.	Lang.mpr  
   
 ```cpp
@@ -68,27 +68,27 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	20.	MonsterSkill.bmd  
 :heavy_check_mark:	21.	Mix.bmd  
 :heavy_check_mark:	22.	PentagramMixNeedSource.bmd  
-:heavy_check_mark:	23.	MuunOption.bmd  
-:heavy_check_mark:	24.	MuunInfo.bmd  
-:heavy_check_mark:	25.	MuunTooltipInfo.bmd  
-:heavy_check_mark:	26.	MuunRenderInfo.bmd  
-:heavy_check_mark:	27.	MuunMeshInfo.bmd  
-:heavy_check_mark:	28.	MuunExchange.bmd  
-:heavy_check_mark:	29.	MuRummyOption.bmd  
-:heavy_check_mark:	30.	MuRummyCard.bmd  
-:heavy_check_mark:	31.	MuRummySlot.bmd  
-:heavy_check_mark:	32.	Quest.bmd  
-:heavy_check_mark:	33.	QuestProgress.bmd  
-:heavy_check_mark:	34.	QuestWords.bmd  
-:heavy_check_mark:	35.	NPCDialogue.bmd  
-:heavy_check_mark:	36.	ServerList.bmd  
-:heavy_check_mark:	37.	FormulaData.bmd  
-:heavy_check_mark:	38.	PlayGuide.bmd  
-:heavy_check_mark:	39.	EvolutionMonsterBox.bmd  
-:heavy_check_mark:	40.	MapCharacters.bmd  
+:heavy_check_mark:	23.	petdata.bmd  
+:heavy_check_mark:	24.	pet.bmd  
+:heavy_check_mark:	25.	MuunOption.bmd  
+:heavy_check_mark:	26.	MuunInfo.bmd  
+:heavy_check_mark:	27.	MuunTooltipInfo.bmd  
+:heavy_check_mark:	28.	MuunRenderInfo.bmd  
+:heavy_check_mark:	29.	MuunMeshInfo.bmd  
+:heavy_check_mark:	30.	MuunExchange.bmd  
+:heavy_check_mark:	31.	MuRummyOption.bmd  
+:heavy_check_mark:	32.	MuRummyCard.bmd  
+:heavy_check_mark:	33.	MuRummySlot.bmd  
+:heavy_check_mark:	34.	Quest.bmd  
+:heavy_check_mark:	35.	QuestProgress.bmd  
+:heavy_check_mark:	36.	QuestWords.bmd  
+:heavy_check_mark:	37.	NPCDialogue.bmd  
+:heavy_check_mark:	38.	ServerList.bmd  
+:heavy_check_mark:	39.	FormulaData.bmd  
+:heavy_check_mark:	40.	PlayGuide.bmd  
+:heavy_check_mark:	41.	EvolutionMonsterBox.bmd  
+:heavy_check_mark:	42.	MapCharacters.bmd  
   
-41.	petdata.bmd  
-42.	pet.bmd  
 43.	RuudShopViewInfo.bmd  
 44.	helpdata.bmd  
 

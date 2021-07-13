@@ -14,16 +14,6 @@ public:
 	ItemToolTipBmd() : ItemToolTipBmdConvert(_ITEM_TOOLTIP_BMD_WKEY_) { hasCounter = false; };
 	virtual ~ItemToolTipBmd() { };
 	
-	/*
-	BOOL Unpack(const char *szSrcBmd, const char *szDestTxt)
-	{
-		sizeof(ITEM_TOOLTIP_BMD);
-		return FileOpen(szSrcBmd)
-			&& Decrypt()
-			&& FileWrite(fs::path(szSrcBmd).replace_extension(".debug").string().c_str());
-	};
-	*/
-
 private:
 	BOOL Decrypt();
 	BOOL Encrypt();

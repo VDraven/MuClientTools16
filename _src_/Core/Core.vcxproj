@@ -87,6 +87,7 @@
     <ClCompile Include="MuCrypto.cpp" />
     <ClCompile Include="MuunExchangeBmd.cpp" />
     <ClCompile Include="NPCQuestBmd.cpp" />
+    <ClCompile Include="PetBmd.cpp" />
     <ClCompile Include="QuestBmd.cpp" />
     <ClCompile Include="ServerListBmd.cpp" />
     <ClCompile Include="SocketItemBmd.cpp" />
@@ -128,6 +129,7 @@
     <ClInclude Include="OZP.h" />
     <ClInclude Include="OZT.h" />
     <ClInclude Include="PentagramMixNeedSourceBmd.h" />
+    <ClInclude Include="PetBmd.h" />
     <ClInclude Include="PlayGuideBmd.h" />
     <ClInclude Include="QuestBmd.h" />
     <ClInclude Include="ServerListBmd.h" />

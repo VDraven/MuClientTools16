@@ -21,7 +21,7 @@ BOOL ItemToolTipBmd::Decrypt()
 
 		if (ptr->Category != 0 || ptr->Index != 0 || Utls::IsEmptyCStr(ptr->Name) == false)
 		{
-			int key = (ptr->Category << 8) | ptr->Index;
+			int key = (ptr->Category * 512) + ptr->Index;
 			InsertToMap(key, ptr);
 		}
 
