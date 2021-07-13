@@ -97,6 +97,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PetData_bmd", "Tools\Data\P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pet_bmd", "Tools\Data\Pet_bmd\Pet_bmd.vcxproj", "{198AE303-C142-4085-9354-3AADEA9FAF72}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelpData_bmd", "Tools\Data\HelpData_bmd\HelpData_bmd.vcxproj", "{5BA58389-8D6A-41E6-94AA-97D595F86C62}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuudShopViewInfo_bmd", "Tools\Data\RuudShopViewInfo_bmd\RuudShopViewInfo_bmd.vcxproj", "{7DADC487-E18B-4AB8-93A6-3FDBD9F55358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x86 = Release|x86
@@ -188,6 +192,10 @@ Global
 		{C3D2E4AC-CFEA-499D-ADDE-F9CC868C154B}.Release|x86.Build.0 = Release|Win32
 		{198AE303-C142-4085-9354-3AADEA9FAF72}.Release|x86.ActiveCfg = Release|Win32
 		{198AE303-C142-4085-9354-3AADEA9FAF72}.Release|x86.Build.0 = Release|Win32
+		{5BA58389-8D6A-41E6-94AA-97D595F86C62}.Release|x86.ActiveCfg = Release|Win32
+		{5BA58389-8D6A-41E6-94AA-97D595F86C62}.Release|x86.Build.0 = Release|Win32
+		{7DADC487-E18B-4AB8-93A6-3FDBD9F55358}.Release|x86.ActiveCfg = Release|Win32
+		{7DADC487-E18B-4AB8-93A6-3FDBD9F55358}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -238,6 +246,8 @@ Global
 		{9F583965-B501-447E-B2EA-A81D16AA76EF} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{C3D2E4AC-CFEA-499D-ADDE-F9CC868C154B} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{198AE303-C142-4085-9354-3AADEA9FAF72} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
+		{5BA58389-8D6A-41E6-94AA-97D595F86C62} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
+		{7DADC487-E18B-4AB8-93A6-3FDBD9F55358} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78828549-D639-412A-A60F-6AC294C049AF}

@@ -488,12 +488,67 @@ struct QUEST_INFO
 	static std::vector<OffsetInfo> GetOffset() { return std::vector<OffsetInfo>(); };
 };
 
+//struct STAT_OPTION_TEXT
+STRUCT(STAT_OPTION_TEXT) LAZY
+(
+	int ID;
+	char Text[256];
+);
+
 //struct STAT_OPTION
 STRUCT(STAT_OPTION) LAZY
 (
 	int Class;
 	int StatType;
 	int TextID;
+);
+
+//struct RUUD_SHOP_VIEW_INFO
+STRUCT(RUUD_SHOP_VIEW_INFO) LAZY
+(
+	int ItemID;
+	char Group[64];
+	char Name[64];
+	int int_132;
+	int Ruud_Price;
+	int int_140;
+	int int_144;
+	int int_148;
+	int ItemID_2;
+	int int_156;
+
+	short Tooltip_1; char Color_1; //BYTE GAP;
+	short Tooltip_2; char Color_2; //BYTE GAP;
+	short Tooltip_3; char Color_3; //BYTE GAP;
+	short Tooltip_4; char Color_4; //BYTE GAP;
+	short Tooltip_5; char Color_5; //BYTE GAP;
+	short Tooltip_6; char Color_6; //BYTE GAP;
+	short Tooltip_7; char Color_7; //BYTE GAP;
+	short Tooltip_8; char Color_8; //BYTE GAP;
+	short Tooltip_9; char Color_9; //BYTE GAP;
+	short Tooltip_10; char Color_10; //BYTE GAP;
+	short Tooltip_11; char Color_11; //BYTE GAP;
+	short Tooltip_12; char Color_12; //BYTE GAP;
+	short Tooltip_13; char Color_13; //BYTE GAP;
+	short Tooltip_14; char Color_14; //BYTE GAP;
+	short Tooltip_15; char Color_15; //BYTE GAP;
+	short Tooltip_16; char Color_16; //BYTE GAP;
+	short Tooltip_17; char Color_17; //BYTE GAP;
+	short Tooltip_18; char Color_18; //BYTE GAP;
+	short Tooltip_19; char Color_19; //BYTE GAP;
+	short Tooltip_20; char Color_20; //BYTE GAP;
+);
+
+
+//struct HELP_DATA
+STRUCT(HELP_DATA) LAZY
+(
+	int Flag;
+	BYTE BYTE_4;
+	BYTE BYTE_5;
+	char Text_1[64];
+	char Text_2[64];
+	//BYTE GAP[2];
 );
 
 //struct PET_BMD
@@ -531,20 +586,20 @@ STRUCT(PET_DATA) LAZY
 STRUCT(MUUN_MESH_INFO) LAZY
 (
 	int MuunID;
-int Flag;
-char Text[256];
-float float_264;
-float float_268;
-float float_272;
-float float_276;
-float float_280;
-float float_284;
-float float_288;
-int int_292;
-BYTE BYTE_296;
-BYTE BYTE_297;
-BYTE BYTE_298;
-BYTE BYTE_299;
+	int Flag;
+	char Text[256];
+	float float_264;
+	float float_268;
+	float float_272;
+	float float_276;
+	float float_280;
+	float float_284;
+	float float_288;
+	int int_292;
+	BYTE BYTE_296;
+	BYTE BYTE_297;
+	BYTE BYTE_298;
+	BYTE BYTE_299;
 
 );
 

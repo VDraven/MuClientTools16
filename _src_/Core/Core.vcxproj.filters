@@ -145,6 +145,12 @@
     <ClInclude Include="PetBmd.h">
       <Filter>Source Files\Client\Data</Filter>
     </ClInclude>
+    <ClInclude Include="HelpDataBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="RuudShopViewInfoBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">

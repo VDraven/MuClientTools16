@@ -20,7 +20,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 
 ### PROJECT'S CHECKLIST:
 
-### Data and Config Files: 95% (42 / 44)
+### Data and Config Files: 100% (44 / 44) (COMPLETED)
 :heavy_check_mark:	1.	Lang.mpr  
   
 ```cpp
@@ -68,8 +68,8 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	20.	MonsterSkill.bmd  
 :heavy_check_mark:	21.	Mix.bmd  
 :heavy_check_mark:	22.	PentagramMixNeedSource.bmd  
-:heavy_check_mark:	23.	petdata.bmd  
-:heavy_check_mark:	24.	pet.bmd  
+:heavy_check_mark:	23.	Pet.bmd  
+:heavy_check_mark:	24.	PetData.bmd  
 :heavy_check_mark:	25.	MuunOption.bmd  
 :heavy_check_mark:	26.	MuunInfo.bmd  
 :heavy_check_mark:	27.	MuunTooltipInfo.bmd  
@@ -88,9 +88,8 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	40.	PlayGuide.bmd  
 :heavy_check_mark:	41.	EvolutionMonsterBox.bmd  
 :heavy_check_mark:	42.	MapCharacters.bmd  
-  
-43.	RuudShopViewInfo.bmd  
-44.	helpdata.bmd  
+:heavy_check_mark:	43.	HelpData.bmd  
+:heavy_check_mark:	44.	RuudShopViewInfo.bmd  
 
 ### Image, 3D Model, Interface and Map Files: 56% (5 / 9)
 :heavy_check_mark:	1.	OZJ	(-> .jpg)  

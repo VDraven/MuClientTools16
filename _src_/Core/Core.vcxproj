@@ -103,6 +103,7 @@
     <ClInclude Include="ExcellentOptionBmd.h" />
     <ClInclude Include="FormulaDataBmd.h" />
     <ClInclude Include="GraphicConvertor.h" />
+    <ClInclude Include="HelpDataBmd.h" />
     <ClInclude Include="InfoTooltipBmd.h" />
     <ClInclude Include="InfoTooltipTextBmd.h" />
     <ClInclude Include="ItemAddOptionBmd.h" />
@@ -132,6 +133,7 @@
     <ClInclude Include="PetBmd.h" />
     <ClInclude Include="PlayGuideBmd.h" />
     <ClInclude Include="QuestBmd.h" />
+    <ClInclude Include="RuudShopViewInfoBmd.h" />
     <ClInclude Include="ServerListBmd.h" />
     <ClInclude Include="SingletonInstance.h" />
     <ClInclude Include="SkillTooltipTextBmd.h" />
