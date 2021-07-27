@@ -151,6 +151,9 @@
     <ClInclude Include="RuudShopViewInfoBmd.h">
       <Filter>Source Files\Client\Data</Filter>
     </ClInclude>
+    <ClInclude Include="CameraAnglePositionBmd.h">
+      <Filter>Source Files\Client\Data</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">

@@ -45,7 +45,7 @@ inline BOOL TxtConvertor<T>::Unpack(const char * szSrcBmd, const char * szDestTx
 {
 	return FileOpen(szSrcBmd)
 		&& Decrypt()
-		&& ComposeTxt(szDestTxt ? szDestTxt : fs::path(szSrcBmd).replace_extension("txt").string().c_str());
+		&& ComposeTxt(szDestTxt ? szDestTxt : fs::path(szSrcBmd).replace_extension(".txt").string().c_str());
 }
 
 template<typename T>

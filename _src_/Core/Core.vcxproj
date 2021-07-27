@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseIO.h" />
+    <ClInclude Include="CameraAnglePositionBmd.h" />
     <ClInclude Include="ClientStructures.h" />
     <ClInclude Include="Core.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>

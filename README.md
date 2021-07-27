@@ -20,7 +20,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 
 ### PROJECT'S CHECKLIST:
 
-### Data and Config Files: 100% (44 / 44) (COMPLETED)
+### Data and Config Files: 100% (45 / 45) (COMPLETED)
 :heavy_check_mark:	1.	Lang.mpr  
   
 ```cpp
@@ -90,6 +90,7 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	42.	MapCharacters.bmd  
 :heavy_check_mark:	43.	HelpData.bmd  
 :heavy_check_mark:	44.	RuudShopViewInfo.bmd  
+:heavy_check_mark:	45.	Camera_Angle_Position.bmd  
 
 ### Image, 3D Model, Interface and Map Files: 56% (5 / 9)
 :heavy_check_mark:	1.	OZJ	(-> .jpg)  
