@@ -13,7 +13,7 @@ class ItemToolTipBmd : public ItemToolTipBmdConvert
 public:
 	ItemToolTipBmd() : ItemToolTipBmdConvert(_ITEM_TOOLTIP_BMD_WKEY_) { hasCounter = false; };
 	virtual ~ItemToolTipBmd() { };
-	
+
 private:
 	BOOL Decrypt();
 	BOOL Encrypt();

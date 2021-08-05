@@ -12,7 +12,7 @@ STRUCT(ITEM_TOOLTIP_TEXT) LAZY
 //struct ITEM_TOOLTIP
 STRUCT(ITEM_TOOLTIP) LAZY
 (
-	WORD Category;
+	BYTE Category;
 	WORD Index;
 	char Name[64];
 

@@ -38,7 +38,7 @@ void MuCrypto::Xor3Byte(BYTE * buf, size_t len)
 	}
 }
 
-void MuCrypto::Xor3Decrypt(BYTE * buf, size_t len, WORD wkey)
+void MuCrypto::Xor3Byte2(BYTE * buf, size_t len, WORD wkey)
 {
 	constexpr static BYTE _xor3key[] = { _MU_XOR3_KEY_ };
 

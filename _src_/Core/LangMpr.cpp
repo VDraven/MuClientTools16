@@ -94,7 +94,7 @@ BOOL LangMpr::Decrypt()
 	}
 	*/
 
-	Xor3Decrypt(&_buf[0], _buf.size(), _wkey);
+	Xor3Byte2(&_buf[0], _buf.size(), _wkey);
 
 	return true;
 }

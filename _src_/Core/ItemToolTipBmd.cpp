@@ -58,6 +58,7 @@ void ItemToolTipBmd::TxtIn(std::ifstream & is)
 	std::string line;
 	size_t size = sizeof(ITEM_TOOLTIP);
 	size_t count = ITEM_CATEGORY_MAX * ITEM_INDEX_MAX;
+	size_t row_id = 0;
 
 	_buf.resize(size * count + 4);
 	memset(&_buf[0], 0, _buf.size());
@@ -91,8 +92,7 @@ void ItemToolTipBmd::TxtIn(std::ifstream & is)
 
 		if (temp.Category != 0 || temp.Index != 0 || Utls::IsEmptyCStr(temp.Name) == false)
 		{
-			size_t id = temp.Category * ITEM_INDEX_MAX + temp.Index;
-			memcpy(&_buf[id * size], &temp, size);
+			memcpy(&_buf[size * (row_id++)], &temp, size);
 		}
 	}
 }
@@ -111,7 +111,7 @@ BOOL ItemToolTipTextBmd::Decrypt()
 	for (size_t p = (hasCounter * 4); p + size <= _buf.size() - (hasCRC * 4); p += size)
 	{
 		//Xor3Byte(&_buf[p], size);
-		Xor3Decrypt(&_buf[p], size, _wkey);
+		Xor3Byte2(&_buf[p], size, _wkey);
 
 		ITEM_TOOLTIP_TEXT *ptr = (ITEM_TOOLTIP_TEXT *)&_buf[p];
 		int key = GetKey(ptr);
@@ -129,7 +129,7 @@ BOOL ItemToolTipTextBmd::Encrypt()
 	for (size_t p = (hasCounter * 4); p + size <= _buf.size() - (hasCRC * 4); p += size)
 	{
 		//Xor3Byte(&_buf[p], size);
-		Xor3Decrypt(&_buf[p], size, _wkey);
+		Xor3Byte2(&_buf[p], size, _wkey);
 	}
 
 	if (hasCRC)
