@@ -92,14 +92,21 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	44.	RuudShopViewInfo.bmd  
 :heavy_check_mark:	45.	Camera_Angle_Position.bmd  
 
-### Image, 3D Model, Interface and Map Files: 56% (5 / 9)
-:heavy_check_mark:	1.	OZJ	(-> .jpg)  
-:heavy_check_mark:	2.	OZT	(-> .tga)  
-:heavy_check_mark:	3.	OZB (-> .bmp)  
-:heavy_check_mark:	4.	OZP (-> .png)  
-:heavy_check_mark:	5.	OZD	(-> .dds)  
-:heavy_check_mark:	6.	OZG	(-> .gfx)  
-7.	MAP  
-8.	ATT  
-9.	OBJ  
-10.	BMD  
+### Image, 3D Model, Interface and Map Files: 67% (6 / 9)
+:heavy_check_mark:	1.	OZJ	(-> .JPG)  
+:heavy_check_mark:	2.	OZT	(-> .TGA)  
+:heavy_check_mark:	3.	OZB (-> .BMP)  
+:heavy_check_mark:	4.	OZP (-> .PNG)  
+:heavy_check_mark:	5.	OZD	(-> .DDS)  
+:heavy_check_mark:	6.	OZG	(-> .GFX)  
+:heavy_check_mark:	7.	BMD (-> .SMD)  
+8.	MAP  
+9.	ATT  
+10.	OBJ  
+
+
+Note: File .SMD can be open in Blender tool by using Blender Source Tools  
+(https://developer.valvesoftware.com/wiki/Blender_Source_Tools)  
+
+https://i.imgur.com/NTZdSGe.png  
+https://i.imgur.com/7dpsr6C.png  

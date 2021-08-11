@@ -22,6 +22,7 @@ constexpr const char EXT_OZB[] = ".ozb";
 constexpr const char EXT_OZP[] = ".ozp";
 constexpr const char EXT_OZD[] = ".ozd";
 constexpr const char EXT_OZG[] = ".ozg";
+constexpr const char EXT_BMD[] = ".bmd";
 
 constexpr const char EXT_JPG[] = ".jpg";
 constexpr const char EXT_TGA[] = ".tga";
@@ -29,6 +30,7 @@ constexpr const char EXT_BMP[] = ".bmp";
 constexpr const char EXT_PNG[] = ".png";
 constexpr const char EXT_DDS[] = ".dds";
 constexpr const char EXT_GFX[] = ".gfx";
+constexpr const char EXT_SMD[] = ".smd";
 
 constexpr DWORD INT_OZJ = Ext2Int(EXT_OZJ);
 constexpr DWORD INT_OZT = Ext2Int(EXT_OZT);
@@ -36,6 +38,7 @@ constexpr DWORD INT_OZB = Ext2Int(EXT_OZB);
 constexpr DWORD INT_OZP = Ext2Int(EXT_OZP);
 constexpr DWORD INT_OZD = Ext2Int(EXT_OZD);
 constexpr DWORD INT_OZG = Ext2Int(EXT_OZG);
+constexpr DWORD INT_BMD = Ext2Int(EXT_BMD);
 
 constexpr DWORD INT_JPG = Ext2Int(EXT_JPG);
 constexpr DWORD INT_TGA = Ext2Int(EXT_TGA);
@@ -43,6 +46,7 @@ constexpr DWORD INT_BMP = Ext2Int(EXT_BMP);
 constexpr DWORD INT_PNG = Ext2Int(EXT_PNG);
 constexpr DWORD INT_DDS = Ext2Int(EXT_DDS);
 constexpr DWORD INT_GFX = Ext2Int(EXT_GFX);
+constexpr DWORD INT_SMD = Ext2Int(EXT_SMD);
 
 template <const char* EXT, size_t PAD>
 class GraphicConvertor : public BaseIO

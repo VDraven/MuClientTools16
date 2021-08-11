@@ -7,6 +7,7 @@
 #include "OZP.h"
 #include "OZD.h"
 #include "OZG.h"
+#include "BMD.h"
 
 using namespace std;
 
@@ -38,6 +39,9 @@ BOOL ReplaceOutputExt(fs::path& output)
 	case INT_OZG:
 		new_ext = EXT_GFX;
 		break;
+	case INT_BMD:
+		new_ext = EXT_SMD;
+		break;
 
 	case INT_JPG:
 		new_ext = EXT_OZJ;
@@ -56,6 +60,9 @@ BOOL ReplaceOutputExt(fs::path& output)
 		break;
 	case INT_GFX:
 		new_ext = EXT_OZG;
+		break; 
+	case INT_SMD:
+		new_ext = EXT_BMD;
 		break;
 
 	default:
@@ -83,6 +90,8 @@ BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 		return sInstance(OZD)->Unpack(szInputPath, szOutputPath);
 	case INT_OZG:
 		return sInstance(OZG)->Unpack(szInputPath, szOutputPath);
+	case INT_BMD:
+		return sInstance(BMD)->Unpack(szInputPath, szOutputPath);
 	default:
 		return FALSE;
 	}
@@ -105,6 +114,9 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 		return sInstance(OZD)->Pack(szInputPath, szOutputPath);
 	case INT_GFX:
 		return sInstance(OZG)->Pack(szInputPath, szOutputPath);
+	case INT_SMD:
+		return sInstance(BMD)->Pack(szInputPath, szOutputPath);
+
 	default:
 		return FALSE;
 	}
@@ -121,7 +133,10 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 
 		if (fs::is_directory(p))
 		{
-			FolderProcess(p, p_out);
+			if (p.filename().string() != "anims")
+			{
+				FolderProcess(p, p_out);
+			}
 		}
 		else if (fs::is_regular_file(p))
 		{
@@ -136,7 +151,7 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 
 int main(int argc, char** argv)
 {
-	const char* szInputPath = nullptr;
+	const char* szInputPath = "D:\\_MuOnline_S16_\\Source\\Tools-Client\\MuClientTools16\\_bin_\\Graphic\\Convertor\\TestBmdModel";
 	const char* szOutputPath = nullptr;
 
 	if (argc >= 2)

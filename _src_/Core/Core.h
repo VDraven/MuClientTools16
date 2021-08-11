@@ -20,6 +20,9 @@
 #include <unordered_map>
 #include <map>
 
+//#include <GL/gl3w.h>
+//#include <GL/glext.h>
+
 #define TRUE	1
 #define FALSE	0
 typedef unsigned long       DWORD;
@@ -35,6 +38,7 @@ namespace fs = std::filesystem;
 #include "SingletonInstance.h"
 #include "MuCommon.h"
 #include "ClientStructures.h"
+#include "ZzzMathLib.h"
 
 #include "MuCrypto.h"
 #include "BaseIO.h"

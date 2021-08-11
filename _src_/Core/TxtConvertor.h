@@ -255,7 +255,7 @@ BOOL TxtConvertor<T>::ComposeTxt(const char * szDestTxt)
 	std::ofstream os(pFile);
 	if (!os.is_open())
 	{
-		std::cout << "Error: Failed to write the txt file: " << pFile << '\n';
+		std::cout << "Error: Failed to write the txt file: " << szDestTxt << '\n';
 		return FALSE;
 	}
 

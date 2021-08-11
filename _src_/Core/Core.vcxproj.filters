@@ -14,6 +14,9 @@
     <Filter Include="Source Files\Client\Graphic">
       <UniqueIdentifier>{316b3536-7d66-443e-a208-0285e5faacbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Client\Graphic\BMD">
+      <UniqueIdentifier>{d0fabab9-9ef4-4990-92ec-ddbb7ed136e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseIO.h">
@@ -154,6 +157,12 @@
     <ClInclude Include="CameraAnglePositionBmd.h">
       <Filter>Source Files\Client\Data</Filter>
     </ClInclude>
+    <ClInclude Include="BMD.h">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
+    </ClInclude>
+    <ClInclude Include="ZzzMathLib.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">
@@ -215,6 +224,12 @@
     </ClCompile>
     <ClCompile Include="PetBmd.cpp">
       <Filter>Source Files\Client\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="BMD.cpp">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
+    </ClCompile>
+    <ClCompile Include="ZzzMathLib.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -70,6 +70,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp" />
+    <ClCompile Include="BMD.cpp" />
     <ClCompile Include="Core.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -92,9 +93,11 @@
     <ClCompile Include="ServerListBmd.cpp" />
     <ClCompile Include="SocketItemBmd.cpp" />
     <ClCompile Include="Utls.cpp" />
+    <ClCompile Include="ZzzMathLib.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseIO.h" />
+    <ClInclude Include="BMD.h" />
     <ClInclude Include="CameraAnglePositionBmd.h" />
     <ClInclude Include="ClientStructures.h" />
     <ClInclude Include="Core.h">
@@ -142,6 +145,7 @@
     <ClInclude Include="StatOptionBmd.h" />
     <ClInclude Include="TxtConvertor.h" />
     <ClInclude Include="Utls.h" />
+    <ClInclude Include="ZzzMathLib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
