@@ -105,7 +105,7 @@ EffectInfo/EffectInfoxxx.txt
 10.	OBJ  
 
 
-Note: File .SMD can be open in Blender tool by using Blender Source Tools  
+Note: File .SMD can be opened in Blender tool by using Blender Source Tools  
 (https://developer.valvesoftware.com/wiki/Blender_Source_Tools)  
 
 ![Image 1](https://i.imgur.com/NTZdSGe.png)  
