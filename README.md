@@ -108,5 +108,5 @@ EffectInfo/EffectInfoxxx.txt
 Note: File .SMD can be open in Blender tool by using Blender Source Tools  
 (https://developer.valvesoftware.com/wiki/Blender_Source_Tools)  
 
-https://i.imgur.com/NTZdSGe.png  
-https://i.imgur.com/7dpsr6C.png  
+![Image 1](https://i.imgur.com/NTZdSGe.png)  
+![Image 2](https://i.imgur.com/7dpsr6C.png)  
