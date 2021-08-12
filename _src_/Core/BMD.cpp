@@ -28,8 +28,23 @@ void ClearTemp()
 	Temp_TexCoord.clear();
 	Temp_Triangle.clear();
 }
+
 BOOL BMD::Unpack(const char* szSrc, const char* szDest)
 {
+	auto CheckBmd = [](const char* szInputPath)->BOOL
+	{
+		std::ifstream is(szInputPath, std::ios::in | std::ios::binary);
+		if (!is.is_open())
+			return FALSE;
+		char BMD[3]{};
+		for (int i = 0; i < 3 && !is.eof(); i++)
+			is >> BMD[i];
+		is.close();
+		return (BMD[0] == 'B' && BMD[1] == 'M' && BMD[2] == 'D');
+	};
+
+	if(!CheckBmd(szSrc)) return FALSE;
+
 	fs::path pDest;
 	if (!szDest)
 	{
@@ -57,24 +72,41 @@ BOOL BMD::Pack(const char* szSrc, const char* szDest)
 
 BOOL BMD::LoadBmd(const char* szFile)
 {
-	if (!Release() || !FileOpen(szFile) || !Decrypt())
-		return FALSE;
-
-	ReadBmd();
-
-	FixUpBones();
-	return TRUE;
+	return Release() 
+		&& FileOpen(szFile) 
+		&& Decrypt() 
+		&& ReadBmd();
 }
 
-void BMD::ReadBmd()
+//#define DEBUG_BMD
+BOOL BMD::ReadBmd()
 {
+	if (_buf.size() < 38) return FALSE;
 
 	size_t pos = 0;
 
 	m_data.Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
-	m_data.NumMeshs = *(short*)&_buf[pos]; pos += 2;	assert(m_data.NumMeshs <= MAX_MESH);
-	m_data.NumBones = *(short*)&_buf[pos]; pos += 2;	assert(m_data.NumBones <= MAX_BONES);
+
+	m_data.NumMeshs = *(short*)&_buf[pos]; pos += 2;
+	if (m_data.NumMeshs > MAX_MESH)
+	{
+		//std::cout << "[ERROR] m_data.NumMeshs > MAX_MESH" << std::endl;
+		return FALSE;
+	}
+
+	m_data.NumBones = *(short*)&_buf[pos]; pos += 2;
+	if (m_data.NumBones > MAX_BONES)
+	{
+		//std::cout << "[ERROR] m_data.NumBones > MAX_BONES" << std::endl;
+		return FALSE;
+	}
+
 	m_data.NumActions = *(short*)&_buf[pos]; pos += 2;
+	if (m_data.NumActions <= 0)
+	{
+		//std::cout << "[ERROR] m_data.NumActions <= 0";
+		return FALSE;
+	}
 
 	if (m_data.NumMeshs < 0) m_data.NumMeshs = 0;
 	if (m_data.NumBones < 0) m_data.NumBones = 0;
@@ -86,7 +118,7 @@ void BMD::ReadBmd()
 	m_data.Textures.resize(m_data.NumMeshs);
 	//m_data.IndexTexture.resize(m_data.NumMeshs);
 
-#ifdef DEBUG_LOAD_BMD
+#ifdef DEBUG_BMD
 	std::cout << "[BMD] : " << m_data.Name << std::endl;
 	std::cout << "\tNumMeshs : " << m_data.NumMeshs << std::endl;
 	std::cout << "\tNumBones : " << m_data.NumBones << std::endl;
@@ -118,7 +150,7 @@ void BMD::ReadBmd()
 
 		//TextureScriptParsing skip
 
-#ifdef DEBUG_LOAD_BMD
+#ifdef DEBUG_BMD
 		std::cout << "[Mesh] : " << i << std::endl;
 		std::cout << "\tNumVertices: " << m->NumVertices << std::endl;
 		std::cout << "\tNumNormals: " << m->NumNormals << std::endl;
@@ -190,6 +222,12 @@ void BMD::ReadBmd()
 #endif
 }
 
+	if (_buf.size() < pos)
+	{
+		//std::cout << "[ERROR] Corrupted Bmd File" << std::endl;
+		return FALSE;
+	}
+
 	for (int i = 0; i < m_data.NumActions; i++)
 	{
 		Action_t* a = &m_data.Actions[i];
@@ -203,13 +241,15 @@ void BMD::ReadBmd()
 		{
 			//don't need to copy, pointing to data in _buf instead
 			a->Positions = (vec3_t*)&_buf[pos]; pos += (a->NumAnimationKeys * sizeof(vec3_t));
+
+			//std::cout << "\t[LockPositions] action : " << (i + 1) << " / " << m_data.NumActions << std::endl;
 		}
 		else
 		{
 			a->Positions = NULL;
 		}
 
-#ifdef DEBUG_LOAD_BMD
+#ifdef DEBUG_BMD
 		std::cout << "[Actions] : " << i << std::endl;
 		std::cout << "\tNumAnimationKeys : " << a->NumAnimationKeys << std::endl;
 		std::cout << "\tLockPositions : " << a->LockPositions << std::endl;
@@ -225,8 +265,19 @@ void BMD::ReadBmd()
 	}
 		}
 		std::cout << "========================================" << std::endl;
-
 #endif
+	}
+
+	if (m_data.Actions[0].NumAnimationKeys <= 0)
+	{
+		//std::cout << "[ERROR] m_data.Actions[0].NumAnimationKeys <= 0";
+		return FALSE;
+	}
+
+	if (_buf.size() < pos)
+	{
+		//std::cout << "[ERROR] Corrupted Bmd File" << std::endl;
+		return FALSE;
 	}
 
 	for (int i = 0; i < m_data.NumBones; i++)
@@ -256,7 +307,7 @@ void BMD::ReadBmd()
 			b->BoneMatrixes.push_back(DUMMY_BONE_MATRIX);
 		}
 
-#ifdef DEBUG_LOAD_BMD
+#ifdef DEBUG_BMD
 		std::cout << "[Bones] : " << i << std::endl;
 		std::cout << "\tDummy : " << ((int)b->Dummy) << std::endl;
 		if (!b->Dummy)
@@ -281,6 +332,22 @@ void BMD::ReadBmd()
 		std::cout << "========================================" << std::endl;
 #endif
 	}
+
+	if (_buf.size() < pos)
+	{
+		//std::cout << "[ERROR] Corrupted Bmd File" << std::endl;
+		return FALSE;
+	}
+
+	if (_buf.size() > pos)
+	{
+		//std::cout << "[ERROR] ??? _buf.size() > pos" << std::endl;
+		return FALSE;
+	}
+
+
+	FixUpBones();
+	return TRUE;
 }
 
 BOOL BMD::Release()
@@ -291,7 +358,6 @@ BOOL BMD::Release()
 	return TRUE;
 }
 
-
 void BMD::FixUpBones()
 {
 	for (int i = 0; i < m_data.NumBones; i++)
@@ -299,22 +365,14 @@ void BMD::FixUpBones()
 		Bone_t* b = &m_data.Bones[i];
 		vec3_t Angle;
 		vec3_t Pos;
-		//if (!b->Dummy)
-		//{
-			BoneMatrix_t* bm = &b->BoneMatrixes[0];
-			Angle[0] = bm->Rotation[0][0] * (180.0f / Q_PI);
-			Angle[1] = bm->Rotation[0][1] * (180.0f / Q_PI);
-			Angle[2] = bm->Rotation[0][2] * (180.0f / Q_PI);
-			Pos[0] = bm->Position[0][0];
-			Pos[1] = bm->Position[0][1];
-			Pos[2] = bm->Position[0][2];
 
-		//}
-		//else
-		//{
-		//	Angle[0] = Angle[1] = Angle[2] = 0.0f;
-		//	Pos[0] = Pos[1] = Pos[2] = 0.0f;
-		//}
+		BoneMatrix_t* bm = &b->BoneMatrixes[0];
+		Angle[0] = bm->Rotation[0][0] * (180.0f / Q_PI);
+		Angle[1] = bm->Rotation[0][1] * (180.0f / Q_PI);
+		Angle[2] = bm->Rotation[0][2] * (180.0f / Q_PI);
+		Pos[0] = bm->Position[0][0];
+		Pos[1] = bm->Position[0][1];
+		Pos[2] = bm->Position[0][2];
 
 		// calc true world coord.
 		if (b->Parent >= 0 && b->Parent < m_data.NumBones)
@@ -343,6 +401,8 @@ void BMD::FixUpBones()
 BOOL BMD::Decrypt()
 {
 	if (_buf.size() < 8) return FALSE;
+
+	if (_buf[0] != 'B' || _buf[1] != 'M' || _buf[2] != 'D') return FALSE;
 
 	BYTE ver = _buf[3];
 	if (ver == 0xC)
@@ -381,10 +441,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 	Utls::CreateParentDir(pFile);
 
 	fs::path pAnimDir(pFile);
-	//pAnimDir = pAnimDir.replace_extension("").string() + "_anims";
 	pAnimDir = pAnimDir.parent_path().append("anims");
-
-	assert(m_data.NumActions > 0 && m_data.Actions[0].NumAnimationKeys > 0);
 
 	//if (m_data.NumMeshs > 0)	player.bmd has no mesh (only animations)
 	{
@@ -408,7 +465,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 		std::ofstream os2(pFileAnim);
 		if (!os2.is_open())
 		{
-			//std::cout << "Error: Failed to write the smd file: " << pFileAnim << '\n';
+			//std::cout << "[ERROR] Failed to write the smd file: " << pFileAnim << '\n';
 			continue;
 		}
 
@@ -420,7 +477,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 	return TRUE;
 }
 
-void BMD::WriteSmd(std::ofstream& os, short action)
+BOOL BMD::WriteSmd(std::ofstream& os, short action)
 {
 	assert(action >= SMD_REFERENCE && action < m_data.NumActions);
 
@@ -499,7 +556,7 @@ void BMD::WriteSmd(std::ofstream& os, short action)
 	}
 	os << "end" << std::endl;
 
-	if (SmdType == SMD_ANIMATION) return;
+	if (SmdType == SMD_ANIMATION) return TRUE;
 
 	//================triangles=====================
 	//		[TextureName]
@@ -525,6 +582,24 @@ void BMD::WriteSmd(std::ofstream& os, short action)
 				short normal_node = m->Normals[normal_index].Node;
 				short texcoord_index = t->TexCoordIndex[k];
 				short node = vertex_node;
+				
+				if (vertex_index < 0 || vertex_index >= m->NumVertices)
+				{
+					//std::cout << "[ERROR] vertex_index < 0 || vertex_index >= m->NumVertices" << std::endl;
+					return FALSE;
+				}
+
+				if (normal_index < 0 || normal_index >= m->NumNormals)
+				{
+					//std::cout << "[ERROR] normal_index < 0 || normal_index >= m->NumNormals" << std::endl;
+					return FALSE;
+				}
+
+				if (texcoord_index < 0 || texcoord_index >= m->NumTexCoords)
+				{
+					//std::cout << "[ERROR] texcoord_index < 0 || texcoord_index >= m->NumTexCoords" << std::endl;
+					return FALSE;
+				}
 
 				os << std::fixed
 					<< node << ' ';
@@ -550,6 +625,8 @@ void BMD::WriteSmd(std::ofstream& os, short action)
 	}
 
 	os << "end" << std::endl;
+
+	return TRUE;
 }
 
 BOOL BMD::LoadSmd(const char* szSrc)
@@ -562,7 +639,7 @@ BOOL BMD::LoadSmd(const char* szSrc)
 	std::ifstream is(szSrc);
 	if (!is.is_open())
 	{
-		std::cout << "Error: Failed to read the txt file: " << szSrc << '\n';
+		//std::cout << "[ERROR] Failed to read the txt file: " << szSrc << '\n';
 		return FALSE;
 	}
 
@@ -636,10 +713,8 @@ void BMD::ReadSmd(std::ifstream& is, short action)
 			short parent;
 			char name[256];
 			sscanf(line.c_str(), "%hd \"%[^\"]%*c %hd", &node, name, &parent);
-			//std::cout << node << " " << name << " " << parent << std::endl;
-			Bone_t b;
 
-			//b.Dummy = (name[0] == 'N' && name[1] == 'u' && name[2] == 'l' && name[3] == 'l' && parent == -1) ? 1 : 0;
+			Bone_t b;
 			b.Dummy = (parent == -1 && node != 0) ? 1 : 0;
 			b.Parent = parent;
 			b.Name = std::string(name, min(32, strlen(name)));
@@ -710,8 +785,6 @@ void BMD::ReadSmd(std::ifstream& is, short action)
 
 	//================Triangles=====================
 
-
-
 	if (SmdType == SMD_REFERENCE)
 	{
 		while (std::getline(is, line))
@@ -778,7 +851,7 @@ void BMD::ReadSmd(std::ifstream& is, short action)
 				Normal_t n;
 				TexCoord_t t;
 				sscanf(line.c_str(), "%hd %f %f %f %f %f %f %f %f", &node, &v.Position[0], &v.Position[1], &v.Position[2], &n.Normal[0], &n.Normal[1], &n.Normal[2], &t.TexCoordU, &t.TexCoordV);
-				t.TexCoordV = 1 - t.TexCoordV;
+				t.TexCoordV = 1.0f - t.TexCoordV;
 
 				vec3_t p;
 				// move vertex position to object space.

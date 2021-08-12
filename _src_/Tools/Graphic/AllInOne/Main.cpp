@@ -73,6 +73,7 @@ BOOL ReplaceOutputExt(fs::path& output)
 	return TRUE;
 }
 
+
 BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 {
 	DWORD N = Ext2Int(fs::path(szInputPath).extension().string().c_str());
@@ -116,7 +117,6 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 		return sInstance(OZG)->Pack(szInputPath, szOutputPath);
 	case INT_SMD:
 		return sInstance(BMD)->Pack(szInputPath, szOutputPath);
-
 	default:
 		return FALSE;
 	}
@@ -151,7 +151,7 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 
 int main(int argc, char** argv)
 {
-	const char* szInputPath = "D:\\_MuOnline_S16_\\Source\\Tools-Client\\MuClientTools16\\_bin_\\Graphic\\Convertor\\TestBmdModel";
+	const char* szInputPath = nullptr;
 	const char* szOutputPath = nullptr;
 
 	if (argc >= 2)

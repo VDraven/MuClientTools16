@@ -189,9 +189,9 @@ private:
 	void FixUpBones();
 
 	BOOL LoadBmd(const char* szFile);
-	void ReadBmd();
+	BOOL ReadBmd();
 	BOOL SaveSmd(const char* szDestTxt);
-	void WriteSmd(std::ofstream& os, short action);
+	BOOL WriteSmd(std::ofstream& os, short action);
 
 	BOOL LoadSmd(const char* szSrc);
 	void ReadSmd(std::ifstream& is, short action);
