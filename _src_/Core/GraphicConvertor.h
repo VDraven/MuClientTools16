@@ -95,6 +95,9 @@ constexpr const char * GraphicConvertor<EXT, PAD>::ExtReplace()
 template<const char* EXT, size_t PAD>
 inline BOOL GraphicConvertor<EXT, PAD>::Unpack(const char * szSrc, const char * szDest)
 {
+	if (!szSrc) return FALSE;
+	PRINT_DEBUG("Unpacking " << szSrc);
+
 	return FileOpen(szSrc)
 		&& Decrypt()
 		&& FileWrite(szDest ? szDest : fs::path(szSrc).replace_extension(ExtReplace()).string().c_str());
@@ -103,6 +106,9 @@ inline BOOL GraphicConvertor<EXT, PAD>::Unpack(const char * szSrc, const char * 
 template<const char* EXT, size_t PAD>
 inline BOOL GraphicConvertor<EXT, PAD>::Pack(const char * szSrc, const char * szDest)
 {
+	if (!szSrc) return FALSE;
+	PRINT_DEBUG("Packing " << szSrc);
+
 	const char* original_ext = EXT;
 	return FileOpen(szSrc)
 		&& Encrypt()

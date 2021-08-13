@@ -151,6 +151,8 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 
 int main(int argc, char** argv)
 {
+	BMD::LoadLockPostionData("LockPositionData.txt");
+
 	const char* szInputPath = nullptr;
 	const char* szOutputPath = nullptr;
 
@@ -161,14 +163,14 @@ int main(int argc, char** argv)
 
 	if (!szInputPath)
 	{
-		cout << "\t Drag & Drop the file/folder \n";
-		cout << "\t  or use console command to execute with the file path. \n";
+		PRINT_DEBUG("Drag & Drop the file/folder");
+		PRINT_DEBUG(" or use console command to execute with the file path.");
 		return EXIT_FAILURE;
 	}
 
 	if (!fs::exists(szInputPath))
 	{
-		cout << "Error: Input file/folder does not exist.\n" << endl;
+		PRINT_DEBUG("[ERROR] Input file/folder does not exist.");
 		return EXIT_FAILURE;
 	}
 
@@ -187,7 +189,7 @@ int main(int argc, char** argv)
 	}
 	else
 	{
-		cout << "Error: Invalid file/folder path.\n" << endl;
+		PRINT_DEBUG("[ERROR] Invalid file/folder path.");
 		return EXIT_FAILURE;
 	}
 

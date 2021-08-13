@@ -1,5 +1,15 @@
 #include "BMD.h"
 
+//#define _DEBUG_BMD_
+
+#ifdef _DEBUG_BMD_
+#define DEBUG_BMD 1
+#define PRINT_DEBUG_BMD(msg) std::cout << msg << std::endl
+#else
+#define DEBUG_BMD 0
+#define PRINT_DEBUG_BMD(msg)
+#endif
+
 struct
 {
 	float  m[3][4];
@@ -13,6 +23,8 @@ BoneMatrix_t DUMMY_BONE_MATRIX{ &DUMMY_VEC3 , &DUMMY_VEC3 };
 std::vector<std::vector<std::vector<float>>> Temp_Bone_Pos;
 std::vector<std::vector<std::vector<float>>> Temp_Bone_Rot;
 
+std::vector<std::vector<float>>			Temp_Lock_Pos;
+
 std::vector<std::vector<Vertex_t>>		Temp_Vertex;
 std::vector<std::vector<Normal_t>>		Temp_Normal;
 std::vector<std::vector<TexCoord_t>>	Temp_TexCoord;
@@ -22,15 +34,22 @@ void ClearTemp()
 {
 	Temp_Bone_Pos.clear();
 	Temp_Bone_Rot.clear();
-
+	Temp_Lock_Pos.clear();
 	Temp_Vertex.clear();
 	Temp_Normal.clear();
 	Temp_TexCoord.clear();
 	Temp_Triangle.clear();
 }
 
+//fs::path g_FileName;
+
+//========================================================================================
+
 BOOL BMD::Unpack(const char* szSrc, const char* szDest)
 {
+	if (!szSrc) return FALSE;
+	PRINT_DEBUG("Unpacking " << szSrc);
+
 	auto CheckBmd = [](const char* szInputPath)->BOOL
 	{
 		std::ifstream is(szInputPath, std::ios::in | std::ios::binary);
@@ -45,309 +64,83 @@ BOOL BMD::Unpack(const char* szSrc, const char* szDest)
 
 	if(!CheckBmd(szSrc)) return FALSE;
 
-	fs::path pDest;
 	if (!szDest)
 	{
-		fs::path pName = fs::path(szSrc).filename().replace_extension("");
-		pDest = fs::path(szSrc).parent_path().append(pName.string() + "_model").append(pName.string()+".smd");
-
+		std::string sName = fs::path(szSrc).filename().replace_extension("").string();
+		szDest = fs::path(szSrc).parent_path().append(sName + "_model").append(sName + ".smd").string().c_str();
 	}
 
 	return LoadBmd(szSrc)
-		&& SaveSmd(szDest ? szDest : pDest.string().c_str());
+		&& SaveSmd(szDest);
 }
 
 BOOL BMD::Pack(const char* szSrc, const char* szDest)
 {
-	fs::path pDest;
+	if (!szSrc) return FALSE;
+	PRINT_DEBUG("Packing " << szSrc);
+
 	if (!szDest)
 	{
-		fs::path pName = fs::path(szSrc).filename().replace_extension(".smd");
-		pDest = fs::path(szSrc).parent_path().parent_path().append(pName.string());
+		std::string sName = fs::path(szSrc).filename().replace_extension(".bmd").string();
+		szDest = fs::path(szSrc).parent_path().parent_path().append(sName).string().c_str();
 	}
 
 	return LoadSmd(szSrc)
-		&& SaveBmd(szDest ? szDest : pDest.string().c_str());
+		&& SaveBmd(szDest);
 }
 
-BOOL BMD::LoadBmd(const char* szFile)
+//========================================================================================
+
+BOOL BMD::LoadLockPostionData(const char* fname)
 {
-	return Release() 
-		&& FileOpen(szFile) 
-		&& Decrypt() 
-		&& ReadBmd();
-}
+	LockPositionData.clear();
 
-//#define DEBUG_BMD
-BOOL BMD::ReadBmd()
-{
-	if (_buf.size() < 38) return FALSE;
-
-	size_t pos = 0;
-
-	m_data.Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
-
-	m_data.NumMeshs = *(short*)&_buf[pos]; pos += 2;
-	if (m_data.NumMeshs > MAX_MESH)
+	if (!fs::exists(fname))
 	{
-		//std::cout << "[ERROR] m_data.NumMeshs > MAX_MESH" << std::endl;
-		return FALSE;
+		std::ofstream os(fname);
+		if (!os.is_open()) return FALSE;
+		os << "//action (tab) bmd_name" << std::endl;
+		os.close();
+		return TRUE;
 	}
 
-	m_data.NumBones = *(short*)&_buf[pos]; pos += 2;
-	if (m_data.NumBones > MAX_BONES)
+	std::ifstream is(fname);
+	if (!is.is_open()) return FALSE;
+	
+	std::string line;
+	while (std::getline(is, line))
 	{
-		//std::cout << "[ERROR] m_data.NumBones > MAX_BONES" << std::endl;
-		return FALSE;
-	}
+		if (line.length() >= 2 && line[0] == '/' && line[1] == '/')
+			continue;
 
-	m_data.NumActions = *(short*)&_buf[pos]; pos += 2;
-	if (m_data.NumActions <= 0)
-	{
-		//std::cout << "[ERROR] m_data.NumActions <= 0";
-		return FALSE;
-	}
+		short action;
+		char buf[256];
+		sscanf_s(line.c_str(), "%hd\t%s", &action, buf, 256);
 
-	if (m_data.NumMeshs < 0) m_data.NumMeshs = 0;
-	if (m_data.NumBones < 0) m_data.NumBones = 0;
-	if (m_data.NumActions < 0) m_data.NumActions = 0;
+		std::string bmd_name(buf);
+		std::transform(bmd_name.begin(), bmd_name.end(), bmd_name.begin(), ::tolower);
 
-	m_data.Meshs.resize(m_data.NumMeshs);
-	m_data.Bones.resize(m_data.NumBones);
-	m_data.Actions.resize(m_data.NumActions);
-	m_data.Textures.resize(m_data.NumMeshs);
-	//m_data.IndexTexture.resize(m_data.NumMeshs);
-
-#ifdef DEBUG_BMD
-	std::cout << "[BMD] : " << m_data.Name << std::endl;
-	std::cout << "\tNumMeshs : " << m_data.NumMeshs << std::endl;
-	std::cout << "\tNumBones : " << m_data.NumBones << std::endl;
-	std::cout << "\tNumActions : " << m_data.NumActions << std::endl;
-	std::cout << "========================================" << std::endl;
-#endif
-
-	for (int i = 0; i < m_data.NumMeshs; i++)
-	{
-		Mesh_t* m = &m_data.Meshs[i];
-		m->NumVertices = *(short*)&_buf[pos]; pos += 2;
-		m->NumNormals = *(short*)&_buf[pos]; pos += 2;
-		m->NumTexCoords = *(short*)&_buf[pos]; pos += 2;
-		m->NumTriangles = *(short*)&_buf[pos]; pos += 2;
-		m->Texture = *(short*)&_buf[pos]; pos += 2;
-		m->NoneBlendMesh = false;
-
-		if (m->NumVertices < 0) m->NumVertices = 0;
-		if (m->NumNormals < 0) m->NumNormals = 0;
-		if (m->NumTexCoords < 0) m->NumTexCoords = 0;
-		if (m->NumTriangles < 0) m->NumTriangles = 0;
-
-		//don't need to copy, pointing to data in _buf instead
-		m->Vertices = (Vertex_t*)&_buf[pos]; pos += (m->NumVertices * sizeof(Vertex_t));
-		m->Normals = (Normal_t*)&_buf[pos]; pos += (m->NumNormals * sizeof(Normal_t));
-		m->TexCoords = (TexCoord_t*)&_buf[pos]; pos += (m->NumTexCoords * sizeof(TexCoord_t));
-		m->Triangles = (Triangle_t*)&_buf[pos]; pos += (m->NumTriangles * sizeof(Triangle_t));
-		m_data.Textures[i].FileName = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
-
-		//TextureScriptParsing skip
-
-#ifdef DEBUG_BMD
-		std::cout << "[Mesh] : " << i << std::endl;
-		std::cout << "\tNumVertices: " << m->NumVertices << std::endl;
-		std::cout << "\tNumNormals: " << m->NumNormals << std::endl;
-		std::cout << "\tNumTexCoords: " << m->NumTexCoords << std::endl;
-		std::cout << "\tNumTriangles: " << m->NumTriangles << std::endl;
-		std::cout << "\tTexture: " << m->Texture << std::endl;
-		std::cout << "\tTexture Name: " << m_data.Textures[i].FileName << std::endl;
-		std::cout << "========================================" << std::endl;
-
-		std::cout << "[Vertices] Mesh : " << i << std::endl;
-		std::cout << "\tNumVertices: " << m->NumVertices << std::endl;
-		for (int ii = 0; ii < m->NumVertices; ii++)
+		if (action > 0 && !bmd_name.empty())
 		{
-			std::cout << std::fixed
-				<< "\t\t" << m->Vertices[ii].Node
-				<< "\t" << m->Vertices[ii].Position[0]
-				<< "\t" << m->Vertices[ii].Position[1]
-				<< "\t" << m->Vertices[ii].Position[2]
-				<< std::endl;
-		}
-		std::cout << "________________________________________" << std::endl;
-
-		std::cout << "[Normals] Mesh : " << i << std::endl;
-		std::cout << "\tNumNormals: " << m->NumNormals << std::endl;
-		for (int ii = 0; ii < m->NumNormals; ii++)
-		{
-			std::cout << std::fixed
-				<< "\t\t" << m->Normals[ii].Node
-				<< "\t" << m->Normals[ii].BindVertex
-				<< "\t" << m->Normals[ii].Normal[0]
-				<< "\t" << m->Normals[ii].Normal[1]
-				<< "\t" << m->Normals[ii].Normal[2]
-				<< std::endl;
-		}
-		std::cout << "________________________________________" << std::endl;
-
-		std::cout << "[TexCoords] Mesh : " << i << std::endl;
-		std::cout << "\tNumTexCoords: " << m->NumTexCoords << std::endl;
-		for (int ii = 0; ii < m->NumTexCoords; ii++)
-		{
-			std::cout << std::fixed
-				<< "\t\t" << m->TexCoords[ii].TexCoordU
-				<< "\t" << m->TexCoords[ii].TexCoordV
-				<< std::endl;
-		}
-		std::cout << "________________________________________" << std::endl;
-
-		std::cout << "[Triangles] Mesh : " << i << std::endl;
-		std::cout << "\tNumTriangles: " << m->NumTriangles << std::endl;
-		for (int ii = 0; ii < m->NumTriangles; ii++)
-		{
-			std::cout << std::fixed
-				<< "\t\t" << m->Triangles[ii].VertexIndex[0]
-				<< "\t" << m->Triangles[ii].VertexIndex[1]
-				<< "\t" << m->Triangles[ii].VertexIndex[2]
-				<< "\t|"
-				<< "\t" << m->Triangles[ii].NormalIndex[0]
-				<< "\t" << m->Triangles[ii].NormalIndex[1]
-				<< "\t" << m->Triangles[ii].NormalIndex[2]
-				<< "\t|"
-				<< "\t" << m->Triangles[ii].TexCoordIndex[0]
-				<< "\t" << m->Triangles[ii].TexCoordIndex[1]
-				<< "\t" << m->Triangles[ii].TexCoordIndex[2]
-				<< std::endl;
-			std::cout << std::endl;
-	}
-		std::cout << "========================================" << std::endl;
-
-#endif
-}
-
-	if (_buf.size() < pos)
-	{
-		//std::cout << "[ERROR] Corrupted Bmd File" << std::endl;
-		return FALSE;
-	}
-
-	for (int i = 0; i < m_data.NumActions; i++)
-	{
-		Action_t* a = &m_data.Actions[i];
-		//a->Loop = false;
-
-		a->NumAnimationKeys = *(short*)&_buf[pos]; pos += 2;
-		if (a->NumAnimationKeys < 0) a->NumAnimationKeys = 0;
-
-		a->LockPositions = *(bool*)&_buf[pos]; pos += 1;
-		if (a->LockPositions)
-		{
-			//don't need to copy, pointing to data in _buf instead
-			a->Positions = (vec3_t*)&_buf[pos]; pos += (a->NumAnimationKeys * sizeof(vec3_t));
-
-			//std::cout << "\t[LockPositions] action : " << (i + 1) << " / " << m_data.NumActions << std::endl;
-		}
-		else
-		{
-			a->Positions = NULL;
-		}
-
-#ifdef DEBUG_BMD
-		std::cout << "[Actions] : " << i << std::endl;
-		std::cout << "\tNumAnimationKeys : " << a->NumAnimationKeys << std::endl;
-		std::cout << "\tLockPositions : " << a->LockPositions << std::endl;
-		if (a->LockPositions)
-		{
-			for (int ii = 0; ii < a->NumAnimationKeys; ii++)
-			{
-				std::cout << std::fixed
-					<< "\t\t" << a->Positions[ii][0]
-					<< "\t" << a->Positions[ii][1]
-					<< "\t" << a->Positions[ii][2]
-					<< std::endl;
-	}
-		}
-		std::cout << "========================================" << std::endl;
-#endif
-	}
-
-	if (m_data.Actions[0].NumAnimationKeys <= 0)
-	{
-		//std::cout << "[ERROR] m_data.Actions[0].NumAnimationKeys <= 0";
-		return FALSE;
-	}
-
-	if (_buf.size() < pos)
-	{
-		//std::cout << "[ERROR] Corrupted Bmd File" << std::endl;
-		return FALSE;
-	}
-
-	for (int i = 0; i < m_data.NumBones; i++)
-	{
-		Bone_t* b = &m_data.Bones[i];
-		b->Dummy = *(char*)&_buf[pos]; pos += 1;
-		if (!b->Dummy)
-		{
-			b->Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
-			b->Parent = *(short*)&_buf[pos]; pos += 2;
-			b->BoneMatrixes.resize(m_data.NumActions);
-			for (int j = 0; j < m_data.NumActions; j++)
-			{
-				BoneMatrix_t* bm = &b->BoneMatrixes[j];
-				//don't need to copy, pointing to data in _buf instead
-				bm->Position = (vec3_t*)&_buf[pos]; pos += (m_data.Actions[j].NumAnimationKeys * sizeof(vec3_t));
-				bm->Rotation = (vec3_t*)&_buf[pos]; pos += (m_data.Actions[j].NumAnimationKeys * sizeof(vec3_t));
-
-				//AngleQuaternion skip
-			}
-		}
-		else
-		{
-			b->Name = "Null " + std::to_string(i);
-			b->Parent = -1;
-			//for (int j = 0; j < m_data.NumActions; j++)
-			b->BoneMatrixes.push_back(DUMMY_BONE_MATRIX);
-		}
-
-#ifdef DEBUG_BMD
-		std::cout << "[Bones] : " << i << std::endl;
-		std::cout << "\tDummy : " << ((int)b->Dummy) << std::endl;
-		if (!b->Dummy)
-		{
-			std::cout << "\tName : " << b->Name << std::endl;
-			std::cout << "\tParent : " << b->Parent << std::endl;
-			for (int ii = 0; ii < m_data.NumActions; ii++)
-			{
-				for (int jj = 0; jj < m_data.Actions[ii].NumAnimationKeys; jj++)
-				{
-					std::cout << std::fixed
-						<< "\t\t" << b->BoneMatrixes[ii].Position[jj][0]
-						<< "\t" << b->BoneMatrixes[ii].Position[jj][1]
-						<< "\t" << b->BoneMatrixes[ii].Position[jj][2]
-						<< "\t" << b->BoneMatrixes[ii].Rotation[jj][0]
-						<< "\t" << b->BoneMatrixes[ii].Rotation[jj][1]
-						<< "\t" << b->BoneMatrixes[ii].Rotation[jj][2]
-						<< std::endl;
+			LockPositionData.insert(std::make_pair(bmd_name, action));
+			//PRINT_DEBUG(bmd_name << " " << action);
 		}
 	}
-		}
-		std::cout << "========================================" << std::endl;
-#endif
-	}
 
-	if (_buf.size() < pos)
-	{
-		//std::cout << "[ERROR] Corrupted Bmd File" << std::endl;
-		return FALSE;
-	}
-
-	if (_buf.size() > pos)
-	{
-		//std::cout << "[ERROR] ??? _buf.size() > pos" << std::endl;
-		return FALSE;
-	}
-
-
-	FixUpBones();
+	is.close();
 	return TRUE;
+}
+
+BOOL BMD::GetLockPosition(std::string& name, short action)
+{
+	auto range = LockPositionData.equal_range(name);
+	for (auto& it = range.first; it != range.second; it++) 
+	{
+		if (it->second == action)
+			return TRUE;
+	}
+
+	return FALSE;
 }
 
 BOOL BMD::Release()
@@ -358,7 +151,7 @@ BOOL BMD::Release()
 	return TRUE;
 }
 
-void BMD::FixUpBones()
+BOOL BMD::FixUpBones()
 {
 	for (int i = 0; i < m_data.NumBones; i++)
 	{
@@ -396,6 +189,51 @@ void BMD::FixUpBones()
 			VectorCopy(Pos, BoneFixup[i].WorldOrg);
 		}
 	}
+
+	return TRUE;
+}
+
+//========================================================================================
+
+BOOL BMD::Encrypt()
+{
+	if (_buf.empty()) return FALSE;
+
+	BYTE ver = m_data.Version;
+	if (ver == 0xC)
+	{
+		size_t size = _buf.size();
+
+		MapFileEncrypt(&_buf[0], size);
+
+		_buf.insert(_buf.begin(), 8, 0);
+		*(size_t*)&_buf[4] = size;
+	}
+	else if (ver == 0xE)
+	{
+		size_t size = _buf.size();
+
+		ModulusEncrypt(_buf);
+
+		_buf.insert(_buf.begin(), 8, 0);
+		*(size_t*)&_buf[4] = size;
+	}
+	else if (ver = 0xA)
+	{
+		_buf.insert(_buf.begin(), 4, 0);
+	}
+	else
+	{
+		PRINT_DEBUG("[ERROR] Unknown BMD version : " << ((int)ver));
+		return FALSE;
+	}
+
+	_buf[0] = 'B';
+	_buf[1] = 'M';
+	_buf[2] = 'D';
+	_buf[3] = ver;
+
+	return TRUE;
 }
 
 BOOL BMD::Decrypt()
@@ -410,7 +248,7 @@ BOOL BMD::Decrypt()
 		size_t size = *(size_t*)&_buf[4];
 		_buf.erase(_buf.begin(), _buf.begin() + 8);
 
-		if (_buf.size() < size) return FALSE;
+		if (_buf.size() < size) return FALSE;	////(_buf.size() == size)
 
 		MapFileDecrypt(&_buf[0], size);
 	}
@@ -419,13 +257,18 @@ BOOL BMD::Decrypt()
 		size_t size = *(size_t*)&_buf[4];
 		_buf.erase(_buf.begin(), _buf.begin() + 8);
 
-		if (_buf.size() < size) return FALSE;
+		if (_buf.size() < size) return FALSE;	//(_buf.size() == size)
 
 		ModulusDecrypt(_buf);
 	}
-	else //ver == 0xA
+	else if (ver == 0xA)
 	{
 		_buf.erase(_buf.begin(), _buf.begin() + 4);
+	}
+	else
+	{
+		PRINT_DEBUG("[ERROR] Unknown BMD version : " << ((int)ver));
+		return FALSE;
 	}
 
 	m_data.Version = ver;
@@ -433,9 +276,276 @@ BOOL BMD::Decrypt()
 	return TRUE;
 }
 
+//========================================================================================
+
+BOOL BMD::LoadBmd(const char* szSrc)
+{
+	return Release()
+		&& FileOpen(szSrc)
+		&& Decrypt()
+		&& ReadBmd();
+}
+
+BOOL BMD::ReadBmd()
+{
+	if (_buf.size() < 38) return FALSE;
+
+	size_t pos = 0;
+
+	m_data.Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
+
+	m_data.NumMeshs = *(short*)&_buf[pos]; pos += 2;
+	if (m_data.NumMeshs < 0 || m_data.NumMeshs > MAX_MESH)
+	{
+		PRINT_DEBUG("[ERROR] m_data.NumMeshs < 0 || m_data.NumMeshs > MAX_MESH");
+		return FALSE;
+	}
+
+	m_data.NumBones = *(short*)&_buf[pos]; pos += 2;
+	if (m_data.NumBones < 0 || m_data.NumBones > MAX_BONES)
+	{
+		PRINT_DEBUG("[ERROR] m_data.NumBones < 0 || m_data.NumBones > MAX_BONES");
+		return FALSE;
+	}
+
+	m_data.NumActions = *(short*)&_buf[pos]; pos += 2;
+	if (m_data.NumActions < 1)
+	{
+		PRINT_DEBUG("[ERROR] m_data.NumActions < 1");
+		return FALSE;
+	}
+	m_data.Meshs.resize(m_data.NumMeshs);
+	m_data.Bones.resize(m_data.NumBones);
+	m_data.Actions.resize(m_data.NumActions);
+	m_data.Textures.resize(m_data.NumMeshs);
+	//m_data.IndexTexture.resize(m_data.NumMeshs);
+
+	if (DEBUG_BMD)
+	{
+		PRINT_DEBUG_BMD("[BMD] : " << m_data.Name);
+		PRINT_DEBUG_BMD("\tNumMeshs : " << m_data.NumMeshs);
+		PRINT_DEBUG_BMD("\tNumBones : " << m_data.NumBones);
+		PRINT_DEBUG_BMD("\tNumActions : " << m_data.NumActions);
+		PRINT_DEBUG_BMD("========================================");
+	}
+
+	for (int i = 0; i < m_data.NumMeshs; i++)
+	{
+		Mesh_t* m = &m_data.Meshs[i];
+		m->NumVertices = *(short*)&_buf[pos]; pos += 2;
+		m->NumNormals = *(short*)&_buf[pos]; pos += 2;
+		m->NumTexCoords = *(short*)&_buf[pos]; pos += 2;
+		m->NumTriangles = *(short*)&_buf[pos]; pos += 2;
+		m->Texture = *(short*)&_buf[pos]; pos += 2;
+		m->NoneBlendMesh = false;
+
+		if (m->NumVertices < 0) m->NumVertices = 0;
+		if (m->NumNormals < 0) m->NumNormals = 0;
+		if (m->NumTexCoords < 0) m->NumTexCoords = 0;
+		if (m->NumTriangles < 0) m->NumTriangles = 0;
+
+		//don't need to copy, pointing to data in _buf instead
+		m->Vertices = (Vertex_t*)&_buf[pos]; pos += (m->NumVertices * sizeof(Vertex_t));
+		m->Normals = (Normal_t*)&_buf[pos]; pos += (m->NumNormals * sizeof(Normal_t));
+		m->TexCoords = (TexCoord_t*)&_buf[pos]; pos += (m->NumTexCoords * sizeof(TexCoord_t));
+		m->Triangles = (Triangle_t*)&_buf[pos]; pos += (m->NumTriangles * sizeof(Triangle_t));
+		m_data.Textures[i].FileName = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
+
+		//TextureScriptParsing skip
+
+		if (_buf.size() < pos)
+		{
+			PRINT_DEBUG("[ERROR] Corrupted Bmd File");
+			return FALSE;
+		}
+
+		if (DEBUG_BMD)
+		{
+			PRINT_DEBUG_BMD("[Mesh] : " << i);
+			PRINT_DEBUG_BMD("\tNumVertices: " << m->NumVertices);
+			PRINT_DEBUG_BMD("\tNumNormals: " << m->NumNormals);
+			PRINT_DEBUG_BMD("\tNumTexCoords: " << m->NumTexCoords);
+			PRINT_DEBUG_BMD("\tNumTriangles: " << m->NumTriangles);
+			PRINT_DEBUG_BMD("\tTexture: " << m->Texture);
+			PRINT_DEBUG_BMD("\tTexture Name: " << m_data.Textures[i].FileName);
+			PRINT_DEBUG_BMD("========================================");
+
+			PRINT_DEBUG_BMD("[Vertices] Mesh : " << i);
+			PRINT_DEBUG_BMD("\tNumVertices: " << m->NumVertices);
+			for (int ii = 0; ii < m->NumVertices; ii++)
+			{
+				PRINT_DEBUG_BMD(std::fixed
+					<< "\t\t" << m->Vertices[ii].Node
+					<< "\t" << m->Vertices[ii].Position[0]
+					<< "\t" << m->Vertices[ii].Position[1]
+					<< "\t" << m->Vertices[ii].Position[2]);
+			}
+			PRINT_DEBUG_BMD("________________________________________");
+
+			PRINT_DEBUG_BMD("[Normals] Mesh : " << i);
+			PRINT_DEBUG_BMD("\tNumNormals: " << m->NumNormals);
+			for (int ii = 0; ii < m->NumNormals; ii++)
+			{
+				PRINT_DEBUG_BMD(std::fixed
+					<< "\t\t" << m->Normals[ii].Node
+					<< "\t" << m->Normals[ii].BindVertex
+					<< "\t" << m->Normals[ii].Normal[0]
+					<< "\t" << m->Normals[ii].Normal[1]
+					<< "\t" << m->Normals[ii].Normal[2]);
+			}
+			PRINT_DEBUG_BMD("________________________________________");
+
+			PRINT_DEBUG_BMD("[TexCoords] Mesh : " << i);
+			PRINT_DEBUG_BMD("\tNumTexCoords: " << m->NumTexCoords);
+			for (int ii = 0; ii < m->NumTexCoords; ii++)
+			{
+				PRINT_DEBUG_BMD(std::fixed
+					<< "\t\t" << m->TexCoords[ii].TexCoordU
+					<< "\t" << m->TexCoords[ii].TexCoordV);
+			}
+			PRINT_DEBUG_BMD("________________________________________");
+
+			PRINT_DEBUG_BMD("[Triangles] Mesh : " << i);
+			PRINT_DEBUG_BMD("\tNumTriangles: " << m->NumTriangles);
+			for (int ii = 0; ii < m->NumTriangles; ii++)
+			{
+				PRINT_DEBUG_BMD(std::fixed
+					<< "\t\t" << m->Triangles[ii].VertexIndex[0]
+					<< "\t" << m->Triangles[ii].VertexIndex[1]
+					<< "\t" << m->Triangles[ii].VertexIndex[2]
+					<< "\t|"
+					<< "\t" << m->Triangles[ii].NormalIndex[0]
+					<< "\t" << m->Triangles[ii].NormalIndex[1]
+					<< "\t" << m->Triangles[ii].NormalIndex[2]
+					<< "\t|"
+					<< "\t" << m->Triangles[ii].TexCoordIndex[0]
+					<< "\t" << m->Triangles[ii].TexCoordIndex[1]
+					<< "\t" << m->Triangles[ii].TexCoordIndex[2] << std::endl);
+			}
+			PRINT_DEBUG_BMD("========================================");
+		}
+	}
+
+
+	for (int i = 0; i < m_data.NumActions; i++)
+	{
+		Action_t* a = &m_data.Actions[i];
+		//a->Loop = false;
+
+		a->NumAnimationKeys = *(short*)&_buf[pos]; pos += 2;
+		if (a->NumAnimationKeys < 0) a->NumAnimationKeys = 0;
+
+		a->LockPositions = *(bool*)&_buf[pos]; pos += 1;
+		if (a->LockPositions)
+		{
+			//don't need to copy, pointing to data in _buf instead
+			a->Positions = (vec3_t*)&_buf[pos]; pos += (a->NumAnimationKeys * sizeof(vec3_t));
+
+			//print LockPositionData.txt
+			//std::cout << i << "\t" << g_FileName.string() << std::endl;
+		}
+		else
+		{
+			a->Positions = NULL;
+		}
+
+		if (m_data.Actions[0].NumAnimationKeys <= 0)
+		{
+			PRINT_DEBUG("[ERROR] m_data.Actions[0].NumAnimationKeys <= 0");
+			return FALSE;
+		}
+
+		if (DEBUG_BMD)
+		{
+			PRINT_DEBUG_BMD("[Actions] : " << i);
+			PRINT_DEBUG_BMD("\tNumAnimationKeys : " << a->NumAnimationKeys);
+			PRINT_DEBUG_BMD("\tLockPositions : " << a->LockPositions);
+			if (a->LockPositions)
+			{
+				for (int ii = 0; ii < a->NumAnimationKeys; ii++)
+				{
+					PRINT_DEBUG_BMD(std::fixed
+						<< "\t\t" << a->Positions[ii][0]
+						<< "\t" << a->Positions[ii][1]
+						<< "\t" << a->Positions[ii][2]);
+				}
+			}
+			PRINT_DEBUG_BMD("========================================");
+		}
+	}
+
+
+	if (_buf.size() < pos)
+	{
+		PRINT_DEBUG("[ERROR] Corrupted Bmd File");
+		return FALSE;
+	}
+
+	for (int i = 0; i < m_data.NumBones; i++)
+	{
+		Bone_t* b = &m_data.Bones[i];
+		b->Dummy = *(char*)&_buf[pos]; pos += 1;
+		if (!b->Dummy)
+		{
+			b->Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
+			b->Parent = *(short*)&_buf[pos]; pos += 2;
+			b->BoneMatrixes.resize(m_data.NumActions);
+			for (int j = 0; j < m_data.NumActions; j++)
+			{
+				BoneMatrix_t* bm = &b->BoneMatrixes[j];
+				//don't need to copy, pointing to data in _buf instead
+				bm->Position = (vec3_t*)&_buf[pos]; pos += (m_data.Actions[j].NumAnimationKeys * sizeof(vec3_t));
+				bm->Rotation = (vec3_t*)&_buf[pos]; pos += (m_data.Actions[j].NumAnimationKeys * sizeof(vec3_t));
+
+				//AngleQuaternion skip
+			}
+		}
+		else
+		{
+			b->Name = "Null " + std::to_string(i);
+			b->Parent = -1;
+			//for (int j = 0; j < m_data.NumActions; j++)
+			b->BoneMatrixes.push_back(DUMMY_BONE_MATRIX);
+		}
+
+		if (_buf.size() < pos)
+		{
+			PRINT_DEBUG("[ERROR] Corrupted Bmd File");
+			return FALSE;
+		}
+
+		if (DEBUG_BMD)
+		{
+			PRINT_DEBUG_BMD("[Bones] : " << i);
+			PRINT_DEBUG_BMD("\tDummy : " << ((int)b->Dummy));
+			if (!b->Dummy)
+			{
+				PRINT_DEBUG_BMD("\tName : " << b->Name);
+				PRINT_DEBUG_BMD("\tParent : " << b->Parent);
+				for (int ii = 0; ii < m_data.NumActions; ii++)
+				{
+					for (int jj = 0; jj < m_data.Actions[ii].NumAnimationKeys; jj++)
+					{
+						PRINT_DEBUG_BMD(std::fixed
+							<< "\t\t" << b->BoneMatrixes[ii].Position[jj][0]
+							<< "\t" << b->BoneMatrixes[ii].Position[jj][1]
+							<< "\t" << b->BoneMatrixes[ii].Position[jj][2]
+							<< "\t" << b->BoneMatrixes[ii].Rotation[jj][0]
+							<< "\t" << b->BoneMatrixes[ii].Rotation[jj][1]
+							<< "\t" << b->BoneMatrixes[ii].Rotation[jj][2]);
+					}
+				}
+			}
+			PRINT_DEBUG_BMD("========================================");
+		}
+	}
+
+	FixUpBones();
+	return TRUE;
+}
+
 BOOL BMD::SaveSmd(const char* szDest)
 {
-	assert(szDest);
 	fs::path pFileName = fs::path(szDest).filename().replace_extension("");
 	fs::path pFile(szDest);
 	Utls::CreateParentDir(pFile);
@@ -465,7 +575,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 		std::ofstream os2(pFileAnim);
 		if (!os2.is_open())
 		{
-			//std::cout << "[ERROR] Failed to write the smd file: " << pFileAnim << '\n';
+			PRINT_DEBUG("[ERROR] Failed to write the smd file : " << pFileAnim);
 			continue;
 		}
 
@@ -585,19 +695,19 @@ BOOL BMD::WriteSmd(std::ofstream& os, short action)
 				
 				if (vertex_index < 0 || vertex_index >= m->NumVertices)
 				{
-					//std::cout << "[ERROR] vertex_index < 0 || vertex_index >= m->NumVertices" << std::endl;
+					PRINT_DEBUG("[ERROR] vertex_index < 0 || vertex_index >= m->NumVertices");
 					return FALSE;
 				}
 
 				if (normal_index < 0 || normal_index >= m->NumNormals)
 				{
-					//std::cout << "[ERROR] normal_index < 0 || normal_index >= m->NumNormals" << std::endl;
+					PRINT_DEBUG("[ERROR] normal_index < 0 || normal_index >= m->NumNormals");
 					return FALSE;
 				}
 
 				if (texcoord_index < 0 || texcoord_index >= m->NumTexCoords)
 				{
-					//std::cout << "[ERROR] texcoord_index < 0 || texcoord_index >= m->NumTexCoords" << std::endl;
+					PRINT_DEBUG("[ERROR] texcoord_index < 0 || texcoord_index >= m->NumTexCoords");
 					return FALSE;
 				}
 
@@ -629,30 +739,30 @@ BOOL BMD::WriteSmd(std::ofstream& os, short action)
 	return TRUE;
 }
 
+//========================================================================================
+
 BOOL BMD::LoadSmd(const char* szSrc)
 {
-	if (!szSrc) return FALSE;
-
-	fs::path pFileName = fs::path(szSrc).filename().replace_extension("");
-	fs::path pAnimDir = fs::path(szSrc).parent_path().append("anims");
+	fs::path p(szSrc);
+	std::string sName = p.filename().replace_extension("").string();
+	fs::path pAnimDir = p.parent_path().append("anims");
 
 	std::ifstream is(szSrc);
 	if (!is.is_open())
 	{
-		//std::cout << "[ERROR] Failed to read the txt file: " << szSrc << '\n';
+		PRINT_DEBUG("[ERROR] Failed to read the smd file : " << szSrc);
 		return FALSE;
 	}
 
 	Release();
-	m_data.Name = pFileName.string();
+	m_data.Name = sName;
 	BMD::ReadSmd(is, SMD_REFERENCE);
 	is.close();
 
 	for (short action = 0; ; action++)
 	{
 		fs::path pFileAnim(pAnimDir);
-		pFileAnim.append(pFileName.string());
-		pFileAnim += "_" + std::to_string(action + 1) + ".smd";
+		pFileAnim.append(sName + "_" + std::to_string(action + 1) + ".smd");
 
 		if (!fs::exists(pFileAnim))
 			break;
@@ -665,7 +775,7 @@ BOOL BMD::LoadSmd(const char* szSrc)
 	return TRUE;
 }
 
-void BMD::ReadSmd(std::ifstream& is, short action)
+BOOL BMD::ReadSmd(std::ifstream& is, short action)
 {
 	SMD_TYPE SmdType;
 	if (action == SMD_REFERENCE)
@@ -689,9 +799,9 @@ void BMD::ReadSmd(std::ifstream& is, short action)
 
 	Action_t* a = &m_data.Actions[action];
 	a->NumAnimationKeys = 0;
-	a->LockPositions = false;
-	a->Positions = NULL;
-
+	std::string bmd_name = m_data.Name + ".bmd";
+	std::transform(bmd_name.begin(), bmd_name.end(), bmd_name.begin(), ::tolower);
+	a->LockPositions = BMD::GetLockPosition(bmd_name, action);
 	std::string line;
 
 	//================nodes=====================
@@ -776,6 +886,33 @@ void BMD::ReadSmd(std::ifstream& is, short action)
 				m_data.Bones[node].BoneMatrixes[action].Rotation = (vec3_t*) Temp_Bone_Rot[node][action].data();
 			}
 		}
+	}
+
+	if (a->LockPositions)
+	{
+		Temp_Lock_Pos.resize(action + 1);
+		Temp_Lock_Pos[action].clear();
+		Bone_t* b = &m_data.Bones[0];
+		for (int i = 0; i < a->NumAnimationKeys; i++)
+		{
+			BoneMatrix_t* bm = &b->BoneMatrixes[action];
+			int j = i + 1;
+			if (j > a->NumAnimationKeys - 1) 
+				j = a->NumAnimationKeys - 1;
+
+			vec3_t p;
+			VectorSubtract(bm->Position[j], bm->Position[i], p);
+
+			Temp_Lock_Pos[action].push_back(p[0]);
+			Temp_Lock_Pos[action].push_back(p[1]);
+			Temp_Lock_Pos[action].push_back(p[2]);
+		}
+
+		a->Positions = (vec3_t*)Temp_Lock_Pos[action].data();
+	}
+	else
+	{
+		a->Positions = NULL;
 	}
 
 	if (SmdType == SMD_REFERENCE) 
@@ -932,24 +1069,25 @@ void BMD::ReadSmd(std::ifstream& is, short action)
 			m->Triangles = Temp_Triangle[mesh_index].data();
 		}
 	}
-}
-
-
-BOOL BMD::SaveBmd(const char* szDest)
-{
-	if (!szDest) return FALSE;
-
-	Utls::CreateParentDir(szDest);
-
-	WriteBmd(szDest);
 
 	return TRUE;
 }
 
-void BMD::WriteBmd(const char* szDest)
+BOOL BMD::SaveBmd(const char* szDest)
 {
+	Utls::CreateParentDir(szDest);
+
+	return WriteBmd() 
+		&& Encrypt() 
+		&& FileWrite(szDest);
+}
+
+BOOL BMD::WriteBmd(BYTE version)
+{
+	m_data.Version = version;	//default version = 0xA (no crypt)
+
 	size_t size = 0;
-	size += 4;	//"BMD."
+
 	size += 38;	//header
 	for (int i = 0; i < m_data.NumMeshs; i++)
 	{
@@ -989,10 +1127,6 @@ void BMD::WriteBmd(const char* szDest)
 
 	size_t pos = 0;
 	size_t sz = 0;
-	_buf[pos] = 'B'; pos += 1;
-	_buf[pos] = 'M'; pos += 1;
-	_buf[pos] = 'D'; pos += 1;
-	_buf[pos] = 0xA; pos += 1;	//version 0xA (no crypt)
 
 	//header
 	memcpy(&_buf[pos], m_data.Name.data(), min(32, 1 + m_data.Name.length())); pos += 32;
@@ -1055,5 +1189,5 @@ void BMD::WriteBmd(const char* szDest)
 		}
 	}
 
-	FileWrite(szDest);
+	return TRUE;
 }

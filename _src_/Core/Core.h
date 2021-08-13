@@ -23,6 +23,14 @@
 //#include <GL/gl3w.h>
 //#include <GL/glext.h>
 
+#define NO_DEBUG_LOG
+
+#ifndef NO_DEBUG_LOG
+#define PRINT_DEBUG(msg) std::cout << msg << std::endl
+#else
+#define PRINT_DEBUG(msg) 
+#endif
+
 #define TRUE	1
 #define FALSE	0
 typedef unsigned long       DWORD;
