@@ -114,5 +114,4 @@ Note: File .SMD can be opened in Blender tool by using Blender Source Tools
 Some BMD Animations (monsters walking,...) use LockPosition flags.  
 SMD files have no option to represent it. It can be set manually in LockPositionData.txt instead.  
 Comparation test:  
-![Gif 1](https://i.imgur.com/diERktn.gif)  
-![Gif 2](https://i.imgur.com/ZgYMpUD.gif)  
+![Gif 1](https://i.imgur.com/diERktn.gif) ![Gif 2](https://i.imgur.com/ZgYMpUD.gif)  
