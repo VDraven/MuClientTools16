@@ -106,7 +106,7 @@ EffectInfo/EffectInfoxxx.txt
 
 Notes:  
 Updated Graphic Converter AllInOne.exe with C++17 parallel algorithms.  
-It benefits a PC with many cored CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  
+It benefits a PC with multi-core CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  
 Low writting speed hard drive will bottleneck CPU.  
 
 
