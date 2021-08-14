@@ -11,7 +11,7 @@ BOOL BaseIO::FileOpen(const char * szSrcFile)
 	std::ifstream is(szSrcFile, std::ios::in | std::ios::binary);
 	if (!is.is_open())
 	{
-		std::cout << "Error: Failed to open file: " << szSrcFile << '\n';
+		PRINT_DEBUG("[ERROR] Failed to open file: " << szSrcFile);
 		return FALSE;
 	}
 	is.seekg(0, is.end);
@@ -35,7 +35,7 @@ BOOL BaseIO::FileWrite(const char * szDestFile)
 	std::ofstream os(pFile, std::ios::out | std::ios::binary);
 	if (!os.is_open())
 	{
-		std::cout << "Error: Failed to write file: " << pFile << '\n';
+		PRINT_DEBUG("[ERROR] Failed to write file: " << pFile);
 		return FALSE;
 	}
 	os.write((char*)_buf.data(), _buf.size());

@@ -9,6 +9,10 @@
 #include "OZG.h"
 #include "BMD.h"
 
+#include <execution>
+
+#define USE_PARALLEL
+
 using namespace std;
 
 BOOL ReplaceOutputExt(fs::path& output)
@@ -76,23 +80,38 @@ BOOL ReplaceOutputExt(fs::path& output)
 
 BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 {
+	unique_ptr<OZJ> ozj; 
+	unique_ptr<OZT> ozt; 
+	unique_ptr<OZB> ozb; 
+	unique_ptr<OZP> ozp;
+	unique_ptr<OZD> ozd;
+	unique_ptr<OZG> ozg;
+	unique_ptr<BMD> bmd;
+
 	DWORD N = Ext2Int(fs::path(szInputPath).extension().string().c_str());
 	switch (N)
 	{
 	case INT_OZJ:
-		return sInstance(OZJ)->Unpack(szInputPath, szOutputPath);
+		ozj = unique_ptr<OZJ>(new OZJ());
+		return ozj->Unpack(szInputPath, szOutputPath);
 	case INT_OZT:
-		return sInstance(OZT)->Unpack(szInputPath, szOutputPath);
+		ozt = unique_ptr<OZT>(new OZT());
+		return  ozt->Unpack(szInputPath, szOutputPath);
 	case INT_OZB:
-		return sInstance(OZB)->Unpack(szInputPath, szOutputPath);
+		ozb = unique_ptr<OZB>(new OZB());
+		return ozb->Unpack(szInputPath, szOutputPath);
 	case INT_OZP:
-		return sInstance(OZP)->Unpack(szInputPath, szOutputPath);
+		ozp = unique_ptr<OZP>(new OZP());
+		return ozp->Unpack(szInputPath, szOutputPath);
 	case INT_OZD:
-		return sInstance(OZD)->Unpack(szInputPath, szOutputPath);
+		ozd = unique_ptr<OZD>(new OZD());
+		return ozd->Unpack(szInputPath, szOutputPath);
 	case INT_OZG:
-		return sInstance(OZG)->Unpack(szInputPath, szOutputPath);
+		ozg = unique_ptr<OZG>(new OZG());
+		return ozg->Unpack(szInputPath, szOutputPath);
 	case INT_BMD:
-		return sInstance(BMD)->Unpack(szInputPath, szOutputPath);
+		bmd = unique_ptr<BMD>(new BMD());
+		return bmd->Unpack(szInputPath, szOutputPath);
 	default:
 		return FALSE;
 	}
@@ -100,23 +119,38 @@ BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 
 BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 {
+	unique_ptr<OZJ> ozj;
+	unique_ptr<OZT> ozt;
+	unique_ptr<OZB> ozb;
+	unique_ptr<OZP> ozp;
+	unique_ptr<OZD> ozd;
+	unique_ptr<OZG> ozg;
+	unique_ptr<BMD> bmd;
+
 	DWORD N = Ext2Int(fs::path(szInputPath).extension().string().c_str());
 	switch (N)
 	{
 	case INT_JPG:
-		return sInstance(OZJ)->Pack(szInputPath, szOutputPath);
+		ozj = unique_ptr<OZJ>(new OZJ());
+		return ozj->Pack(szInputPath, szOutputPath);
 	case INT_TGA:
-		return sInstance(OZT)->Pack(szInputPath, szOutputPath);
+		ozt = unique_ptr<OZT>(new OZT());
+		return ozt->Pack(szInputPath, szOutputPath);
 	case INT_BMP:
-		return sInstance(OZB)->Pack(szInputPath, szOutputPath);
+		ozb = unique_ptr<OZB>(new OZB());
+		return ozb->Pack(szInputPath, szOutputPath);
 	case INT_PNG:
-		return sInstance(OZP)->Pack(szInputPath, szOutputPath);
+		ozp = unique_ptr<OZP>(new OZP());
+		return ozp->Pack(szInputPath, szOutputPath);
 	case INT_DDS:
-		return sInstance(OZD)->Pack(szInputPath, szOutputPath);
+		ozd = unique_ptr<OZD>(new OZD());
+		return ozd->Pack(szInputPath, szOutputPath);
 	case INT_GFX:
-		return sInstance(OZG)->Pack(szInputPath, szOutputPath);
+		ozg = unique_ptr<OZG>(new OZG());
+		return ozg->Pack(szInputPath, szOutputPath);
 	case INT_SMD:
-		return sInstance(BMD)->Pack(szInputPath, szOutputPath);
+		bmd = unique_ptr<BMD>(new BMD());
+		return bmd->Pack(szInputPath, szOutputPath);
 	default:
 		return FALSE;
 	}
@@ -124,33 +158,52 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 
 void FolderProcess(fs::path inputPath, fs::path outputPath)
 {
-	for (auto& iter : fs::directory_iterator(inputPath))
-	{
-		fs::path p = iter.path();
-		fs::path p_out = outputPath;
-		p_out += "\\";
-		p_out += fs::path(p).filename();
+	vector<fs::path> paths;
+	vector<fs::path> dirs; mutex mt;
+	fs::directory_iterator iters1(inputPath);
+	std::copy_if(fs::begin(iters1), fs::end(iters1), std::back_inserter(paths), [](const fs::path& p) {return fs::is_regular_file(p); });
+	fs::directory_iterator iters2(inputPath);
+	std::copy_if(fs::begin(iters2), fs::end(iters2), std::back_inserter(dirs), [](const fs::path& p) {return fs::is_directory(p) && p.filename().string() != "anims"; });
 
-		if (fs::is_directory(p))
-		{
-			if (p.filename().string() != "anims")
-			{
-				FolderProcess(p, p_out);
-			}
-		}
-		else if (fs::is_regular_file(p))
-		{
+	//Using parallel aglorithms C++17
+	std::for_each(
+#ifdef USE_PARALLEL
+		std::execution::par
+#else
+		std::execution::seq
+#endif	
+		, std::begin(paths), std::end(paths), [&outputPath](const fs::path& p)
+		{	
+			fs::path p_out = outputPath;
+			p_out += "\\";
+			p_out += fs::path(p).filename();
+			
 			if (ReplaceOutputExt(p_out))
 			{
 				if (!UnpackFile(p.string().c_str(), p_out.string().c_str()))
 					PackFile(p.string().c_str(), p_out.string().c_str());
 			}
 		}
-	}
+	);
+
+	std::for_each(std::execution::seq, std::begin(dirs), std::end(dirs),
+		[&outputPath](const std::filesystem::path& d)
+		{
+			fs::path d_out = outputPath;
+			d_out += "\\";
+			d_out += fs::path(d).filename();
+			FolderProcess(d, d_out);
+		}
+	);
 }
 
 int main(int argc, char** argv)
 {
+#ifndef NO_DEBUG_LOG
+	ofstream log("AllInOne.log");
+	std::cout.rdbuf(log.rdbuf());
+#endif // !NO_DEBUG_LOG
+
 	BMD::LoadLockPostionData("LockPositionData.txt");
 
 	const char* szInputPath = nullptr;
@@ -185,6 +238,7 @@ int main(int argc, char** argv)
 	{
 		fs::path inputPath = Utls::RemoveSlashEnd(szInputPath);
 		fs::path outputPath(szOutputPath ? szOutputPath : (inputPath.string() + "_out"));
+
 		FolderProcess(inputPath, outputPath);
 	}
 	else

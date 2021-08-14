@@ -87,6 +87,43 @@ BOOL MuCrypto::InitModulusCrypto(DWORD algorithm, BYTE * key, size_t keyLength)
 	typedef ConcreteCipher < CryptoPP::IDEA, 1024 * 8 >			Cipher6;
 	typedef ConcreteCipher < CryptoPP::GOST, 1024 * 8 >			Cipher7;
 
+	//FIX for multi threads (parallel algorithms C++17)
+	if (this->m_cipher) delete this->m_cipher;
+
+	switch (algorithm & 7)	// algorithm % 8
+	{
+	case 0:
+		this->m_cipher = new Cipher0();
+		break;
+	case 1:
+		this->m_cipher = new Cipher1();
+		break;
+	case 2:
+		this->m_cipher = new Cipher2();
+		break;
+	case 3:
+		this->m_cipher = new Cipher3();
+		break;
+	case 4:
+		this->m_cipher = new Cipher4();
+		break;
+	case 5:
+		this->m_cipher = new Cipher5();
+		break;
+	case 6:
+		this->m_cipher = new Cipher6();
+		break;
+	case 7:
+		this->m_cipher = new Cipher7();
+		break;
+	default:	//should never reach here
+		this->m_cipher = new Cipher7();
+		break;
+	}
+
+	return this->m_cipher->Init(key, keyLength);
+
+/*
 	switch (algorithm & 7)	// algorithm % 8
 	{
 	case 0:
@@ -119,6 +156,7 @@ BOOL MuCrypto::InitModulusCrypto(DWORD algorithm, BYTE * key, size_t keyLength)
 	}
 
 	return this->m_cipher->Init(key, keyLength);
+*/
 }
 
 int MuCrypto::BlockEncrypt(BYTE *inBuf, size_t len, BYTE *outBuf)

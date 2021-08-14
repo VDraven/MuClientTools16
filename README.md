@@ -104,8 +104,13 @@ EffectInfo/EffectInfoxxx.txt
 9.	ATT  
 10.	OBJ  
 
+Notes:  
+Updated Graphic Converter AllInOne.exe with C++17 parallel algorithms.  
+It benefits a PC with many cored CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  
+Low writting speed hard drive will bottleneck CPU.  
 
-Note: File .SMD can be opened in Blender tool by using Blender Source Tools  
+
+SMD files can be opened in Blender by using Blender Source Tools.  
 (https://developer.valvesoftware.com/wiki/Blender_Source_Tools)  
 
 ![Image 1](https://i.imgur.com/NTZdSGe.png)  

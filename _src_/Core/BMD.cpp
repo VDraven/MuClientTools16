@@ -10,45 +10,14 @@
 #define PRINT_DEBUG_BMD(msg)
 #endif
 
-struct
-{
-	float  m[3][4];
-	float  im[3][4];
-	vec3_t WorldOrg;
-} BoneFixup[MAX_BONES];
-
 vec3_t DUMMY_VEC3{ 0.0f, 0.0f,0.0f };
 BoneMatrix_t DUMMY_BONE_MATRIX{ &DUMMY_VEC3 , &DUMMY_VEC3 };
-
-std::vector<std::vector<std::vector<float>>> Temp_Bone_Pos;
-std::vector<std::vector<std::vector<float>>> Temp_Bone_Rot;
-
-std::vector<std::vector<float>>			Temp_Lock_Pos;
-
-std::vector<std::vector<Vertex_t>>		Temp_Vertex;
-std::vector<std::vector<Normal_t>>		Temp_Normal;
-std::vector<std::vector<TexCoord_t>>	Temp_TexCoord;
-std::vector<std::vector<Triangle_t>>	Temp_Triangle;
-
-void ClearTemp()
-{
-	Temp_Bone_Pos.clear();
-	Temp_Bone_Rot.clear();
-	Temp_Lock_Pos.clear();
-	Temp_Vertex.clear();
-	Temp_Normal.clear();
-	Temp_TexCoord.clear();
-	Temp_Triangle.clear();
-}
-
-//fs::path g_FileName;
 
 //========================================================================================
 
 BOOL BMD::Unpack(const char* szSrc, const char* szDest)
 {
 	if (!szSrc) return FALSE;
-	PRINT_DEBUG("Unpacking " << szSrc);
 
 	auto CheckBmd = [](const char* szInputPath)->BOOL
 	{
@@ -63,6 +32,8 @@ BOOL BMD::Unpack(const char* szSrc, const char* szDest)
 	};
 
 	if(!CheckBmd(szSrc)) return FALSE;
+
+	PRINT_DEBUG("Unpacking " << szSrc);
 
 	if (!szDest)
 	{
@@ -94,7 +65,7 @@ BOOL BMD::Pack(const char* szSrc, const char* szDest)
 BOOL BMD::LoadLockPostionData(const char* fname)
 {
 	LockPositionData.clear();
-
+	LockPositionData_FileName = fname;
 	if (!fs::exists(fname))
 	{
 		std::ofstream os(fname);
@@ -143,11 +114,40 @@ BOOL BMD::GetLockPosition(std::string& name, short action)
 	return FALSE;
 }
 
+BOOL BMD::SetLockPosition(std::string& name, short action)
+{
+	auto range = LockPositionData.equal_range(name);
+	for (auto& it = range.first; it != range.second; it++)
+	{
+		if (it->second == action)
+			return FALSE;
+	}
+
+	std::ofstream os(LockPositionData_FileName, std::ofstream::app);
+	if (!os.is_open()) return FALSE;
+
+	LockPositionData.insert(std::make_pair(name, action));
+	os << action << "\t" << name << std::endl;
+	os.close();
+
+	return TRUE;
+}
+
+//========================================================================================
+
 BOOL BMD::Release()
 {
-	ClearTemp();
+	Temp_Bone_Pos.clear();
+	Temp_Bone_Rot.clear();
+	Temp_Lock_Pos.clear();
+	Temp_Vertex.clear();
+	Temp_Normal.clear();
+	Temp_TexCoord.clear();
+	Temp_Triangle.clear();
+
 	m_data.clear();
 	_buf.clear();
+
 	return TRUE;
 }
 
@@ -280,8 +280,10 @@ BOOL BMD::Decrypt()
 
 BOOL BMD::LoadBmd(const char* szSrc)
 {
-	return Release()
-		&& FileOpen(szSrc)
+	Release();
+	m_data.Name = fs::path(szSrc).filename().replace_extension("").string();
+
+	return FileOpen(szSrc)
 		&& Decrypt()
 		&& ReadBmd();
 }
@@ -292,7 +294,8 @@ BOOL BMD::ReadBmd()
 
 	size_t pos = 0;
 
-	m_data.Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
+	//m_data.Name = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
+	pos += 32;
 
 	m_data.NumMeshs = *(short*)&_buf[pos]; pos += 2;
 	if (m_data.NumMeshs < 0 || m_data.NumMeshs > MAX_MESH)
@@ -349,8 +352,6 @@ BOOL BMD::ReadBmd()
 		m->Normals = (Normal_t*)&_buf[pos]; pos += (m->NumNormals * sizeof(Normal_t));
 		m->TexCoords = (TexCoord_t*)&_buf[pos]; pos += (m->NumTexCoords * sizeof(TexCoord_t));
 		m->Triangles = (Triangle_t*)&_buf[pos]; pos += (m->NumTriangles * sizeof(Triangle_t));
-		m_data.Textures[i].FileName = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
-
 		//TextureScriptParsing skip
 
 		if (_buf.size() < pos)
@@ -358,6 +359,8 @@ BOOL BMD::ReadBmd()
 			PRINT_DEBUG("[ERROR] Corrupted Bmd File");
 			return FALSE;
 		}
+
+		m_data.Textures[i].FileName = std::string((const char*)&_buf[pos], min(32, strlen((const char*)&_buf[pos]))); pos += 32;
 
 		if (DEBUG_BMD)
 		{
@@ -441,12 +444,17 @@ BOOL BMD::ReadBmd()
 			//don't need to copy, pointing to data in _buf instead
 			a->Positions = (vec3_t*)&_buf[pos]; pos += (a->NumAnimationKeys * sizeof(vec3_t));
 
-			//print LockPositionData.txt
-			//std::cout << i << "\t" << g_FileName.string() << std::endl;
+			BMD::SetLockPosition(m_data.Name + ".bmd", i);
 		}
 		else
 		{
 			a->Positions = NULL;
+		}
+
+		if (_buf.size() < pos)
+		{
+			PRINT_DEBUG("[ERROR] Corrupted Bmd File");
+			return FALSE;
 		}
 
 		if (m_data.Actions[0].NumAnimationKeys <= 0)
@@ -556,7 +564,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 	//if (m_data.NumMeshs > 0)	player.bmd has no mesh (only animations)
 	{
 		std::ofstream os1(pFile);
-		WriteSmd(os1, SMD_REFERENCE);
+		Bmd2Smd(os1, SMD_REFERENCE);
 		os1.close();
 	}
 
@@ -579,7 +587,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 			continue;
 		}
 
-		WriteSmd(os2, action);
+		Bmd2Smd(os2, action);
 
 		os2.close();
 	}
@@ -587,7 +595,7 @@ BOOL BMD::SaveSmd(const char* szDest)
 	return TRUE;
 }
 
-BOOL BMD::WriteSmd(std::ofstream& os, short action)
+BOOL BMD::Bmd2Smd(std::ofstream& os, short action)
 {
 	assert(action >= SMD_REFERENCE && action < m_data.NumActions);
 
@@ -711,6 +719,18 @@ BOOL BMD::WriteSmd(std::ofstream& os, short action)
 					return FALSE;
 				}
 
+				if (vertex_node < 0 || vertex_node >= m_data.NumBones)
+				{
+					PRINT_DEBUG("[ERROR] vertex_node < 0 || vertex_node >= m_data.NumBones");
+					return FALSE;
+				}
+
+				if (normal_node < 0 || normal_node >= m_data.NumBones)
+				{
+					PRINT_DEBUG("[ERROR] normal_index < 0 || normal_index >= m_data.NumBones");
+					return FALSE;
+				}
+
 				os << std::fixed
 					<< node << ' ';
 
@@ -771,8 +791,8 @@ BOOL BMD::LoadSmd(const char* szSrc)
 		BMD::ReadSmd(is2, action);
 		is2.close();
 	}
-	
-	return TRUE;
+
+	return Smd2Bmd();
 }
 
 BOOL BMD::ReadSmd(std::ifstream& is, short action)
@@ -1077,12 +1097,11 @@ BOOL BMD::SaveBmd(const char* szDest)
 {
 	Utls::CreateParentDir(szDest);
 
-	return WriteBmd() 
-		&& Encrypt() 
+	return Encrypt() 
 		&& FileWrite(szDest);
 }
 
-BOOL BMD::WriteBmd(BYTE version)
+BOOL BMD::Smd2Bmd(BYTE version)
 {
 	m_data.Version = version;	//default version = 0xA (no crypt)
 
