@@ -106,7 +106,7 @@ EffectInfo/EffectInfoxxx.txt
 
 Notes:  
 Linked this project to https://github.com/VD1988/MuOnline-WorldEditor  
-Use the WorldEditor to edit/view map/att/obj files.  
+Use the WorldEditor to edit map/att/obj files.  
 
 Updated Graphic Converter AllInOne.exe with C++17 parallel algorithms.  
 It benefits a PC with many cores CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  

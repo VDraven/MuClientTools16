@@ -77,7 +77,6 @@ public:
 	MuCrypto(){};
 	virtual ~MuCrypto() {};
 
-protected:
 	DWORD CalculateCRC(BYTE *buf, size_t len, WORD wkey);
 	void Xor3Byte(BYTE *buf, size_t len);
 	void Xor3Byte2(BYTE *buf, size_t len, WORD wkey);
@@ -85,14 +84,15 @@ protected:
 	void MapFileEncrypt(BYTE* buf, size_t len);
 	void MapFileDecrypt(BYTE* buf, size_t len);
 
+	BOOL ModulusEncrypt(std::vector<BYTE>& buf);
+	BOOL ModulusDecrypt(std::vector<BYTE>& buf);
+
+private:
 	BOOL InitModulusCrypto(DWORD algorithm, BYTE * key, size_t keyLength);
 	int BlockEncrypt(BYTE *inBuf, size_t len, BYTE *outBuf);
 	int BlockDecrypt(BYTE *inBuf, size_t len, BYTE *outBuf);
 	int GetBlockSize() { return m_cipher ? m_cipher->m_blockSize : 0; }
 
-
-	BOOL ModulusEncrypt(std::vector<BYTE>& buf);
-	BOOL ModulusDecrypt(std::vector<BYTE>& buf);
 
 private:
 	AbstractCipher * m_cipher;
