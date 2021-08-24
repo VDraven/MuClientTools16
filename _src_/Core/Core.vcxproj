@@ -70,6 +70,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ATT.cpp" />
     <ClCompile Include="BaseIO.cpp" />
     <ClCompile Include="BMD.cpp" />
     <ClCompile Include="Core.cpp">
@@ -84,11 +85,13 @@
     <ClCompile Include="JewelOfHarmonyBmd.cpp" />
     <ClCompile Include="LangMpr.cpp" />
     <ClCompile Include="LazyStruct.cpp" />
+    <ClCompile Include="MAP.cpp" />
     <ClCompile Include="MapCharactersBmd.cpp" />
     <ClCompile Include="MixBmd.cpp" />
     <ClCompile Include="MuCrypto.cpp" />
     <ClCompile Include="MuunExchangeBmd.cpp" />
     <ClCompile Include="NPCQuestBmd.cpp" />
+    <ClCompile Include="OBJ.cpp" />
     <ClCompile Include="PetBmd.cpp" />
     <ClCompile Include="QuestBmd.cpp" />
     <ClCompile Include="ServerListBmd.cpp" />
@@ -97,6 +100,7 @@
     <ClCompile Include="ZzzMathLib.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ATT.h" />
     <ClInclude Include="BaseIO.h" />
     <ClInclude Include="BMD.h" />
     <ClInclude Include="CameraAnglePositionBmd.h" />
@@ -118,6 +122,7 @@
     <ClInclude Include="JewelOfHarmonyBmd.h" />
     <ClInclude Include="LangMpr.h" />
     <ClInclude Include="LazyStruct.h" />
+    <ClInclude Include="MAP.h" />
     <ClInclude Include="MapCharactersBmd.h" />
     <ClInclude Include="MasterSkillTreeBmd.h" />
     <ClInclude Include="MixBmd.h" />
@@ -128,6 +133,7 @@
     <ClInclude Include="MuunBmd.h" />
     <ClInclude Include="MuunExchangeBmd.h" />
     <ClInclude Include="NPCQuestBmd.h" />
+    <ClInclude Include="OBJ.h" />
     <ClInclude Include="OZB.h" />
     <ClInclude Include="OZD.h" />
     <ClInclude Include="OZG.h" />

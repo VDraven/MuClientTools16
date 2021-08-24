@@ -18,7 +18,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 */
 ```
 
-### PROJECT'S CHECKLIST:
+### THIS PROJECT HAS BEEN COMPLETED (AUG 2021)
 
 ### Data and Config Files: 100% (45 / 45) (COMPLETED)
 :heavy_check_mark:	1.	Lang.mpr  
@@ -92,7 +92,7 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	44.	RuudShopViewInfo.bmd  
 :heavy_check_mark:	45.	Camera_Angle_Position.bmd  
 
-### Image, 3D Model, Interface and Map Files: 67% (6 / 9)
+### Image, 3D Model, Interface and Map Files: 100% (10 / 10)  (COMPLETED)
 :heavy_check_mark:	1.	OZJ	(-> .JPG)  
 :heavy_check_mark:	2.	OZT	(-> .TGA)  
 :heavy_check_mark:	3.	OZB (-> .BMP)  
@@ -100,13 +100,16 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	5.	OZD	(-> .DDS)  
 :heavy_check_mark:	6.	OZG	(-> .GFX)  
 :heavy_check_mark:	7.	BMD (-> .SMD)  
-8.	MAP  
-9.	ATT  
-10.	OBJ  
+:heavy_check_mark:	8.	MAP (-> .PAM)  
+:heavy_check_mark:	9.	ATT (-> .TTA)  
+:heavy_check_mark:	10.	OBJ (-> .JBO)  
 
 Notes:  
+Linked this project to https://github.com/VD1988/MuOnline-WorldEditor  
+Use the WorldEditor to edit/view map/att/obj files.  
+
 Updated Graphic Converter AllInOne.exe with C++17 parallel algorithms.  
-It benefits a PC with many cored CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  
+It benefits a PC with many cores CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  
 Low writting speed hard drive will bottleneck CPU.  
 
 

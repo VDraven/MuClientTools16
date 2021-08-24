@@ -20,12 +20,9 @@
 #include <unordered_map>
 #include <map>
 
-//#include <GL/gl3w.h>
-//#include <GL/glext.h>
+#define NO_CORE_DEBUG_LOG
 
-#define NO_DEBUG_LOG
-
-#ifndef NO_DEBUG_LOG
+#ifndef NO_CORE_DEBUG_LOG
 #define PRINT_DEBUG(msg) std::cout << msg << std::endl
 #else
 #define PRINT_DEBUG(msg) 

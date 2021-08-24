@@ -1,7 +1,7 @@
 #ifndef OZG_H
 #define OZG_H
 
-typedef GraphicConvertor<EXT_OZG, 34> OzgConvertor;
+typedef GraphicConvertor<EXT_OZG> OzgConvertor;
 class OZG : public OzgConvertor
 {
 public:

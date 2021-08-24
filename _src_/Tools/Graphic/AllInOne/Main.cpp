@@ -8,10 +8,17 @@
 #include "OZD.h"
 #include "OZG.h"
 #include "BMD.h"
+#include "MAP.h"
+#include "ATT.h"
+#include "OBJ.h"
 
 #include <execution>
 
 #define USE_PARALLEL
+
+#ifndef NO_CORE_DEBUG_LOG
+#undef USE_PARALLEL
+#endif //!NO_CORE_DEBUG_LOG
 
 using namespace std;
 
@@ -46,6 +53,15 @@ BOOL ReplaceOutputExt(fs::path& output)
 	case INT_BMD:
 		new_ext = EXT_SMD;
 		break;
+	case INT_MAP:
+		new_ext = EXT_PAM;
+		break;
+	case INT_ATT:
+		new_ext = EXT_TTA;
+		break;
+	case INT_OBJ:
+		new_ext = EXT_JBO;
+		break;
 
 	case INT_JPG:
 		new_ext = EXT_OZJ;
@@ -67,6 +83,15 @@ BOOL ReplaceOutputExt(fs::path& output)
 		break; 
 	case INT_SMD:
 		new_ext = EXT_BMD;
+		break;	
+	case INT_PAM:
+		new_ext = EXT_MAP;
+		break;
+	case INT_TTA:
+		new_ext = EXT_ATT;
+		break;
+	case INT_JBO:
+		new_ext = EXT_OBJ;
 		break;
 
 	default:
@@ -87,6 +112,9 @@ BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 	unique_ptr<OZD> ozd;
 	unique_ptr<OZG> ozg;
 	unique_ptr<BMD> bmd;
+	unique_ptr<MAP> map;
+	unique_ptr<ATT> att;
+	unique_ptr<OBJ> obj;
 
 	DWORD N = Ext2Int(fs::path(szInputPath).extension().string().c_str());
 	switch (N)
@@ -112,6 +140,15 @@ BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 	case INT_BMD:
 		bmd = unique_ptr<BMD>(new BMD());
 		return bmd->Unpack(szInputPath, szOutputPath);
+	case INT_MAP:
+		map = unique_ptr<MAP>(new MAP());
+		return map->Unpack(szInputPath, szOutputPath);
+	case INT_ATT:
+		att = unique_ptr<ATT>(new ATT());
+		return att->Unpack(szInputPath, szOutputPath);
+	case INT_OBJ:
+		obj = unique_ptr<OBJ>(new OBJ());
+		return obj->Unpack(szInputPath, szOutputPath);
 	default:
 		return FALSE;
 	}
@@ -126,6 +163,9 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 	unique_ptr<OZD> ozd;
 	unique_ptr<OZG> ozg;
 	unique_ptr<BMD> bmd;
+	unique_ptr<MAP> map;
+	unique_ptr<ATT> att;
+	unique_ptr<OBJ> obj;
 
 	DWORD N = Ext2Int(fs::path(szInputPath).extension().string().c_str());
 	switch (N)
@@ -151,6 +191,16 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 	case INT_SMD:
 		bmd = unique_ptr<BMD>(new BMD());
 		return bmd->Pack(szInputPath, szOutputPath);
+	case INT_PAM:
+		map = unique_ptr<MAP>(new MAP());
+		return map->Pack(szInputPath, szOutputPath);
+	case INT_TTA:
+		att = unique_ptr<ATT>(new ATT());
+		return att->Pack(szInputPath, szOutputPath);
+	case INT_JBO:
+		obj = unique_ptr<OBJ>(new OBJ());
+		return obj->Pack(szInputPath, szOutputPath);
+
 	default:
 		return FALSE;
 	}
@@ -199,10 +249,10 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 
 int main(int argc, char** argv)
 {
-#ifndef NO_DEBUG_LOG
+#ifndef NO_CORE_DEBUG_LOG
 	ofstream log("AllInOne.log");
 	std::cout.rdbuf(log.rdbuf());
-#endif // !NO_DEBUG_LOG
+#endif // !NO_CORE_DEBUG_LOG
 
 	BMD::LoadLockPostionData("LockPositionData.txt");
 

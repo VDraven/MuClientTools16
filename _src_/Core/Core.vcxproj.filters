@@ -17,6 +17,9 @@
     <Filter Include="Source Files\Client\Graphic\BMD">
       <UniqueIdentifier>{d0fabab9-9ef4-4990-92ec-ddbb7ed136e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Client\Graphic\World">
+      <UniqueIdentifier>{76e815f6-ac2e-4ea6-a41a-c3d36e4033ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseIO.h">
@@ -163,6 +166,15 @@
     <ClInclude Include="ZzzMathLib.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="MAP.h">
+      <Filter>Source Files\Client\Graphic\World</Filter>
+    </ClInclude>
+    <ClInclude Include="ATT.h">
+      <Filter>Source Files\Client\Graphic\World</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJ.h">
+      <Filter>Source Files\Client\Graphic\World</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">
@@ -230,6 +242,15 @@
     </ClCompile>
     <ClCompile Include="ZzzMathLib.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ATT.cpp">
+      <Filter>Source Files\Client\Graphic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="MAP.cpp">
+      <Filter>Source Files\Client\Graphic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJ.cpp">
+      <Filter>Source Files\Client\Graphic\World</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
