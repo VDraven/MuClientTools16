@@ -4,6 +4,8 @@
 //--BaseIO
 //------------------------------------------------------------------------
 
+BOOL BaseIO::_overwrite = false;
+
 BOOL BaseIO::FileOpen(const char * szSrcFile)
 {
 	if(!szSrcFile) return FALSE;
@@ -29,7 +31,7 @@ BOOL BaseIO::FileWrite(const char * szDestFile)
 {
 	if(!_buf.size() || !szDestFile) return FALSE;
 
-	fs::path pFile = Utls::BackupPath(szDestFile);
+	fs::path pFile = BaseIO::_overwrite ? fs::path(szDestFile) : Utls::BackupPath(szDestFile);
 	Utls::CreateParentDir(pFile);
 
 	std::ofstream os(pFile, std::ios::out | std::ios::binary);

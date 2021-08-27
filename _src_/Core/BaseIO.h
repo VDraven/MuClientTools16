@@ -12,6 +12,11 @@ protected:
 	virtual BOOL FileWrite(const char *szDestFile);
 
 	std::vector<BYTE> _buf;
+
+public:
+	static void SetOverwrite(BOOL b) { _overwrite = b; };
+private:
+	static BOOL _overwrite;
 };
 
 #endif
