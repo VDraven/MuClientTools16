@@ -59,7 +59,6 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	10.	ExcellentCommonOption.bmd  
 :heavy_check_mark:	11.	ExcellentWingOption.bmd  
 :heavy_check_mark:	12.	JewelOfHarmonyOption.bmd  
-~~JewelOfHarmonySmelt.bmd (client does not open/load ?)~~  
 :heavy_check_mark:	13.	StatOption.bmd  
 :heavy_check_mark:	14.	StatOptionText.bmd  
 :heavy_check_mark:	15.	InfoTooltip.bmd  
