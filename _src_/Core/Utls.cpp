@@ -44,21 +44,14 @@ namespace Utls {
 			}
 			catch (std::exception ex)
 			{
-				std::cout << ex.what() << '\n';
+				PRINT_DEBUG(ex.what());
 				char msg[256];
 				printf(msg, "Use '%s' instead. \n", pBak);
-				std::cout << msg;
-				//MessageBox(NULL, msg, "Warning", MB_OK);
+				PRINT_DEBUG(msg);
 				return pBak;
 			}
 		}
 		return pFile;
-	}
-
-	bool IsEmptyCStr(const char * str)
-	{
-		assert(str);
-		return str[0] == '\0';
 	}
 
 	void RemoveAllStringSpaces(std::string& s)
@@ -70,10 +63,17 @@ namespace Utls {
 		s.resize(count);
 	}
 
-	void ToLowerCaseString(std::string& s)
+	inline void ToLowerCaseString(std::string& s)
 	{
 		std::transform(s.begin(), s.end(), s.begin(), tolower);
 	}
+
+	inline bool IsEmptyCStr(const char* str)
+	{
+		assert(str);
+		return str[0] == '\0';
+	}
+
 }
 
 

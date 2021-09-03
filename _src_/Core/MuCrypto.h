@@ -9,8 +9,8 @@ class AbstractCipher
 {
 	friend class MuCrypto;
 public:
-	AbstractCipher() {}
-	virtual ~AbstractCipher() {}
+	AbstractCipher() {};
+	virtual ~AbstractCipher() {};
 
 protected:
 	virtual bool Init(BYTE *key, DWORD length) = 0;
@@ -26,8 +26,8 @@ template <class CRYPTO, int MAX_RUN>
 class ConcreteCipher : public AbstractCipher
 {
 public:
-	ConcreteCipher() {}
-	virtual ~ConcreteCipher() {}
+	ConcreteCipher() {};
+	virtual ~ConcreteCipher() {};
 
 	bool Init(BYTE *key, DWORD length)
 	{

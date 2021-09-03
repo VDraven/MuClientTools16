@@ -9,9 +9,9 @@ namespace Utls
 	void CreateParentDir(fs::path path);
 	fs::path RemoveSlashEnd(fs::path path);
 	fs::path BackupPath(fs::path path);
-	bool IsEmptyCStr(const char* str);
 	void RemoveAllStringSpaces(std::string& s);
-	void ToLowerCaseString(std::string& s);
+	inline void ToLowerCaseString(std::string& s);
+	inline bool IsEmptyCStr(const char* str);
 }
 
 #endif // !UTLS_H

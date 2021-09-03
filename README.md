@@ -20,7 +20,7 @@ C/C++ reversing skill is a plus to see the changes in their game client.
 */
 ```
 
-### THIS PROJECT WAS COMPLETED (AUG 2021)
+### THIS PROJECT HAS BEEN COMPLETED (AUG 2021)
 
 ### Data and Config Files: 100% (45 / 45) (COMPLETED)
 :heavy_check_mark:	1.	Lang.mpr  
@@ -106,20 +106,30 @@ EffectInfo/EffectInfoxxx.txt
 :heavy_check_mark:	10.	OBJ (-> .JBO)  
 
 Notes:  
+.PAM, .TTA and .JBO are decrypted files of .MAP, .ATT and OBJ.  
+It can be read as a binary file by using any hex editor tool (such as HxD).  
+  
+//--------------------------------------------  
+  
 Linked this project to https://github.com/VD1988/MuOnline-WorldEditor  
 Use the WorldEditor to edit map/att/obj files.  
-
+  
+//--------------------------------------------  
+  
 Updated Graphic Converter AllInOne.exe with C++17 parallel algorithms.  
 It benefits a PC with many cores CPU and SSD drive. (Convert 2 GB "Data" folder in ~ 1min)  
 Low writting speed hard drive will bottleneck CPU.  
-
-
+  
+//--------------------------------------------  
+  
 SMD files can be opened in Blender by using Blender Source Tools.  
 (https://developer.valvesoftware.com/wiki/Blender_Source_Tools)  
 
 ![Image 1](https://i.imgur.com/NTZdSGe.png)  
 ![Image 2](https://i.imgur.com/7dpsr6C.png)  
-
+  
+//--------------------------------------------  
+  
 Some BMD Animations (monsters walking,...) use LockPosition flags.  
 SMD files have no option to represent it. It can be set manually in LockPositionData.txt instead.  
 Comparation test:  
