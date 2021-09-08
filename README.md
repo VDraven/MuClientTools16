@@ -1,10 +1,14 @@
 # MuClientTools16 by VD (Vic)
 Mu Client Tools (Season 16 part 1.1)  
 This project is using test files obtained from client Lgd_Test (1.19.46)
-Server files & sources released by MuLegend can be found here. https://forum.ragezone.com/f197/release-legend-mu-client-amp-1195391/  
+Server files & sources released by MuLegend can be found here:  
+https://forum.ragezone.com/f197/release-legend-mu-client-amp-1195391/  
   
-If you want to ask or look for help, please don't open issues here. It will not be process.  
-Please post it on ragezone or my original thread instead. https://forum.ragezone.com/f197/release-muclienttools-season-16-1-a-1198961/  
+If you want to ask or look for help, please don't open issues here. It will not be processed.  
+Please post it on ragezone or my original thread instead.  
+https://forum.ragezone.com/f197/release-muclienttools-season-16-1-a-1198961/  
+  
+### THIS PROJECT HAS BEEN COMPLETED (AUG 2021).  
   
 ```cpp
 /*
@@ -21,9 +25,7 @@ The ones want to modify the tools in order to fit with their data files should c
 C/C++ reversing skill is a plus to see the changes in their game client.
 */
 ```
-
-### THIS PROJECT HAS BEEN COMPLETED (AUG 2021)
-
+  
 ### Data and Config Files: 100% (45 / 45) (COMPLETED)
 :heavy_check_mark:	1.	Lang.mpr  
   
