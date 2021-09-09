@@ -49,5 +49,6 @@ namespace fs = std::filesystem;
 #include "BaseIO.h"
 #include "TxtConvertor.h"
 #include "GraphicConvertor.h"
+#include "ConvertorTemplate.h"
 
 #endif // !CORE_PCH_H

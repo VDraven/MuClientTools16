@@ -41,8 +41,7 @@
       <FunctionLevelLinking>
       </FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>
-      </SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -150,6 +149,7 @@
     <ClInclude Include="SkillTooltipTextBmd.h" />
     <ClInclude Include="SocketItemBmd.h" />
     <ClInclude Include="StatOptionBmd.h" />
+    <ClInclude Include="ConvertorTemplate.h" />
     <ClInclude Include="TxtConvertor.h" />
     <ClInclude Include="Utls.h" />
     <ClInclude Include="ZzzMathLib.h" />

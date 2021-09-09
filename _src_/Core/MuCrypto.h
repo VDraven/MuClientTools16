@@ -74,7 +74,7 @@ public:
 class MuCrypto
 {
 public:
-	MuCrypto(){};
+	MuCrypto() : m_cipher(nullptr) {};
 	virtual ~MuCrypto() {};
 
 	DWORD CalculateCRC(BYTE *buf, size_t len, WORD wkey);
@@ -92,7 +92,6 @@ private:
 	int BlockEncrypt(BYTE *inBuf, size_t len, BYTE *outBuf);
 	int BlockDecrypt(BYTE *inBuf, size_t len, BYTE *outBuf);
 	int GetBlockSize() { return m_cipher ? m_cipher->m_blockSize : 0; }
-
 
 private:
 	AbstractCipher * m_cipher;

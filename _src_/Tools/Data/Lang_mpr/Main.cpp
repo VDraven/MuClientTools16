@@ -7,8 +7,8 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	LangMpr opener;
-	const char* szInputPath = "lang.mpr";
+	LangMpr convertor;
+	const char* szInputPath = nullptr;
 	const char* szOutputPath = nullptr;
 
 	if (argc >= 2)
@@ -18,36 +18,46 @@ int main(int argc, char** argv)
 
 	if (!szInputPath)
 	{
-		cout << "\t Drag & Drop the Lang file/folder \n";
-		cout << "\t  or use console command to execute with the file path. \n";
+		PRINT_DEBUG("Drag&Drop the '.bmd' / '.txt' file \n" "\t or use console command to execute with the file path.");
 		return EXIT_FAILURE;
 	}
 
 	if (!fs::exists(szInputPath))
 	{
-		cout << "Error: Input file/folder does not exist.\n" << endl;
+		PRINT_DEBUG("[ERROR] Input file/directory does not exist.");
 		return EXIT_FAILURE;
 	}
-	if (fs::is_regular_file(szInputPath)
-		&& (!szOutputPath || fs::is_directory(szOutputPath)))
+	if (fs::is_regular_file(szInputPath))
 	{
-		//szInputPath = fs::path(szInputPath).relative_path().string().c_str();
-		if (!opener.Unpack(szInputPath, szOutputPath))
+		if (szOutputPath && !fs::is_directory(szOutputPath))
 		{
+			PRINT_DEBUG("[ERROR] szOutputPath is not a directory.");
+			return EXIT_FAILURE;
+		}
+
+		if (!convertor.Unpack(szInputPath, szOutputPath))
+		{
+			PRINT_DEBUG("[ERROR] Failed to unpack ." << szInputPath);
 			return EXIT_FAILURE;
 		}
 	}
-	else if (fs::is_directory(szInputPath)
-		&& (!szOutputPath || fs::is_regular_file(szOutputPath)))
+	else if (fs::is_directory(szInputPath))
 	{
-		if (!opener.Pack(szInputPath, szOutputPath))
+		if (szOutputPath && !fs::is_regular_file(szOutputPath))
 		{
+			PRINT_DEBUG("[ERROR] szOutputPath is not a regular file.");
+			return EXIT_FAILURE;
+		}
+
+		if (!convertor.Pack(szInputPath, szOutputPath))
+		{
+			PRINT_DEBUG("[ERROR] Failed to pack ." << szInputPath);
 			return EXIT_FAILURE;
 		}
 	}
 	else
 	{
-		cout << "Error: Invalid file/folder path.\n" << endl;
+		PRINT_DEBUG("[ERROR] Invalid file/folder path.");
 		return EXIT_FAILURE;
 	}
 

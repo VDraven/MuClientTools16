@@ -10,8 +10,14 @@ constexpr char ToLower(char c)
 constexpr DWORD Ext2Int(const char* e)
 {
 	DWORD n = 0;
+	if (!e) return n;
+
 	for (int i = 0; i < 4; i++)
+	{
+		if (e[i] == 0) return n;
 		n |= ToLower(e[i]) << ((3 - i) * 8);
+	}
+
 	return n;
 }
 

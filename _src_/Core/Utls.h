@@ -10,8 +10,16 @@ namespace Utls
 	fs::path RemoveSlashEnd(fs::path path);
 	fs::path BackupPath(fs::path path);
 	void RemoveAllStringSpaces(std::string& s);
-	inline void ToLowerCaseString(std::string& s);
-	inline bool IsEmptyCStr(const char* str);
+
+	inline void ToLowerCaseString(std::string& s)
+	{
+		std::transform(s.begin(), s.end(), s.begin(), tolower);
+	}
+
+	inline bool IsEmptyCStr(const char* str)
+	{
+		return str && str[0] == '\0';
+	};
 }
 
 #endif // !UTLS_H

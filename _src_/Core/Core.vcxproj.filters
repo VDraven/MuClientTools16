@@ -175,6 +175,9 @@
     <ClInclude Include="OBJ.h">
       <Filter>Source Files\Client\Graphic\World</Filter>
     </ClInclude>
+    <ClInclude Include="ConvertorTemplate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseIO.cpp">

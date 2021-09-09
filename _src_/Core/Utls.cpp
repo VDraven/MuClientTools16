@@ -5,8 +5,15 @@
 namespace Utls {
 	void CreateParentDir(fs::path pPath)
 	{
+		//fs::path pParent = fs::_Parse_parent_path(pPath.wstring());
+		//fs::create_directories(pParent);
+
 		fs::path pParent = fs::_Parse_parent_path(pPath.wstring());
-		fs::create_directories(pParent);
+		if (!pParent.empty() && !fs::exists(pParent))
+		{
+			Utls::CreateParentDir(pParent);
+			fs::create_directory(pParent);
+		}
 	}
 	
 	fs::path RemoveSlashEnd(fs::path path)
@@ -62,18 +69,6 @@ namespace Utls {
 				s[count++] = s[i];
 		s.resize(count);
 	}
-
-	inline void ToLowerCaseString(std::string& s)
-	{
-		std::transform(s.begin(), s.end(), s.begin(), tolower);
-	}
-
-	inline bool IsEmptyCStr(const char* str)
-	{
-		assert(str);
-		return str[0] == '\0';
-	}
-
 }
 
 
