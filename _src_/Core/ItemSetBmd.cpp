@@ -62,7 +62,7 @@ void ItemSetTypeBmd::TxtOut(std::ofstream & os)
 	{
 		ITEM_SET_TYPE* ptr = it->second;
 		BYTE item_cat = it->first / 512;
-		BYTE item_idx = it->first % 512;
+		WORD item_idx = it->first % 512;
 
 		if (item_cat < ITEM_CATEGORY_MAX && item_idx < ITEM_INDEX_MAX)
 		{
@@ -100,7 +100,7 @@ void ItemSetTypeBmd::TxtIn(std::ifstream & is)
 		BYTE item_idx;
 
 		sscanf(line.c_str(),
-			"%hhd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd"
+			"%hhd\t%hd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd"
 			, &item_cat, &item_idx, &temp.Tier1, &temp.Tier2, &temp.Tier3, &temp.Tier4, &temp.Unk1, &temp.Unk2
 		);
 
