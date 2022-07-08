@@ -8,7 +8,13 @@ If you want to ask or look for help, please don't open issues here. It will not 
 Please post it on ragezone or my original thread instead.  
 https://forum.ragezone.com/f197/release-muclienttools-season-16-1-a-1198961/  
   
-### THIS PROJECT HAS BEEN COMPLETED (AUG 2021).  
+### LASTEST UPDATE: JULY 2022
+  
+Add Bmd2Fbx tool  
++ SMD := deprecated  
++ FBX := easier for importing to modeling tools or game engines  
+  
+![Alt Text](https://i.imgur.com/avAcW0e.gifv)
   
 ```cpp
 /*
