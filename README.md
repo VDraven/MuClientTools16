@@ -14,8 +14,12 @@ Add Bmd2Fbx tool
 + SMD := deprecated  
 + FBX := easier for importing to modeling tools or game engines  
   
-![Alt Text](https://i.imgur.com/avAcW0e.gif)
+https://i.imgur.com/8jBYkV6.mp4  
+https://i.imgur.com/avAcW0e.mp4  
+https://i.imgur.com/cQs0Ag6.mp4  
+https://i.imgur.com/THIw4RS.mp4  
   
+________________________________
 ```cpp
 /*
 It might (or might not) work for files from older/newer versions. 
