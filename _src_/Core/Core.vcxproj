@@ -17,7 +17,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -54,7 +54,7 @@
       </TreatSpecificWarningsAsErrors>
       <CompileAs>CompileAsCpp</CompileAs>
       <ForcedIncludeFiles>Core.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\3rdParty\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\3rdParty\;..\3rdParty\FBX\;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
@@ -64,19 +64,25 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>cryptlib.lib; bit7z.lib;glfw3.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>cryptlib.lib; bit7z.lib;glfw3.lib;opengl32.lib;libfbxsdk-md.lib;libxml2-md.lib;zlib-md.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\3rdParty\</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ATT.cpp" />
     <ClCompile Include="BaseIO.cpp" />
-    <ClCompile Include="BMD.cpp" />
+    <ClCompile Include="BMD_SMD.cpp" />
+    <ClCompile Include="BMD_FBX.cpp" />
     <ClCompile Include="Core.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="EvoMonsterBoxBmd.cpp" />
+    <ClCompile Include="FBX.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="FormulaDataBmd.cpp" />
     <ClCompile Include="ItemAddOptionBmd.cpp" />
     <ClCompile Include="ItemSetBmd.cpp" />
@@ -102,6 +108,8 @@
     <ClInclude Include="ATT.h" />
     <ClInclude Include="BaseIO.h" />
     <ClInclude Include="BMD.h" />
+    <ClInclude Include="BMD_SMD.h" />
+    <ClInclude Include="BMD_FBX.h" />
     <ClInclude Include="CameraAnglePositionBmd.h" />
     <ClInclude Include="ClientStructures.h" />
     <ClInclude Include="Core.h">
@@ -109,6 +117,7 @@
     </ClInclude>
     <ClInclude Include="EvoMonsterBoxBmd.h" />
     <ClInclude Include="ExcellentOptionBmd.h" />
+    <ClInclude Include="FBX.h" />
     <ClInclude Include="FormulaDataBmd.h" />
     <ClInclude Include="GraphicConvertor.h" />
     <ClInclude Include="HelpDataBmd.h" />

@@ -7,7 +7,7 @@
 #include "OZP.h"
 #include "OZD.h"
 #include "OZG.h"
-#include "BMD.h"
+#include "BMD_SMD.h"
 #include "MAP.h"
 #include "ATT.h"
 #include "OBJ.h"
@@ -111,7 +111,7 @@ BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 	unique_ptr<OZP> ozp;
 	unique_ptr<OZD> ozd;
 	unique_ptr<OZG> ozg;
-	unique_ptr<BMD> bmd;
+	unique_ptr<BMD_SMD> bmd;
 	unique_ptr<MAP> map;
 	unique_ptr<ATT> att;
 	unique_ptr<OBJ> obj;
@@ -138,7 +138,7 @@ BOOL UnpackFile(const char* szInputPath, const char* szOutputPath)
 		ozg = unique_ptr<OZG>(new OZG());
 		return ozg->Unpack(szInputPath, szOutputPath);
 	case INT_BMD:
-		bmd = unique_ptr<BMD>(new BMD());
+		bmd = unique_ptr<BMD_SMD>(new BMD_SMD());
 		return bmd->Unpack(szInputPath, szOutputPath);
 	case INT_MAP:
 		map = unique_ptr<MAP>(new MAP());
@@ -162,7 +162,7 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 	unique_ptr<OZP> ozp;
 	unique_ptr<OZD> ozd;
 	unique_ptr<OZG> ozg;
-	unique_ptr<BMD> bmd;
+	unique_ptr<BMD_SMD> bmd;
 	unique_ptr<MAP> map;
 	unique_ptr<ATT> att;
 	unique_ptr<OBJ> obj;
@@ -189,7 +189,7 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 		ozg = unique_ptr<OZG>(new OZG());
 		return ozg->Pack(szInputPath, szOutputPath);
 	case INT_SMD:
-		bmd = unique_ptr<BMD>(new BMD());
+		bmd = unique_ptr<BMD_SMD>(new BMD_SMD());
 		return bmd->Pack(szInputPath, szOutputPath);
 	case INT_PAM:
 		map = unique_ptr<MAP>(new MAP());
@@ -208,12 +208,15 @@ BOOL PackFile(const char* szInputPath, const char* szOutputPath)
 
 void FolderProcess(fs::path inputPath, fs::path outputPath)
 {
+	if (!fs::is_directory(inputPath)) return;
+
 	vector<fs::path> paths;
-	vector<fs::path> dirs; mutex mt;
+	vector<fs::path> dirs;
 	fs::directory_iterator iters1(inputPath);
 	std::copy_if(fs::begin(iters1), fs::end(iters1), std::back_inserter(paths), [](const fs::path& p) {return fs::is_regular_file(p); });
 	fs::directory_iterator iters2(inputPath);
 	std::copy_if(fs::begin(iters2), fs::end(iters2), std::back_inserter(dirs), [](const fs::path& p) {return fs::is_directory(p) && p.filename().string() != "anims"; });
+
 
 	//Using parallel aglorithms C++17
 	std::for_each(
@@ -254,7 +257,7 @@ int main(int argc, char** argv)
 	std::cout.rdbuf(log.rdbuf());
 #endif // !NO_CORE_DEBUG_LOG
 
-	BMD::LoadLockPostionData("LockPositionData.txt");
+	BMD_SMD::LoadLockPostionData("LockPositionData.txt");
 
 	const char* szInputPath = nullptr;
 	const char* szOutputPath = nullptr;

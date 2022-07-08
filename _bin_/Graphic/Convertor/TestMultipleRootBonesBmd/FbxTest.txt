@@ -1,0 +1,6 @@
+This example (Wing06.bmd) originally has 2 root bones: "Bip01" & "Box01" 
+(root bone: bone which has not attached to any parent bone node).
+Unreal Engine will not import any FBX file has multiple bone roots.
+
+[FIXED] 
+ + Manually add a new root node.

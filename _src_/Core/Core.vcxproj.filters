@@ -160,7 +160,7 @@
     <ClInclude Include="CameraAnglePositionBmd.h">
       <Filter>Source Files\Client\Data</Filter>
     </ClInclude>
-    <ClInclude Include="BMD.h">
+    <ClInclude Include="BMD_SMD.h">
       <Filter>Source Files\Client\Graphic\BMD</Filter>
     </ClInclude>
     <ClInclude Include="ZzzMathLib.h">
@@ -177,6 +177,15 @@
     </ClInclude>
     <ClInclude Include="ConvertorTemplate.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BMD_FBX.h">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
+    </ClInclude>
+    <ClInclude Include="BMD.h">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX.h">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -240,7 +249,7 @@
     <ClCompile Include="PetBmd.cpp">
       <Filter>Source Files\Client\Data</Filter>
     </ClCompile>
-    <ClCompile Include="BMD.cpp">
+    <ClCompile Include="BMD_SMD.cpp">
       <Filter>Source Files\Client\Graphic\BMD</Filter>
     </ClCompile>
     <ClCompile Include="ZzzMathLib.cpp">
@@ -254,6 +263,12 @@
     </ClCompile>
     <ClCompile Include="OBJ.cpp">
       <Filter>Source Files\Client\Graphic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="BMD_FBX.cpp">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
+    </ClCompile>
+    <ClCompile Include="FBX.cpp">
+      <Filter>Source Files\Client\Graphic\BMD</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

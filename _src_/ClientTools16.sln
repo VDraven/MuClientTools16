@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1169
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{778FD18A-CFFA-4B11-97CE-C4C01492DAFF}"
 EndProject
@@ -103,6 +103,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuudShopViewInfo_bmd", "Too
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CameraAnglePosition_bmd", "Tools\Data\CameraAnglePosition_bmd\CameraAnglePosition_bmd.vcxproj", "{39F1A78A-7962-400B-8F2B-E9AA18664D57}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bmd2Fbx", "Tools\Graphic\Bmd2Fbx\AllInOne2.vcxproj", "{68B18002-C423-4A77-BA8A-C32E854158FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x86 = Release|x86
@@ -200,6 +202,8 @@ Global
 		{7DADC487-E18B-4AB8-93A6-3FDBD9F55358}.Release|x86.Build.0 = Release|Win32
 		{39F1A78A-7962-400B-8F2B-E9AA18664D57}.Release|x86.ActiveCfg = Release|Win32
 		{39F1A78A-7962-400B-8F2B-E9AA18664D57}.Release|x86.Build.0 = Release|Win32
+		{68B18002-C423-4A77-BA8A-C32E854158FA}.Release|x86.ActiveCfg = Release|Win32
+		{68B18002-C423-4A77-BA8A-C32E854158FA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -253,6 +257,7 @@ Global
 		{5BA58389-8D6A-41E6-94AA-97D595F86C62} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{7DADC487-E18B-4AB8-93A6-3FDBD9F55358} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
 		{39F1A78A-7962-400B-8F2B-E9AA18664D57} = {8E526C0E-CB8B-463D-B48E-B58869F684B2}
+		{68B18002-C423-4A77-BA8A-C32E854158FA} = {6030C4BC-4F69-4318-B13F-81E8CBA2BA05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78828549-D639-412A-A60F-6AC294C049AF}

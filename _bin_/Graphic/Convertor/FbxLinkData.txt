@@ -1,0 +1,2402 @@
+HelmMale27.bmd	Adamantine_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Adamantine
+ArmorMale27.bmd	Adamantine_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Adamantine
+PantMale27.bmd	Adamantine_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Adamantine
+GloveMale27.bmd	Adamantine_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Adamantine
+BootMale27.bmd	Adamantine_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Adamantine
+new_Helm05.bmd	Adamantine_Mask_New.fbx	Items\Group_1\Helm	Items\Group_2\Adamantine_New
+new_Armor05.bmd	Adamantine_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Adamantine_New
+new_Pant05.bmd	Adamantine_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Adamantine_New
+new_Glove05.bmd	Adamantine_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Adamantine_New
+new_Boot05.bmd	Adamantine_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Adamantine_New
+AmbitionShield.bmd	Ambition_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Ambition
+HelmMale4005.bmd	Ambition_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Ambition
+ArmorMale4005.bmd	Ambition_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Ambition
+PantMale4005.bmd	Ambition_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Ambition
+GloveMale4005.bmd	Ambition_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Ambition
+BootMale4005.bmd	Ambition_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Ambition
+staff18.bmd	Ancient_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Ancient
+HelmMale42.bmd	Ancient_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Ancient
+ArmorMale42.bmd	Ancient_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Ancient
+PantMale42.bmd	Ancient_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Ancient
+GloveMale42.bmd	Ancient_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Ancient
+BootMale42.bmd	Ancient_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Ancient
+CW_HelmMale01.bmd	Ashcrow_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Ashcrow
+CW_ArmorMale01.bmd	Ashcrow_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Ashcrow
+CW_PantMale01.bmd	Ashcrow_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Ashcrow
+CW_GloveMale01.bmd	Ashcrow_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Ashcrow
+CW_BootMale01.bmd	Ashcrow_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Ashcrow
+HelmMale17.bmd	Black_Dragon_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Black_Dragon
+ArmorMale17.bmd	Black_Dragon_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Black_Dragon
+PantMale17.bmd	Black_Dragon_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Black_Dragon
+GloveMale17.bmd	Black_Dragon_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Black_Dragon
+BootMale17.bmd	Black_Dragon_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Black_Dragon
+absolute02_sword.bmd	Blessed_Divine_Sword_of_Archangel.fbx	Items\Group_1\Sword	Items\Group_2\Blessed_Divine_Archangel
+sword42.bmd	Blessed_Divine_Claw_of_Archangel.fbx	Items\Group_1\Sword	Items\Group_2\Blessed_Divine_Archangel
+BlessedAbsoluteShortSword.bmd	Blessed_Divine_Short_Sword_of_Archangel.fbx	Items\Group_1\Sword	Items\Group_2\Blessed_Divine_Archangel
+absolute_septer.bmd	Blessed_Divine_Scepter_of_Archangel.fbx	Items\Group_1\Mace	Items\Group_2\Blessed_Divine_Archangel
+Bless_Absolute_Mace.bmd	Blessed_Divine_Runic_Mace_of_Archangel.fbx	Items\Group_1\Mace	Items\Group_2\Blessed_Divine_Archangel
+blessedabsolute_lance.bmd	Blessed_Divine_Lance_of_Archangel.fbx	Items\Group_1\Spear	Items\Group_2\Blessed_Divine_Archangel
+absolute_gunbow.bmd	Blessed_Divine_Crossbow_of_Archangel.fbx	Items\Group_1\Bow	Items\Group_2\Blessed_Divine_Archangel
+absolute02_staff.bmd	Blessed_Divine_Staff_of_Archangel.fbx	Items\Group_1\Staff	Items\Group_2\Blessed_Divine_Archangel
+absolute_stick.bmd	Blessed_Divine_Stick_of_Archangel.fbx	Items\Group_1\Staff	Items\Group_2\Blessed_Divine_Archangel
+blood_angelsword_s.bmd	Bloodangel_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Bloodangel
+blood_anglesword.bmd	Bloodangel_Magic_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Bloodangel
+BloodangelClo.bmd	Bloodangel_Claw.fbx	Items\Group_1\Sword	Items\Group_2\Bloodangel
+BloodangelShortSword.bmd	Bloodangel_Short_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Bloodangel
+booldangel_sapter.bmd	Bloodangel_Scepter.fbx	Items\Group_1\Mace	Items\Group_2\Bloodangel
+BloodAngel_Mace.bmd	Bloodangel_Runic_Mace.fbx	Items\Group_1\Mace	Items\Group_2\Bloodangel
+bloodangellance01.bmd	Bloodangel_Lance.fbx	Items\Group_1\Spear	Items\Group_2\Bloodangel
+bloodangel_bow.bmd	Bloodangel_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Bloodangel
+hs_quiverLV3.bmd	Bloodangel_Quiver.fbx	Items\Group_1\Bow	Items\Group_2\Bloodangel
+bloodangelstaff01.bmd	Bloodangel_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Bloodangel
+bloodangelstick01.bmd	Bloodangel_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Bloodangel
+Yigye1Book.bmd	Bloodangel_Book.fbx	Items\Group_1\Staff	Items\Group_2\Bloodangel
+Masteryshild_dk01.bmd	Bloodangel_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Bloodangel
+HelmMale100_elf.bmd	Bloodangel_Elf_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Elf
+ArmorMale100.bmd	Bloodangel_Elf_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Elf
+PantMale100_elf.bmd	Bloodangel_Elf_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Elf
+GloveMale100.bmd	Bloodangel_Elf_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Elf
+BootMale100.bmd	Bloodangel_Elf_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Elf
+HelmMale98_fight.bmd	Bloodangel_Fighter_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Fighter
+ArmorMale98.bmd	Bloodangel_Fighter_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Fighter
+PantMale98.bmd	Bloodangel_Fighter_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Fighter
+BootMale98.bmd	Bloodangel_Fighter_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Fighter
+HelmMale99_guncrasher.bmd	Bloodangel_Gun_Crusher_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Gun_Crusher
+ArmorMale99.bmd	Bloodangel_Gun_Crusher_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Gun_Crusher
+PantMale99.bmd	Bloodangel_Gun_Crusher_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Gun_Crusher
+GloveMale99.bmd	Bloodangel_Gun_Crusher_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Gun_Crusher
+BootMale99.bmd	Bloodangel_Gun_Crusher_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Gun_Crusher
+HelmMale98_knight.bmd	Bloodangel_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Knight
+ArmorMale98.bmd	Bloodangel_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Knight
+PantMale98.bmd	Bloodangel_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Knight
+GloveMale98.bmd	Bloodangel_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Knight
+BootMale98.bmd	Bloodangel_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Knight
+HelmMale97.bmd	Bloodangel_Lancer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Lancer
+ArmorMale97.bmd	Bloodangel_Lancer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Lancer
+PantMale97.bmd	Bloodangel_Lancer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Lancer
+GloveMale97.bmd	Bloodangel_Lancer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Lancer
+BootMale97.bmd	Bloodangel_Lancer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Lancer
+HelmMale99_dark.bmd	Bloodangel_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Lord
+ArmorMale99.bmd	Bloodangel_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Lord
+PantMale99.bmd	Bloodangel_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Lord
+GloveMale99.bmd	Bloodangel_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Lord
+BootMale99.bmd	Bloodangel_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Lord
+ArmorMale98.bmd	Bloodangel_Magic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Magic
+PantMale98.bmd	Bloodangel_Magic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Magic
+GloveMale98.bmd	Bloodangel_Magic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Magic
+BootMale98.bmd	Bloodangel_Magic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Magic
+HelmMale100_benzia.bmd	Bloodangel_Slayer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Slayer
+ArmorMale100_benzia.bmd	Bloodangel_Slayer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Slayer
+PantMale100_benzia.bmd	Bloodangel_Slayer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Slayer
+GloveMale100.bmd	Bloodangel_Slayer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Slayer
+BootMale100.bmd	Bloodangel_Slayer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Slayer
+HelmMale100_alice.bmd	Bloodangel_Summoner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Summoner
+ArmorMale100.bmd	Bloodangel_Summoner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Summoner
+PantMale100_alice.bmd	Bloodangel_Summoner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Summoner
+GloveMale100.bmd	Bloodangel_Summoner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Summoner
+BootMale100.bmd	Bloodangel_Summoner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Summoner
+HelmMale99.bmd	Bloodangel_Wizard_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel\Bloodangel_Wizard
+ArmorMale99.bmd	Bloodangel_Wizard_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel\Bloodangel_Wizard
+PantMale99.bmd	Bloodangel_Wizard_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel\Bloodangel_Wizard
+GloveMale99.bmd	Bloodangel_Wizard_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel\Bloodangel_Wizard
+BootMale99.bmd	Bloodangel_Wizard_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel\Bloodangel_Wizard
+HelmMale100_Rune.bmd	Bloodangel_Runic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bloodangel_Runic\Bloodangel_Runic
+ArmorMale100.bmd	Bloodangel_Runic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bloodangel_Runic\Bloodangel_Runic
+PantMale100_alice.bmd	Bloodangel_Runic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bloodangel_Runic\Bloodangel_Runic
+GloveMale100.bmd	Bloodangel_Runic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bloodangel_Runic\Bloodangel_Runic
+BootMale100.bmd	Bloodangel_Runic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bloodangel_Runic\Bloodangel_Runic
+Blue_eyeShortSword.bmd	Blue_Eye_Short_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Blue_Eye
+hs_blueeyeknightA.bmd	Blue_Eye_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Blue_Eye
+blue_eye_magicsword01.bmd	Blue_Eye_Magic_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Blue_Eye
+sword44.bmd	Blue_Eye_Claw.fbx	Items\Group_1\Sword	Items\Group_2\Blue_Eye
+Blue_eye_road_secpter.bmd	Blue_Eye_Scepter.fbx	Items\Group_1\Mace	Items\Group_2\Blue_Eye
+mace5masterf.bmd	Blue_Eye_Runic_Mace.fbx	Items\Group_1\Mace	Items\Group_2\Blue_Eye
+hs_blueeyelance.bmd	Blue_Eye_Lance.fbx	Items\Group_1\Spear	Items\Group_2\Blue_Eye
+blue_eyebow_stand.bmd	Blue_Eye_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Blue_Eye
+Quiver_lv07.bmd	Blue_Eye_Quiver.fbx	Items\Group_1\Bow	Items\Group_2\Blue_Eye
+blue_eye_ws.bmd	Blue_Eye_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Blue_Eye
+blueeye_summoner.bmd	Blue_Eye_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Blue_Eye
+Yigye5Book.bmd	Blue_Eye_Book.fbx	Items\Group_1\Staff	Items\Group_2\Blue_Eye
+Masteryshild_dk05.bmd	Blue_Eye_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Blue_Eye
+HelmMale117_elf.bmd	Blue_Eye_Elf_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Elf
+ArmorMale117.bmd	Blue_Eye_Elf_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Elf
+PantMale117.bmd	Blue_Eye_Elf_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Elf
+GloveMale117.bmd	Blue_Eye_Elf_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Elf
+BootMale117.bmd	Blue_Eye_Elf_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Elf
+HelmMale120_fight.bmd	Blue_Eye_Fighter_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Fighter
+ArmorMale120_fight.bmd	Blue_Eye_Fighter_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Fighter
+PantMale120_fight.bmd	Blue_Eye_Fighter_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Fighter
+BootMale120_fight.bmd	Blue_Eye_Fighter_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Fighter
+HelmMale120_knight.bmd	Blue_Eye_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Knight
+ArmorMale120_knight.bmd	Blue_Eye_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Knight
+PantMale120_knight.bmd	Blue_Eye_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Knight
+GloveMale120_knight.bmd	Blue_Eye_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Knight
+BootMale120_knight.bmd	Blue_Eye_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Knight
+HelmMale118.bmd	Blue_Eye_Lancer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Lancer
+ArmorMale118.bmd	Blue_Eye_Lancer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Lancer
+PantMale118.bmd	Blue_Eye_Lancer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Lancer
+GloveMale118.bmd	Blue_Eye_Lancer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Lancer
+BootMale118.bmd	Blue_Eye_Lancer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Lancer
+HelmMale119_dark.bmd	Blue_Eye_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Lord
+ArmorMale119.bmd	Blue_Eye_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Lord
+PantMale119.bmd	Blue_Eye_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Lord
+GloveMale119.bmd	Blue_Eye_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Lord
+BootMale119.bmd	Blue_Eye_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Lord
+ArmorMale120_ma.bmd	Blue_Eye_Magic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Magic
+PantMale120_ma.bmd	Blue_Eye_Magic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Magic
+GloveMale120_ma.bmd	Blue_Eye_Magic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Magic
+BootMale120_ma.bmd	Blue_Eye_Magic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Magic
+HelmMale117_rune.bmd	Blue_Eye_Runic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Runic
+ArmorMale117.bmd	Blue_Eye_Runic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Runic
+PantMale117.bmd	Blue_Eye_Runic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Runic
+GloveMale117.bmd	Blue_Eye_Runic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Runic
+BootMale117.bmd	Blue_Eye_Runic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Runic
+HelmMale117_benzia.bmd	Blue_Eye_Slayer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Slayer
+ArmorMale117.bmd	Blue_Eye_Slayer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Slayer
+PantMale117_benzia.bmd	Blue_Eye_Slayer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Slayer
+GloveMale117.bmd	Blue_Eye_Slayer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Slayer
+BootMale117.bmd	Blue_Eye_Slayer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Slayer
+HelmMale117_alice.bmd	Blue_Eye_Summoner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Summoner
+ArmorMale117_alice.bmd	Blue_Eye_Summoner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Summoner
+PantMale117.bmd	Blue_Eye_Summoner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Summoner
+GloveMale117.bmd	Blue_Eye_Summoner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Summoner
+BootMale117.bmd	Blue_Eye_Summoner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Summoner
+HelmMale119_magic.bmd	Blue_Eye_Wizard_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Blue_Eye\Blue_Eye_Wizard
+ArmorMale119.bmd	Blue_Eye_Wizard_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Blue_Eye\Blue_Eye_Wizard
+PantMale119.bmd	Blue_Eye_Wizard_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Blue_Eye\Blue_Eye_Wizard
+GloveMale119.bmd	Blue_Eye_Wizard_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Blue_Eye\Blue_Eye_Wizard
+BootMale119.bmd	Blue_Eye_Wizard_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Blue_Eye\Blue_Eye_Wizard
+HelmMale05.bmd	Bone_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bone
+ArmorMale05.bmd	Bone_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bone
+PantMale05.bmd	Bone_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bone
+GloveMale05.bmd	Bone_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bone
+BootMale05.bmd	Bone_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bone
+HelmMale09.bmd	Brass_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Brass
+ArmorMale09.bmd	Brass_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Brass
+PantMale09.bmd	Brass_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Brass
+GloveMale09.bmd	Brass_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Brass
+BootMale09.bmd	Brass_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Brass
+HelmMale47.bmd	Brave_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Brave
+ArmorMale47.bmd	Brave_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Brave
+PantMale47.bmd	Brave_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Brave
+GloveMale47.bmd	Brave_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Brave
+BootMale47.bmd	Brave_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Brave
+shield13.bmd	Bronze_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Bronze
+HelmMale01.bmd	Bronze_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Bronze
+ArmorMale01.bmd	Bronze_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Bronze
+PantMale01.bmd	Bronze_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Bronze
+GloveMale01.bmd	Bronze_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Bronze
+BootMale01.bmd	Bronze_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Bronze
+mace07.bmd	Chaos_Dragon_Axe.fbx	Items\Group_1\Mace	Items\Group_2\Chaos
+bow07.bmd	Chaos_Nature_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Chaos
+staff08.bmd	Chaos_Lighting_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Chaos
+growlance400shield.bmd	Constant_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Constant
+HelmMale108.bmd	Constant_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Constant
+ArmorMale108.bmd	Constant_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Constant
+PantMale108.bmd	Constant_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Constant
+GloveMale108.bmd	Constant_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Constant
+Bootmale108.bmd	Constant_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Constant
+Shield_18.bmd	Crimson_Glory.fbx	Items\Group_1\Shield	Items\Group_2\Crimson_Skull
+HelmMale107.bmd	Crimson_Skull_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Crimson_Skull
+ArmorMale107.bmd	Crimson_Skull_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Crimson_Skull
+PantMale107.bmd	Crimson_Skull_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Crimson_Skull
+Bootmale107.bmd	Crimson_Skull_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Crimson_Skull
+darkdevilS.bmd	Dark_Devil_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Dark_Devil
+HelmMale56.bmd	Dark_Devil_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Dark_Devil
+ArmorMale56.bmd	Dark_Devil_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dark_Devil
+PantMale56.bmd	Dark_Devil_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dark_Devil
+GloveMale56.bmd	Dark_Devil_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dark_Devil
+BootMale56.bmd	Dark_Devil_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dark_Devil
+HelmMale29.bmd	Dark_Master_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Dark_Master
+ArmorMale29.bmd	Dark_Master_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dark_Master
+PantMale29.bmd	Dark_Master_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dark_Master
+GloveMale29.bmd	Dark_Master_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dark_Master
+BootMale29.bmd	Dark_Master_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dark_Master
+HelmMale18.bmd	Dark_Phoenix_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Dark_Phoenix
+ArmorMale18.bmd	Dark_Phoenix_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dark_Phoenix
+PantMale18.bmd	Dark_Phoenix_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dark_Phoenix
+GloveMale18.bmd	Dark_Phoenix_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dark_Phoenix
+BootMale18.bmd	Dark_Phoenix_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dark_Phoenix
+HelmMale23.bmd	Dark_Soul_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Dark_Soul
+ArmorMale23.bmd	Dark_Soul_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dark_Soul
+PantMale23.bmd	Dark_Soul_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dark_Soul
+GloveMale23.bmd	Dark_Soul_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dark_Soul
+BootMale23.bmd	Dark_Soul_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dark_Soul
+HelmMale28.bmd	Dark_Steel_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Dark_Steel
+ArmorMale28.bmd	Dark_Steel_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dark_Steel
+PantMale28.bmd	Dark_Steel_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dark_Steel
+GloveMale28.bmd	Dark_Steel_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dark_Steel
+BootMale28.bmd	Dark_Steel_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dark_Steel
+DarkangelSword.bmd	Darkangel_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Darkangel
+DarkangelMagicsword.bmd	Darkangel_Magic_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Darkangel
+sword39.bmd	Darkangel_Claw.fbx	Items\Group_1\Sword	Items\Group_2\Darkangel
+DarkangelShortSword.bmd	Darkangel_Short_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Darkangel
+Darkangel_Scepter.bmd	Darkangel_Scepter.fbx	Items\Group_1\Mace	Items\Group_2\Darkangel
+DarkAngel_Mace.bmd	Darkangel_Runic_Mace.fbx	Items\Group_1\Mace	Items\Group_2\Darkangel
+Darkangel_Lance.bmd	Darkangel_Lance.fbx	Items\Group_1\Spear	Items\Group_2\Darkangel
+Darkangel_Bow.bmd	Darkangel_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Darkangel
+hs_quiverLV4.bmd	Darkangel_Quiver.fbx	Items\Group_1\Bow	Items\Group_2\Darkangel
+Darkangel_Staff.bmd	Darkangel_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Darkangel
+DarkangelStick.bmd	Darkangel_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Darkangel
+Yigye2Book.bmd	Darkangel_Book.fbx	Items\Group_1\Staff	Items\Group_2\Darkangel
+Masteryshild_dk02.bmd	Darkangel_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Darkangel
+HelmMale102_elf.bmd	Darkangel_Elf_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Elf
+ArmorMale102_elf.bmd	Darkangel_Elf_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Elf
+PantMale102_elf.bmd	Darkangel_Elf_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Elf
+GloveMale102.bmd	Darkangel_Elf_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Elf
+BootMale102.bmd	Darkangel_Elf_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Elf
+HelmMale104_fight.bmd	Darkangel_Fighter_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Fighter
+ArmorMale104.bmd	Darkangel_Fighter_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Fighter
+PantMale104.bmd	Darkangel_Fighter_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Fighter
+BootMale104.bmd	Darkangel_Fighter_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Fighter
+HelmMale104_knight.bmd	Darkangel_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Knight
+ArmorMale104.bmd	Darkangel_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Knight
+PantMale104.bmd	Darkangel_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Knight
+GloveMale104.bmd	Darkangel_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Knight
+BootMale104.bmd	Darkangel_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Knight
+HelmMale101.bmd	Darkangel_Lancer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Lancer
+ArmorMale101.bmd	Darkangel_Lancer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Lancer
+PantMale101.bmd	Darkangel_Lancer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Lancer
+Glovemale101.bmd	Darkangel_Lancer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Lancer
+Bootmale101.bmd	Darkangel_Lancer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Lancer
+HelmMale103_dark.bmd	Darkangel_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Lord
+ArmorMale103.bmd	Darkangel_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Lord
+PantMale103.bmd	Darkangel_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Lord
+GloveMale103.bmd	Darkangel_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Lord
+BootMale103.bmd	Darkangel_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Lord
+ArmorMale104.bmd	Darkangel_Magic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Magic
+PantMale104.bmd	Darkangel_Magic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Magic
+GloveMale104.bmd	Darkangel_Magic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Magic
+BootMale104.bmd	Darkangel_Magic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Magic
+HelmMale102_Rune.bmd	Darkangel_Runic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Runic
+ArmorMale102_elf.bmd	Darkangel_Runic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Runic
+PantMale102_elf.bmd	Darkangel_Runic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Runic
+GloveMale102.bmd	Darkangel_Runic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Runic
+BootMale102.bmd	Darkangel_Runic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Runic
+HelmMale102_benzia.bmd	Darkangel_Slayer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Slayer
+ArmorMale102_benzia.bmd	Darkangel_Slayer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Slayer
+PantMale102_benzia.bmd	Darkangel_Slayer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Slayer
+GloveMale102.bmd	Darkangel_Slayer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Slayer
+BootMale102.bmd	Darkangel_Slayer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Slayer
+HelmMale102_alice.bmd	Darkangel_Summoner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Summoner
+ArmorMale102_alice.bmd	Darkangel_Summoner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Summoner
+PantMale102_alice.bmd	Darkangel_Summoner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Summoner
+GloveMale102.bmd	Darkangel_Summoner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Summoner
+BootMale102.bmd	Darkangel_Summoner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Summoner
+HelmMale103_magic.bmd	Darkangel_Wizard_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Darkangel\Darkangel_Wizard
+ArmorMale103.bmd	Darkangel_Wizard_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Darkangel\Darkangel_Wizard
+PantMale103.bmd	Darkangel_Wizard_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Darkangel\Darkangel_Wizard
+GloveMale103.bmd	Darkangel_Wizard_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Darkangel\Darkangel_Wizard
+BootMale103.bmd	Darkangel_Wizard_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Darkangel\Darkangel_Wizard
+staff19.bmd	Demonic_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Demonic
+HelmMale43.bmd	Demonic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Demonic
+ArmorMale43.bmd	Demonic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Demonic
+PantMale43.bmd	Demonic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Demonic
+GloveMale43.bmd	Demonic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Demonic
+BootMale43.bmd	Demonic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Demonic
+ArmorMale49.bmd	Destroy_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Destroy
+PantMale49.bmd	Destroy_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Destroy
+GloveMale49.bmd	Destroy_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Destroy
+BootMale49.bmd	Destroy_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Destroy
+Crossbow20.bmd	Great_Reign_Crossbow.fbx	Items\Group_1\Bow	Items\Group_2\Divine
+HelmMale51.bmd	Divine_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Divine
+ArmorMale51.bmd	Divine_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Divine
+PantMale51.bmd	Divine_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Divine
+GloveMale51.bmd	Divine_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Divine
+BootMale51.bmd	Divine_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Divine
+sword20.bmd	Divine_Sword_of_Archangel.fbx	Items\Group_1\Sword	Items\Group_2\Divine_Archangel
+sword41.bmd	Divine_Claw_of_Archangel.fbx	Items\Group_1\Sword	Items\Group_2\Divine_Archangel
+AbsoluteShortSword.bmd	Divine_Short_Sword_of_Archangel.fbx	Items\Group_1\Sword	Items\Group_2\Divine_Archangel
+saint.bmd	Divine_Scepter_of_Archangel.fbx	Items\Group_1\Mace	Items\Group_2\Divine_Archangel
+Absolute_Mace.bmd	Divine_Runic_Mace_of_Archangel.fbx	Items\Group_1\Mace	Items\Group_2\Divine_Archangel
+absolute_lance.bmd	Divine_Lance_of_Archangel.fbx	Items\Group_1\Spear	Items\Group_2\Divine_Archangel
+bow19.bmd	Divine_Crossbow_of_Archangel.fbx	Items\Group_1\Bow	Items\Group_2\Divine_Archangel
+gunmana01A.bmd	Divine_Magic_Gun_of_the_Archangel.fbx	Items\Group_1\Bow	Items\Group_2\Divine_Archangel
+staff11.bmd	Divine_Staff_of_Archangel.fbx	Items\Group_1\Staff	Items\Group_2\Divine_Archangel
+Archangelus.bmd	Divine_Stick_of_the_Archangel.fbx	Items\Group_1\Staff	Items\Group_2\Divine_Archangel
+spear03.bmd	Dragon_Lance.fbx	Items\Group_1\Spear	Items\Group_2\Dragon
+shield14.bmd	Dragon_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Dragon
+HelmMale02.bmd	Dragon_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Dragon
+ArmorMale02.bmd	Dragon_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dragon
+PantMale02.bmd	Dragon_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dragon
+GloveMale02.bmd	Dragon_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dragon
+BootMale02.bmd	Dragon_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dragon
+HDK_Sword.bmd	Bone_Blade.fbx	Items\Group_1\Sword	Items\Group_2\Dragon_Knight
+HDK_HelmMale01.bmd	Dragon_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Dragon_Knight
+HDK_ArmorMale01.bmd	Dragon_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Dragon_Knight
+HDK_PantMale01.bmd	Dragon_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Dragon_Knight
+HDK_GloveMale01.bmd	Dragon_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Dragon_Knight
+HDK_BootMale01.bmd	Dragon_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Dragon_Knight
+new_Helm06.bmd	Dragon_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Dragon_New
+new_Armor06.bmd	Dragon_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Dragon_New
+new_Pant06.bmd	Dragon_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Dragon_New
+new_Glove06.bmd	Dragon_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Dragon_New
+new_Boot06.bmd	Dragon_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Dragon_New
+CW_HelmMale02.bmd	Eclipse_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Eclipse
+CW_ArmorMale02.bmd	Eclipse_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Eclipse
+CW_PantMale02.bmd	Eclipse_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Eclipse
+CW_GloveMale02.bmd	Eclipse_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Eclipse
+CW_BootMale02.bmd	Eclipse_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Eclipse
+staff21.bmd	Eternal_Wing_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Eternal_Wing
+HelmMale45.bmd	Eternal_Wing_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Eternal_Wing
+ArmorMale45.bmd	Eternal_Wing_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Eternal_Wing
+PantMale45.bmd	Eternal_Wing_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Eternal_Wing
+GloveMale45.bmd	Eternal_Wing_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Eternal_Wing
+BootMale45.bmd	Eternal_Wing_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Eternal_Wing
+HelmMale126.bmd	Fidelity_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Fidelity
+ArmorMale126.bmd	Fidelity_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Fidelity
+PantMale126.bmd	Fidelity_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Fidelity
+GloveMale126.bmd	Fidelity_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Fidelity
+BootMale126.bmd	Fidelity_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Fidelity
+gunmanB01.bmd	Fray_Magic_Gun.fbx	Items\Group_1\Bow	Items\Group_2\Fray
+HelmMale139.bmd	Fray_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Fray
+ArmorMale139.bmd	Fray_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Fray
+PantMale139.bmd	Fray_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Fray
+GloveMale139.bmd	Fray_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Fray
+BootMale139.bmd	Fray_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Fray
+HelmMale139.bmd	Fray_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Fray_New
+ArmorMale139.bmd	Fray_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Fray_New
+PantMale139.bmd	Fray_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Fray_New
+GloveMale139.bmd	Fray_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Fray_New
+BootMale139.bmd	Fray_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Fray_New
+CW_HelmMale05.bmd	Glorious_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Glorious
+CW_ArmorMale05.bmd	Glorious_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Glorious
+CW_PantMale05.bmd	Glorious_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Glorious
+CW_GloveMale05.bmd	Glorious_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Glorious
+CW_BootMale05.bmd	Glorious_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Glorious
+GL380shieldA.bmd	Grace_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Grace
+HelmMale106.bmd	Grace_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Grace
+ArmorMale106.bmd	Grace_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Grace
+PantMale106.bmd	Grace_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Grace
+GloveMale106.bmd	Grace_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Grace
+Bootmale106.bmd	Grace_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Grace
+staff10.bmd	Dragon_Soul_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Grand_Soul
+shield16.bmd	Grand_Soul_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Grand_Soul
+HelmMale19.bmd	Grand_Soul_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Grand_Soul
+ArmorMale19.bmd	Grand_Soul_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Grand_Soul
+t_PantMale19.bmd	Grand_Soul_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Grand_Soul
+GloveMale19.bmd	Grand_Soul_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Grand_Soul
+BootMale19.bmd	Grand_Soul_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Grand_Soul
+HelmMale22.bmd	Great_Dragon_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Great_Dragon
+ArmorMale22.bmd	Great_Dragon_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Great_Dragon
+PantMale22.bmd	Great_Dragon_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Great_Dragon
+GloveMale22.bmd	Great_Dragon_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Great_Dragon
+BootMale22.bmd	Great_Dragon_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Great_Dragon
+HelmMale93.bmd	Gru_hill_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Gru_Hill
+ArmorMale93.bmd	Gru_Hill_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Gru_Hill
+PantMale93.bmd	Gru_Hill_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Gru_Hill
+GloveMale93.bmd	Gru_Hill_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Gru_Hill
+BootMale93.bmd	Gru_Hill_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Gru_Hill
+Shield_21.bmd	Guardian_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Guardian
+HelmElf05.bmd	Guardian_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Guardian
+ArmorElf05.bmd	Guardian_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Guardian
+PantElf05.bmd	Guardian_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Guardian
+GloveElf05.bmd	Guardian_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Guardian
+BootElf05.bmd	Guardian_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Guardian
+new_Helm07.bmd	Guardian_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Guardian_New
+new_Armor07.bmd	Guardian_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Guardian_New
+new_Pant07.bmd	Guardian_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Guardian_New
+new_Glove07.bmd	Guardian_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Guardian_New
+new_Boot07.bmd	Guardian_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Guardian_New
+HelmMale53.bmd	Hades_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Hades
+ArmorMale53.bmd	Hades_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Hades
+PantMale53.bmd	Hades_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Hades
+GloveMale53.bmd	Hades_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Hades
+BootMale53.bmd	Hades_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Hades
+ArmorMale4003.bmd	Hell_Night_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Hell_Night
+PantMale4003.bmd	Hell_Night_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Hell_Night
+GloveMale4003.bmd	Hell_Night_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Hell_Night
+BootMale4003.bmd	Hell_Night_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Hell_Night
+HelmMale95.bmd	Hirat_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Hirat
+ArmorMale95.bmd	Hirat_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Hirat
+PantMale95.bmd	Hirat_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Hirat
+GloveMale95.bmd	Hirat_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Hirat
+BootMale95.bmd	Hirat_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Hirat
+HelmMaleTest20.bmd	Holy_Spirit_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holy_Spirit
+ArmorMaleTest20.bmd	Holy_Spirit_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holy_Spirit
+PantMaleTest20.bmd	Holy_Spirit_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holy_Spirit
+GloveMaleTest20.bmd	Holy_Spirit_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holy_Spirit
+BootMaleTest20.bmd	Holy_Spirit_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holy_Spirit
+HolyAngelSword.bmd	Holyangel_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Holyangel
+HolyAngelMagicSword.bmd	Holyangel_Magic_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Holyangel
+Sword40.bmd	Holyangel_Claw.fbx	Items\Group_1\Sword	Items\Group_2\Holyangel
+HolyAngelShortSword.bmd	Holyangel_Short_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Holyangel
+HolyAngelSepter.bmd	Holyangel_Scepter.fbx	Items\Group_1\Mace	Items\Group_2\Holyangel
+HolyAngel_Mace.bmd	Holyangel_Runic_Mace.fbx	Items\Group_1\Mace	Items\Group_2\Holyangel
+HolyAngelLance.bmd	Holyangel_Lance.fbx	Items\Group_1\Spear	Items\Group_2\Holyangel
+HolyAngelBow.bmd	Holyangel_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Holyangel
+HolyAngelQuiver.bmd	Holyangel_Quiver.fbx	Items\Group_1\Bow	Items\Group_2\Holyangel
+HolyAngelStaff.bmd	Holyangel_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Holyangel
+HolyAngelStick.bmd	Holyangel_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Holyangel
+Yigye3Book.bmd	Holyangel_Book.fbx	Items\Group_1\Staff	Items\Group_2\Holyangel
+Masteryshild_dk03.bmd	Holyangel_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Holyangel
+HelmMale109_elf.bmd	Holyangel_Elf_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Elf
+ArmorMale109_elf.bmd	Holyangel_Elf_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Elf
+PantMale109_elf.bmd	Holyangel_Elf_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Elf
+GloveMale109.bmd	Holyangel_Elf_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Elf
+BootMale109.bmd	Holyangel_Elf_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Elf
+HelmMale112_knight.bmd	Holyangel_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Knight
+ArmorMale112.bmd	Holyangel_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Knight
+PantMale112.bmd	Holyangel_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Knight
+GloveMale112.bmd	Holyangel_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Knight
+BootMale112.bmd	Holyangel_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Knight
+HelmMale110.bmd	Holyangel_Lancer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Lancer
+ArmorMale110.bmd	Holyangel_Lancer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Lancer
+PantMale110.bmd	Holyangel_Lancer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Lancer
+GloveMale110.bmd	Holyangel_Lancer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Lancer
+BootMale110.bmd	Holyangel_Lancer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Lancer
+HelmMale111_dark.bmd	Holyangel_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Lord
+HelmMale112_fight.bmd	Holyangel_Fighter_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Lord
+ArmorMale111.bmd	Holyangel_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Lord
+ArmorMale112.bmd	Holyangel_Fighter_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Lord
+PantMale111.bmd	Holyangel_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Lord
+PantMale112.bmd	Holyangel_Fighter_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Lord
+GloveMale111.bmd	Holyangel_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Lord
+BootMale111.bmd	Holyangel_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Lord
+BootMale112.bmd	Holyangel_Fighter_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Lord
+ArmorMale112.bmd	Holyangel_Magic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Magic
+PantMale112.bmd	Holyangel_Magic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Magic
+GloveMale112.bmd	Holyangel_Magic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Magic
+BootMale112.bmd	Holyangel_Magic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Magic
+HelmMale109_rune.bmd	Holyangel_Runic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Runic
+ArmorMale109_elf.bmd	Holyangel_Runic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Runic
+PantMale109_elf.bmd	Holyangel_Runic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Runic
+GloveMale109.bmd	Holyangel_Runic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Runic
+BootMale109.bmd	Holyangel_Runic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Runic
+HelmMale109_banzia.bmd	Holyangel_Slayer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Slayer
+ArmorMale109_benzia.bmd	Holyangel_Slayer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Slayer
+PantMale109_benzia.bmd	Holyangel_Slayer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Slayer
+GloveMale109.bmd	Holyangel_Slayer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Slayer
+BootMale109.bmd	Holyangel_Slayer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Slayer
+HelmMale109_alice.bmd	Holyangel_Summoner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Summoner
+ArmorMale109_alice.bmd	Holyangel_Summoner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Summoner
+PantMale109_alice.bmd	Holyangel_Summoner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Summoner
+GloveMale109.bmd	Holyangel_Summoner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Summoner
+BootMale109.bmd	Holyangel_Summoner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Summoner
+HelmMale111_magic.bmd	Holyangel_Wizard_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Holyangel\Holyangel_Wizard
+ArmorMale111.bmd	Holyangel_Wizard_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Holyangel\Holyangel_Wizard
+PantMale111.bmd	Holyangel_Wizard_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Holyangel\Holyangel_Wizard
+GloveMale111.bmd	Holyangel_Wizard_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Holyangel\Holyangel_Wizard
+BootMale111.bmd	Holyangel_Wizard_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Holyangel\Holyangel_Wizard
+ArmorMale24.bmd	Hurricane_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Hurricane
+PantMale24.bmd	Hurricane_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Hurricane
+GloveMale24.bmd	Hurricane_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Hurricane
+BootMale24.bmd	Hurricane_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Hurricane
+CW_HelmMale03.bmd	Iris_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Iris
+CW_ArmorMale03.bmd	Iris_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Iris
+CW_PantMale03.bmd	Iris_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Iris
+CW_GloveMale03.bmd	Iris_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Iris
+CW_BootMale03.bmd	Iris_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Iris
+HelmMale123.bmd	Kenazu_Hood.fbx	Items\Group_1\Helm	Items\Group_2\Kenazu
+ArmorMale123.bmd	Kenazu_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Kenazu
+PantMale123.bmd	Kenazu_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Kenazu
+GloveMale123.bmd	Kenazu_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Kenazu
+BootMale123.bmd	Kenazu_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Kenazu
+CrazyWind.bmd	Lazy_Wind_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Lazy_Wind
+HelmMale75.bmd	Lazy_Wind_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Lazy_Wind
+ArmorMale75.bmd	Lazy_Wind_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Lazy_Wind
+PantMale75.bmd	Lazy_Wind_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Lazy_Wind
+GloveMale75.bmd	Lazy_Wind_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Lazy_Wind
+BootMale75.bmd	Lazy_Wind_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Lazy_Wind
+HelmMale06.bmd	Leather_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Leather
+ArmorMale06.bmd	Leather_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Leather
+PantMale06.bmd	Leather_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Leather
+GloveMale06.bmd	Leather_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Leather
+BootMale06.bmd	Leather_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Leather
+HelmMale06_guncrasher.bmd	Leather_Gunner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Leather_Gunner
+ArmorMale06_guncrasher.bmd	Leather_Gunner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Leather_Gunner
+PantMale06.bmd	Leather_Gunner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Leather_Gunner
+GloveMale06.bmd	Leather_Gunner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Leather_Gunner
+BootMale06.bmd	Leather_Gunner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Leather_Gunner
+sword12.bmd	Legendary_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Legendary
+staff06.bmd	Legendary_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Legendary
+shield15.bmd	Legendary_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Legendary
+HelmMale04.bmd	Legendary_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Legendary
+ArmorMale04.bmd	Legendary_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Legendary
+PantMale04.bmd	Legendary_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Legendary
+GloveMale04.bmd	Legendary_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Legendary
+BootMale04.bmd	Legendary_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Legendary
+new_Helm08.bmd	Legendary_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Legendary_New
+new_Armor08.bmd	Legendary_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Legendary_New
+new_Pant08.bmd	Legendary_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Legendary_New
+new_Glove08.bmd	Legendary_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Legendary_New
+new_Boot08.bmd	Legendary_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Legendary_New
+LightLord_Mace.bmd	Light_Lord_Runic_Mace.fbx	Items\Group_1\Mace	Items\Group_2\Light_Lord
+light_road.bmd	Light_Lord_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Light_Lord
+HelmMail3003.bmd	Light_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Light_Lord
+ArmorMail3003.bmd	Light_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Light_Lord
+PantMail3003.bmd	Light_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Light_Lord
+GloveMail3003.bmd	Light_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Light_Lord
+BootMail3003.bmd	Light_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Light_Lord
+HelmMale26.bmd	Light_Plate_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Light_Plate
+ArmorMale26.bmd	Light_Plate_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Light_Plate
+PantMale26.bmd	Light_Plate_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Light_Plate
+GloveMale26.bmd	Light_Plate_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Light_Plate
+BootMale26.bmd	Light_Plate_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Light_Plate
+hellnights.bmd	Magic_Knight_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Magic_Knight
+ArmorMale4003.bmd	Magic_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Magic_Knight
+PantMale4003.bmd	Magic_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Magic_Knight
+GloveMale4003.bmd	Magic_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Magic_Knight
+BootMale4003.bmd	Magic_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Magic_Knight
+HelmMale125.bmd	Night_Wing_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Night_Wing
+ArmorMale125.bmd	Night_Wing_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Night_Wing
+PantMale125.bmd	Night_Wing_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Night_Wing
+GloveMale125.bmd	Night_Wing_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Night_Wing
+BootMale125.bmd	Night_Wing_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Night_Wing
+HelmMale03.bmd	Pad_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Pad
+ArmorMale03.bmd	Pad_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Pad
+PantMale03.bmd	Pad_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Pad
+GloveMale03.bmd	Pad_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Pad
+BootMale03.bmd	Pad_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Pad
+ArmorMale48.bmd	Phantom_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Phantom
+PantMale48.bmd	Phantom_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Phantom
+GloveMale48.bmd	Phantom_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Phantom
+BootMale48.bmd	Phantom_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Phantom
+Sword36.bmd	Phoenix_Soul_Star.fbx	Items\Group_1\Sword	Items\Group_2\Phoenix_Soul
+HelmMale74.bmd	Phoenix_Soul_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Phoenix_Soul
+ArmorMale74.bmd	Phoenix_Soul_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Phoenix_Soul
+PantMale74.bmd	Phoenix_Soul_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Phoenix_Soul
+BootMale74.bmd	Phoenix_Soul_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Phoenix_Soul
+Sword35.bmd	Piercing_Blade_Glove.fbx	Items\Group_1\Sword	Items\Group_2\Piercing_Groove
+HelmMale62.bmd	Piercing_Groove_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Piercing_Groove
+ArmorMale62.bmd	Piercing_Groove_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Piercing_Groove
+PantMale62.bmd	Piercing_Groove_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Piercing_Groove
+BootMale62.bmd	Piercing_Groove_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Piercing_Groove
+shield10.bmd	Plate_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Plate
+HelmMale10.bmd	Plate_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Plate
+ArmorMale10.bmd	Plate_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Plate
+PantMale10.bmd	Plate_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Plate
+GloveMale10.bmd	Plate_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Plate
+BootMale10.bmd	Plate_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Plate
+HelmMale94.bmd	Princie_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Princie
+ArmorMale94.bmd	Princie_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Princie
+PantMale94.bmd	Princie_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Princie
+GloveMale94.bmd	Princie_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Princie
+BootMale94.bmd	Princie_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Princie
+HelmMale94.bmd	Princie_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Princie_New
+ArmorMale94.bmd	Princie_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Princie_New
+PantMale94.bmd	Princie_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Princie_New
+GloveMale94.bmd	Princie_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Princie_New
+BootMale94.bmd	Princie_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Princie_New
+HelmMale25.bmd	Red_Spirit_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Red_Spirit
+ArmorMale25.bmd	Red_Spirit_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Red_Spirit
+PantMale25.bmd	Red_Spirit_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Red_Spirit
+GloveMale25.bmd	Red_Spirit_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Red_Spirit
+BootMale25.bmd	Red_Spirit_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Red_Spirit
+staff17.bmd	Red_Wing_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Red_Wing
+HelmMale41.bmd	Red_Wing_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Red_Wing
+ArmorMale41.bmd	Red_Wing_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Red_Wing
+PantMale41.bmd	Red_Wing_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Red_Wing
+GloveMale41.bmd	Red_Wing_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Red_Wing
+BootMale41.bmd	Red_Wing_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Red_Wing
+new_Helm09.bmd	Red_Wing_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Red_Wing_New
+new_Armor09.bmd	Red_Wing_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Red_Wing_New
+new_Pant09.bmd	Red_Wing_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Red_Wing_New
+new_Glove09.bmd	Red_Wing_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Red_Wing_New
+new_Boot09.bmd	Red_Wing_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Red_Wing_New
+HelmMale92.bmd	Robust_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Robust
+ArmorMale92.bmd	Robust_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Robust
+PantMale92.bmd	Robust_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Robust
+GloveMale92.bmd	Robust_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Robust
+BootMale92.bmd	Robust_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Robust
+HelmMale92.bmd	Robust_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Robust_New
+ArmorMale92.bmd	Robust_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Robust_New
+PantMale92.bmd	Robust_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Robust_New
+GloveMale92.bmd	Robust_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Robust_New
+BootMale92.bmd	Robust_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Robust_New
+HelmMale26_guncrasher.bmd	Round_Gunner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Round_Gunner
+ArmorMale26.bmd	Round_Gunner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Round_Gunner
+PantMale26.bmd	Round_Gunner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Round_Gunner
+GloveMale26.bmd	Round_Gunner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Round_Gunner
+BootMale26.bmd	Round_Gunner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Round_Gunner
+HelmMale52.bmd	Royal_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Royal
+ArmorMale52.bmd	Royal_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Royal
+PantMale52.bmd	Royal_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Royal
+GloveMale52.bmd	Royal_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Royal
+BootMale52.bmd	Royal_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Royal
+HelmMale51_rune.bmd	Runic_Divine_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Divine
+ArmorMale51.bmd	Runic_Divine_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Divine
+PantMale51.bmd	Runic_Divine_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Divine
+GloveMale51.bmd	Runic_Divine_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Divine
+BootMale51.bmd	Runic_Divine_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Divine
+HelmMale121.bmd	Runic_Legendary_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Legendary
+ArmorMale121.bmd	Runic_Legendary_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Legendary
+PantMale121.bmd	Runic_Legendary_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Legendary
+GloveMale121.bmd	Runic_Legendary_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Legendary
+BootMale121.bmd	Runic_Legendary_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Legendary
+HelmMale121.bmd	Runic_Legendary_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Legendary_New
+ArmorMale121.bmd	Runic_Legendary_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Legendary_New
+PantMale121.bmd	Runic_Legendary_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Legendary_New
+GloveMale121.bmd	Runic_Legendary_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Legendary_New
+BootMale121.bmd	Runic_Legendary_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Legendary_New
+HelmMale57_rune.bmd	Runic_Light_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Light_Lord
+ArmorMale57_rune.bmd	Runic_Light_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Light_Lord
+PantMale57_rune.bmd	Runic_Light_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Light_Lord
+GloveMail3003.bmd	Runic_Light_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Light_Lord
+BootMail3003.bmd	Runic_Light_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Light_Lord
+HelmMale122.bmd	Runic_Pad_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Pad
+ArmorMale122.bmd	Runic_Pad_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Pad
+PantMale122.bmd	Runic_Pad_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Pad
+GloveMale122.bmd	Runic_Pad_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Pad
+BootMale122.bmd	Runic_Pad_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Pad
+HelmMale124.bmd	Runic_Sphinx_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Sphinx
+ArmorMale124.bmd	Runic_Sphinx_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Sphinx
+PantMale124.bmd	Runic_Sphinx_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Sphinx
+GloveMale124.bmd	Runic_Sphinx_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Sphinx
+BootMale124.bmd	Runic_Sphinx_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Sphinx
+HelmMale124.bmd	Runic_Sphinx_Mask_New.fbx	Items\Group_1\Helm	Items\Group_2\Runic_Sphinx_New
+ArmorMale124.bmd	Runic_Sphinx_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Runic_Sphinx_New
+PantMale124.bmd	Runic_Sphinx_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Runic_Sphinx_New
+GloveMale124.bmd	Runic_Sphinx_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Runic_Sphinx_New
+BootMale124.bmd	Runic_Sphinx_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Runic_Sphinx_New
+Sword33.bmd	Sacred_Glove.fbx	Items\Group_1\Sword	Items\Group_2\Sacred_Fire
+HelmMale60.bmd	Sacred_Fire_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Sacred_Fire
+ArmorMale60.bmd	Sacred_Fire_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Sacred_Fire
+PantMale60.bmd	Sacred_Fire_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Sacred_Fire
+BootMale60.bmd	Sacred_Fire_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Sacred_Fire
+HelmMale96.bmd	Sate_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Sate
+ArmorMale96.bmd	Sate_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Sate
+PantMale96.bmd	Sate_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Sate
+GloveMale96.bmd	Sate_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Sate
+BootMale96.bmd	Sate_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Sate
+HelmMale07.bmd	Scale_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Scale
+ArmorMale07.bmd	Scale_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Scale
+PantMale07.bmd	Scale_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Scale
+GloveMale07.bmd	Scale_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Scale
+BootMale07.bmd	Scale_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Scale
+HelmMale07_guncrasher.bmd	Scale_Gunner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Scale_Gunner
+ArmorMale07.bmd	Scale_Gunner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Scale_Gunner
+PantMale07.bmd	Scale_Gunner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Scale_Gunner
+GloveMale07.bmd	Scale_Gunner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Scale_Gunner
+BootMale07.bmd	Scale_Gunner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Scale_Gunner
+new_Helm01_guncrasher.bmd	Scale_Gunner_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Scale_Gunner_New
+new_Armor01.bmd	Scale_Gunner_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Scale_Gunner_New
+new_Pant01.bmd	Scale_Gunner_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Scale_Gunner_New
+new_Glove01.bmd	Scale_Gunner_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Scale_Gunner_New
+new_Boot01.bmd	Scale_Gunner_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Scale_Gunner_New
+new_Helm01.bmd	Scale_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Scale_New
+new_Armor01.bmd	Scale_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Scale_New
+new_Pant01.bmd	Scale_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Scale_New
+new_Glove01.bmd	Scale_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Scale_New
+new_Boot01.bmd	Scale_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Scale_New
+HelmMale50.bmd	Seraphim_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Seraphim
+ArmorMale50.bmd	Seraphim_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Seraphim
+PantMale50.bmd	Seraphim_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Seraphim
+GloveMale50.bmd	Seraphim_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Seraphim
+BootMale50.bmd	Seraphim_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Seraphim
+HelmElf02.bmd	Silk_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silk
+ArmorElf02.bmd	Silk_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silk
+PantElf02.bmd	Silk_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silk
+GloveElf02.bmd	Silk_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silk
+BootElf02.bmd	Silk_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silk
+new_Helm02.bmd	Silk_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Silk_New
+new_Armor02.bmd	Silk_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Silk_New
+new_Pant02.bmd	Silk_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Silk_New
+new_Glove02.bmd	Silk_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Silk_New
+new_Boot02.bmd	Silk_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Silk_New
+HelmMale128_elf.bmd	Silver_Heart_Elf_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Elf
+ArmorMale128_elf.bmd	Silver_Heart_Elf_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Elf
+PantMale128_elf.bmd	Silver_Heart_Elf_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Elf
+GloveMale128_elf.bmd	Silver_Heart_Elf_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Elf
+BootMale128_elf.bmd	Silver_Heart_Elf_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Elf
+HelmMale131.bmd 	Silver_Heart_Fighter_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Fighter
+ArmorMale131.bmd	Silver_Heart_Fighter_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Fighter
+PantMale131.bmd	Silver_Heart_Fighter_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Fighter
+BootMale131.bmd	Silver_Heart_Fighter_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Fighter
+HelmMale131.bmd 	Silver_Heart_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Knight
+ArmorMale131.bmd	Silver_Heart_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Knight
+PantMale131.bmd	Silver_Heart_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Knight
+GloveMale131.bmd	Silver_Heart_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Knight
+BootMale131.bmd	Silver_Heart_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Knight
+HelmMale129.bmd	Silver_Heart_Lancer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Lancer
+ArmorMale129.bmd	Silver_Heart_Lancer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Lancer
+PantMale129.bmd	Silver_Heart_Lancer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Lancer
+GloveMale129.bmd	Silver_Heart_Lancer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Lancer
+BootMale129.bmd	Silver_Heart_Lancer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Lancer
+HelmMale130.bmd	Silver_Heart_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Lord
+ArmorMale130.bmd	Silver_Heart_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Lord
+PantMale130.bmd	Silver_Heart_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Lord
+GloveMale130.bmd	Silver_Heart_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Lord
+BootMale130.bmd	Silver_Heart_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Lord
+ArmorMale131.bmd	Silver_Heart_Magic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Magic
+PantMale131.bmd	Silver_Heart_Magic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Magic
+GloveMale131.bmd	Silver_Heart_Magic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Magic
+BootMale131.bmd	Silver_Heart_Magic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Magic
+HelmMale128_rune.bmd	Silver_Heart_Runic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Runic
+ArmorMale128_rune.bmd	Silver_Heart_Runic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Runic
+PantMale128_rune.bmd	Silver_Heart_Runic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Runic
+GloveMale128_rune.bmd	Silver_Heart_Runic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Runic
+BootMale128_rune.bmd	Silver_Heart_Runic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Runic
+HelmMale128_benzia.bmd	Silver_Heart_Slayer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Slayer
+ArmorMale128_benzia.bmd	Silver_Heart_Slayer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Slayer
+PantMale128_benzia.bmd	Silver_Heart_Slayer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Slayer
+GloveMale128_benzia.bmd	Silver_Heart_Slayer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Slayer
+BootMale128_benzia.bmd	Silver_Heart_Slayer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Slayer
+HelmMale128_alice.bmd	Silver_Heart_Summoner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Summoner
+ArmorMale128_alice.bmd	Silver_Heart_Summoner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Summoner
+PantMale128_alice.bmd	Silver_Heart_Summoner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Summoner
+GloveMale128_alice.bmd	Silver_Heart_Summoner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Summoner
+BootMale128_alice.bmd	Silver_Heart_Summoner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Summoner
+HelmMale130.bmd	Silver_Heart_Wizard_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Silver_Heart\Silver_Heart_Wizard
+ArmorMale130.bmd	Silver_Heart_Wizard_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Silver_Heart\Silver_Heart_Wizard
+PantMale130.bmd	Silver_Heart_Wizard_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Silver_Heart\Silver_Heart_Wizard
+GloveMale130.bmd	Silver_Heart_Wizard_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Silver_Heart\Silver_Heart_Wizard
+BootMale130.bmd	Silver_Heart_Wizard_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Silver_Heart\Silver_Heart_Wizard
+HelmMale133.bmd	Slayer_Ancient_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Slayer_Ancient
+ArmorMale133.bmd	Slayer_Ancient_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Slayer_Ancient
+PantMale133.bmd	Slayer_Ancient_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Slayer_Ancient
+GloveMale133.bmd	Slayer_Ancient_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Slayer_Ancient
+BootMale133.bmd	Slayer_Ancient_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Slayer_Ancient
+HelmMale133.bmd	Slayer_Ancient_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Slayer_Ancient_New
+ArmorMale133.bmd	Slayer_Ancient_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Slayer_Ancient_New
+PantMale133.bmd	Slayer_Ancient_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Slayer_Ancient_New
+GloveMale133.bmd	Slayer_Ancient_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Slayer_Ancient_New
+BootMale133.bmd	Slayer_Ancient_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Slayer_Ancient_New
+HelmMale134.bmd	Slayer_Demonic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Slayer_Demonic
+ArmorMale134.bmd	Slayer_Demonic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Slayer_Demonic
+PantMale134.bmd	Slayer_Demonic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Slayer_Demonic
+GloveMale134.bmd	Slayer_Demonic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Slayer_Demonic
+BootMale134.bmd	Slayer_Demonic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Slayer_Demonic
+HelmMale134.bmd	Slayer_Demonic_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Slayer_Demonic_New
+ArmorMale134.bmd	Slayer_Demonic_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Slayer_Demonic_New
+PantMale134.bmd	Slayer_Demonic_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Slayer_Demonic_New
+GloveMale134.bmd	Slayer_Demonic_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Slayer_Demonic_New
+BootMale134.bmd	Slayer_Demonic_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Slayer_Demonic_New
+HelmMale132.bmd	Slayer_Red_Wing_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Slayer_Red_Wing
+ArmorMale132.bmd	Slayer_Red_Wing_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Slayer_Red_Wing
+PantMale132.bmd	Slayer_Red_Wing_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Slayer_Red_Wing
+GloveMale132.bmd	Slayer_Red_Wing_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Slayer_Red_Wing
+BootMale132.bmd	Slayer_Red_Wing_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Slayer_Red_Wing
+soulknightsword.bmd	Soul_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Soul
+SoulmagicSword.bmd	Soul_Magic_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Soul
+sword43.bmd	Soul_Claw.fbx	Items\Group_1\Sword	Items\Group_2\Soul
+SoulShortSword.bmd	Soul_Short_Sword.fbx	Items\Group_1\Sword	Items\Group_2\Soul
+seoulRoad_septer.bmd	Soul_Scepter.fbx	Items\Group_1\Mace	Items\Group_2\Soul
+Soul_Mace.bmd	Soul_Runic_Mace.fbx	Items\Group_1\Mace	Items\Group_2\Soul
+sd_soullance01_final.bmd	Soul_Lance.fbx	Items\Group_1\Spear	Items\Group_2\Soul
+hs_soularcherbow_s.bmd	Soul_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Soul
+hs_quiverLV6.bmd	Soul_Quiver.fbx	Items\Group_1\Bow	Items\Group_2\Soul
+sd_SoulWizardStaff01_max7.bmd	Soul_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Soul
+sd_soulsummoner.bmd	Soul_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Soul
+Yigye4Book.bmd	Soul_Book.fbx	Items\Group_1\Staff	Items\Group_2\Soul
+Masteryshild_dk04.bmd	Soul_Shield.fbx	Items\Group_1\Shield	Items\Group_2\Soul
+HelmMale113_elf.bmd	Soul_Elf_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Elf
+ArmorMale113_elf.bmd	Soul_Elf_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Elf
+PantMale113_elf.bmd	Soul_Elf_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Elf
+GloveMale113_elf.bmd	Soul_Elf_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Elf
+BootMale113_elf.bmd	Soul_Elf_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Elf
+HelmMale116.bmd	Soul_Fighter_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Fighter
+ArmorMale116.bmd	Soul_Fighter_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Fighter
+PantMale116.bmd	Soul_Fighter_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Fighter
+BootMale116.bmd	Soul_Fighter_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Fighter
+HelmMale116.bmd	Soul_Knight_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Knight
+ArmorMale116.bmd	Soul_Knight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Knight
+PantMale116.bmd	Soul_Knight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Knight
+GloveMale116.bmd	Soul_Knight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Knight
+BootMale116.bmd	Soul_Knight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Knight
+HelmMale114.bmd	Soul_Lancer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Lancer
+ArmorMale114.bmd	Soul_Lancer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Lancer
+PantMale114.bmd	Soul_Lancer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Lancer
+GloveMale114.bmd	Soul_Lancer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Lancer
+BootMale114.bmd	Soul_Lancer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Lancer
+HelmMale115_dark.bmd	Soul_Lord_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Lord
+ArmorMale115.bmd	Soul_Lord_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Lord
+PantMale115.bmd	Soul_Lord_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Lord
+GloveMale115.bmd	Soul_Lord_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Lord
+BootMale115.bmd	Soul_Lord_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Lord
+ArmorMale116.bmd	Soul_Magic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Magic
+PantMale116.bmd	Soul_Magic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Magic
+GloveMale116.bmd	Soul_Magic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Magic
+BootMale116.bmd	Soul_Magic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Magic
+HelmMale113_rune.bmd	Soul_Runic_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Runic
+ArmorMale113_elf.bmd	Soul_Runic_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Runic
+PantMale113_elf.bmd	Soul_Runic_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Runic
+GloveMale113_elf.bmd	Soul_Runic_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Runic
+BootMale113_elf.bmd	Soul_Runic_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Runic
+HelmMale113_benzia.bmd	Soul_Slayer_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Slayer
+ArmorMale113_benzia.bmd	Soul_Slayer_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Slayer
+PantMale113_benzia.bmd	Soul_Slayer_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Slayer
+GloveMale113_alice.bmd	Soul_Slayer_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Slayer
+BootMale113_alice.bmd	Soul_Slayer_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Slayer
+HelmMale113_alice.bmd	Soul_Summoner_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Summoner
+ArmorMale113_alice.bmd	Soul_Summoner_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Summoner
+PantMale113_alice.bmd	Soul_Summoner_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Summoner
+GloveMale113_alice.bmd	Soul_Summoner_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Summoner
+BootMale113_alice.bmd	Soul_Summoner_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Summoner
+HelmMale115_magic.bmd	Soul_Wizard_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Soul\Soul_Wizard
+ArmorMale115.bmd	Soul_Wizard_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Soul\Soul_Wizard
+PantMale115.bmd	Soul_Wizard_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Soul\Soul_Wizard
+GloveMale115.bmd	Soul_Wizard_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Soul\Soul_Wizard
+BootMale115.bmd	Soul_Wizard_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Soul\Soul_Wizard
+HelmMale08.bmd	Sphinx_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Sphinx
+ArmorMale08.bmd	Sphinx_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Sphinx
+PantMale08.bmd	Sphinx_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Sphinx
+GloveMale08.bmd	Sphinx_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Sphinx
+BootMale08.bmd	Sphinx_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Sphinx
+new_Helm03.bmd	Sphinx_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Sphinx_New
+new_Armor03.bmd	Sphinx_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Sphinx_New
+new_Pant03.bmd	Sphinx_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Sphinx_New
+new_Glove03.bmd	Sphinx_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Sphinx_New
+new_Boot03.bmd	Sphinx_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Sphinx_New
+HelmElf04.bmd	Spirit_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Spirit
+ArmorElf04.bmd	Spirit_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Spirit
+PantElf04.bmd	Spirit_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Spirit
+GloveElf04.bmd	Spirit_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Spirit
+BootElf04.bmd	Spirit_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Spirit
+HelmMail3003.bmd	Sticky_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Sticky
+ArmorMail3003.bmd	Sticky_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Sticky
+PantMail3003.bmd	Sticky_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Sticky
+GloveMail3003.bmd	Sticky_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Sticky
+BootMail3003.bmd	Sticky_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Sticky
+staff20.bmd	Storm_Blitz_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Storm_Blitz
+HelmMale44.bmd	Storm_Blitz_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Storm_Blitz
+ArmorMale44.bmd	Storm_Blitz_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Storm_Blitz
+PantMale44.bmd	Storm_Blitz_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Storm_Blitz
+GloveMale44.bmd	Storm_Blitz_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Storm_Blitz
+BootMale44.bmd	Storm_Blitz_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Storm_Blitz
+ArmorMale16.bmd	Storm_Crow_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Storm_Crow
+PantMale16.bmd	Storm_Crow_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Storm_Crow
+GloveMale16.bmd	Storm_Crow_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Storm_Crow
+BootMale16.bmd	Storm_Crow_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Storm_Crow
+new_Armor10.bmd	Storm_Crow_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Storm_Crow_New
+new_Pant10.bmd	Storm_Crow_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Storm_Crow_New
+new_Glove10.bmd	Storm_Crow_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Storm_Crow_New
+new_Boot10.bmd	Storm_Crow_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Storm_Crow_New
+HelmMale61.bmd	Storm_Jahad_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Storm_Jahad
+ArmorMale61.bmd	Storm_Jahad_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Storm_Jahad
+PantMale61.bmd	Storm_Jahad_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Storm_Jahad
+BootMale61.bmd	Storm_Jahad_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Storm_Jahad
+new_Helm11.bmd	Storm_Jahad_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Storm_Jahad_New
+new_Armor11.bmd	Storm_Jahad_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Storm_Jahad_New
+new_Pant11.bmd	Storm_Jahad_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Storm_Jahad_New
+new_Boot11.bmd	Storm_Jahad_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Storm_Jahad_New
+HelmMale75.bmd	Storm_Wing_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Storm_Wing
+ArmorMale75.bmd	Storm_Wing_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Storm_Wing
+PantMale75.bmd	Storm_Wing_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Storm_Wing
+GloveMale75.bmd	Storm_Wing_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Storm_Wing
+BootMale75.bmd	Storm_Wing_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Storm_Wing
+HelmMail_succubus.bmd	Succubus_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Succubus
+ArmorMail_succubus.bmd	Succubus_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Succubus
+PantMail_succubus.bmd	Succubus_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Succubus
+GloveMail_succubus.bmd	Succubus_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Succubus
+BootMail_succubus.bmd	Succubus_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Succubus
+HDK_Mace.bmd	Soleil_Scepter.fbx	Items\Group_1\Mace	Items\Group_2\Sunlight
+HDK_HelmMale05.bmd	Sunlight_Mask.fbx	Items\Group_1\Helm	Items\Group_2\Sunlight
+HDK_ArmorMale05.bmd	Sunlight_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Sunlight
+HDK_PantMale05.bmd	Sunlight_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Sunlight
+HDK_GloveMale05.bmd	Sunlight_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Sunlight
+HDK_BootMale05.bmd	Sunlight_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Sunlight
+HDK_Bow.bmd	Sylph_Wind_Bow.fbx	Items\Group_1\Bow	Items\Group_2\Sylphid_Ray
+HDK_HelmMale03.bmd	Sylphid_Ray_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Sylphid_Ray
+HDK_ArmorMale03.bmd	Sylphid_Ray_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Sylphid_Ray
+HDK_PantMale03.bmd	Sylphid_Ray_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Sylphid_Ray
+HDK_GloveMale03.bmd	Sylphid_Ray_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Sylphid_Ray
+HDK_BootMale03.bmd	Sylphid_Ray_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Sylphid_Ray
+sword19.bmd	Thunder_Blade.fbx	Items\Group_1\Sword	Items\Group_2\Thunder_Hawk
+staff04.bmd	Thunder_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Thunder_Hawk
+ArmorMale21.bmd	Thunder_Hawk_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Thunder_Hawk
+PantMale21.bmd	Thunder_Hawk_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Thunder_Hawk
+GloveMale21.bmd	Thunder_Hawk_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Thunder_Hawk
+BootMale21.bmd	Thunder_Hawk_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Thunder_Hawk
+HelmMale105.bmd	Tigris_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Tigris
+ArmorMale105.bmd	Tigris_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Tigris
+PantMale105.bmd	Tigris_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Tigris
+Bootmale105.bmd	Tigris_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Tigris
+HelmMale46.bmd	Titan_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Titan
+ArmorMale46.bmd	Titan_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Titan
+PantMale46.bmd	Titan_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Titan
+GloveMale46.bmd	Titan_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Titan
+BootMale46.bmd	Titan_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Titan
+HelmMale127.bmd	Trace_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Trace
+ArmorMale127.bmd	Trace_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Trace
+PantMale127.bmd	Trace_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Trace
+GloveMale127.bmd	Trace_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Trace
+BootMale127.bmd	Trace_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Trace
+CW_ArmorMale04.bmd	Valiant_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Valiant
+CW_PantMale04.bmd	Valiant_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Valiant
+CW_GloveMale04.bmd	Valiant_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Valiant
+CW_BootMale04.bmd	Valiant_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Valiant
+HDK_Staff.bmd	Grand_Viper_Staff.fbx	Items\Group_1\Staff	Items\Group_2\Venom_Mist
+HDK_HelmMale02.bmd	Venom_Mist_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Venom_Mist
+HDK_ArmorMale02.bmd	Venom_Mist_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Venom_Mist
+HDK_PantMale02.bmd	Venom_Mist_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Venom_Mist
+HDK_GloveMale02.bmd	Venom_Mist_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Venom_Mist
+HDK_BootMale02.bmd	Venom_Mist_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Venom_Mist
+HelmElf01.bmd	Vine_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Vine
+ArmorElf01.bmd	Vine_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Vine
+PantElf01.bmd	Vine_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Vine
+GloveElf01.bmd	Vine_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Vine
+BootElf01.bmd	Vine_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Vine
+staff16.bmd	Violent_Wind_Stick.fbx	Items\Group_1\Staff	Items\Group_2\Violent_Wind
+HelmMale40.bmd	Violent_Wind_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Violent_Wind
+ArmorMale40.bmd	Violent_Wind_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Violent_Wind
+PantMale40.bmd	Violent_Wind_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Violent_Wind
+GloveMale40.bmd	Violent_Wind_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Violent_Wind
+BootMale40.bmd	Violent_Wind_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Violent_Wind
+new_Helm04.bmd	Violent_Wind_Helm_New.fbx	Items\Group_1\Helm	Items\Group_2\Violent_Wind_New
+new_Armor04.bmd	Violent_Wind_Armor_New.fbx	Items\Group_1\Armor	Items\Group_2\Violent_Wind_New
+new_Pant04.bmd	Violent_Wind_Pants_New.fbx	Items\Group_1\Pants	Items\Group_2\Violent_Wind_New
+new_Glove04.bmd	Violent_Wind_Gloves_New.fbx	Items\Group_1\Gloves	Items\Group_2\Violent_Wind_New
+new_Boot04.bmd	Violent_Wind_Boots_New.fbx	Items\Group_1\Boots	Items\Group_2\Violent_Wind_New
+HDK_Sword2.bmd	Explosion_Blade.fbx	Items\Group_1\Sword	Items\Group_2\Volcano
+HDK_ArmorMale04.bmd	Volcano_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Volcano
+HDK_PantMale04.bmd	Volcano_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Volcano
+HDK_GloveMale04.bmd	Volcano_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Volcano
+HDK_BootMale04.bmd	Volcano_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Volcano
+HelmElf03.bmd	Wind_Helm.fbx	Items\Group_1\Helm	Items\Group_2\Wind
+ArmorElf03.bmd	Wind_Armor.fbx	Items\Group_1\Armor	Items\Group_2\Wind
+PantElf03.bmd	Wind_Pants.fbx	Items\Group_1\Pants	Items\Group_2\Wind
+GloveElf03.bmd	Wind_Gloves.fbx	Items\Group_1\Gloves	Items\Group_2\Wind
+BootElf03.bmd	Wind_Boots.fbx	Items\Group_1\Boots	Items\Group_2\Wind
+sword01.bmd	Kris.fbx	Items\Group_1\Sword
+sword02.bmd	Short_Sword.fbx	Items\Group_1\Sword
+sword03.bmd	Rapier.fbx	Items\Group_1\Sword
+sword04.bmd	Katana.fbx	Items\Group_1\Sword
+sword05.bmd	Sword_of_Assassin.fbx	Items\Group_1\Sword
+sword06.bmd	Blade.fbx	Items\Group_1\Sword
+sword07.bmd	Gladius.fbx	Items\Group_1\Sword
+sword08.bmd	Falchion.fbx	Items\Group_1\Sword
+sword09.bmd	Serpent_Sword.fbx	Items\Group_1\Sword
+sword10.bmd	Sword_of_Salamander.fbx	Items\Group_1\Sword
+sword11.bmd	Light_Saber.fbx	Items\Group_1\Sword
+sword13.bmd	Heliacal_Sword.fbx	Items\Group_1\Sword
+sword14.bmd	Double_Blade.fbx	Items\Group_1\Sword
+sword15.bmd	Lighting_Sword.fbx	Items\Group_1\Sword
+sword16.bmd	Giant_Sword.fbx	Items\Group_1\Sword
+sword17.bmd	Sword_of_Destruction.fbx	Items\Group_1\Sword
+sword18.bmd	Dark_Breaker.fbx	Items\Group_1\Sword
+sword21.bmd	Knight_Blade.fbx	Items\Group_1\Sword
+sword22.bmd	Dark_Reign_Blade.fbx	Items\Group_1\Sword
+CW_Sword.bmd	Daybreak.fbx	Items\Group_1\Sword
+CW_Sword2.bmd	Sword_Dancer.fbx	Items\Group_1\Sword
+Sword_27.bmd	Flameberge.fbx	Items\Group_1\Sword
+Sword_28.bmd	Sword_Breaker.fbx	Items\Group_1\Sword
+Sword_29.bmd	Rune_Bastard_Sword.fbx	Items\Group_1\Sword
+balhalla_sword.bmd	Sonic_Blade.fbx	Items\Group_1\Sword
+asura.bmd	Asura.fbx	Items\Group_1\Sword
+sword32.bmd	Rune_Blade.fbx	Items\Group_1\Sword
+Sword34.bmd	Holy_Storm_Claw.fbx	Items\Group_1\Sword
+balhalla_sword.bmd	Cyclone_Sword.fbx	Items\Group_1\Sword
+blastbreak.bmd	Blast_Break.fbx	Items\Group_1\Sword
+cokcangki.bmd	Pandora_Pick.fbx	Items\Group_1\Sword
+sword37.bmd	Panthera_Claw.fbx	Items\Group_1\Sword
+sword38.bmd	Devast_Claw.fbx	Items\Group_1\Sword
+FlatShortSword.bmd	Flat_Short_Sword.fbx	Items\Group_1\Sword
+DaciaShortSword.bmd	Dacia_Short_Sword.fbx	Items\Group_1\Sword
+CookriShortSword.bmd	Kukri_Short_Sword.fbx	Items\Group_1\Sword
+ParryingShortSword.bmd	Parrying_Short_Sword.fbx	Items\Group_1\Sword
+NovaculaShortSword.bmd	Novacula_Short_Sword.fbx	Items\Group_1\Sword
+axe01.bmd	Small_Axe.fbx	Items\Group_1\Axe
+axe02.bmd	Hand_Axe.fbx	Items\Group_1\Axe
+axe03.bmd	Double_Axe.fbx	Items\Group_1\Axe
+axe04.bmd	Tomahawk.fbx	Items\Group_1\Axe
+axe05.bmd	Elven_Axe.fbx	Items\Group_1\Axe
+axe06.bmd	Battle_Axe.fbx	Items\Group_1\Axe
+axe07.bmd	Nikea_Axe.fbx	Items\Group_1\Axe
+axe08.bmd	Larkan_Axe.fbx	Items\Group_1\Axe
+axe09.bmd	Crescent_Axe.fbx	Items\Group_1\Axe
+mace01.bmd	Mace.fbx	Items\Group_1\Mace
+mace02.bmd	Morning_Star.fbx	Items\Group_1\Mace
+mace03.bmd	Flail.fbx	Items\Group_1\Mace
+mace04.bmd	Great_Hammer.fbx	Items\Group_1\Mace
+mace05.bmd	Crystal_Morning_Star.fbx	Items\Group_1\Mace
+mace06.bmd	Crystal_Sword.fbx	Items\Group_1\Mace
+mace08.bmd	Elemental_Mace.fbx	Items\Group_1\Mace
+mace09.bmd	Battle_Scepter.fbx	Items\Group_1\Mace
+mace10.bmd	Master_Scepter.fbx	Items\Group_1\Mace
+mace11.bmd	Great_Scepter.fbx	Items\Group_1\Mace
+mace12.bmd	Lord_Scepter.fbx	Items\Group_1\Mace
+mace13.bmd	Great_Lord_Scepter.fbx	Items\Group_1\Mace
+CW_Mace.bmd	Shining_Scepter.fbx	Items\Group_1\Mace
+Mace_17.bmd	Frost_Mace.fbx	Items\Group_1\Mace
+Mace_18.bmd	Absolute_Scepter.fbx	Items\Group_1\Mace
+gamble_safter01.bmd	Striker_Scepter.fbx	Items\Group_1\Mace
+thunder_bolt.bmd	Thunderbolt.fbx	Items\Group_1\Mace
+hornofsteel.bmd	Horn_of_Steal.fbx	Items\Group_1\Mace
+mace08.bmd	Elemental_Runic_Mace.fbx	Items\Group_1\Mace
+Elhaz_Mace.bmd	Elhaz_Runic_Mace.fbx	Items\Group_1\Mace
+Mace_17.bmd	Frost_Runic_Mace.fbx	Items\Group_1\Mace
+spear01.bmd	Light_Spear.fbx	Items\Group_1\Spear
+spear02.bmd	Spear.fbx	Items\Group_1\Spear
+spear04.bmd	Giant_Trident.fbx	Items\Group_1\Spear
+spear05.bmd	Serpent_Spear.fbx	Items\Group_1\Spear
+spear06.bmd	Double_Poleaxe.fbx	Items\Group_1\Spear
+spear07.bmd	Halberd.fbx	Items\Group_1\Spear
+spear08.bmd	Berdysh.fbx	Items\Group_1\Spear
+spear09.bmd	Great_Scythe.fbx	Items\Group_1\Spear
+spear10.bmd	Bill_of_Balrog.fbx	Items\Group_1\Spear
+spear11.bmd	Dragon_Spear.fbx	Items\Group_1\Spear
+gamble_scyder01.bmd	Beuroba.fbx	Items\Group_1\Spear
+MagmaSpear.bmd	Magmus_Peer.fbx	Items\Group_1\Spear
+RapideLance.bmd	Lapid_Lance.fbx	Items\Group_1\Spear
+ConmocionLance.bmd	Conmocion_Lance.fbx	Items\Group_1\Spear
+PlumaLance.bmd	Pluma_Lance.fbx	Items\Group_1\Spear
+VisLance.bmd	Vis_Lance.fbx	Items\Group_1\Spear
+PrickleLance.bmd	Prickle_Lance.fbx	Items\Group_1\Spear
+AlacranLance.bmd	Alacran_Lance.fbx	Items\Group_1\Spear
+GL380lanceA.bmd	Rectus_Lance.fbx	Items\Group_1\Spear
+growlance400weapon.bmd	Russellite_Lance.fbx	Items\Group_1\Spear
+bow01.bmd	Short_Bow.fbx	Items\Group_1\Bow
+bow02.bmd	Bow.fbx	Items\Group_1\Bow
+bow03.bmd	Elven_Bow.fbx	Items\Group_1\Bow
+bow04.bmd	Battle_Bow.fbx	Items\Group_1\Bow
+bow05.bmd	Tiger_Bow.fbx	Items\Group_1\Bow
+bow06.bmd	Silver_Bow.fbx	Items\Group_1\Bow
+arrows01.bmd	Bolt.fbx	Items\Group_1\Bow
+Crossbow01.bmd	Crossbow.fbx	Items\Group_1\Bow
+Crossbow02.bmd	Golden_Crossbow.fbx	Items\Group_1\Bow
+Crossbow03.bmd	Arquebus.fbx	Items\Group_1\Bow
+Crossbow04.bmd	Light_Crossbow.fbx	Items\Group_1\Bow
+Crossbow05.bmd	Serpent_Crossbow.fbx	Items\Group_1\Bow
+Crossbow06.bmd	Bluewing_Crossbow.fbx	Items\Group_1\Bow
+Crossbow07.bmd	Aquagold_Crossbow.fbx	Items\Group_1\Bow
+arrows02.bmd	Arrow.fbx	Items\Group_1\Bow
+Crossbow17.bmd	Saint_Crossbow.fbx	Items\Group_1\Bow
+bow18.bmd	Celestial_Bow.fbx	Items\Group_1\Bow
+bow20.bmd	Arrow_Viper_Bow.fbx	Items\Group_1\Bow
+CW_Bow.bmd	Albatross_Bow.fbx	Items\Group_1\Bow
+Bow_24.bmd	Dark_Stinger.fbx	Items\Group_1\Bow
+gamblebow.bmd	Aileen_Bow.fbx	Items\Group_1\Bow
+bow26.bmd	Angelic_Bow.fbx	Items\Group_1\Bow
+devilcrossbow.bmd	Devil_Crossbow.fbx	Items\Group_1\Bow
+hs_quiverLV1.bmd	Combat_Quiver.fbx	Items\Group_1\Bow
+hs_quiverLV2.bmd	Devilwood_Quiver.fbx	Items\Group_1\Bow
+Gunmanw01.bmd	Entro_Magic_Gun.fbx	Items\Group_1\Bow
+staff01.bmd	Skull_Staff.fbx	Items\Group_1\Staff
+staff02.bmd	Angelic_Staff.fbx	Items\Group_1\Staff
+staff03.bmd	Serpent_Staff.fbx	Items\Group_1\Staff
+staff05.bmd	Gorgon_Staff.fbx	Items\Group_1\Staff
+staff07.bmd	Staff_of_Resurrection.fbx	Items\Group_1\Staff
+staff09.bmd	Staff_of_Destruction.fbx	Items\Group_1\Staff
+staff12.bmd	Staff_of_Kundun.fbx	Items\Group_1\Staff
+CW_Staff.bmd	Platina_Staff.fbx	Items\Group_1\Staff
+staff15.bmd	Mystery_Stick.fbx	Items\Group_1\Staff
+Book_of_Sahamutt.bmd	Book_of_Samut.fbx	Items\Group_1\Staff
+Book_of_Neil.bmd	Book_of_Neil.fbx	Items\Group_1\Staff
+Book_of_Rargle.bmd	Book_of_Lagle.fbx	Items\Group_1\Staff
+Staff_31.bmd	Deadly_Staff.fbx	Items\Group_1\Staff
+Staff_32.bmd	Inberial_Staff.fbx	Items\Group_1\Staff
+summonsprit.bmd	Summon_Spirit_Stick.fbx	Items\Group_1\Staff
+gamble_wand.bmd	Chrome_Staff.fbx	Items\Group_1\Staff
+gamble_stick.bmd	Raven_Stick.fbx	Items\Group_1\Staff
+MiracleStaff.bmd	Miracle_Staff.fbx	Items\Group_1\Staff
+kerberos_spear_dark_road.bmd	Spite_Staff.fbx	Items\Group_1\Staff
+shield01.bmd	Small_Shield.fbx	Items\Group_1\Shield
+shield02.bmd	Horn_Shield.fbx	Items\Group_1\Shield
+shield03.bmd	Kite_Shield.fbx	Items\Group_1\Shield
+shield04.bmd	Elven_Shield.fbx	Items\Group_1\Shield
+shield05.bmd	Buckler.fbx	Items\Group_1\Shield
+shield06.bmd	Dragon_Slayer_Shield.fbx	Items\Group_1\Shield
+shield07.bmd	Skull_Shield.fbx	Items\Group_1\Shield
+shield08.bmd	Spiked_Shield.fbx	Items\Group_1\Shield
+shield09.bmd	Tower_Shield.fbx	Items\Group_1\Shield
+shield11.bmd	Large_Round_Shield.fbx	Items\Group_1\Shield
+shield12.bmd	Serpent_Shield.fbx	Items\Group_1\Shield
+shield17.bmd	Elemental_Shield.fbx	Items\Group_1\Shield
+Shield_19.bmd	Salamander_Shield.fbx	Items\Group_1\Shield
+Shield_20.bmd	Frost_Barrier.fbx	Items\Group_1\Shield
+crosssheild.bmd	Cross_Shield.fbx	Items\Group_1\Shield
+RapideShield.bmd	Lapid_Shield.fbx	Items\Group_1\Shield
+PlumaShield.bmd	Pluma_Shield.fbx	Items\Group_1\Shield
+AlacranShield.bmd	Alacran_Shield.fbx	Items\Group_1\Shield
+VisShield.bmd	Vis_Shield.fbx	Items\Group_1\Shield
+shildrune_mixelf.bmd	Elhaz_Runic_Shield.fbx	Items\Group_1\Shield
+Wing01.bmd	Wings_of_Elf.fbx	Items\Group_1\Wings
+Wing02.bmd	Wings_of_Heaven.fbx	Items\Group_1\Wings
+Wing03.bmd	Wings_of_Satan.fbx	Items\Group_1\Wings
+Wing04.bmd	Wings_of_Spirits.fbx	Items\Group_1\Wings
+Wing05.bmd	Wings_of_Soul.fbx	Items\Group_1\Wings
+Wing06.bmd	Wings_of_Dragon.fbx	Items\Group_1\Wings
+Wing07.bmd	Wings_of_Darkness.fbx	Items\Group_1\Wings
+Gem01.bmd	Orb_of_Twisting_Slash.fbx	Items\Group_1\Skill\Orb
+Gem02.bmd	Orb_of_Healing.fbx	Items\Group_1\Skill\Orb
+Gem03.bmd	Orb_of_Greater_Defense.fbx	Items\Group_1\Skill\Orb
+Gem04.bmd	Orb_of_Greater_Damage.fbx	Items\Group_1\Skill\Orb
+Gem05.bmd	Orb_of_Summoning.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Rageful_Blow.fbx	Items\Group_1\Skill\Orb
+Gem07.bmd	Orb_of_Impale.fbx	Items\Group_1\Skill\Orb
+Gem08.bmd	Orb_of_Greater_Fortitude.fbx	Items\Group_1\Skill\Orb
+Jewel15.bmd	Jewel_of_Chaos.fbx	Items\Group_1\Misc\Mix
+Gem10.bmd	Orb_of_Fire_Slash.fbx	Items\Group_1\Skill\Orb
+Gem11.bmd	Orb_of_Penetration.fbx	Items\Group_1\Skill\Orb
+Gem12.bmd	Orb_of_Ice_Arrow.fbx	Items\Group_1\Skill\Orb
+Gem13.bmd	Orb_of_Death_Stab.fbx	Items\Group_1\Skill\Orb
+SkillScroll.bmd	Scroll_of_Fire_Burst.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Scroll_of_Summon.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Scroll_of_Critical_Damage.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Scroll_of_Electric_Spark.fbx	Items\Group_1\Skill\Scroll
+giftbox_r.bmd	Red_Ribbon_Box.fbx	Items\Group_1\Misc\Box
+giftbox_g.bmd	Green_Ribbon_Box.fbx	Items\Group_1\Misc\Box
+giftbox_b.bmd	Blue_Ribbon_Box.fbx	Items\Group_1\Misc\Box
+SkillScroll.bmd	Scroll_of_Fire_Scream.fbx	Items\Group_1\Skill\Scroll
+Wing08.bmd	Wings_of_Storm.fbx	Items\Group_1\Wings
+Wing09.bmd	Wings_of_Eternal.fbx	Items\Group_1\Wings
+Wing10.bmd	Wings_of_Illusion.fbx	Items\Group_1\Wings
+Wing11.bmd	Wings_of_Ruin.fbx	Items\Group_1\Wings
+DarkLordRobe02.bmd	Cape_of_Emperor.fbx	Items\Group_1\Wings
+Wing42.bmd	Wings_of_Curse.fbx	Items\Group_1\Wings
+Wing43.bmd	Wings_of_Despair.fbx	Items\Group_1\Wings
+Wing44.bmd	Wings_of_Dimension.fbx	Items\Group_1\Wings
+Gem06.bmd	Crystal_of_Destruction.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Crystal_of_Multi_Shot.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Crystal_of_Recovery.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Crystal_of_Flame_Strike.fbx	Items\Group_1\Skill\Orb
+SkillScroll.bmd	Scroll_of_Chaotic_Diseier.fbx	Items\Group_1\Skill\Scroll
+Wing50.bmd	Cape_of_Fighter.fbx	Items\Group_1\Wings
+Wing51.bmd	Cape_of_Overrule.fbx	Items\Group_1\Wings
+s30_seed.bmd	Seed_Fire.fbx	Items\Group_1\Misc\Seed
+s30_seed.bmd	Seed_Water.fbx	Items\Group_1\Misc\Seed
+s30_seed.bmd	Seed_Ice.fbx	Items\Group_1\Misc\Seed
+s30_seed.bmd	Seed_Wind.fbx	Items\Group_1\Misc\Seed
+s30_seed.bmd	Seed_Lightning.fbx	Items\Group_1\Misc\Seed
+s30_seed.bmd	Seed_Earth.fbx	Items\Group_1\Misc\Seed
+s30_sphere_body01.bmd	Sphere_Mono.fbx	Items\Group_1\Misc\Seed
+s30_sphere_body02.bmd	Sphere_Di.fbx	Items\Group_1\Misc\Seed
+s30_sphere_body03.bmd	Sphere_Tri.fbx	Items\Group_1\Misc\Seed
+s30_sphere_body04.bmd	Sphere_Tetra.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Fire_Lvl_1.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Water_Lvl_1.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Ice_Lvl_1.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Wind_Lvl_1.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Lightning_Lvl_1.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Earth_Lvl_1.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Fire_Lvl_2.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Water_Lvl_2.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Ice_Lvl_2.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Wind_Lvl_2.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Lightning_Lvl_2.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Earth_Lvl_2.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Fire_Lvl_3.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Water_Lvl_3.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Ice_Lvl_3.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Wind_Lvl_3.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Lightning_Lvl_3.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Earth_Lvl_3.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Fire_Lvl_4.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Water_Lvl_4.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Ice_Lvl_4.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Wind_Lvl_4.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Lightning_Lvl_4.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Earth_Lvl_4.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Fire_Lvl_5.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Water_Lvl_5.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Ice_Lvl_5.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Wind_Lvl_5.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Lightning_Lvl_5.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Earth_Lvl_5.fbx	Items\Group_1\Misc\Seed
+DarkLordRobe.bmd	Small_Cape_of_Lord.fbx	Items\Group_1\Wings
+alice1wing.bmd	Small_Wing_of_Curse.fbx	Items\Group_1\Wings
+elf_wing.bmd	Small_Wings_of_Elf.fbx	Items\Group_1\Wings
+angel_wing.bmd	Small_Wings_of_Heaven.fbx	Items\Group_1\Wings
+devil_wing.bmd	Small_Wings_of_Satan.fbx	Items\Group_1\Wings
+Wing50.bmd	Little_Warriors_Cloak.fbx	Items\Group_1\Wings
+attgempiece.bmd	Mithril_Fragment.fbx	Items\Group_1\Pentagram
+attjewel.bmd	Mithril.fbx	Items\Group_1\Pentagram
+ElixirPiece.bmd	Elixir_Fragment.fbx	Items\Group_1\Misc\Mix
+Elixir.bmd	Elixir.fbx	Items\Group_1\Misc\Mix
+attgempiece.bmd	Mithril_Fragment_Bunch.fbx	Items\Group_1\Pentagram
+ElixirPiece.bmd	Elixir_Fragment_Bunch.fbx	Items\Group_1\Misc\Mix
+gemmix.bmd	Jewel_Combination_Frame.fbx	Items\Group_1\Misc\Mix
+SpiritDust.bmd	Spirit_Powder.fbx	Items\Group_1\Misc\Mix
+penta02.bmd	Murens_Book_of_Magic.fbx	Items\Group_1\Pentagram
+penta01.bmd	Scroll_of_Etramu.fbx	Items\Group_1\Pentagram
+PentaExShi.bmd	Lorencia_Knights_Iron_Shield.fbx	Items\Group_1\Pentagram
+PentaExShi.bmd	Iron_Shield_of_the_Magic.fbx	Items\Group_1\Pentagram
+PentaLiquid.bmd	Hero_Elixir.fbx	Items\Group_1\Pentagram
+PentaLiquid.bmd	Brave_Hero_Elixir.fbx	Items\Group_1\Pentagram
+PentaExDan.bmd	Gladiators_Dagger.fbx	Items\Group_1\Pentagram
+PentaExDan.bmd	Merciless_Gladiators_Dagger.fbx	Items\Group_1\Pentagram
+PentaExDan.bmd	Kunduns_Madness_Blade.fbx	Items\Group_1\Pentagram
+penta01.bmd	Kunduns_Magic_Spell_Scroll.fbx	Items\Group_1\Pentagram
+PentaExShi.bmd	Empire_Guardians_Stronghold.fbx	Items\Group_1\Pentagram
+penta02.bmd	Ancient_Icarus_Scroll.fbx	Items\Group_1\Pentagram
+penta01.bmd	Arcas_Prophecy.fbx	Items\Group_1\Pentagram
+PentaExDan.bmd	Antonias_Sword.fbx	Items\Group_1\Pentagram
+penta01.bmd	Kunduns_Seal_Scroll.fbx	Items\Group_1\Pentagram
+penta02.bmd	Pentagram_for_Beginners.fbx	Items\Group_1\Pentagram
+PentaCintamani.bmd	Bead_of_Thoughtful_Sage.fbx	Items\Group_1\Pentagram
+penta01.bmd	Magic_Scroll_attributable.fbx	Items\Group_1\Pentagram
+RageErthel.bmd	Errtel_of_Anger.fbx	Items\Group_1\Pentagram
+RageErthel.bmd	Errtel_of_Anger_for_Beginners.fbx	Items\Group_1\Pentagram
+blessing.bmd	Errtel_of_Blessing.fbx	Items\Group_1\Pentagram
+blessing.bmd	Errtel_of_Blessing_for_Beginners.fbx	Items\Group_1\Pentagram
+NobleErthel.bmd	Errtel_of_Integrity.fbx	Items\Group_1\Pentagram
+NobleErthel.bmd	Errtel_of_Integrity_for_Beginners.fbx	Items\Group_1\Pentagram
+holyE.bmd	Errtel_of_Divinity.fbx	Items\Group_1\Pentagram
+holyE.bmd	Errtel_of_Divinity_for_Beginners.fbx	Items\Group_1\Pentagram
+ExtremeErthel.bmd	Errtel_of_Radiance.fbx	Items\Group_1\Pentagram
+cape_of_death.bmd	Cloak_of_Death.fbx	Items\Group_1\Wings
+chaoswing.bmd	Wings_of_Chaos.fbx	Items\Group_1\Wings
+magic_wing.bmd	Wings_of_Magic.fbx	Items\Group_1\Wings
+flamewing.bmd	Wings_of_Life.fbx	Items\Group_1\Wings
+ConquerorWing.bmd	Wings_of_Conqueror.fbx	Items\Group_1\Wings
+angel_devil_wing.bmd	Wings_of_Angel_and_Devil.fbx	Items\Group_1\Wings
+wing270.bmd	Cloak_of_Limit.fbx	Items\Group_1\Wings
+wing271.bmd	Cloak_of_Transcendence.fbx	Items\Group_1\Wings
+SkillScroll.bmd	Spin_Step_Scroll.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Obsidian_Scroll.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Magic_Pin_Scroll.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Harsh_Strike_Scroll.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Shining_Peak_Scroll.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Wrath_Scroll.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Breche_Scroll.fbx	Items\Group_1\Skill\Scroll
+Limit_wing.bmd	Small_Cloak_of_Limit.fbx	Items\Group_1\Wings
+elementalloon.bmd	Elemental_Rune.fbx	Items\Group_1\Misc\Mix
+Gem01.bmd	Orb_of_Fire_Blow.fbx	Items\Group_1\Skill\Orb
+Book01.bmd	Scroll_of_Meteor_Strike.fbx	Items\Group_1\Skill\Scroll
+Book01.bmd	Scroll_of_Meteor_Storm.fbx	Items\Group_1\Skill\Scroll
+Book01.bmd	Scroll_of_Soul_Seeker.fbx	Items\Group_1\Skill\Scroll
+Gem11.bmd	Orb_of_Focus_Shot.fbx	Items\Group_1\Skill\Orb
+rollofpaper.bmd	Parchment_of_Fire_Beast.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Parchment_of_Aqua_Beast.fbx	Items\Group_1\Skill\Parchment
+Gem01.bmd	Orb_of_Ice_Blood.fbx	Items\Group_1\Skill\Orb
+Gem01.bmd	Orb_of_Fire_Blood.fbx	Items\Group_1\Skill\Orb
+Book01.bmd	Scroll_of_Dark_Blast.fbx	Items\Group_1\Skill\Scroll
+SkillScroll.bmd	Scroll_of_Wind_Soul.fbx	Items\Group_1\Skill\Scroll
+rollofpaper.bmd	Parchment_of_Dark_Phoenix_Shot.fbx	Items\Group_1\Skill\Parchment
+PentaHarp.bmd	Golden_Line_Harp_of_Lunidel.fbx	Items\Group_1\Pentagram
+PentaCintamani.bmd	Orb_of_the_Lemurian.fbx	Items\Group_1\Pentagram
+PentaHarp.bmd	Colorful_Lira_of_Norwein.fbx	Items\Group_1\Pentagram
+s30_sphere01.bmd	Seed_Sphere_Fire_Lvl_6.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Water_Lvl_6.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Ice_Lvl_6.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Wind_Lvl_6.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Lightning_Lvl_6.fbx	Items\Group_1\Misc\Seed
+s30_sphere01.bmd	Seed_Sphere_Earth_Lvl_6.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Fire_Lvl_7.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Water_Lvl_7.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Ice_Lvl_7.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Wind_Lvl_7.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Lightning_Lvl_7.fbx	Items\Group_1\Misc\Seed
+s30_sphere02.bmd	Seed_Sphere_Earth_Lvl_7.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Fire_Lvl_8.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Water_Lvl_8.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Ice_Lvl_8.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Wind_Lvl_8.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Lightning_Lvl_8.fbx	Items\Group_1\Misc\Seed
+s30_sphere03.bmd	Seed_Sphere_Earth_Lvl_8.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Fire_Lvl_9.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Water_Lvl_9.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Ice_Lvl_9.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Wind_Lvl_9.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Lightning_Lvl_9.fbx	Items\Group_1\Misc\Seed
+s30_sphere04.bmd	Seed_Sphere_Earth_Lvl_9.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Fire_Lvl_10.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Water_Lvl_10.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Ice_Lvl_10.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Wind_Lvl_10.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Lightning_Lvl_10.fbx	Items\Group_1\Misc\Seed
+s30_sphere05.bmd	Seed_Sphere_Earth_Lvl_10.fbx	Items\Group_1\Misc\Seed
+sd_rune01.bmd	Sphere_Strengthener_Rune.fbx	Items\Group_1\Misc\Mix
+spellstone1.bmd	Lesser_Spiritstone.fbx	Items\Group_1\Misc\Mix
+spellstone2.bmd	Intermediate_Spiritstone.fbx	Items\Group_1\Misc\Mix
+spellstone3.bmd	Greater_Spiritstone.fbx	Items\Group_1\Misc\Mix
+magicPotion1.bmd	Bind_Lochs_Magic_Solution.fbx	Items\Group_1\Misc\Mix
+magicPotion11.bmd	Bind_Completed_Lochs_Magic_Solution.fbx	Items\Group_1\Misc\Mix
+magicPotion2.bmd	Bind_Condors_Magic_Solution.fbx	Items\Group_1\Misc\Mix
+magicPotion21.bmd	Bind_Completed_Condors_Magic_Solution.fbx	Items\Group_1\Misc\Mix
+rollofpaper.bmd	Spirit_Hook_Parchment.fbx	Items\Group_1\Skill\Parchment
+Wing401.bmd	Heavenly_Wings.fbx	Items\Group_1\Wings
+Wing402.bmd	Wrathful_Wings.fbx	Items\Group_1\Wings
+Wing403.bmd	Celestial_Wings.fbx	Items\Group_1\Wings
+Wing404.bmd	Devastation_Wings.fbx	Items\Group_1\Wings
+Wing405.bmd	Cape_of_Dominance.fbx	Items\Group_1\Wings
+Wing406.bmd	Agony_Wings.fbx	Items\Group_1\Wings
+Wing407.bmd	Cloak_of_Judgement.fbx	Items\Group_1\Wings
+Wing408.bmd	Cloak_of_Renascence.fbx	Items\Group_1\Wings
+wdrop3.bmd	Lochs_Magical_Bell.fbx	Items\Group_1\Misc\Mix
+wdrop2.bmd	Condors_Magical_Bell.fbx	Items\Group_1\Misc\Mix
+so_neck.bmd	Rage_Earring_L.fbx	Items\Group_1\Accessory
+mr2earringL.bmd	Ancestor_Earring_L.fbx	Items\Group_1\Accessory
+gloryearringL.bmd	Honor_Earring_L.fbx	Items\Group_1\Accessory
+so_neck02.bmd	Rage_Earring_R.fbx	Items\Group_1\Accessory
+mr2earringR.bmd	Ancestor_Earring_R.fbx	Items\Group_1\Accessory
+gloryearringR.bmd	Honor_Earring_R.fbx	Items\Group_1\Accessory
+ring01.bmd	Baseball_Player_Transformation_Ring.fbx	Items\Group_1\Accessory
+ring01.bmd	Cheerleader_Transformation_Ring.fbx	Items\Group_1\Accessory
+Wing52.bmd	Wings_of_Disillusionment.fbx	Items\Group_1\Wings
+Wing53.bmd	Wings_of_Fate.fbx	Items\Group_1\Wings
+Ghosthorse_item_mask01.bmd	Ghost_Horse.fbx	Items\Group_1\Pet
+Wing54.bmd	Wings_of_Silence.fbx	Items\Group_1\Wings
+Wing55.bmd	Wings_of_Condemnation.fbx	Items\Group_1\Wings
+Gem01.bmd	Orb_of_Sword_Inertia.fbx	Items\Group_1\Skill\Orb
+Gem01.bmd	Orb_of_Bat_Flock.fbx	Items\Group_1\Skill\Orb
+Gem01.bmd	Orb_of_Detection.fbx	Items\Group_1\Skill\Orb
+Gem01.bmd	Orb_of_Pierce_Attack.fbx	Items\Group_1\Skill\Orb
+WingsOfPower.bmd	Wings_of_Power.fbx	Items\Group_1\Wings
+SpecialPetEgg.bmd	Desmodus_Egg.fbx	Items\Group_1\Misc\Box
+Gem01.bmd	Orb_of_Demolish.fbx	Items\Group_1\Skill\Orb
+hs_2GuadianiceCA.bmd	Ice_Dragon.fbx	Items\Group_1\Pet
+hs_2GuadianiceCB.bmd	Ice_Dragon_Rare.fbx	Items\Group_1\Pet
+Gem06.bmd	Orb_of_Sword_Wrath.fbx	Items\Group_1\Skill\Orb
+Gem13.bmd	Orb_of_Sword_Blow.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Strong_Belief.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Solid_Protection.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Dark_Plasma.fbx	Items\Group_1\Skill\Orb
+Gem13.bmd	Orb_of_Ice_Break.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Ice_Blast.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Fire_Death.fbx	Items\Group_1\Skill\Orb
+Gem06.bmd	Orb_of_Bursting_Flare.fbx	Items\Group_1\Skill\Orb
+helper01.bmd	Guardian_Angel.fbx	Items\Group_1\Pet
+helper02.bmd	Imp.fbx	Items\Group_1\Pet
+helper03.bmd	Horn_of_Uniria.fbx	Items\Group_1\Pet
+helper04.bmd	Horn_of_Dinorant.fbx	Items\Group_1\Pet
+darkhorsehorn.bmd	Dark_Horse.fbx	Items\Group_1\Pet
+spiritbill.bmd	Dark_Raven.fbx	Items\Group_1\Pet
+covenant.bmd	Contract_Summon.fbx	Items\Group_1\Misc\Mix
+ring01.bmd	Ring_of_Ice.fbx	Items\Group_1\Accessory
+ring02.bmd	Ring_of_Poison.fbx	Items\Group_1\Accessory
+ring01.bmd	Transformation_Ring.fbx	Items\Group_1\Accessory
+summonbook.bmd	Order_Guardian/Life_Stone.fbx	Items\Group_1\Misc\Mix
+necklace01.bmd	Pendant_of_Lighting.fbx	Items\Group_1\Accessory
+necklace02.bmd	Pendant_of_Fire.fbx	Items\Group_1\Accessory
+Quest04.bmd	Lochs_Feather.fbx	Items\Group_1\Misc\Mix
+Quest05.bmd	Fruits.fbx	Items\Group_1\Misc\Mix
+EventBloodCastle00.bmd	Scroll_of_Archangel.fbx	Items\Group_1\Misc\Mix
+EventBloodCastle01.bmd	Blood_Bone.fbx	Items\Group_1\Misc\Mix
+EventBloodCastle02.bmd	Invisibility_Cloak.fbx	Items\Group_1\Misc\Event
+firering.bmd	Ring_of_Fire.fbx	Items\Group_1\Accessory
+groundring.bmd	Ring_of_Earth.fbx	Items\Group_1\Accessory
+windring.bmd	Ring_of_Wind.fbx	Items\Group_1\Accessory
+manaring.bmd	Ring_of_Magic.fbx	Items\Group_1\Accessory
+icenecklace.bmd	Pendant_of_Ice.fbx	Items\Group_1\Accessory
+windnecklace.bmd	Pendant_of_Wind.fbx	Items\Group_1\Accessory
+waternecklace.bmd	Pendant_of_Water.fbx	Items\Group_1\Accessory
+agnecklace.bmd	Pendant_of_Ability.fbx	Items\Group_1\Accessory
+eventchaoscastle.bmd	Armor_of_Guardsman.fbx	Items\Group_1\Misc\Event
+DarkLordRobe.bmd	Cape_of_Lord.fbx	Items\Group_1\Wings
+darkhorsesoul.bmd	Spirit.fbx	Items\Group_1\Misc\Mix
+fr_1.bmd	Splinter_of_Armor.fbx	Items\Group_1\Misc\Mix
+fr_2.bmd	Bless_of_Guardian.fbx	Items\Group_1\Misc\Mix
+fr_3.bmd	Claw_of_Beast.fbx	Items\Group_1\Misc\Mix
+fr_4.bmd	Fragment_of_Horn.fbx	Items\Group_1\Misc\Mix
+fr_5.bmd	Broken_Horn.fbx	Items\Group_1\Misc\Mix
+fr_6.bmd	Horn_of_Fenrir.fbx	Items\Group_1\Pet
+kanneck2.bmd	Moonstone_Pendant.fbx	Items\Group_1\Accessory
+ring01.bmd	Eilte_Transfer_Skeleton_Ring.fbx	Items\Group_1\Accessory
+ring01.bmd	Jack_Olantern_Ring.fbx	Items\Group_1\Accessory
+ring01.bmd	Transfer_Christmas_Ring.fbx	Items\Group_1\Accessory
+ring01.bmd	Ring_of_GM.fbx	Items\Group_1\Accessory
+monmark01.bmd	Seal_of_Ascension.fbx	Items\Group_1\Misc\Buff
+monmark02.bmd	Seal_of_Wealth.fbx	Items\Group_1\Misc\Buff
+monmark03.bmd	Seal_of_Sustenance.fbx	Items\Group_1\Misc\Buff
+entrancegray.bmd	Devil_Square_Ticket.fbx	Items\Group_1\Misc\Event
+entrancered.bmd	Blood_Castle_Ticket.fbx	Items\Group_1\Misc\Event
+entrancebleu.bmd	Kalima_Ticket.fbx	Items\Group_1\Misc\Event
+scrollpaper.bmd	Old_Scroll.fbx	Items\Group_1\Misc\Mix
+oath.bmd	Illusion_Sorcerer_Covenant_.fbx	Items\Group_1\Misc\Mix
+songbl.bmd	Scroll_of_Blood.fbx	Items\Group_1\Misc\Event
+condolstone.bmd	Condor_Flame.fbx	Items\Group_1\Misc\Mix
+condolwing.bmd	Condor_Feather.fbx	Items\Group_1\Misc\Mix
+resetfruit_power.bmd	Reset_Fruit_Strength.fbx	Items\Group_1\Misc\Mix
+resetfruit_quick.bmd	Reset_Fruit_Agility.fbx	Items\Group_1\Misc\Mix
+resetfruit_strenth.bmd	Reset_Fruit_Vitality.fbx	Items\Group_1\Misc\Mix
+resetfruit_energe.bmd	Reset_Fruit_Energy.fbx	Items\Group_1\Misc\Mix
+resetfruit_command.bmd	Reset_Fruit_Leadership.fbx	Items\Group_1\Misc\Mix
+sealmove.bmd	Seal_of_Mobility.fbx	Items\Group_1\Misc\Buff
+indulgence.bmd	Indulgence.fbx	Items\Group_1\Misc\Mix
+entrancepurple.bmd	Illusion_Temple_Ticket.fbx	Items\Group_1\Misc\Event
+curemark.bmd	Seal_of_Healing.fbx	Items\Group_1\Misc\Buff
+holinessmark.bmd	Seal_of_Divinity.fbx	Items\Group_1\Misc\Buff
+demon.bmd	Demon.fbx	Items\Group_1\Pet
+maria.bmd	Spirit_of_Guardian.fbx	Items\Group_1\Pet
+santa_village.bmd	Invitation_to_Santa_Village.fbx	Items\Group_1\Misc\Event
+xmas_deer.bmd	Pet_Rudolph.fbx	Items\Group_1\Pet
+xmasring.bmd	Snowman_Transformation_Ring.fbx	Items\Group_1\Accessory
+ressurection.bmd	Talisman_of_Resurrection.fbx	Items\Group_1\Misc\Mix
+potalcharm.bmd	Talisman_of_Mobility.fbx	Items\Group_1\Misc\Buff
+gamble_scyderx01.bmd	Sword_Mace_Spear.fbx	Items\Group_1\Misc\Mix
+gamble_wand01.bmd	Staff.fbx	Items\Group_1\Misc\Mix
+gamble_bowx01.bmd	Bow_Crossbow.fbx	Items\Group_1\Misc\Mix
+gamble_safterx01.bmd	Scepter.fbx	Items\Group_1\Misc\Mix
+gamble_stickx01.bmd	Stick.fbx	Items\Group_1\Misc\Mix
+pandapetring.bmd	Panda_Ring.fbx	Items\Group_1\Accessory
+pandapetring_brown.bmd	Brown_Panda_Ring.fbx	Items\Group_1\Accessory
+pandapetring_pink.bmd	Pink_Panda_Ring.fbx	Items\Group_1\Accessory
+pandapet.bmd	Pet_Panda.fbx	Items\Group_1\Pet
+suhocham01.bmd	Talisman_of_Guardian.fbx	Items\Group_1\Misc\Buff
+imteam_protect.bmd	Talisman_of_Item_Protection.fbx	Items\Group_1\Misc\Buff
+masterseala.bmd	Master_Seal_of_Ascension.fbx	Items\Group_1\Misc\Buff
+mastersealb.bmd	Master_Seal_of_Wealth.fbx	Items\Group_1\Misc\Buff
+charactercard.bmd	Magic_Gladiator_Character_Card.fbx	Items\Group_1\Misc\Mix
+charactercard.bmd	Dark_Lord_Character_Card.fbx	Items\Group_1\Misc\Mix
+key.bmd	Character_Slot_Key.fbx	Items\Group_1\Misc\Mix
+expscroll.bmd	Party_EXP_Scroll.fbx	Items\Group_1\Misc\Buff
+injang_ag.bmd	Max_AG_Boost_Aura.fbx	Items\Group_1\Misc\Buff
+injang_sd.bmd	Max_SD_Boost_Aura.fbx	Items\Group_1\Misc\Buff
+fatalring.bmd	Lethal_Wizards_Ring.fbx	Items\Group_1\Accessory
+PeriodRingBlue.bmd	Sapphire_Ring.fbx	Items\Group_1\Accessory
+PeriodRingRed.bmd	Ruby_Ring.fbx	Items\Group_1\Accessory
+PeriodRingYellow.bmd	Topaz_Ring.fbx	Items\Group_1\Accessory
+PeriodRingViolet.bmd	Amethyst_Ring.fbx	Items\Group_1\Accessory
+necklace_red.bmd	Ruby_Necklace.fbx	Items\Group_1\Accessory
+necklace_green.bmd	Emerald_Necklace.fbx	Items\Group_1\Accessory
+necklace_blue.bmd	Sapphire_Necklace.fbx	Items\Group_1\Accessory
+FRpotionD.bmd	Minimum_Vitality_Potion.fbx	Items\Group_1\Misc\Buff
+FRpotionA.bmd	Low_Vitality_Potion.fbx	Items\Group_1\Misc\Buff
+FRpotionB.bmd	Medium_Vitality_Potion.fbx	Items\Group_1\Misc\Buff
+FRpotionC.bmd	High_Vitality_Potion.fbx	Items\Group_1\Misc\Buff
+entrancegreen.bmd	Access_Ticket_to_Chaos_Castle.fbx	Items\Group_1\Misc\Event
+skeletonring.bmd	Skeleton_Transformation_Ring.fbx	Items\Group_1\Accessory
+skeletonpet.bmd	Pet_Skeleton.fbx	Items\Group_1\Pet
+HawkStatue.bmd	Hawk_Figurine.fbx	Items\Group_1\Misc\Buff
+SheepStatue.bmd	Goat_Figurine.fbx	Items\Group_1\Misc\Buff
+ork_cham.bmd	Oak_Charm.fbx	Items\Group_1\Misc\Buff
+goldenork_cham.bmd	Golden_Oak_Charm.fbx	Items\Group_1\Misc\Buff
+horseshoe.bmd	Worn_Horseshoe.fbx	Items\Group_1\Misc\Buff
+LuckyCardgreen.bmd	1st_Lucky_Armor_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardgreen.bmd	1st_Lucky_Pants_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardgreen.bmd	1st_Lucky_Helm_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardgreen.bmd	1st_Lucky_Gloves_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardgreen.bmd	1st_Lucky_Boots_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardred.bmd	2nd_Lucky_Armor_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardred.bmd	2nd_Lucky_Pants_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardred.bmd	2nd_Lucky_Helm_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardred.bmd	2nd_Lucky_Gloves_Ticket.fbx	Items\Group_1\Misc\Mix
+LuckyCardred.bmd	2nd_Lucky_Boots_Ticket.fbx	Items\Group_1\Misc\Mix
+SpiritMapPiece.bmd	Spirit_Map_Fragment.fbx	Items\Group_1\Misc\Mix
+SpiritMap.bmd	Spirit_Map.fbx	Items\Group_1\Misc\Mix
+trophy.bmd	Trophies_of_Battle.fbx	Items\Group_1\Misc\Mix
+FRpotionD.bmd	Green_Ink.fbx	Items\Group_1\Misc\Quest
+FRpotionA.bmd	Blue_Ink.fbx	Items\Group_1\Misc\Quest
+FRpotionC.bmd	Red_Ink.fbx	Items\Group_1\Misc\Quest
+rollofpaper.bmd	Parchment_of_Soul.fbx	Items\Group_1\Misc\Quest
+MSIitemGreen.bmd	Scroll_of_Green_Oblivion.fbx	Items\Group_1\Misc\Quest
+MSIitemBlue.bmd	Scroll_of_Blue_Oblivion.fbx	Items\Group_1\Misc\Quest
+MSIitemRed.bmd	Scroll_of_Red_Oblivion.fbx	Items\Group_1\Misc\Quest
+MSIitemBlack.bmd	Scroll_of_Gray_Oblivion.fbx	Items\Group_1\Misc\Quest
+MSIitemGreen.bmd	Sealed_Green_Oblivion_Scroll.fbx	Items\Group_1\Misc\Quest
+MSIitemBlue.bmd	Sealed_Blue_Oblivion_Scroll.fbx	Items\Group_1\Misc\Quest
+MSIitemRed.bmd	Sealed_Red_Oblivion_Scroll.fbx	Items\Group_1\Misc\Quest
+MSIitemBlack.bmd	Sealed_Gray_Oblivion_Scroll.fbx	Items\Group_1\Misc\Quest
+suhocham01.bmd	Protection_Talisman.fbx	Items\Group_1\Misc\Mix
+suhocham01.bmd	Cooperation_Talisman.fbx	Items\Group_1\Misc\Mix
+RobotRing.bmd	Robot_Knight_Ring.fbx	Items\Group_1\Accessory
+RobotRing_gold.bmd	Mini_Robot_Ring.fbx	Items\Group_1\Accessory
+monkyRing.bmd	Great_Heavenly_Mage_Ring.fbx	Items\Group_1\Accessory
+pandapetring_brown.bmd	Brown_Panda_Transformation_Ring.fbx	Items\Group_1\Accessory
+charactercard.bmd	Gold_Card.fbx	Items\Group_1\Misc\Mix
+ring01.bmd	Decoration_Ring.fbx	Items\Group_1\Accessory
+ring01.bmd	Blessed_Decoration_Ring.fbx	Items\Group_1\Accessory
+necklace.bmd	Necklace_of_Agony.fbx	Items\Group_1\Accessory
+hardnecklace.bmd	Solid_Symbol.fbx	Items\Group_1\Accessory
+finalgori.bmd	Ring_of_Ultimatum.fbx	Items\Group_1\Accessory
+ProGuardRing.bmd	Protector_Protection_Ring.fbx	Items\Group_1\Accessory
+GuardRing.bmd	Protection_Ring.fbx	Items\Group_1\Accessory
+IVmonmarkA.bmd	Talisman_of_Ascension_I.fbx	Items\Group_1\Misc\Buff
+IVmonmarkA.bmd	Talisman_of_Ascension_II.fbx	Items\Group_1\Misc\Buff
+IVmonmarkA.bmd	Talisman_of_Ascension_III.fbx	Items\Group_1\Misc\Buff
+IVmonmarkB.bmd	Seal_of_Asecnsion_II.fbx	Items\Group_1\Misc\Buff
+IVmonmarkB.bmd	Master_Seal_of_Ascension_II.fbx	Items\Group_1\Misc\Buff
+PetEgg.bmd	WereRabbit_Egg.fbx	Items\Group_1\Misc\Box
+PetEgg.bmd	Lucky_Bag_Egg.fbx	Items\Group_1\Misc\Box
+PetEgg.bmd	Fire_Flame_Ghost_Egg.fbx	Items\Group_1\Misc\Box
+PetEgg.bmd	Golden_Goblin_Egg.fbx	Items\Group_1\Misc\Box
+DarknessRing.bmd	Dark_Transformation_Ring.fbx	Items\Group_1\Accessory
+ProofOfConqueror.bmd	Conquerors_Badge.fbx	Items\Group_1\Misc\Mix
+ProofOfOrdeal.bmd	Badge_of_Hardships.fbx	Items\Group_1\Misc\Mix
+PetEgg.bmd	Muun_Egg.fbx	Items\Group_1\Misc\Box
+ArmorMale98_mono.bmd	Sealed_Bloodangel_Knight_Armor_S.fbx	Items\Group_1\Sealed
+HelmMale98_mono.bmd	Sealed_Bloodangel_Knight_Helm_S.fbx	Items\Group_1\Sealed
+PantMale98_mono.bmd	Sealed_Bloodangel_Knight_Pants_S.fbx	Items\Group_1\Sealed
+BootMale98_mono.bmd	Sealed_Bloodangel_Knight_Boots_S.fbx	Items\Group_1\Sealed
+ArmorMale100_mono.bmd	Sealed_Bloodangel_Runic_Armor.fbx	Items\Group_1\Sealed
+HelmMale100_mono.bmd	Sealed_Bloodangel_Runic_Helm.fbx	Items\Group_1\Sealed
+PantMale100_mono.bmd	Sealed_Bloodangel_Runic_Pants.fbx	Items\Group_1\Sealed
+GloveMale100_mono.bmd	Sealed_Bloodangel_Runic_Gloves.fbx	Items\Group_1\Sealed
+ArmorMale99_mono.bmd	Sealed_Bloodangel_Wizard_Armor.fbx	Items\Group_1\Sealed
+HelmMale99_mono.bmd	Sealed_Bloodangel_Wizard_Helm.fbx	Items\Group_1\Sealed
+PantMale99_mono.bmd	Sealed_Bloodangel_Wizard_Pants.fbx	Items\Group_1\Sealed
+GloveMale99_mono.bmd	Sealed_Bloodangel_Wizard_Gloves.fbx	Items\Group_1\Sealed
+ArmorMale100_mono.bmd	Sealed_Bloodangel_Elf_Armor_A.fbx	Items\Group_1\Sealed
+HelmMale100_mono.bmd	Sealed_Bloodangel_Elf_Helm_A.fbx	Items\Group_1\Sealed
+PantMale100_mono.bmd	Sealed_Bloodangel_Elf_Pants_A.fbx	Items\Group_1\Sealed
+GloveMale100_mono.bmd	Sealed_Bloodangel_Elf_Gloves_A.fbx	Items\Group_1\Sealed
+ArmorMale100_mono.bmd	Sealed_Bloodangel_Elf_Armor_E.fbx	Items\Group_1\Sealed
+HelmMale100_mono.bmd	Sealed_Bloodangel_Elf_Helm_E.fbx	Items\Group_1\Sealed
+PantMale100_mono.bmd	Sealed_Bloodangel_Elf_Pants_E.fbx	Items\Group_1\Sealed
+GloveMale100_mono.bmd	Sealed_Bloodangel_Elf_Gloves_E.fbx	Items\Group_1\Sealed
+ArmorMale98_mono.bmd	Sealed_Bloodangel_Magic_Armor_S.fbx	Items\Group_1\Sealed
+BootMale98_mono.bmd	Sealed_Bloodangel_Magic_Boots_S.fbx	Items\Group_1\Sealed
+PantMale98_mono.bmd	Sealed_Bloodangel_Magic_Pants_S.fbx	Items\Group_1\Sealed
+GloveMale98_mono.bmd	Sealed_Bloodangel_Magic_Gloves_S.fbx	Items\Group_1\Sealed
+ArmorMale98_mono.bmd	Sealed_Bloodangel_Magic_Armor_E.fbx	Items\Group_1\Sealed
+BootMale98_mono.bmd	Sealed_Bloodangel_Magic_Boots_E.fbx	Items\Group_1\Sealed
+PantMale98_mono.bmd	Sealed_Bloodangel_Magic_Pants_E.fbx	Items\Group_1\Sealed
+GloveMale98_mono.bmd	Sealed_Bloodangel_Magic_Gloves_E.fbx	Items\Group_1\Sealed
+ArmorMale98_mono.bmd	Sealed_Bloodangel_Lord_Armor.fbx	Items\Group_1\Sealed
+HelmMale98_mono.bmd	Sealed_Bloodangel_Lord_Helm.fbx	Items\Group_1\Sealed
+PantMale98_mono.bmd	Sealed_Bloodangel_Lord_Pants.fbx	Items\Group_1\Sealed
+GloveMale98_mono.bmd	Sealed_Bloodangel_Lord_Gloves.fbx	Items\Group_1\Sealed
+ArmorMale100_mono.bmd	Sealed_Bloodangel_Slayer_Armor.fbx	Items\Group_1\Sealed
+HelmMale100_mono.bmd	Sealed_Bloodangel_Slayer_Helm.fbx	Items\Group_1\Sealed
+PantMale100_mono.bmd	Sealed_Bloodangel_Slayer_Pants.fbx	Items\Group_1\Sealed
+GloveMale100_mono.bmd	Sealed_Bloodangel_Slayer_Gloves.fbx	Items\Group_1\Sealed
+ArmorMale100_mono.bmd	Sealed_Bloodangel_Summoner_Armor.fbx	Items\Group_1\Sealed
+HelmMale100_mono.bmd	Sealed_Bloodangel_Summoner_Helm.fbx	Items\Group_1\Sealed
+PantMale100_mono.bmd	Sealed_Bloodangel_Summoner_Pants.fbx	Items\Group_1\Sealed
+GloveMale100_mono.bmd	Sealed_Bloodangel_Summoner_Gloves.fbx	Items\Group_1\Sealed
+ArmorMale98_mono.bmd	Sealed_Bloodangel_Fighter_Armor.fbx	Items\Group_1\Sealed
+HelmMale98_mono.bmd	Sealed_Bloodangel_Fighter_Helm.fbx	Items\Group_1\Sealed
+PantMale98_mono.bmd	Sealed_Bloodangel_Fighter_Pants.fbx	Items\Group_1\Sealed
+BootMale98_mono.bmd	Sealed_Bloodangel_Fighter_Boots.fbx	Items\Group_1\Sealed
+HelmMale98_mono.bmd	Sealed_Bloodangel_Knight_Helm_E.fbx	Items\Group_1\Sealed
+ArmorMale98_mono.bmd	Sealed_Bloodangel_Knight_Armor_E.fbx	Items\Group_1\Sealed
+PantMale98_mono.bmd	Sealed_Bloodangel_Knight_Pants_E.fbx	Items\Group_1\Sealed
+BootMale98_mono.bmd	Sealed_Bloodangel_Knight_Boots_E.fbx	Items\Group_1\Sealed
+ArmorMale97_mono.bmd	Sealed_Bloodangel_Lancer_Armor.fbx	Items\Group_1\Sealed
+HelmMale97_mono.bmd	Sealed_Bloodangel_Lancer_Helm.fbx	Items\Group_1\Sealed
+Pantmale97_mono.bmd	Sealed_Bloodangel_Lancer_Pants.fbx	Items\Group_1\Sealed
+Glovemale97_mono.bmd	Sealed_Bloodangel_Lancer_Gloves.fbx	Items\Group_1\Sealed
+HelmMale99_mono.bmd	Sealed_Bloodangel_Gun_Crusher_Helm.fbx	Items\Group_1\Sealed
+ArmorMale99_mono.bmd	Sealed_Bloodangel_Gun_Crusher_Armor.fbx	Items\Group_1\Sealed
+PantMale99_mono.bmd	Sealed_Bloodangel_Gun_Crusher_Pants.fbx	Items\Group_1\Sealed
+BootMale99_mono.bmd	Sealed_Bloodangel_Gun_Crusher_Boots.fbx	Items\Group_1\Sealed
+AHeroSpirit.bmd	Ancient_Heros_Soul.fbx	Items\Group_1\Misc\Mix
+GarudaFlame.bmd	Garudas_Flame.fbx	Items\Group_1\Misc\Mix
+GarudaFeather.bmd	Garudas_Feather.fbx	Items\Group_1\Misc\Mix
+goldarms01.bmd	Golden_Sentence.fbx	Items\Group_1\Misc\Mix
+pandapet.bmd	PC_Pet_Panda.fbx	Items\Group_1\Pet
+skeletonpet.bmd	PC_Pet_Skeleton.fbx	Items\Group_1\Pet
+pandapetring.bmd	PC_Panda_Ring.fbx	Items\Group_1\Accessory
+skeletonring.bmd	PC_Skeleton_Transformation_Ring.fbx	Items\Group_1\Accessory
+RobotRing.bmd	PC_Robot_Knight_Ring.fbx	Items\Group_1\Accessory
+RobotRing_gold.bmd	PC_Mini_Robot_Ring.fbx	Items\Group_1\Accessory
+monkyRing.bmd	PC_Great_Heavenly_Mage_Ring.fbx	Items\Group_1\Accessory
+IVmonmarkA.bmd	PC_Talisman_of_Ascension_II.fbx	Items\Group_1\Misc\Buff
+indulgence.bmd	PC_Indulgence.fbx	Items\Group_1\Misc\Event
+indulgence.bmd	Event_Map_Ticket.fbx	Items\Group_1\Misc\Event
+MSIitemBlack.bmd	Scroll_of_Golden_Oblivion.fbx	Items\Group_1\Misc\Quest
+segongseok.bmd	Handcraft_Stone.fbx	Items\Group_1\Misc\Mix
+Potion01.bmd	Apple.fbx	Items\Group_1\Misc\Potion
+Potion02.bmd	Small_Healing_Potion.fbx	Items\Group_1\Misc\Potion
+Potion03.bmd	Healing_Potion.fbx	Items\Group_1\Misc\Potion
+Potion04.bmd	Large_Healing_Potion.fbx	Items\Group_1\Misc\Potion
+Potion05.bmd	Small_Mana_Potion.fbx	Items\Group_1\Misc\Potion
+Potion06.bmd	Mana_Potion.fbx	Items\Group_1\Misc\Potion
+Potion07.bmd	Large_Mana_Potion.fbx	Items\Group_1\Misc\Potion
+SpecialPotion.bmd	Siege_Potion.fbx	Items\Group_1\Misc\Potion
+Antidote01.bmd	Antidote.fbx	Items\Group_1\Misc\Potion
+Beer01.bmd	Ale.fbx	Items\Group_1\Misc\Potion
+Scroll01.bmd	Town_Portal_Scroll.fbx	Items\Group_1\Misc\Mix
+MagicBox01.bmd	Box_of_Luck.fbx	Items\Group_1\Misc\Box
+Event01.bmd	Heart.fbx	Items\Group_1\Misc\Mix
+Jewel01.bmd	Jewel_of_Bless.fbx	Items\Group_1\Misc\Mix
+Jewel02.bmd	Jewel_of_Soul.fbx	Items\Group_1\Misc\Mix
+Gold01.bmd	Zen.fbx	Items\Group_1\Misc\Mix
+Jewel03.bmd	Jewel_of_Life.fbx	Items\Group_1\Misc\Mix
+Devil00.bmd	Devils_Eye.fbx	Items\Group_1\Misc\Mix
+Devil01.bmd	Devils_Key.fbx	Items\Group_1\Misc\Mix
+Devil02.bmd	Devils_Invitation.fbx	Items\Group_1\Misc\Event
+Drink00.bmd	Remedy_of_Love.fbx	Items\Group_1\Misc\Mix
+ConChip00.bmd	Rena.fbx	Items\Group_1\Misc\Mix
+jewel22.bmd	Jewel_of_Creation.fbx	Items\Group_1\Misc\Mix
+Quest00.bmd	Scroll_of_the_Emperor.fbx	Items\Group_1\Misc\Quest
+Quest01.bmd	Broken_Sword.fbx	Items\Group_1\Misc\Quest
+Quest02.bmd	Tear_of_Elf.fbx	Items\Group_1\Misc\Quest
+Quest03.bmd	Soul_Shard_of_Wizard.fbx	Items\Group_1\Misc\Quest
+hellasitem00.bmd	Lost_Map.fbx	Items\Group_1\Misc\Mix
+hellasitem01.bmd	Symbol_of_Kundun.fbx	Items\Group_1\Misc\Mix
+suho.bmd	Jewel_of_Guardian.fbx	Items\Group_1\Misc\Mix
+giftbox_bp.bmd	Pink_Chocolate_Box.fbx	Items\Group_1\Misc\Box
+giftbox_br.bmd	Red_Chocolate_Box.fbx	Items\Group_1\Misc\Box
+giftbox_bb.bmd	Blue_Chocolate_Box.fbx	Items\Group_1\Misc\Box
+sdwater01.bmd	Small_SD_Potion.fbx	Items\Group_1\Misc\Potion
+sdwater02.bmd	SD_Potion.fbx	Items\Group_1\Misc\Potion
+sdwater03.bmd	Large_SD_Potion.fbx	Items\Group_1\Misc\Potion
+megawater01.bmd	Small_Complex_Potion.fbx	Items\Group_1\Misc\Potion
+megawater02.bmd	Complex_Potion.fbx	Items\Group_1\Misc\Potion
+megawater03.bmd	Large_Complex_Potion.fbx	Items\Group_1\Misc\Potion
+rs.bmd	Gemstone.fbx	Items\Group_1\Misc\Mix
+jos.bmd	Jewel_of_Harmony.fbx	Items\Group_1\Misc\Mix
+LowRefineStone.bmd	Lower_refining_stone.fbx	Items\Group_1\Misc\Mix
+HighRefineStone.bmd	Higher_refining_stone.fbx	Items\Group_1\Misc\Mix
+hobakhead.bmd	Pumpkin_of_Luck.fbx	Items\Group_1\Misc\Mix
+hellowinscroll.bmd	Increase_Jack_OLantern_Blessings.fbx	Items\Group_1\Misc\Buff
+hellowinscroll.bmd	Enhance_Jack_OLantern_Wrath.fbx	Items\Group_1\Misc\Buff
+hellowinscroll.bmd	Enhance_Jack_OLantern_Cry.fbx	Items\Group_1\Misc\Buff
+Gogi.bmd	Increase_Jack_OLantern_Food.fbx	Items\Group_1\Misc\Buff
+pumpkincup.bmd	Increase_Jack_OLantern_Drink.fbx	Items\Group_1\Misc\Buff
+MagicBox02.bmd	Chistmas_Star.fbx	Items\Group_1\Misc\Mix
+GM02.bmd	GM_Gift.fbx	Items\Group_1\Misc\Box
+bujuck01.bmd	Talisman_of_Luck.fbx	Items\Group_1\Misc\Mix
+juju.bmd	Chaos_Card.fbx	Items\Group_1\Misc\Mix
+roboxgreen.bmd	Green_Chaos_Box.fbx	Items\Group_1\Misc\Box
+roboxred.bmd	Red_Chaos_Box.fbx	Items\Group_1\Misc\Box
+roboxpurple.bmd	Purple_Chaos_Box.fbx	Items\Group_1\Misc\Box
+expensiveitem01.bmd	Rare_Item_Ticket1.fbx	Items\Group_1\Misc\Mix
+expensiveitem02a.bmd	Rare_Item_Ticket2.fbx	Items\Group_1\Misc\Mix
+expensiveitem02b.bmd	Rare_Item_Ticket3.fbx	Items\Group_1\Misc\Mix
+GM01.bmd	Firecracker.fbx	Items\Group_1\Misc\Mix
+songss.bmd	Cursed_Castle_Water.fbx	Items\Group_1\Misc\Mix
+deathbeamstone.bmd	Death_beam_Knight_Flame.fbx	Items\Group_1\Misc\Quest
+hellhorn.bmd	Hell_Miner_Horn.fbx	Items\Group_1\Misc\Quest
+phoenixfeather.bmd	Dark_Phoenix_Feather.fbx	Items\Group_1\Misc\Quest
+deye.bmd	Abyssal_Eye.fbx	Items\Group_1\Misc\Quest
+epotionr.bmd	Elite_Healing_Potion.fbx	Items\Group_1\Misc\Potion
+epotionb.bmd	Elite_Mana_Potion.fbx	Items\Group_1\Misc\Potion
+elitescroll_quick.bmd	Scroll_of_Quickness.fbx	Items\Group_1\Misc\Buff
+elitescroll_depence.bmd	Scroll_of_Defense.fbx	Items\Group_1\Misc\Buff
+elitescroll_anger.bmd	Scroll_of_Wrath.fbx	Items\Group_1\Misc\Buff
+elitescroll_magic.bmd	Scroll_of_Wizardry.fbx	Items\Group_1\Misc\Buff
+elitescroll_strenth.bmd	Scroll_of_Health.fbx	Items\Group_1\Misc\Buff
+elitescroll_mana.bmd	Scroll_of_Mana.fbx	Items\Group_1\Misc\Buff
+secret_power.bmd	Elixir_of_Strength.fbx	Items\Group_1\Misc\Buff
+secret_quick.bmd	Elixir_of_Agility.fbx	Items\Group_1\Misc\Buff
+secret_strenth.bmd	Elixir_of_Vitality.fbx	Items\Group_1\Misc\Buff
+secret_energe.bmd	Elixir_of_Energy.fbx	Items\Group_1\Misc\Buff
+secret_command.bmd	Elixir_of_Leadership.fbx	Items\Group_1\Misc\Buff
+cherrybox.bmd	Cherry_Blossom_Play_Box.fbx	Items\Group_1\Misc\Box
+chwine.bmd	Increase_Cherry_Blossom_Wine.fbx	Items\Group_1\Misc\Buff
+chgateaux.bmd	Increase_Cherry_Blossom_Rice_Cake.fbx	Items\Group_1\Misc\Buff
+chpetal.bmd	Enhance_Cherry_Blossom_Flower_Petal.fbx	Items\Group_1\Misc\Buff
+chbranche_red.bmd	Red_Cherry_Blossom_Branch.fbx	Items\Group_1\Misc\Mix
+chbranche_yellow.bmd	Golden_Cherry_Blossom_Branch.fbx	Items\Group_1\Misc\Mix
+strengamulet.bmd	Talisman_of_Chaos_Assembly.fbx	Items\Group_1\Misc\Mix
+battlescroll.bmd	Scroll_of_Battle.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_of_Strength.fbx	Items\Group_1\Misc\Buff
+xmasfire.bmd	Christmas_Firecracker.fbx	Items\Group_1\Misc\Mix
+coin7.bmd	Lucky_Coin.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Suspicious_Scrap_of_Paper.fbx	Items\Group_1\Misc\Mix
+warrant.bmd	Gaions_Order.fbx	Items\Group_1\Misc\Event
+secromicon_piece.bmd	First_Secromicon_Fragment.fbx	Items\Group_1\Misc\Mix
+secromicon_piece.bmd	Second_Secromicon_Fragment.fbx	Items\Group_1\Misc\Mix
+secromicon_piece.bmd	Third_Secromicon_Fragment.fbx	Items\Group_1\Misc\Mix
+secromicon_piece.bmd	Fourth_Secromicon_Fragment.fbx	Items\Group_1\Misc\Mix
+secromicon_piece.bmd	Fifth_Secromicon_Fragment.fbx	Items\Group_1\Misc\Mix
+secromicon_piece.bmd	Sixth_Secromicon_Fragment.fbx	Items\Group_1\Misc\Mix
+secromicon.bmd	Complete_Secromicon.fbx	Items\Group_1\Misc\Mix
+indication.bmd	Sign_of_Dimensions.fbx	Items\Group_1\Misc\Mix
+speculum.bmd	Mirror_of_Dimensions.fbx	Items\Group_1\Misc\Event
+ItemBoxKey_silver.bmd	Silver_Key.fbx	Items\Group_1\Misc\Mix
+ItemBoxKey_gold.bmd	Gold_Key.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	Master_Skill_Reset.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	Stat_Adjustment.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	Character_Relocation_Service.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	Character_Rename_Service.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	Server_Relocation_Service.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	Premium_Package.fbx	Items\Group_1\Misc\Mix
+gold_coin.bmd	Legend_Credit_Coin.fbx	Items\Group_1\Misc\Mix
+itembox_gold.bmd	Sealed_Golden_Box.fbx	Items\Group_1\Misc\Box
+itembox_silver.bmd	Sealed_Silver_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Golden_Box.fbx	Items\Group_1\Misc\Box
+itembox_silver.bmd	Silver_Box.fbx	Items\Group_1\Misc\Box
+primium_membership_item.bmd	30_Day_Pass.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	90_Day_Pass.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	30_Day_Pass_Points.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	90_Day_Pass_Points.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	3_Hour_Pass.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	5_Hour_Pass.fbx	Items\Group_1\Misc\Mix
+primium_membership_item.bmd	10_Hour_Pass.fbx	Items\Group_1\Misc\Mix
+esdpotion.bmd	Elite_SD_Potion.fbx	Items\Group_1\Misc\Potion
+package_money_item.bmd	Package_Box_A.fbx	Items\Group_1\Misc\Box
+package_money_item.bmd	Package_Box_B.fbx	Items\Group_1\Misc\Box
+package_money_item.bmd	Package_Box_C.fbx	Items\Group_1\Misc\Box
+package_money_item.bmd	Package_Box_D.fbx	Items\Group_1\Misc\Box
+package_money_item.bmd	Package_Box_E.fbx	Items\Group_1\Misc\Box
+package_money_item.bmd	Package_Box_F.fbx	Items\Group_1\Misc\Box
+strengscroll.bmd	Scroll_of_Healing.fbx	Items\Group_1\Misc\Buff
+requitalbox_red.bmd	Shining_Jewelry_Case.fbx	Items\Group_1\Misc\Mix
+requitalbox_violet.bmd	Elegant_Jewelry_Case.fbx	Items\Group_1\Misc\Mix
+requitalbox_blue.bmd	Steel_Jewelry_Case.fbx	Items\Group_1\Misc\Mix
+requitalbox_wood.bmd	Old_Jewelry_Case.fbx	Items\Group_1\Misc\Mix
+rareitem_ticket7.bmd	Bloodangel_Horn_Conversion_Mark.fbx	Items\Group_1\Misc\Mix
+rollofpaper.bmd	Lv_1_Letter_of_Request.fbx	Items\Group_1\Misc\Quest
+rollofpaper.bmd	Lv_1_Completion_Certificate.fbx	Items\Group_1\Misc\Quest
+songss.bmd	Stardust.fbx	Items\Group_1\Misc\Quest
+hydra_jewel.bmd	Kalt_Stone.fbx	Items\Group_1\Misc\Quest
+tan.bmd	Tantaloss_Armor.fbx	Items\Group_1\Misc\Quest
+Mace01.bmd	Burnt_Murderers_Club.fbx	Items\Group_1\Misc\Quest
+roboxgreen.bmd	Green_Box.fbx	Items\Group_1\Misc\Box
+roboxred.bmd	Red_Box.fbx	Items\Group_1\Misc\Box
+roboxpurple.bmd	Purple_Box.fbx	Items\Group_1\Misc\Box
+lucky_items01.bmd	Jewel_of_Extension.fbx	Items\Group_1\Misc\Mix
+lucky_items02.bmd	Jewel_of_Elevation.fbx	Items\Group_1\Misc\Mix
+Mbag.bmd	Magic_Backpack.fbx	Items\Group_1\Misc\Quest
+Exbond.bmd	Vault_Expansion_Certificate.fbx	Items\Group_1\Misc\Quest
+AncientStatue.bmd	Ancient_Statue.fbx	Items\Group_1\Misc\Quest
+MagicCloth.bmd	Magic_Cloth.fbx	Items\Group_1\Misc\Quest
+SpaceCloth.bmd	Space_Cloth.fbx	Items\Group_1\Misc\Quest
+charactercard.bmd	Rage_Fighter_Character_Card.fbx	Items\Group_1\Misc\Mix
+rollofpaper.bmd	Lv_2_letter_of_Request.fbx	Items\Group_1\Misc\Quest
+rollofpaper.bmd	Lv_2_Completion_Certificate.fbx	Items\Group_1\Misc\Quest
+DeathKingBone.bmd	Death_Kings_Bone.fbx	Items\Group_1\Misc\Mix
+hellmine.bmd	Hell_Maines_Leather.fbx	Items\Group_1\Misc\Mix
+DarkPhoenixBz.bmd	Dark_Phoenix_Flame.fbx	Items\Group_1\Misc\Mix
+deathsoul.bmd	Death_Beam_Knight_Soul.fbx	Items\Group_1\Misc\Mix
+icewalker.bmd	Ice_Walkers_Mane.fbx	Items\Group_1\Misc\Mix
+MDfur.bmd	Mammoths_Bundle_of_Fur.fbx	Items\Group_1\Misc\Mix
+GiantIce.bmd	Giants_Icicle.fbx	Items\Group_1\Misc\Mix
+coulposion.bmd	Coolutins_Poison.fbx	Items\Group_1\Misc\Mix
+inightheart.bmd	Iron_Knights_Heart.fbx	Items\Group_1\Misc\Mix
+DMhorn.bmd	Dark_Mammoths_Horn.fbx	Items\Group_1\Misc\Mix
+DarkGiantAx.bmd	Dark_Giants_Axe.fbx	Items\Group_1\Misc\Mix
+dcoulblood.bmd	Dark_Coolutins_Blood.fbx	Items\Group_1\Misc\Mix
+DarkIKsword.bmd	Dark_Iron_Knights_Sword.fbx	Items\Group_1\Misc\Mix
+bujuck01_blue.bmd	Elemental_Talisman_of_Luck.fbx	Items\Group_1\Misc\Mix
+StrengamuletBlue.bmd	Elemental_Talisman_of_Chaos.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Sonic_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Cyclone_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Blast_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Magma_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Horn_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Angelic_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Devil_Cross_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Miracle_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Spite_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Asura_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Thunder_Combination_Note.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Soul_Combination_Note.fbx	Items\Group_1\Misc\Mix
+giftbox_bp.bmd	Lackluster_Box.fbx	Items\Group_1\Misc\Box
+giftbox_br.bmd	Luxurious_Box.fbx	Items\Group_1\Misc\Box
+giftbox_bb.bmd	Exciting_Box.fbx	Items\Group_1\Misc\Box
+TIstamp.bmd	Tradeable_Seal.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Summon_Scroll_Lv1.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Summon_Scroll_Lv2.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Summon_Scroll_Lv3.fbx	Items\Group_1\Misc\Mix
+doubt_paper.bmd	Summon_Scroll_Lv4.fbx	Items\Group_1\Misc\Mix
+cards01_minigame.bmd	Card_Piece.fbx	Items\Group_1\Misc\Event
+cards_minigame.bmd	Card_Deck.fbx	Items\Group_1\Misc\Event
+Book01.bmd	Titans_Anger.fbx	Items\Group_1\Misc\Event
+Book01.bmd	Tantaloses_Punishment.fbx	Items\Group_1\Misc\Event
+Book01.bmd	Erohims_Nightmare.fbx	Items\Group_1\Misc\Event
+Book01.bmd	Hell_Maines_Insanity.fbx	Items\Group_1\Misc\Event
+Book01.bmd	Kunduns_Greed.fbx	Items\Group_1\Misc\Event
+IVmonmarkC.bmd	Bless_of_Light_Greater.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Defense.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Wizardry.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Health.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Mana.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Wrath.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Recovery.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Battle.fbx	Items\Group_1\Misc\Buff
+strengscroll.bmd	Scroll_Master_of_Strength.fbx	Items\Group_1\Misc\Buff
+Book01.bmd	Monster_Summoning_Scroll.fbx	Items\Group_1\Misc\Mix
+IllusionBead_violet.bmd	Reward_Jar_Violet.fbx	Items\Group_1\Misc\Box
+IllusionBead_pink.bmd	Reward_Jar_Pink.fbx	Items\Group_1\Misc\Box
+IllusionBead_green.bmd	Reward_Jar_Green.fbx	Items\Group_1\Misc\Box
+IllusionBead_cyan.bmd	Reward_Jar_Cyan.fbx	Items\Group_1\Misc\Box
+IllusionBead_blue.bmd	Reward_Jar_Blue.fbx	Items\Group_1\Misc\Box
+BIllusionBead.bmd	Valuable_Reward_Jar.fbx	Items\Group_1\Misc\Box
+Book01.bmd	Evomon_Summoning_Scroll.fbx	Items\Group_1\Misc\Event
+crystal01.bmd	Tetra_Crystal_Greater.fbx	Items\Group_1\Misc\Mix
+crystal02.bmd	Tetra_Crystal_Standard.fbx	Items\Group_1\Misc\Mix
+crystal03.bmd	Tetra_Crystal_Minor.fbx	Items\Group_1\Misc\Mix
+rewardbox01.bmd	Minor_Evomon_Box.fbx	Items\Group_1\Misc\Box
+rewardbox02.bmd	Standard_Evomon_Box.fbx	Items\Group_1\Misc\Box
+rewardbox03.bmd	Greater_Evomon_Box.fbx	Items\Group_1\Misc\Box
+rewardbox04.bmd	Luxurious_Evomon_Box.fbx	Items\Group_1\Misc\Box
+rewardbox05.bmd	Magnificent_Evomon_Box.fbx	Items\Group_1\Misc\Box
+rewardbox06.bmd	Legendary_Evomon_Box.fbx	Items\Group_1\Misc\Box
+GM02.bmd	Gift_of_Henchmen.fbx	Items\Group_1\Misc\Mix
+GM02.bmd	Gift_of_Knights.fbx	Items\Group_1\Misc\Mix
+GM02.bmd	Gift_of_High_Knights.fbx	Items\Group_1\Misc\Mix
+BIllusionBead.bmd	Minor_Devils_Box.fbx	Items\Group_1\Misc\Box
+BIllusionBead.bmd	Devils_Box.fbx	Items\Group_1\Misc\Box
+BIllusionBead.bmd	High_Devils_Box.fbx	Items\Group_1\Misc\Box
+roboxred.bmd	Guardsmans_Box.fbx	Items\Group_1\Misc\Box
+roboxpurple.bmd	Guardman_Captains_Box.fbx	Items\Group_1\Misc\Box
+IVmonmarkC.bmd	Bless_of_Light_Minor.fbx	Items\Group_1\Misc\Buff
+IVmonmarkC.bmd	Bless_of_Light_Standard.fbx	Items\Group_1\Misc\Buff
+GoblinBox_Green.bmd	Goblin_Treasure_Box_Green.fbx	Items\Group_1\Misc\Box
+GoblinBox_Blue.bmd	Goblin_Treasure_Box_Blue.fbx	Items\Group_1\Misc\Box
+GoblinBox_Red.bmd	Goblin_Treasure_Box_Red.fbx	Items\Group_1\Misc\Box
+GoblinBox_Yellow.bmd	Goblin_Treasure_Box_Yellow.fbx	Items\Group_1\Misc\Box
+EXPpotion_blue.bmd	Normal_EXP_Potion_1.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Normal_EXP_Potion_2.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Normal_EXP_Potion_3.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Normal_EXP_Potion_4.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Master_EXP_Potion_1.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Master_EXP_Potion_2.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Master_EXP_Potion_3.fbx	Items\Group_1\Misc\Mix
+EXPpotion_blue.bmd	Master_EXP_Potion_4.fbx	Items\Group_1\Misc\Mix
+RummyCard.bmd	Special_Card.fbx	Items\Group_1\Misc\Event
+BookPiece.bmd	Piece_of_Summoning_Scroll.fbx	Items\Group_1\Misc\Event
+EXPpotion_blue.bmd	Master_EXP_Potion_5.fbx	Items\Group_1\Misc\Mix
+EXPpotion_Red.bmd	Master_EXP_Potion_6.fbx	Items\Group_1\Misc\Mix
+charactercard.bmd	Grow_Lancer_Character_Card.fbx	Items\Group_1\Misc\Mix
+RudeBox_green.bmd	Mastery_Box_Minor.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Mastery_Box_Standard.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Box_Greater.fbx	Items\Group_1\Misc\Box
+Gold01.bmd	Ruud.fbx	Items\Group_1\Misc\Mix
+GM02.bmd	Pentagram_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Reward_Chest_2000.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Mastery_Reward_Chest_1000.fbx	Items\Group_1\Misc\Box
+RudeBox_green.bmd	Mastery_Reward_Chest_500.fbx	Items\Group_1\Misc\Box
+soimixw01.bmd	Elemental_Powder.fbx	Items\Group_1\Misc\Mix
+soicapw01.bmd	Elemental_Capsule_Normal.fbx	Items\Group_1\Misc\Box
+soicapr04.bmd	Capsule_Fire.fbx	Items\Group_1\Misc\Box
+pentagramA01.bmd	Fragment_of_Radiance_slot_1.fbx	Items\Group_1\Misc\Mix
+pentagramA02.bmd	Fragment_of_Radiance_slot_2.fbx	Items\Group_1\Misc\Mix
+pentagramA03.bmd	Fragment_of_Radiance_slot_3.fbx	Items\Group_1\Misc\Mix
+pentagramA04.bmd	Fragment_of_Radiance_slot_4.fbx	Items\Group_1\Misc\Mix
+PExtendedSlotB.bmd	Expansion_Scroll_of_Radiance_slot.fbx	Items\Group_1\Misc\Mix
+changeamulet01.bmd	Talisman_Element_Change.fbx	Items\Group_1\Misc\Mix
+hs_spiritprotection.bmd	Blessing_of_Spirit.fbx	Items\Group_1\Misc\Mix
+itembox_silver.bmd	PC_1_hour_gift_box.fbx	Items\Group_1\Misc\Box
+itembox_silver.bmd	PC_4_hour_gift_box.fbx	Items\Group_1\Misc\Box
+itembox_silver.bmd	PC_8_hour_gift_box.fbx	Items\Group_1\Misc\Box
+itembox_silver.bmd	PC_12_hour_gift_box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Reward_Chest_100.fbx	Items\Group_1\Misc\Box
+soicapy07.bmd	Capsule_Earth.fbx	Items\Group_1\Misc\Box
+soicapb05.bmd	Capsule_Water.fbx	Items\Group_1\Misc\Box
+soicapg02.bmd	Capsule_Wind.fbx	Items\Group_1\Misc\Box
+soicapgr06.bmd	Capsule_Darkness.fbx	Items\Group_1\Misc\Box
+MixMaterial.bmd	Sealed_Stone_Shard.fbx	Items\Group_1\Misc\Mix
+hs_hammerB.bmd	Steel_of_Heaven.fbx	Items\Group_1\Misc\Mix
+hs_hammerA.bmd	Archangels_Hammer.fbx	Items\Group_1\Misc\Mix
+itembox_gold.bmd	Speed_Archangel_Weapon_Box.fbx	Items\Group_1\Misc\Box
+so_stone01.bmd	Mysterious_Stone.fbx	Items\Group_1\Misc\Mix
+sd_propertycard01.bmd	Fire_Symbol.fbx	Items\Group_1\Misc\Event
+sd_propertycard02.bmd	Water_Symbol.fbx	Items\Group_1\Misc\Event
+sd_propertycard03.bmd	Earth_Symbol.fbx	Items\Group_1\Misc\Event
+sd_propertycard04.bmd	Wind_Symbol.fbx	Items\Group_1\Misc\Event
+sd_propertycard05.bmd	Darkness_Symbol.fbx	Items\Group_1\Misc\Event
+requitalbox_violet.bmd	Element_Box.fbx	Items\Group_1\Misc\Box
+magic_piece.bmd	Magic_Fragment.fbx	Items\Group_1\Misc\Mix
+rewardbox02.bmd	14_Year_Prize_Box.fbx	Items\Group_1\Misc\Box
+rewardbox05.bmd	14_Year_Special_Prize_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_green.bmd	PC_Ruud_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Speed_Helm_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Speed_Armor_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Speed_Pants_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Speed_Gloves_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Speed_Boots_Box.fbx	Items\Group_1\Misc\Box
+doubt_paper.bmd	Socket_Upgrade_Note.fbx	Items\Group_1\Misc\Mix
+GoblinBox_Blue.bmd	Roomy_Card_Box_Minor.fbx	Items\Group_1\Misc\Box
+GoblinBox_Red.bmd	Roomy_Card_Box_Standard.fbx	Items\Group_1\Misc\Box
+GoblinBox_Yellow.bmd	Roomy_Card_Box_Greater.fbx	Items\Group_1\Misc\Box
+s30_seed.bmd	Seed.fbx	Items\Group_1\Misc\Mix
+rewardbox01.bmd	Event_Box_Minor.fbx	Items\Group_1\Misc\Box
+rewardbox02.bmd	Event_Box_Standard.fbx	Items\Group_1\Misc\Box
+rewardbox03.bmd	Event_Box_Greater.fbx	Items\Group_1\Misc\Box
+rewardbox04.bmd	Event_Box_Luxurious.fbx	Items\Group_1\Misc\Box
+so_stet01r.bmd	Seed_Capsule_Fire.fbx	Items\Group_1\Misc\Box
+so_stet01b.bmd	Seed_Capsule_Water.fbx	Items\Group_1\Misc\Box
+so_stet01w.bmd	Seed_Capsule_Ice.fbx	Items\Group_1\Misc\Box
+so_stet01g.bmd	Seed_Capsule_Wind.fbx	Items\Group_1\Misc\Box
+so_stet01y.bmd	Seed_Capsule_Lightning.fbx	Items\Group_1\Misc\Box
+so_stet01p.bmd	Seed_Capsule_Earth.fbx	Items\Group_1\Misc\Box
+so_stet01bl.bmd	Sphere_Strengthener_Rune_Capsule.fbx	Items\Group_1\Misc\Box
+roboxpurple.bmd	Box_of_Mystery.fbx	Items\Group_1\Misc\Box
+James_anvil.bmd	Darkangel_Anvil.fbx	Items\Group_1\Misc\Mix
+3cha_lightstone.bmd	Holyangel_Spirit.fbx	Items\Group_1\Misc\Mix
+nudldisivna.bmd	Nixies_spirit_fragment.fbx	Items\Group_1\Misc\Mix
+roboxred.bmd	Event_Gift_Box.fbx	Items\Group_1\Misc\Box
+GoblinBox_Green.bmd	Card_box.fbx	Items\Group_1\Misc\Box
+GoblinBox_Yellow.bmd	Card_box_10.fbx	Items\Group_1\Misc\Box
+ChangeCharmYellow.bmd	Elf_Conversion_Order_E_to_A.fbx	Items\Group_1\Misc\Mix
+ChangeCharmGreen.bmd	Elf_Conversion_Order_A_to_E.fbx	Items\Group_1\Misc\Mix
+ChangeCharmRed.bmd	Magic_Conversion_Order_E_to_S.fbx	Items\Group_1\Misc\Mix
+ChangeCharmMagenta.bmd	Magic_Conversion_Order_S_to_E.fbx	Items\Group_1\Misc\Mix
+GoblinBox_Blue.bmd	Attribute_Talisman_Box.fbx	Items\Group_1\Misc\Box
+AHeroSpiritUP.bmd	Hero_Bloodangel_Spirit.fbx	Items\Group_1\Misc\Mix
+RudeBox_green.bmd	Ruud_Box_1.fbx	Items\Group_1\Misc\Box
+RudeBox_green.bmd	Ruud_Box_2.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Ruud_Box_10.fbx	Items\Group_1\Misc\Box
+rewardbox01.bmd	Labyrinth_Box.fbx	Items\Group_1\Misc\Box
+rewardbox03.bmd	Labyrinth_Box_Standard.fbx	Items\Group_1\Misc\Box
+rewardbox06.bmd	Labyrinth_Box_Greater.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Intermediate_Mastery_Weapon_Box.fbx	Items\Group_1\Misc\Box
+itembox_gold.bmd	Speed_Server_Competition_Box.fbx	Items\Group_1\Misc\Box
+rewardbox01.bmd	Jewel_Bingo_Box_Minor.fbx	Items\Group_1\Misc\Box
+rewardbox02.bmd	Jewel_Bingo_Box_Standard.fbx	Items\Group_1\Misc\Box
+rewardbox03.bmd	Jewel_Bingo_Box_Greater.fbx	Items\Group_1\Misc\Box
+rewardbox04.bmd	Jewel_Bingo_Box_Luxurious.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Intermediate_Mastery_Armor_Box.fbx	Items\Group_1\Misc\Box
+coin7.bmd	Miracle_Coin.fbx	Items\Group_1\Misc\Mix
+rewardbox04.bmd	Manche_Compensation_Box.fbx	Items\Group_1\Misc\Box
+sd_AwakeningSoul01.bmd	Awakening_Spirit.fbx	Items\Group_1\Misc\Mix
+holyangelanvil.bmd	Holyangel_Anvil.fbx	Items\Group_1\Misc\Mix
+rareitem_ticket7.bmd	Bloodangel_Conversion_Mark.fbx	Items\Group_1\Misc\Mix
+RudeBox_red.bmd	PC_Intermediate_mastery_weapon.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	PC_Intermediate_mastery_armor.fbx	Items\Group_1\Misc\Box
+so_stone01.bmd	Bind_Mysterious_Stone.fbx	Items\Group_1\Misc\Mix
+RudeBox_blue.bmd	2nd_Wings_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	3rd_Wings_Box.fbx	Items\Group_1\Misc\Box
+rewardbox01.bmd	Baseball_Box_Minor.fbx	Items\Group_1\Misc\Box
+rewardbox02.bmd	Baseball_Box_Standard.fbx	Items\Group_1\Misc\Box
+rewardbox03.bmd	Baseball_Box_Greater.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Armor_Box_60_days.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Armor_Box_30_days.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Armor_Box_3_days.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Third_Wing_Box_Bind.fbx	Items\Group_1\Misc\Box
+rollofpaperelena.bmd	Elenas_letter.fbx	Items\Group_1\Misc\Event
+Devil01.bmd	Dimensional_Key.fbx	Items\Group_1\Misc\Box
+LifeMedicine.bmd	Increase_Life_Elixir.fbx	Items\Group_1\Misc\Buff
+ManaMedicine.bmd	Increase_Mana_Elixir.fbx	Items\Group_1\Misc\Buff
+SpeedMedicine.bmd	Increase_Speed_Elixir.fbx	Items\Group_1\Misc\Buff
+PowerMedicine.bmd	Enhance_Attack_Elixir.fbx	Items\Group_1\Misc\Buff
+SpellMedicine.bmd	Enhance_Wizardry_Elixir.fbx	Items\Group_1\Misc\Buff
+DefenseMedicine.bmd	Enhance_Defense_Elixir.fbx	Items\Group_1\Misc\Buff
+so_den01.bmd	Enhance_Critical_Elixir.fbx	Items\Group_1\Misc\Buff
+so_stor01.bmd	Enhance_Excellent_Elixir.fbx	Items\Group_1\Misc\Buff
+rewardbox04.bmd	Compensation_Box_B.fbx	Items\Group_1\Misc\Box
+creaftbox.bmd	Handcraft_Stone_Box.fbx	Items\Group_1\Misc\Box
+earringbox.bmd	Shiny_Earring_Box_L.fbx	Items\Group_1\Misc\Box
+earringbox.bmd	Shiny_Earring_Box_R.fbx	Items\Group_1\Misc\Box
+Drink00.bmd	Power_Chicken_Drink.fbx	Items\Group_1\Misc\Event
+rewardbox06.bmd	Box_of_Blessing.fbx	Items\Group_1\Misc\Box
+RudeBox_green.bmd	Event_Ruud_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Ruud_Box_20.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Ruud_Box_30.fbx	Items\Group_1\Misc\Box
+FrostSoul.bmd	Cold_Spirit.fbx	Items\Group_1\Misc\Mix
+soulanvil.bmd	Soul_Anvil.fbx	Items\Group_1\Misc\Mix
+RudeBox_green.bmd	Event_Ruud_Box_2nd_week.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Mastery_Weapon_Box_60_days.fbx	Items\Group_1\Misc\Box
+lightweightscroll.bmd	Switch_Mode_Scroll.fbx	Items\Group_1\Misc\Buff
+itembox_gold.bmd	Speed_Earring_Box_L.fbx	Items\Group_1\Misc\Box
+RudeBox_green.bmd	Gift_Box_Minor.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Gift_Box_Standard.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Gift_Box_Greater.fbx	Items\Group_1\Misc\Box
+mr2earringst.bmd	Framework_of_the_Ancestors.fbx	Items\Group_1\Misc\Mix
+skillbeads.bmd	Monster_Soul.fbx	Items\Group_1\Misc\Mix
+SoulTranslatorL1.bmd	Level_1_Monster_Soul_Converter.fbx	Items\Group_1\Misc\Mix
+SoulTranslatorL2.bmd	Level_2_Monster_Soul_Converter.fbx	Items\Group_1\Misc\Mix
+SoulTranslatorL3.bmd	Level_3_Monster_Soul_Converter.fbx	Items\Group_1\Misc\Mix
+SoulTranslatorL4.bmd	Level_4_Monster_Soul_Converter.fbx	Items\Group_1\Misc\Mix
+SoulTranslatorL5.bmd	Level_5_Monster_Soul_Converter.fbx	Items\Group_1\Misc\Mix
+GuarCapsule.bmd	Guardian_Capsule.fbx	Items\Group_1\Misc\Box
+ResuPiece.bmd	Resurrection_Piece.fbx	Items\Group_1\Misc\Mix
+GuarEnStone.bmd	Guardian_Fossil.fbx	Items\Group_1\Misc\Mix
+CGuarEnStone.bmd	Elite_Guardian_Fossil.fbx	Items\Group_1\Misc\Mix
+GuardianSTP.bmd	Guardian_Elite_Option_Change_Piece.fbx	Items\Group_1\Misc\Mix
+GuardianSTS.bmd	Guardian_Elite_Option_Change.fbx	Items\Group_1\Misc\Mix
+FlawSealPiece.bmd	Seal_Armor_Piece.fbx	Items\Group_1\Misc\Mix
+FlawSealHelm.bmd	Scratched_Sealed_Bloodangel_Helm.fbx	Items\Group_1\Misc\Mix
+FlawSealArmor.bmd	Scratched_Sealed_Bloodangel_Armor.fbx	Items\Group_1\Misc\Mix
+FlawSealPant.bmd	Scratched_Sealed_Bloodangel_Pants.fbx	Items\Group_1\Misc\Mix
+FlawSealGlove.bmd	Scratched_Sealed_Bloodangel_Gloves.fbx	Items\Group_1\Misc\Mix
+FlawSealBoot.bmd	Scratched_Sealed_Bloodangel_Boots.fbx	Items\Group_1\Misc\Mix
+Ghosthorse_item_shield.bmd	Ghost_Horse_Seal.fbx	Items\Group_1\Misc\Mix
+itembox_gold.bmd	Moss_Treasure_Chest.fbx	Items\Group_1\Misc\Box
+rareitem_ticket8.bmd	Moss_Treasure_Chest_Winning_Ticket.fbx	Items\Group_1\Misc\Mix
+RudeBox_red.bmd	Level_1_Soul_Converter_Ruud_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Level_2_Soul_Converter_Ruud_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Level_3_Soul_Converter_Ruud_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Level_4_Soul_Converter_Ruud_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	Level_5_Soul_Converter_Ruud_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Ruud_Box_5.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Ruud_Box_15.fbx	Items\Group_1\Misc\Box
+RudeBox_blue.bmd	Ruud_Box_4.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	TEST_Mastery_Armor_Box.fbx	Items\Group_1\Misc\Box
+RudeBox_red.bmd	TEST_Mastery_Weapon_Box.fbx	Items\Group_1\Misc\Box
+IllusionBead_violet.bmd	Glowing_Guardian_Capsule.fbx	Items\Group_1\Misc\Box
+rewardbox04.bmd	Term_Wing_Box.fbx	Items\Group_1\Misc\Box
+6master_peice.bmd	Ancestral_Spirit.fbx	Items\Group_1\Misc\Mix
+BlueEyeAnvil.bmd	Blue_Eye_Anvil.fbx	Items\Group_1\Misc\Mix
+RudeBox_red.bmd	30_Day_Mastery_Weapon_Box.fbx	Items\Group_1\Misc\Box
+gloryearringst.bmd	Honorary_Craftwork_Frame.fbx	Items\Group_1\Misc\Mix
+hs_2GuadianiceD.bmd	Ice_Dragon_Seal.fbx	Items\Group_1\Misc\Mix
+ChangeCharmYellow.bmd	Knight_Conversion_Order_E_to_S.fbx	Items\Group_1\Misc\Mix
+ChangeCharmGreen.bmd	Knight_Conversion_Order_S_to_E.fbx	Items\Group_1\Misc\Mix
+Book01.bmd	Scroll_of_Poison.fbx	Items\Group_1\Skill\Scroll
+Book02.bmd	Scroll_of_Meteorite.fbx	Items\Group_1\Skill\Scroll
+Book03.bmd	Scroll_of_Lighting.fbx	Items\Group_1\Skill\Scroll
+Book04.bmd	Scroll_of_Fire_Ball.fbx	Items\Group_1\Skill\Scroll
+Book05.bmd	Scroll_of_Flame.fbx	Items\Group_1\Skill\Scroll
+Book06.bmd	Scroll_of_Teleport.fbx	Items\Group_1\Skill\Scroll
+Book07.bmd	Scroll_of_Ice.fbx	Items\Group_1\Skill\Scroll
+Book08.bmd	Scroll_of_Twister.fbx	Items\Group_1\Skill\Scroll
+Book09.bmd	Scroll_of_Evil_Spirit.fbx	Items\Group_1\Skill\Scroll
+Book10.bmd	Scroll_of_Hellfire.fbx	Items\Group_1\Skill\Scroll
+Book11.bmd	Scroll_of_Power_Wave.fbx	Items\Group_1\Skill\Scroll
+Book12.bmd	Scroll_of_Aqua_Beam.fbx	Items\Group_1\Skill\Scroll
+Book13.bmd	Scroll_of_Cometfall.fbx	Items\Group_1\Skill\Scroll
+Book14.bmd	Scroll_of_Inferno.fbx	Items\Group_1\Skill\Scroll
+Book15.bmd	Scroll_of_Teleport_Ally.fbx	Items\Group_1\Skill\Scroll
+Book16.bmd	Scroll_of_Soul_Barrier.fbx	Items\Group_1\Skill\Scroll
+Book17.bmd	Scroll_of_Decay.fbx	Items\Group_1\Skill\Scroll
+Book18.bmd	Scroll_of_Ice_Storm.fbx	Items\Group_1\Skill\Scroll
+Book19.bmd	Scroll_of_Nova.fbx	Items\Group_1\Skill\Scroll
+rollofpaper.bmd	Chain_Lightning_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Drain_Life_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Lightning_Shock_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Damage_Reflection_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Berserker_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Sleep_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Weakness_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Innovation_Parchment.fbx	Items\Group_1\Skill\Parchment
+Book18.bmd	Scroll_of_Wizardry_Enhance.fbx	Items\Group_1\Skill\Scroll
+Book18.bmd	Scroll_of_Gigantic_Storm.fbx	Items\Group_1\Skill\Scroll
+rollofpaper.bmd	Chain_Drive_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Dark_Side_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Dragon_Roar_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Dragon_Slasher_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Ignore_Defense_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Increase_Health_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Increase_Block_Parchment.fbx	Items\Group_1\Skill\Parchment
+Book02.bmd	Magic_Arrow_Book.fbx	Items\Group_1\Skill\Scroll
+Book02.bmd	Plasma_Ball_Book.fbx	Items\Group_1\Skill\Scroll
+Book02.bmd	Lightning_Storm_Book.fbx	Items\Group_1\Skill\Scroll
+Book02.bmd	Burst_Book.fbx	Items\Group_1\Skill\Scroll
+Book02.bmd	Haste_Book.fbx	Items\Group_1\Skill\Scroll
+rollofpaper.bmd	Explosion_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Requiem_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Pollution_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Deathside_Parchment.fbx	Items\Group_1\Skill\Parchment
+rollofpaper.bmd	Darkness_Parchment.fbx	Items\Group_1\Skill\Parchment
+pinocchio.bmd	Pinocchio.fbx	Items\Group_1\Muun
+pinocchioUp.bmd	Pinocchio_Evolved.fbx	Items\Group_1\Muun
+geppetoo.bmd	Geppeto.fbx	Items\Group_1\Muun
+geppetooUp.bmd	Geppeto_Evolved.fbx	Items\Group_1\Muun
+bluefairy.bmd	Blue_Fairy.fbx	Items\Group_1\Muun
+bluefairyUp.bmd	Blue_Fairy_Evolved.fbx	Items\Group_1\Muun
+daddybear.bmd	Father_Bear.fbx	Items\Group_1\Muun
+daddybearUp.bmd	Father_Bear_Evolved.fbx	Items\Group_1\Muun
+babybear.bmd	Baby_Bear.fbx	Items\Group_1\Muun
+babybearUp.bmd	Baby_Bear_Evolved.fbx	Items\Group_1\Muun
+mommybear.bmd	Mother_Bear.fbx	Items\Group_1\Muun
+mommybearUp.bmd	Mother_Bear_Evolved.fbx	Items\Group_1\Muun
+indio.bmd	Indio.fbx	Items\Group_1\Muun
+indioUp.bmd	Indio_Evolved.fbx	Items\Group_1\Muun
+treasure.bmd	Treasure_Chest.fbx	Items\Group_1\Muun
+treasureUp.bmd	Treasure_Chest_Evolved.fbx	Items\Group_1\Muun
+treasurehunter.bmd	Treasure_Hunter.fbx	Items\Group_1\Muun
+treasurehunterUp.bmd	Treasure_Hunter_Evolved.fbx	Items\Group_1\Muun
+treeelf.bmd	Tree_Fairy.fbx	Items\Group_1\Muun
+treeelfUp.bmd	Tree_Fairy_Evolved.fbx	Items\Group_1\Muun
+grassfairy.bmd	Grassy_Elf.fbx	Items\Group_1\Muun
+grassfairyUp.bmd	Grasshopper_Fairy_Evolved.fbx	Items\Group_1\Muun
+leafsorcerer.bmd	Reef_Master.fbx	Items\Group_1\Muun
+leafsorcererUp.bmd	Reef_Sword_Evolved.fbx	Items\Group_1\Muun
+sambagirl.bmd	Samba_Girl.fbx	Items\Group_1\Muun
+sambagirlUp.bmd	Samba_Girl_Evolved.fbx	Items\Group_1\Muun
+rio.bmd	Rio.fbx	Items\Group_1\Muun
+rioUp.bmd	Rio_Evolved.fbx	Items\Group_1\Muun
+bateria.bmd	Bateria.fbx	Items\Group_1\Muun
+bateriaUp.bmd	Bateria_Evolved.fbx	Items\Group_1\Muun
+presscorps.bmd	Reporter.fbx	Items\Group_1\Muun
+DragonKnight.bmd	Dragon_Articles.fbx	Items\Group_1\Muun
+Tiger.bmd	Tiger.fbx	Items\Group_1\Muun
+tigerUp.bmd	Tiger_Evolved.fbx	Items\Group_1\Muun
+Libra.bmd	Libra.fbx	Items\Group_1\Muun
+LibraUp.bmd	Libra_Evolved.fbx	Items\Group_1\Muun
+scorpio.bmd	Scorpio.fbx	Items\Group_1\Muun
+scorpioUp.bmd	Scorpio_Evolved.fbx	Items\Group_1\Muun
+rabbit.bmd	Rabbit.fbx	Items\Group_1\Muun
+rabbitUp.bmd	Rabbit_Evolved.fbx	Items\Group_1\Muun
+doto.bmd	Kaolin.fbx	Items\Group_1\Muun
+Chefchicken.bmd	Chicken.fbx	Items\Group_1\Muun
+ChefchickenUp.bmd	Chicken_Evolved.fbx	Items\Group_1\Muun
+chick.bmd	Chick.fbx	Items\Group_1\Muun
+chickUp.bmd	Chick_Evolved.fbx	Items\Group_1\Muun
+angrychicken.bmd	Angry_Chicken.fbx	Items\Group_1\Muun
+angrychickenUp.bmd	Angry_Chicken_Evolved.fbx	Items\Group_1\Muun
+lionmask.bmd	Lion.fbx	Items\Group_1\Muun
+lionmaskUp.bmd	Lion_Evolved.fbx	Items\Group_1\Muun
+knightinstructor.bmd	Knight_Instructor.fbx	Items\Group_1\Muun
+knightinstructorUP.bmd	Knight_Instructor_Evolved.fbx	Items\Group_1\Muun
+blackleopard.bmd	Blackbeard.fbx	Items\Group_1\Muun
+blackleopardUp.bmd	Blackbeard_Evolved.fbx	Items\Group_1\Muun
+toyrobot.bmd	Toy_Robot.fbx	Items\Group_1\Muun
+toyrobotUp.bmd	Toy_Robot_Evolved.fbx	Items\Group_1\Muun
+adventurecat.bmd	Adventure_cat.fbx	Items\Group_1\Muun
+adventurecatUp.bmd	Adventure_cat_Evolved.fbx	Items\Group_1\Muun
+dike.bmd	Dike.fbx	Items\Group_1\Muun
+dikeUp.bmd	Dike_Evolved.fbx	Items\Group_1\Muun
+raincoatGirl.bmd	Rainy_Girl.fbx	Items\Group_1\Muun
+raincoatGirlUp.bmd	Rainy_Girl_Evolved.fbx	Items\Group_1\Muun
+scarecrow.bmd	Scarecrow.fbx	Items\Group_1\Muun
+scarecrowUp.bmd	Scarecrow_Evolved.fbx	Items\Group_1\Muun
+knightZombie.bmd	Zombie_Articles.fbx	Items\Group_1\Muun
+knightZombieUp.bmd	Zombie_Articles_Evolved.fbx	Items\Group_1\Muun
+mrAngler.bmd	Mr_Fishing_King.fbx	Items\Group_1\Muun
+mrAnglerUp.bmd	Mr_Fishing_King_Evolved.fbx	Items\Group_1\Muun
+snowFairy.bmd	Snow_Fairy.fbx	Items\Group_1\Muun
+snowFairyUp.bmd	Snow_Fairy_Evolved.fbx	Items\Group_1\Muun
+prince.bmd	Prince.fbx	Items\Group_1\Muun
+king.bmd	Rex_Millon.fbx	Items\Group_1\Muun
+poodle.bmd	Dodo_Puddle.fbx	Items\Group_1\Muun
+poodleUp.bmd	Dodo_Puddle_Evolved.fbx	Items\Group_1\Muun
+beagle.bmd	Shinan_Beagle.fbx	Items\Group_1\Muun
+beagleUp.bmd	Shinan_Beagle_Evolved.fbx	Items\Group_1\Muun
+bulldog.bmd	Angry_Bulldog.fbx	Items\Group_1\Muun
+bulldogUp.bmd	Angry_Bulldog_Evolved.fbx	Items\Group_1\Muun
+tigerSki.bmd	Skier_Tiger.fbx	Items\Group_1\Muun
+tigerSkiUp.bmd	Skier_Tiger_Evolved.fbx	Items\Group_1\Muun
+figure.bmd	Figure_Queen.fbx	Items\Group_1\Muun
+figureUp.bmd	Figure_Queen_Evolved.fbx	Items\Group_1\Muun
+bearhockey.bmd	Hockey_Bear.fbx	Items\Group_1\Muun
+bearhockeyUp.bmd	Hockey_Bear_Evolved.fbx	Items\Group_1\Muun
+pilot.bmd	Pilot.fbx	Items\Group_1\Muun
+pilotUp.bmd	Pilot_Evolved.fbx	Items\Group_1\Muun
+superpanda.bmd	Super_Panda.fbx	Items\Group_1\Muun
+superpandaUp.bmd	Super_Panda_Evolved.fbx	Items\Group_1\Muun
+bellydancer.bmd	Belly_Dancer.fbx	Items\Group_1\Muun
+bellydancerUp.bmd	Belly_Dancer_Evolved.fbx	Items\Group_1\Muun
+bestcaptain.bmd	The_Best_Captain.fbx	Items\Group_1\Muun
+bestcaptainUp.bmd	The_Best_Captain_Evolved.fbx	Items\Group_1\Muun
+goalkeeper.bmd	Goalkeeper.fbx	Items\Group_1\Muun
+goalkeeperUp.bmd	Goalkeeper_Evolved.fbx	Items\Group_1\Muun
+referee.bmd	Referee.fbx	Items\Group_1\Muun
+refereeUp.bmd	Referee_Evolved.fbx	Items\Group_1\Muun
+hiphopdino.bmd	Hip_Hop_Dino.fbx	Items\Group_1\Muun
+hiphopdinoUp.bmd	Hip_Hop_Dino_Evolved.fbx	Items\Group_1\Muun
+beachgirl.bmd	Beach_Girl.fbx	Items\Group_1\Muun
+beachgirlUp.bmd	Beach_Girl_Evolved.fbx	Items\Group_1\Muun
+poodle.bmd	Bread_Master.fbx	Items\Group_1\Muun
+poodleUp.bmd	Bread_Master_Evolved.fbx	Items\Group_1\Muun
+kingofhangeul.bmd	Hangul_King.fbx	Items\Group_1\Muun
+kingofhangeulUp.bmd	Hangul_King_Evolved.fbx	Items\Group_1\Muun
+applemagician.bmd	Apple_Magician.fbx	Items\Group_1\Muun
+applemagicianUp.bmd	Apple_Magician_Evolved.fbx	Items\Group_1\Muun
+flyingbread.bmd	Flying_Bread.fbx	Items\Group_1\Muun
+flyingbreadUp.bmd	Flying_Bread_Evolved.fbx	Items\Group_1\Muun
+karafairy.bmd	The_Great_Fairy_Kara.fbx	Items\Group_1\Muun
+magician.bmd	Great_Wizard_Eithamu.fbx	Items\Group_1\Muun
+runemuun.bmd	Bell.fbx	Items\Group_1\Muun
+rapa.bmd	Rapa.fbx	Items\Group_1\Muun
+rapaUp.bmd	Rapa_Evolved.fbx	Items\Group_1\Muun
+nix.bmd	Nix.fbx	Items\Group_1\Muun
+nixUp.bmd	Nix_Evolved.fbx	Items\Group_1\Muun
+selupan.bmd	Selupan.fbx	Items\Group_1\Muun
+selupanUp.bmd	Selupan_Evolved.fbx	Items\Group_1\Muun
+medusa.bmd	Medusa.fbx	Items\Group_1\Muun
+medusaUp.bmd	Medusa_Evolved.fbx	Items\Group_1\Muun
+balrog.bmd	Balrog.fbx	Items\Group_1\Muun
+balrogUp.bmd	Balrog_Evolved.fbx	Items\Group_1\Muun
+hellmaine.bmd	Hell_Maine.fbx	Items\Group_1\Muun
+hellmaineUp.bmd	Hell_Maine_Evolved.fbx	Items\Group_1\Muun
+kundun.bmd	Kundun.fbx	Items\Group_1\Muun
+kundunUp.bmd	Kundun_Evolved.fbx	Items\Group_1\Muun
+hydra.bmd	Hydra.fbx	Items\Group_1\Muun
+hydraUp.bmd	Hydra_Evolved.fbx	Items\Group_1\Muun
+flyingbread.bmd	Lord_Silvester.fbx	Items\Group_1\Muun
+flyingbread.bmd	Lord_Silvester_Evolved.fbx	Items\Group_1\Muun
+flyingbread.bmd	Nightmare.fbx	Items\Group_1\Muun
+flyingbread.bmd	Nightmare_Evolved.fbx	Items\Group_1\Muun
+flyingbread.bmd	Dark_Phoenix.fbx	Items\Group_1\Muun
+flyingbread.bmd	Dark_Phoenix_Evolved.fbx	Items\Group_1\Muun
+kairuku.bmd	Kairuku.fbx	Items\Group_1\Muun
+kairukuup.bmd	Kairuku_Evolved.fbx	Items\Group_1\Muun
+magicianmuun.bmd	Legendary_Wizard.fbx	Items\Group_1\Muun
+elfmuun.bmd	Guardian_Elf.fbx	Items\Group_1\Muun
+Desmodus.bmd	Desmodus.fbx	Items\Group_1\Muun
+Desmodus_evol.bmd	Desmodus_Evolved.fbx	Items\Group_1\Muun
+elfqueen.bmd	Fairy_Queen_Lunedil.fbx	Items\Group_1\Muun
+elfmuun.bmd	Marshal_Gaion_Karein.fbx	Items\Group_1\Muun
+mousemuun.bmd	Mouse.fbx	Items\Group_1\Muun
+mousemuunUp.bmd	Mouse_Evolved.fbx	Items\Group_1\Muun
+leah.bmd	Leah.fbx	Items\Group_1\Muun
+leahUp.bmd	Leah_Evolved.fbx	Items\Group_1\Muun
+shadowphantom.bmd	Shadow_Phantom.fbx	Items\Group_1\Muun
+shadowphantomUp.bmd	Shadow_Phantom_Evolved.fbx	Items\Group_1\Muun
+guardian.bmd	Warehouse_Guardian.fbx	Items\Group_1\Muun
+guardianUp.bmd	Warehouse_Guardian_Evolved.fbx	Items\Group_1\Muun
+lala.bmd	Elf_Lala.fbx	Items\Group_1\Muun
+lalaUp.bmd	Elf_Lala_Evolved.fbx	Items\Group_1\Muun
+evolutionstone.bmd	Stone_of_Evolution.fbx	Items\Group_1\Muun
+dragonpet.bmd	Luki.fbx	Items\Group_1\Muun
+dragonpet_evol.bmd	Luki_Evolved.fbx	Items\Group_1\Muun
+stonepet.bmd	Tony.fbx	Items\Group_1\Muun
+stonepet_evol.bmd	Tony_Evolved.fbx	Items\Group_1\Muun
+mermaidpet.bmd	Nymph.fbx	Items\Group_1\Muun
+mermaidpet_evol.bmd	Nymph_Evolved.fbx	Items\Group_1\Muun
+satanpet.bmd	Safi.fbx	Items\Group_1\Muun
+satanpet_evol.bmd	Safi_Evolved.fbx	Items\Group_1\Muun
+williumpet.bmd	William.fbx	Items\Group_1\Muun
+williumpet_evol.bmd	William_Evolved.fbx	Items\Group_1\Muun
+Polpet.bmd	Paul.fbx	Items\Group_1\Muun
+Polpet_evol.bmd	Paul_Evolved.fbx	Items\Group_1\Muun
+Kironpet.bmd	Chiron.fbx	Items\Group_1\Muun
+Kironpet_evol.bmd	Chiron_Evolved.fbx	Items\Group_1\Muun
+wooparoopet.bmd	Wooparoo.fbx	Items\Group_1\Muun
+wooparoopet_evol.bmd	Wooparoo_Evolved.fbx	Items\Group_1\Muun
+wolfpet.bmd	Tibetton.fbx	Items\Group_1\Muun
+wolfpet_evol.bmd	Tibetton_Evolved.fbx	Items\Group_1\Muun
+Witchpet.bmd	Witch.fbx	Items\Group_1\Muun
+Witchpet_evol.bmd	Witch_Evolved.fbx	Items\Group_1\Muun
+Skullpet.bmd	Skull.fbx	Items\Group_1\Muun
+Skullpet_evol.bmd	Skull_Evolved.fbx	Items\Group_1\Muun
+pumpipet.bmd	Pumpy.fbx	Items\Group_1\Muun
+pumpipet_evol.bmd	Pumpy_Evolved.fbx	Items\Group_1\Muun
+spellst01.bmd	Muun_Energy_Converter.fbx	Items\Group_1\Muun
+spellst02.bmd	Wizardry_Stone.fbx	Items\Group_1\Muun
+sabatpet.bmd	Savath.fbx	Items\Group_1\Muun
+sabatpet_evol.bmd	Savath_Evolved.fbx	Items\Group_1\Muun
+Lycanpet.bmd	Lycan.fbx	Items\Group_1\Muun
+Lycanpet_evol.bmd	Lycan_Evolved.fbx	Items\Group_1\Muun
+tobypet.bmd	Torby.fbx	Items\Group_1\Muun
+tobypet_evol.bmd	Torby_Evolved.fbx	Items\Group_1\Muun
+seirenpet.bmd	Seiren.fbx	Items\Group_1\Muun
+seirenpet_evol.bmd	Seiren_Evolved.fbx	Items\Group_1\Muun
+Behemothpet.bmd	Behemoth.fbx	Items\Group_1\Muun
+Behemothpet_evol.bmd	Behemoth_Evolved.fbx	Items\Group_1\Muun
+loglepet.bmd	Loggle.fbx	Items\Group_1\Muun
+loglepet_evol.bmd	Loggle_Evolved.fbx	Items\Group_1\Muun
+minopet.bmd	Mino.fbx	Items\Group_1\Muun
+minopet_evol.bmd	Mino_Evolved.fbx	Items\Group_1\Muun
+houndpet.bmd	Hound.fbx	Items\Group_1\Muun
+houndpet_evol.bmd	Hound_Evolved.fbx	Items\Group_1\Muun
+tribepet.bmd	Trive.fbx	Items\Group_1\Muun
+tribepet_evol.bmd	Trive_Evolved.fbx	Items\Group_1\Muun
+bogeonpet.bmd	Vogan.fbx	Items\Group_1\Muun
+bogeonpet_evol.bmd	Vogan_Evolved.fbx	Items\Group_1\Muun
+cyclopspet.bmd	Cyclop.fbx	Items\Group_1\Muun
+cyclopspet_evol.bmd	Cyclop_Evolved.fbx	Items\Group_1\Muun
+Bonpeupet.bmd	Bonf.fbx	Items\Group_1\Muun
+Bonpeupet_evol.bmd	Bonf_Evolved.fbx	Items\Group_1\Muun
+hawkpet.bmd	Hawk.fbx	Items\Group_1\Muun
+hawkpet_evol.bmd	Hawk_Evolved.fbx	Items\Group_1\Muun
+MuTpet.bmd	Muty.fbx	Items\Group_1\Muun
+MuTpet_evol.bmd	Muty_Evolved.fbx	Items\Group_1\Muun
+mantispet.bmd	Mantis.fbx	Items\Group_1\Muun
+mantispet_evol.bmd	Mantis_Evolved.fbx	Items\Group_1\Muun
+scolpipet.bmd	Scolpy.fbx	Items\Group_1\Muun
+scolpipet_evol.bmd	Scolpy_Evolved.fbx	Items\Group_1\Muun
+chaferpet.bmd	Chafer.fbx	Items\Group_1\Muun
+chaferpet_evol.bmd	Chafer_Evolved.fbx	Items\Group_1\Muun
+shogunpet.bmd	Shogun.fbx	Items\Group_1\Muun
+shogunpet_evol.bmd	Shogun_Evolved.fbx	Items\Group_1\Muun
+ninjapet.bmd	Ninja.fbx	Items\Group_1\Muun
+ninjapet_evol.bmd	Ninja_Evolved.fbx	Items\Group_1\Muun
+samouraipet.bmd	Samurai.fbx	Items\Group_1\Muun
+samouraipet_evol.bmd	Samurai_Evolved.fbx	Items\Group_1\Muun
+cosgirlpet.bmd	Cosplay_Girl.fbx	Items\Group_1\Muun
+cosgirlpet_evol.bmd	Cosplay_Girl_Evolved.fbx	Items\Group_1\Muun
+taegeukgirlpet.bmd	Cheer_Girl.fbx	Items\Group_1\Muun
+taegeukgirlpet_evol.bmd	Cheer_Girl_Evolved.fbx	Items\Group_1\Muun
+SportyGirlpet.bmd	Sporty_Girl.fbx	Items\Group_1\Muun
+SportyGirlpet_evol.bmd	Sporty_Girl_Evolved.fbx	Items\Group_1\Muun
+baelpet.bmd	Baal.fbx	Items\Group_1\Muun
+baelpet_evol.bmd	Baal_Evolved.fbx	Items\Group_1\Muun
+gapppet.bmd	Gaap.fbx	Items\Group_1\Muun
+gapppet_evol.bmd	Gaap_Evolved.fbx	Items\Group_1\Muun
+tapppet.bmd	Taaf.fbx	Items\Group_1\Muun
+tapppet_evol.bmd	Taaf_Evolved.fbx	Items\Group_1\Muun
+Frozenpet.bmd	Frozen.fbx	Items\Group_1\Muun
+Frozenpet_evol.bmd	Frozen_Evolved.fbx	Items\Group_1\Muun
+lurepet.bmd	Loor.fbx	Items\Group_1\Muun
+lurepet_evol.bmd	Loor_Evolved.fbx	Items\Group_1\Muun
+persilpet.bmd	Purssil.fbx	Items\Group_1\Muun
+persilpet_evol.bmd	Purssil_Evolved.fbx	Items\Group_1\Muun
+luckyrabbit.bmd	Lucky_Rabbit.fbx	Items\Group_1\Muun
+luckyrabbit_evol.bmd	Lucky_Rabbit_Evolved.fbx	Items\Group_1\Muun
+songrabbit.bmd	Songpyeon_Rabbit.fbx	Items\Group_1\Muun
+songrabbit_evol.bmd	Songpyeon_Rabbit_Evolved.fbx	Items\Group_1\Muun
+stonemortarrabbit.bmd	Mortar_Rabbit.fbx	Items\Group_1\Muun
+stonemortarrabbit_evol.bmd	Mortar_Rabbit_Evolved.fbx	Items\Group_1\Muun
+polarispet.bmd	Tarius.fbx	Items\Group_1\Muun
+polarispet_evol.bmd	Tarius_Evolved.fbx	Items\Group_1\Muun
+reynerpet.bmd	Rainer.fbx	Items\Group_1\Muun
+reynerpet_evol.bmd	Rainer_Evolved.fbx	Items\Group_1\Muun
+alcamopet.bmd	Alkamo.fbx	Items\Group_1\Muun
+alcamopet_evol.bmd	Alkamo_Evolved.fbx	Items\Group_1\Muun
+gracchuspet.bmd	Glacuse.fbx	Items\Group_1\Muun
+gracchuspet_evol.bmd	Glacuse_Evolved.fbx	Items\Group_1\Muun
+kenturionpet.bmd	Kenturion.fbx	Items\Group_1\Muun
+kenturionpet_evol.bmd	Kenturion_Evolved.fbx	Items\Group_1\Muun
+rockapet.bmd	Rocka.fbx	Items\Group_1\Muun
+rockapet_evol.bmd	Rocka_Evolved.fbx	Items\Group_1\Muun
+rippenpet.bmd	Repen.fbx	Items\Group_1\Muun
+rippenpet_evol.bmd	Repen_Evolved.fbx	Items\Group_1\Muun
+ponpet.bmd	Pawn.fbx	Items\Group_1\Muun
+ponpet_evol.bmd	Pawn_Evolved.fbx	Items\Group_1\Muun
+griffspet.bmd	Grippus.fbx	Items\Group_1\Muun
+griffspet_evol.bmd	Grippus_Evolved.fbx	Items\Group_1\Muun
+polarbearpet.bmd	Polar_Bear.fbx	Items\Group_1\Muun
+polarbearpet_evol.bmd	Polar_Bear_Evolved.fbx	Items\Group_1\Muun
+presentpet.bmd	Present.fbx	Items\Group_1\Muun
+presentpet_evol.bmd	Present_Evolved.fbx	Items\Group_1\Muun
+rockinghorsepet.bmd	Rockinghorse.fbx	Items\Group_1\Muun
+rockinghorsepet_evol.bmd	Rockinghorse_Evolved.fbx	Items\Group_1\Muun
+orrispet.bmd	Aries.fbx	Items\Group_1\Muun
+orrispet_evol.bmd	Aries_Evolved.fbx	Items\Group_1\Muun
+Leicesterpet.bmd	Lester.fbx	Items\Group_1\Muun
+Leicesterpet_evol.bmd	Lester_Evolved.fbx	Items\Group_1\Muun
+merinopet.bmd	Merino.fbx	Items\Group_1\Muun
+merinopet_evol.bmd	Merino_Evolved.fbx	Items\Group_1\Muun
+splinterpet.bmd	Splinter.fbx	Items\Group_1\Muun
+splinterpet_evol.bmd	Splinter_Evolved.fbx	Items\Group_1\Muun
+mutationpet.bmd	Mutation.fbx	Items\Group_1\Muun
+mutationpet_evol.bmd	Mutation_Evolved.fbx	Items\Group_1\Muun
+fighterpet.bmd	Pider.fbx	Items\Group_1\Muun
+fighterpet_evol.bmd	Pider_Evolved.fbx	Items\Group_1\Muun
+heywoodpet.bmd	Heywood.fbx	Items\Group_1\Muun
+heywoodpet_evol.bmd	Heywood_Evolved.fbx	Items\Group_1\Muun
+branchpet.bmd	Branch.fbx	Items\Group_1\Muun
+branchpet_evol.bmd	Branch_Evolved.fbx	Items\Group_1\Muun
+hookpet.bmd	Hook.fbx	Items\Group_1\Muun
+hookpet_evol.bmd	Hook_Evolved.fbx	Items\Group_1\Muun
+caniflepet.bmd	Carnifle.fbx	Items\Group_1\Muun
+caniflepet_evol.bmd	Carnifle_Evolved.fbx	Items\Group_1\Muun
+mandorapet.bmd	Mandora.fbx	Items\Group_1\Muun
+mandorapet_evol.bmd	Mandora_Evolved.fbx	Items\Group_1\Muun
+treatpet.bmd	Treat.fbx	Items\Group_1\Muun
+treatpet_evol.bmd	Treat_Evolved.fbx	Items\Group_1\Muun
+rosepet.bmd	Rose_Spirit.fbx	Items\Group_1\Muun
+rosepet_evol.bmd	Rose_Spirit_Evolved.fbx	Items\Group_1\Muun
+rapeflowerpet.bmd	Freesia_Spirit.fbx	Items\Group_1\Muun
+rapeflowerpet_evol.bmd	Freesia_Spirit_Evolved.fbx	Items\Group_1\Muun
+cherryblossompet.bmd	Cherry_Blossom_Spirit.fbx	Items\Group_1\Muun
+cherryblossompet_evol.bmd	Cherry_Blossom_Spirit_Evolved.fbx	Items\Group_1\Muun
+gigantespet.bmd	Gigantes.fbx	Items\Group_1\Muun
+gigantespet_evol.bmd	Gigantes_Evolved.fbx	Items\Group_1\Muun
+mommothpet.bmd	Mammoth.fbx	Items\Group_1\Muun
+mommothpet_evol.bmd	Mammoth_Evolved.fbx	Items\Group_1\Muun
+walkerpet.bmd	Walker.fbx	Items\Group_1\Muun
+walkerpet_evol.bmd	Walker_Evolved.fbx	Items\Group_1\Muun
+surfinggirl.bmd	Surfing_Girl.fbx	Items\Group_1\Muun
+surfinggirlUp.bmd	Surfing_Girl_Evolved.fbx	Items\Group_1\Muun
+tubegirl.bmd	Tube_Girl.fbx	Items\Group_1\Muun
+tubegirlUP.bmd	Tube_Girl_Evolved.fbx	Items\Group_1\Muun
+coolinggirlpet.bmd	Snorkeling_Girl.fbx	Items\Group_1\Muun
+coolinggirlpet_evol.bmd	Snorkeling_Girl_Evolved.fbx	Items\Group_1\Muun
+commander.bmd	Commander.fbx	Items\Group_1\Muun
+CommanderUp.bmd	Commander_Evolved.fbx	Items\Group_1\Muun
+LanceSoldier.bmd	Lance_Soldier.fbx	Items\Group_1\Muun
+LanceSoldierUp.bmd	Lance_Soldier_Evolved.fbx	Items\Group_1\Muun
+bowsoldier.bmd	Bow_Soldier.fbx	Items\Group_1\Muun
+bowsoldierUp.bmd	Bow_Soldier_Evolved.fbx	Items\Group_1\Muun
+hammer.bmd	Hammer.fbx	Items\Group_1\Muun
+hammerUp.bmd	Hammer_Evolved.fbx	Items\Group_1\Muun
+ripieo.bmd	Refear.fbx	Items\Group_1\Muun
+ripieoUp.bmd	Refear_Evolved.fbx	Items\Group_1\Muun
+xer.bmd	Axer.fbx	Items\Group_1\Muun
+xerUp.bmd	Axer_Evolved.fbx	Items\Group_1\Muun
+pumpkingirl.bmd	Pumpkin_Girl.fbx	Items\Group_1\Muun
+pumpkingirlUp.bmd	Pumpkin_Girl_Evolved.fbx	Items\Group_1\Muun
+ghost.bmd	Ghost.fbx	Items\Group_1\Muun
+ghostUp.bmd	Ghost_Evolved.fbx	Items\Group_1\Muun
+mummyboy.bmd	Mummified_Boy.fbx	Items\Group_1\Muun
+mummyboyUp.bmd	Mummified_Boy_Evolved.fbx	Items\Group_1\Muun
+chrysanthemum.bmd	Chrysanthemum.fbx	Items\Group_1\Muun
+chrysanthemumUp.bmd	Chrysanthemum_Evolved.fbx	Items\Group_1\Muun
+maple.bmd	Maple.fbx	Items\Group_1\Muun
+mapleUp.bmd	Maple_Evolved.fbx	Items\Group_1\Muun
+ginkgo.bmd	Ginkgo.fbx	Items\Group_1\Muun
+ginkgoUp.bmd	Ginkgo_Evolved.fbx	Items\Group_1\Muun
+toysoldier.bmd	Toy_soldier.fbx	Items\Group_1\Muun
+toysoldierUp.bmd	Toy_soldier_Evolved.fbx	Items\Group_1\Muun
+xmastree.bmd	Christmas_tree.fbx	Items\Group_1\Muun
+xmastreeUp.bmd	Christmas_tree_Evolved.fbx	Items\Group_1\Muun
+snowman.bmd	Snow_Man.fbx	Items\Group_1\Muun
+snowmanUp.bmd	Snow_Man_Evolved.fbx	Items\Group_1\Muun
+buskermonkey.bmd	Muscle_Monkey.fbx	Items\Group_1\Muun
+buskermonkeyUp.bmd	Muscle_Monkey_Evolved.fbx	Items\Group_1\Muun
+djmonkey.bmd	Monkey_DJ.fbx	Items\Group_1\Muun
+djmonkeyUp.bmd	Monkey_DJ_Evolved.fbx	Items\Group_1\Muun
+spacemonkey.bmd	Space_Monkey.fbx	Items\Group_1\Muun
+spacemonkeyUp.bmd	Space_Monkey_Evolved.fbx	Items\Group_1\Muun
+littlecupid.bmd	Little_Cupid.fbx	Items\Group_1\Muun
+littlecupidUp.bmd	Little_Cupid_Evolved.fbx	Items\Group_1\Muun
+chococookie.bmd	Chocolate_Cookie.fbx	Items\Group_1\Muun
+chococookieUp.bmd	Chocolate_Cookie_Evolved.fbx	Items\Group_1\Muun
+heartgirl.bmd	Heart_girl.fbx	Items\Group_1\Muun
+heartgirlUp.bmd	Heart_girl_Evolved.fbx	Items\Group_1\Muun
+candygril.bmd	Candy_Girl_.fbx	Items\Group_1\Muun
+candygrilUp.bmd	Candy_Girl_Evolved.fbx	Items\Group_1\Muun
+lollipopmama.bmd	Lollipop_Mama.fbx	Items\Group_1\Muun
+lollipopmamaUp.bmd	Lollipop_Mama_Evolved.fbx	Items\Group_1\Muun
+sweetmuscleman.bmd	Sweet_Muscle_Man.fbx	Items\Group_1\Muun
+SweetMuscleManUp.bmd	Sweet_Muscle_Man_Evolved.fbx	Items\Group_1\Muun
+roboxred.bmd	Pandora_Box.fbx	Items\Group_1\Misc\Box
+charactercard.bmd	Red_Card.fbx	Items\Group_1\Misc\Box
+charactercard.bmd	Blue_Card.fbx	Items\Group_1\Misc\Box
+creaftbox.bmd	Premium_Box.fbx	Items\Group_1\Misc\Box
+charactercard.bmd	Red_Card_Elemental.fbx	Items\Group_1\Misc\Box
+jaspernecklace.bmd	Jade_Necklace.fbx	Items\Group_1\Accessory
+lazuritenecklace.bmd	Lapis_Lazuli_Necklace.fbx	Items\Group_1\Accessory
+BTjaspernecklace.bmd	Battle_Jade_Necklace.fbx	Items\Group_1\Accessory
+BTlazuritenecklace.bmd	Battle_Lapis_Lazuli_Necklace.fbx	Items\Group_1\Accessory	

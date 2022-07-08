@@ -1,0 +1,6 @@
+This example (player.bmd) only contains animations. 
+
+[PASSED] Tested OK on Unreal Engine. 
+Remember to uncheck Import Mesh, cause no geometry mesh data at all (only anims).
+
+PS: Need to naming every animation for better experience.

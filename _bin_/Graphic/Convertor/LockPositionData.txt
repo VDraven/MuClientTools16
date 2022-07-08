@@ -461,3 +461,6 @@
 3	Rider02.bmd
 4	Rider02.bmd
 0	WaveForce.bmd
+0	player.bmd
+0	player.bmd
+0	player.bmd

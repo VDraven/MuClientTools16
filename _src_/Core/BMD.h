@@ -6,7 +6,7 @@
 #define MAX_VERTICES 15000
 #define MAX_MONSTER_SOUND   10//5
 
-enum SMD_TYPE {SMD_REFERENCE = -1, SMD_ANIMATION };
+enum SMD_TYPE { SMD_REFERENCE = -1, SMD_ANIMATION };
 
 struct BoneMatrix_t
 {
@@ -20,7 +20,7 @@ struct BoneMatrix_t
 		Rotation = r;
 		//Quaternion = NULL;
 	}
-} ;
+};
 
 struct Bone_t
 {
@@ -87,7 +87,7 @@ struct Triangle_t
 	char       Polygon;
 	short      VertexIndex[4];
 	short      NormalIndex[4];
-	short      TexCoordIndex[4]; 
+	short      TexCoordIndex[4];
 	//EdgeTriangleIndex, Front, LightMapCoord, LightMapIndexes are unsed
 	short      EdgeTriangleIndex[4];
 	bool       Front;
@@ -110,7 +110,7 @@ struct Action_t
 	//float			PlaySpeed;
 	short			NumAnimationKeys;
 	bool			LockPositions;
-	vec3_t*			Positions;
+	vec3_t* Positions;
 
 	Action_t()
 	{
@@ -130,10 +130,10 @@ struct Mesh_t
 	short			NumTexCoords;
 	short			NumTriangles;
 	short			Texture;
-	Vertex_t*		Vertices;
-	Normal_t*		Normals;
-	TexCoord_t*		TexCoords;
-	Triangle_t*		Triangles;
+	Vertex_t* Vertices;
+	Normal_t* Normals;
+	TexCoord_t* TexCoords;
+	Triangle_t* Triangles;
 	//TextureScript* m_csTScript;
 
 	Mesh_t()
@@ -174,57 +174,5 @@ struct BMD_DATA
 	}
 };
 
-class BMD : public BaseIO
-{
-public:
-	BMD() { };
-	virtual ~BMD() { Release(); };
 
-	BOOL Unpack(const char* szSrc, const char* szDest);
-	BOOL Pack(const char* szSrc, const char* szDest);
-
-	static BOOL LoadLockPostionData(const char* fname = "LockPositionData.txt");
-private:
-	static BOOL GetLockPosition(std::string & name, short action);
-	static BOOL SetLockPosition(std::string& name, short action);
-	inline static std::string LockPositionData_FileName;
-	inline static std::unordered_multimap <std::string, short> LockPositionData;
-private:
-	BOOL Release();
-	BOOL FixUpBones();
-
-	BOOL Encrypt();
-	BOOL Decrypt();
-
-	BOOL LoadBmd(const char* szSrc);
-	BOOL ReadBmd();
-	BOOL SaveSmd(const char* szDest);
-	BOOL Bmd2Smd(std::ofstream& os, short action);
-
-	BOOL LoadSmd(const char* szSrc);
-	BOOL ReadSmd(std::ifstream& is, short action);
-	BOOL SaveBmd(const char* szDest);
-	BOOL Smd2Bmd(BYTE version = 0xA);
-
-private:
-	BMD_DATA m_data;
-
-	struct
-	{
-		float  m[3][4];
-		float  im[3][4];
-		vec3_t WorldOrg;
-	} BoneFixup[MAX_BONES];
-
-	std::vector<std::vector<std::vector<float>>> Temp_Bone_Pos;
-	std::vector<std::vector<std::vector<float>>> Temp_Bone_Rot;
-	std::vector<std::vector<float>>			Temp_Lock_Pos;
-	std::vector<std::vector<Vertex_t>>		Temp_Vertex;
-	std::vector<std::vector<Normal_t>>		Temp_Normal;
-	std::vector<std::vector<TexCoord_t>>	Temp_TexCoord;
-	std::vector<std::vector<Triangle_t>>	Temp_Triangle;
-
-
-};
-
-#endif // !BMD_H
+#endif

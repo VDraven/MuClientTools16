@@ -43,6 +43,7 @@ constexpr const char EXT_SMD[] = ".smd";
 constexpr const char EXT_PAM[] = ".pam";
 constexpr const char EXT_TTA[] = ".tta";
 constexpr const char EXT_JBO[] = ".jbo";
+constexpr const char EXT_FBX[] = ".fbx";
 
 constexpr DWORD INT_OZJ = Ext2Int(EXT_OZJ);
 constexpr DWORD INT_OZT = Ext2Int(EXT_OZT);
@@ -65,6 +66,7 @@ constexpr DWORD INT_SMD = Ext2Int(EXT_SMD);
 constexpr DWORD INT_PAM = Ext2Int(EXT_PAM);
 constexpr DWORD INT_TTA = Ext2Int(EXT_TTA);
 constexpr DWORD INT_JBO = Ext2Int(EXT_JBO);
+constexpr DWORD INT_FBX = Ext2Int(EXT_FBX);
 
 template <const char* EXT, size_t PAD = 1>
 class GraphicConvertor : public BaseIO
