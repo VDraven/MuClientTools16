@@ -12,6 +12,7 @@ public:
 	BOOL Unpack(const char* szSrc, const char* szDest = NULL, std::vector<std::pair<std::string, fs::path>>* find_textures = NULL, bool rename_textures = false);
 	BOOL Pack(const char* szSrc, const char* szDest = NULL);
 
+	static void SetFrameTime(double t);
 private:
 	BOOL Release();
 	BOOL FixUpBones();
@@ -24,6 +25,7 @@ private:
 	BOOL SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs::path>>* find_textures = NULL, bool rename_textures = false);
 
 private:
+	static double FRAME_TIME;
 	BMD_DATA m_data;
 	struct
 	{

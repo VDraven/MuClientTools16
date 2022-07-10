@@ -16,6 +16,12 @@
 #define PRINT_DEBUG_BMD(msg)
 #endif
 
+double BMD_FBX::FRAME_TIME = 0.25;
+void BMD_FBX::SetFrameTime(double t)
+{
+	BMD_FBX::FRAME_TIME = t;
+};
+
 
 //========================================================================================
 
@@ -814,34 +820,26 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 
 			FbxTime lTimeStart, lTimeStop;
 			lTimeStart.SetSecondDouble(0.0);
-			lTimeStop.SetSecondDouble(0.5 * nKeys);
+			lTimeStop.SetSecondDouble(BMD_FBX::FRAME_TIME * (nKeys - 1));
 			FbxTimeSpan lTimeSpan(lTimeStart, lTimeStop);
 			lAnimStack->SetLocalTimeSpan(lTimeSpan);
 
-			for (int j = 0; j < m_data.NumBones; j++)
+			auto AddAnim = [&](FbxNode* node, BoneMatrix_t* bm)
 			{
-				Bone_t* b = &m_data.Bones[j];
-				BoneMatrix_t* bm = &b->BoneMatrixes[i];
-
-				if (b->Dummy || i >= b->BoneMatrixes.size())
-					continue;
-
-				aSkeletonNodes[j]->LclTranslation.GetCurveNode(lAnimLayer, true);
-				aSkeletonNodes[j]->LclRotation.GetCurveNode(lAnimLayer, true);
-				FbxAnimCurve* lCurveTX = aSkeletonNodes[j]->LclTranslation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_X, true);
-				FbxAnimCurve* lCurveTY = aSkeletonNodes[j]->LclTranslation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Y, true);
-				FbxAnimCurve* lCurveTZ = aSkeletonNodes[j]->LclTranslation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Z, true);
-				FbxAnimCurve* lCurveRX = aSkeletonNodes[j]->LclRotation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_X, true);
-				FbxAnimCurve* lCurveRY = aSkeletonNodes[j]->LclRotation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Y, true);
-				FbxAnimCurve* lCurveRZ = aSkeletonNodes[j]->LclRotation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Z, true);
+				node->LclTranslation.GetCurveNode(lAnimLayer, true);
+				node->LclRotation.GetCurveNode(lAnimLayer, true);
+				FbxAnimCurve* lCurveTX = node->LclTranslation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_X, true);
+				FbxAnimCurve* lCurveTY = node->LclTranslation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Y, true);
+				FbxAnimCurve* lCurveTZ = node->LclTranslation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Z, true);
+				FbxAnimCurve* lCurveRX = node->LclRotation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_X, true);
+				FbxAnimCurve* lCurveRY = node->LclRotation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Y, true);
+				FbxAnimCurve* lCurveRZ = node->LclRotation.GetCurve(lAnimLayer, FBXSDK_CURVENODE_COMPONENT_Z, true);
 
 				FbxTime lTime; int lKeyIndex = 0;
 
 				lCurveTX->KeyModifyBegin(); lCurveRX->KeyModifyBegin();
 				lCurveTY->KeyModifyBegin(); lCurveRY->KeyModifyBegin();
-				lCurveTZ->KeyModifyBegin(); lCurveRZ->KeyModifyBegin(); 
-
-
+				lCurveTZ->KeyModifyBegin(); lCurveRZ->KeyModifyBegin();
 				for (int k = 0; k < nKeys; k++)
 				{
 					FbxVector4 r;
@@ -854,7 +852,7 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 					t[1] = bm->Position[k][1];
 					t[2] = bm->Position[k][2];
 
-					lTime.SetSecondDouble(0.5 * k);
+					lTime.SetSecondDouble(BMD_FBX::FRAME_TIME * k);
 					lKeyIndex = lCurveTX->KeyAdd(lTime);
 					lCurveTX->KeySet(lKeyIndex, lTime, t[0], FbxAnimCurveDef::eInterpolationLinear);
 					lKeyIndex = lCurveTY->KeyAdd(lTime);
@@ -871,6 +869,26 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 				lCurveTX->KeyModifyEnd(); lCurveRX->KeyModifyEnd();
 				lCurveTY->KeyModifyEnd(); lCurveRY->KeyModifyEnd();
 				lCurveTZ->KeyModifyEnd(); lCurveRZ->KeyModifyEnd();
+			};
+
+			for (int j = 0; j < m_data.NumBones; j++)
+			{
+				Bone_t* b = &m_data.Bones[j];
+				if (b->Dummy || i >= b->BoneMatrixes.size())
+					continue;
+				BoneMatrix_t* bm = &b->BoneMatrixes[i];
+
+				if (j == 0)
+				{
+					std::vector<vec3_t> dummy(nKeys);
+					memset(dummy.data(), 0, nKeys * sizeof(vec3_t));
+					BoneMatrix_t bm_root(dummy.data(), dummy.data());
+
+					AddAnim(lSkeletonRootNode, &bm_root);
+				}
+				else
+					AddAnim(aSkeletonNodes[j], bm);
+
 			}
 		}
 	}

@@ -18,9 +18,10 @@ using namespace std;
 #define FBX_FOLDER				1	// "out\model\model.fbx" vs "out\model.fbx"
 #define FBX_FIND_TEXTURES		1	// find and copy textures required to fbx folder
 #define FBX_CREATE_LINK			1	// grouping by creating Windows .lnk (shortcut) files. Depend on "FbxLinkData.txt"
-
-//Should disable this. It makes unnecessary dupicated textures when importing (same textures but different names)
+//Should disable FBX_RENAME_TEXTURE. It makes unnecessary dupicated textures when importing (same textures but different names)
 #define FBX_RENAME_TEXTURE		0	// rename textures to model name. Ex: "ModelName_T_001.jpg"	
+//Time (in second) between 2 anim keyframes. default = 0.25
+#define FBX_FRAME_TIME			0.25
 
 // "FbxLinkData.txt" format:
 // [bmd file name - case insensitive] \tab [fbx output name - case sensitive] \tab [a link] \tab [another link] ...
@@ -313,6 +314,9 @@ int main(int argc, char** argv)
 	ofstream log("Bmd2Fbx.log");
 	std::cout.rdbuf(log.rdbuf());
 #endif
+
+	//Time (in second) between 2 anim keyframes. default = 0.25
+	BMD_FBX::SetFrameTime(FBX_FRAME_TIME);
 
 	if (FBX_CREATE_LINK)
 		LoadFbxLinkData("FbxLinkData.txt");
