@@ -285,11 +285,6 @@ BOOL BMD_SMD::LoadBmd(const char* szSrc)
 	Release();
 	m_data.Name = fs::path(szSrc).filename().replace_extension("").string();
 
-#ifdef BMD_TEXTURE_INFO
-	Temp_Texture.first = std::string(szSrc);
-	Temp_Texture.second.clear();
-#endif
-
 	return FileOpen(szSrc)
 		&& Decrypt()
 		&& ReadBmd();
