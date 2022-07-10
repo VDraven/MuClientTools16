@@ -17,9 +17,9 @@
 #endif
 
 double BMD_FBX::FRAME_TIME = 0.25;
-void BMD_FBX::SetFrameTime(double t)
+void BMD_FBX::SetFrameTime(double frame_time)
 {
-	BMD_FBX::FRAME_TIME = t;
+	BMD_FBX::FRAME_TIME = frame_time;
 };
 
 
@@ -192,11 +192,6 @@ BOOL BMD_FBX::LoadBmd(const char* szSrc)
 {
 	Release();
 	m_data.Name = fs::path(szSrc).filename().replace_extension("").string();
-
-#ifdef BMD_TEXTURE_INFO
-	Temp_Texture.first = std::string(szSrc);
-	Temp_Texture.second.clear();
-#endif
 
 	return FileOpen(szSrc)
 		&& Decrypt()
@@ -845,12 +840,12 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 					FbxVector4 r;
 					FbxVector4 t;
 
-					r[0] = bm->Rotation[k][0] * (180.0f / Q_PI);
-					r[1] = bm->Rotation[k][1] * (180.0f / Q_PI);
-					r[2] = bm->Rotation[k][2] * (180.0f / Q_PI);
-					t[0] = bm->Position[k][0];
-					t[1] = bm->Position[k][1];
-					t[2] = bm->Position[k][2];
+					r[0] = !bm ? 0.0 : bm->Rotation[k][0] * (180.0f / Q_PI);
+					r[1] = !bm ? 0.0 : bm->Rotation[k][1] * (180.0f / Q_PI);
+					r[2] = !bm ? 0.0 : bm->Rotation[k][2] * (180.0f / Q_PI);
+					t[0] = !bm ? 0.0 : bm->Position[k][0];
+					t[1] = !bm ? 0.0 : bm->Position[k][1];
+					t[2] = !bm ? 0.0 : bm->Position[k][2];
 
 					lTime.SetSecondDouble(BMD_FBX::FRAME_TIME * k);
 					lKeyIndex = lCurveTX->KeyAdd(lTime);
@@ -880,14 +875,16 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 
 				if (j == 0)
 				{
-					std::vector<vec3_t> dummy(nKeys);
-					memset(dummy.data(), 0, nKeys * sizeof(vec3_t));
-					BoneMatrix_t bm_root(dummy.data(), dummy.data());
+					AddAnim(lSkeletonRootNode, NULL);
 
-					AddAnim(lSkeletonRootNode, &bm_root);
+					//https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/RootMotion/
+					if (!a->LockPositions)
+						AddAnim(aSkeletonNodes[0], bm);
 				}
 				else
+				{
 					AddAnim(aSkeletonNodes[j], bm);
+				}
 
 			}
 		}

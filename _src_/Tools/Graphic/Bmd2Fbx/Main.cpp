@@ -1,7 +1,10 @@
 // This file contains the 'main' function. Program execution begins and ends there.
 // Requirement: C++17
 
-#define BMD_TEXTURE_INFO
+// "FbxLinkData.txt" format:
+// [bmd file name - case insensitive] \tab [fbx output name - case sensitive] \tab [a link] \tab [another link] ...
+// Ex: 
+// Monster01.bmd	Bull_Fighter.fbx	Monster\Group_1\Lorencia	Monster\Group_2\Something	Monster\Group_3\BlaBlaBla
 
 #include "Core.h"
 #include "OZJ.h"
@@ -14,6 +17,8 @@
 #include <execution>
 using namespace std;
 
+//==================================================================================
+
 #define FBX_DEBUG_LOG			1	// log file "Bmd2Fbx.log"
 #define FBX_FOLDER				1	// "out\model\model.fbx" vs "out\model.fbx"
 #define FBX_FIND_TEXTURES		1	// find and copy textures required to fbx folder
@@ -23,10 +28,7 @@ using namespace std;
 //Time (in second) between 2 anim keyframes. default = 0.25
 #define FBX_FRAME_TIME			0.25
 
-// "FbxLinkData.txt" format:
-// [bmd file name - case insensitive] \tab [fbx output name - case sensitive] \tab [a link] \tab [another link] ...
-// Ex: 
-// Monster01.bmd	Bull_Fighter.fbx	Monster\Group_1\Lorencia	Monster\Group_2\Something	Monster\Group_3\BlaBlaBla
+//==================================================================================
 
 #if FBX_DEBUG_LOG
 #define PRINT_DEBUG(msg) cout << msg << endl

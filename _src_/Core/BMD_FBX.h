@@ -12,7 +12,7 @@ public:
 	BOOL Unpack(const char* szSrc, const char* szDest = NULL, std::vector<std::pair<std::string, fs::path>>* find_textures = NULL, bool rename_textures = false);
 	BOOL Pack(const char* szSrc, const char* szDest = NULL);
 
-	static void SetFrameTime(double t);
+	static void SetFrameTime(double frame_time);
 private:
 	BOOL Release();
 	BOOL FixUpBones();
