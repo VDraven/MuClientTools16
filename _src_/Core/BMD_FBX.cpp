@@ -819,7 +819,7 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 			FbxTimeSpan lTimeSpan(lTimeStart, lTimeStop);
 			lAnimStack->SetLocalTimeSpan(lTimeSpan);
 
-			auto AddAnim = [&](FbxNode* node, BoneMatrix_t* bm)
+			auto AddAnim = [&](FbxNode* node, BoneMatrix_t* bm, vec3_t* lock_positions = NULL)
 			{
 				node->LclTranslation.GetCurveNode(lAnimLayer, true);
 				node->LclRotation.GetCurveNode(lAnimLayer, true);
