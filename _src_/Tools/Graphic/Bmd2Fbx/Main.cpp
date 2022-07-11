@@ -7,11 +7,6 @@
 // Monster01.bmd	Bull_Fighter.fbx	Monster\Group_1\Lorencia	Monster\Group_2\Something	Monster\Group_3\BlaBlaBla
 
 #include "Core.h"
-#include "OZJ.h"
-#include "OZT.h"
-#include "OZB.h"
-#include "OZP.h"
-#include "OZD.h"
 #include "BMD_FBX.h"
 #include "FbxLink.h"
 #include <execution>
@@ -36,12 +31,6 @@ using namespace std;
 #define PRINT_DEBUG(msg) 
 #endif
 
-// filename, src_path
-unordered_map<string, fs::path> packed_textures;
-unordered_map<string, fs::path> unpacked_textures;
-// pair<filename, dest_path>
-vector< pair<string, fs::path> > find_textures;
-
 extern multimap<string, vector<string>> fbx_links_data;
 fs::path fbx_links_dir;
 
@@ -57,96 +46,11 @@ BOOL UnpackBMD(const char* szInputPath, const char* szOutputPath, bool only_unpa
 		if(only_unpack)
 			return bmd_fbx->Unpack(szInputPath, szOutputPath);
 		else
-			return bmd_fbx->Unpack(szInputPath, szOutputPath, FBX_FIND_TEXTURES ? &find_textures : NULL, FBX_RENAME_TEXTURE);
+			return bmd_fbx->Unpack(szInputPath, szOutputPath, FBX_FIND_TEXTURES, FBX_RENAME_TEXTURE);
 
 	default:
 		return FALSE;
 	}
-}
-
-BOOL UnpackTexture(const char* szInputPath, const char* szOutputPath)
-{
-	unique_ptr<OZJ> ozj;
-	unique_ptr<OZT> ozt;
-	unique_ptr<OZB> ozb;
-	unique_ptr<OZP> ozp;
-	unique_ptr<OZD> ozd;
-
-	DWORD N = Ext2Int(fs::path(szInputPath).extension().string().c_str());
-	switch (N)
-	{
-	case INT_OZJ:
-		ozj = unique_ptr<OZJ>(new OZJ());
-		return ozj->Unpack(szInputPath, szOutputPath);
-	case INT_OZT:
-		ozt = unique_ptr<OZT>(new OZT());
-		return  ozt->Unpack(szInputPath, szOutputPath);
-	case INT_OZB:
-		ozb = unique_ptr<OZB>(new OZB());
-		return ozb->Unpack(szInputPath, szOutputPath);
-	case INT_OZP:
-		ozp = unique_ptr<OZP>(new OZP());
-		return ozp->Unpack(szInputPath, szOutputPath);
-	case INT_OZD:
-		ozd = unique_ptr<OZD>(new OZD());
-		return ozd->Unpack(szInputPath, szOutputPath);
-
-	default:
-		return FALSE;
-	}
-}
-
-BOOL IsTextureFile(const fs::path& p)
-{
-	//Utls::ToLowerCaseString()
-	if (fs::is_regular_file(p))
-	{
-		fs::path pFilename = p.filename();
-		string sFilename = pFilename.string();
-		DWORD N = Ext2Int(p.extension().string().c_str());
-		switch (N)
-		{
-		case INT_OZJ:
-			sFilename = pFilename.replace_extension(EXT_JPG).string();
-			Utls::ToLowerCaseString(sFilename);
-			packed_textures[sFilename] = p;
-			return TRUE;
-		case INT_OZT:
-			sFilename = pFilename.replace_extension(EXT_TGA).string();
-			Utls::ToLowerCaseString(sFilename);
-			packed_textures[sFilename] = p;
-			return TRUE;
-		case INT_OZB:
-			sFilename = pFilename.replace_extension(EXT_BMP).string();
-			Utls::ToLowerCaseString(sFilename);
-			packed_textures[sFilename] = p;
-			return TRUE;
-		case INT_OZP:
-			sFilename = pFilename.replace_extension(EXT_PNG).string();
-			Utls::ToLowerCaseString(sFilename);
-			packed_textures[sFilename] = p;
-			return TRUE;
-		case INT_OZD:
-			sFilename = pFilename.replace_extension(EXT_DDS).string();
-			Utls::ToLowerCaseString(sFilename);
-			packed_textures[sFilename] = p;
-			return TRUE;
-
-		case INT_JPG:
-		case INT_TGA:
-		case INT_BMP:
-		case INT_PNG:
-		case INT_DDS:
-			Utls::ToLowerCaseString(sFilename);
-			unpacked_textures[sFilename] = p;
-			return TRUE;
-
-		default:
-			return FALSE;
-		}
-	}
-
-	return FALSE;
 }
 
 BOOL IsBmdFile(const fs::path& p)
@@ -166,82 +70,12 @@ BOOL IsBmdFile(const fs::path& p)
 	return (fs::is_regular_file(p) && Ext2Int(p.extension().string().c_str()) == INT_BMD && CheckBmd(p.string().c_str()));
 }
 
-void ClearTextures()
-{
-	packed_textures.clear();
-	unpacked_textures.clear();
-	find_textures.clear();
-}
-
-void FindTextures()
-{
-	PRINT_DEBUG(" ");
-	PRINT_DEBUG("===============================================================");
-	PRINT_DEBUG(" ");
-
-	for (auto it = find_textures.begin(); it != find_textures.end(); it++)
-	{
-		fs::path& dest = it->second;
-		if (fs::is_regular_file(dest))	//already exsit
-			continue;
-
-		PRINT_DEBUG("Texture: " << dest.string().c_str());
-		if (unpacked_textures.count(it->first) > 0)
-		{
-			fs::path& src = unpacked_textures[it->first];
-			try
-			{
-				if (fs::copy_file(src, dest))
-				{
-					PRINT_DEBUG("\tCopied: " << src.string().c_str());
-				}
-				else
-					PRINT_DEBUG("\t[FAILED COPYING] " << src.string().c_str());
-			}
-			catch (const exception& e)
-			{
-				PRINT_DEBUG("\t[ERROR COPYING] " << e.what());
-			}
-		}
-		else if (packed_textures.count(it->first) > 0)
-		{
-			fs::path& src = packed_textures[it->first];
-			try
-			{
-				if (UnpackTexture(src.string().c_str(), dest.string().c_str()))
-				{
-					PRINT_DEBUG("\tUnpacked: " << src.string().c_str());
-
-					//Only unpack once, next time just need to copy
-					unpacked_textures[it->first] = dest;
-				}
-				else
-					PRINT_DEBUG("\t[FAILED UNPACKING] " << src.string().c_str());
-			}
-			catch (const exception& e)
-			{
-				PRINT_DEBUG("\t[ERROR UNPACKING] " << e.what());
-			}
-		}
-		else
-		{
-			PRINT_DEBUG("\t[[TEXTURE NOT FOUND]]");
-		}
-	}
-
-	PRINT_DEBUG(" ");
-	PRINT_DEBUG("===============================================================");
-	PRINT_DEBUG(" ");
-
-	ClearTextures();
-}
-
 void FolderProcess(fs::path inputPath, fs::path outputPath)
 {
 	vector<fs::path> bmds;
 	vector<fs::path> dirs;
 	fs::directory_iterator iter1(inputPath);
-	std::copy_if(fs::begin(iter1), fs::end(iter1), std::back_inserter(bmds), [](const fs::path& p) {IsTextureFile(p);  return IsBmdFile(p); });
+	std::copy_if(fs::begin(iter1), fs::end(iter1), std::back_inserter(bmds), [](const fs::path& p) {return IsBmdFile(p); });
 	fs::directory_iterator iter2(inputPath);
 	std::copy_if(fs::begin(iter2), fs::end(iter2), std::back_inserter(dirs), [](const fs::path& p) {return fs::is_directory(p); });
 
@@ -323,7 +157,7 @@ int main(int argc, char** argv)
 	if (FBX_CREATE_LINK)
 		LoadFbxLinkData("FbxLinkData.txt");
 
-	const char* szInputPath = "TestBmd";
+	const char* szInputPath = NULL;
 	const char* szOutputPath = NULL;
 
 	if (argc >= 2)
@@ -377,8 +211,6 @@ int main(int argc, char** argv)
 		}
 
 		FolderProcess(inputPath, outputPath);
-		if(FBX_FIND_TEXTURES)
-			FindTextures();
 	}
 	else
 	{

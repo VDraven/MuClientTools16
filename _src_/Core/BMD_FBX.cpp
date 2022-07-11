@@ -1,6 +1,11 @@
 #include "BMD_FBX.h"
 
 #include "FBX.h"
+#include "OZJ.h"
+#include "OZT.h"
+#include "OZB.h"
+#include "OZP.h"
+#include "OZD.h"
 #include "ZzzMathLib.h"
 
 #include <sstream>
@@ -25,7 +30,7 @@ void BMD_FBX::SetFrameTime(double frame_time)
 
 //========================================================================================
 
-BOOL BMD_FBX::Unpack(const char* szSrc, const char* szDest, std::vector<std::pair<std::string, fs::path>>* required_textures, bool rename_textures)
+BOOL BMD_FBX::Unpack(const char* szSrc, const char* szDest, bool find_textures, bool rename_textures)
 {
 	if (!szSrc) return FALSE;
 
@@ -39,8 +44,12 @@ BOOL BMD_FBX::Unpack(const char* szSrc, const char* szDest, std::vector<std::pai
 		szDest = szNewDest;
 	}
 
+	fs::path pSrcDir = fs::path(szSrc).parent_path();
+	std::unordered_map<std::string, fs::path> textures;
+
 	return LoadBmd(szSrc)
-		&& SaveFbx(szDest, required_textures, rename_textures);
+		&& SaveFbx(szDest, find_textures ? &textures : NULL, rename_textures)
+		&& FindTexture(pSrcDir, find_textures ? &textures : NULL);
 }
 
 //========================================================================================
@@ -463,7 +472,7 @@ BOOL BMD_FBX::ReadBmd()
 	return TRUE;
 }
 
-BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs::path>>* find_textures, bool rename_textures)
+BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::path>* textures, bool rename_textures)
 {
 	Utls::CreateParentDir(szDest);
 
@@ -625,17 +634,14 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 		}
 		else strcpy_s(szTextureFilename, 256, m_data.Textures[m->Texture].FileName.c_str());
 		
-		if (find_textures)
+		if (textures)
 		{
 			std::string texture_key = m_data.Textures[m->Texture].FileName;
 			Utls::ToLowerCaseString(texture_key);
 			
 			fs::path texture_dest = fs::path(szDest).parent_path().append(fs::path(szTextureFilename).filename().string());
 			
-			find_textures->emplace_back(
-				std::move(texture_key),
-				std::move(texture_dest)
-			);
+			textures->emplace(std::move(texture_key), std::move(texture_dest));
 		}
 
 		std::string sTextureName(szTextureFilename);
@@ -897,3 +903,124 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs:
 	DestroySdkObjects(lSdkManager, 0);
 	return TRUE;
 }
+
+BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::path>* textures)
+{
+	//assert(fs::is_directory(pDir));
+
+	if (!textures || textures->empty())
+		return TRUE;
+
+	auto ReplaceTextureExt = [](fs::path& pFilename) -> BOOL
+	{
+		fs::path ext = pFilename.extension();
+		fs::path new_ext;
+		if (ext.string().length() != 4)
+			return FALSE;
+
+		DWORD N = Ext2Int(ext.string().c_str());
+		switch (N)
+		{
+		case INT_OZJ:
+			new_ext = EXT_JPG;
+			break;
+		case INT_OZT:
+			new_ext = EXT_TGA;
+			break;
+		case INT_OZB:
+			new_ext = EXT_BMP;
+			break;
+		case INT_OZP:
+			new_ext = EXT_PNG;
+			break;
+		case INT_OZD:
+			new_ext = EXT_OZD;
+			break;
+
+		default:
+			return FALSE;
+		}
+
+		pFilename.replace_extension(new_ext);
+		return TRUE;
+	};
+
+	auto UnpackTexture = [](fs::path pInput, fs::path pOutput) -> void
+	{
+		OZJ* ozj;
+		OZT* ozt;
+		OZB* ozb;
+		OZP* ozp;
+		OZD* ozd;
+
+		DWORD N = Ext2Int(pInput.extension().string().c_str());
+		char szInput[256]; strcpy_s(szInput,256, pInput.string().c_str());
+		char szOutput[256]; strcpy_s(szOutput, 256, pOutput.string().c_str());
+
+		switch (N)
+		{
+		case INT_OZJ:
+			ozj = new OZJ();
+			ozj->Unpack(szInput, szOutput);
+			break;
+		case INT_OZT:
+			ozt = new OZT();
+			ozt->Unpack(szInput, szOutput);
+			break;
+		case INT_OZB:
+			ozb = new OZB();
+			ozb->Unpack(szInput, szOutput);
+			break;
+		case INT_OZP:
+			ozp = new OZP();
+			ozp->Unpack(szInput, szOutput);
+			break;
+		case INT_OZD:
+			ozd = new OZD();
+			ozd->Unpack(szInput, szOutput);
+			break;
+
+		default:
+			break;
+		}
+	};
+
+	fs::directory_iterator iter(pDir);
+	for (auto& dir_entry : iter)
+	{
+		if (dir_entry.is_regular_file())
+		{
+			fs::path pFilename = dir_entry.path().filename();
+			if (ReplaceTextureExt(pFilename))
+			{
+				std::string sFilename = pFilename.string();
+				Utls::ToLowerCaseString(sFilename);
+
+				if (textures->count(sFilename) > 0)
+				{
+					UnpackTexture(dir_entry.path(), textures->at(sFilename));
+					textures->extract(sFilename);
+
+					if (textures->empty())
+						return TRUE;
+				}
+			}
+		}
+	}
+
+	std::vector<fs::path> sub_dirs;
+	fs::directory_iterator iter2(pDir);
+	for (auto& dir_entry : iter)
+	{
+		if (dir_entry.is_directory())
+		{
+			FindTexture(dir_entry.path(), textures);
+
+			if (textures->empty())
+				return TRUE;
+		}
+	}
+
+	return TRUE;
+}
+

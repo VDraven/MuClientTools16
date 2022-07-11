@@ -9,7 +9,7 @@ public:
 	BMD_FBX() {};
 	virtual ~BMD_FBX() { Release(); };
 
-	BOOL Unpack(const char* szSrc, const char* szDest = NULL, std::vector<std::pair<std::string, fs::path>>* find_textures = NULL, bool rename_textures = false);
+	BOOL Unpack(const char* szSrc, const char* szDest = NULL, bool find_textures = false, bool rename_textures = false);
 	BOOL Pack(const char* szSrc, const char* szDest = NULL);
 
 	static void SetFrameTime(double frame_time);
@@ -22,7 +22,8 @@ private:
 
 	BOOL LoadBmd(const char* szSrc);
 	BOOL ReadBmd();
-	BOOL SaveFbx(const char* szDest, std::vector<std::pair<std::string, fs::path>>* find_textures = NULL, bool rename_textures = false);
+	BOOL SaveFbx(const char* szDest, std::unordered_map<std::string, fs::path>* textures = NULL, bool rename_textures = false);
+	BOOL FindTexture(fs::path pDir, std::unordered_map<std::string, fs::path>* textures);
 
 private:
 	static double FRAME_TIME;
