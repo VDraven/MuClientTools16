@@ -158,7 +158,7 @@ int main(int argc, char** argv)
 	if (FBX_CREATE_LINK)
 		LoadFbxLinkData("FbxLinkData.txt");
 
-	const char* szInputPath = "Item";
+	const char* szInputPath = NULL;
 	const char* szOutputPath = NULL;
 
 	if (argc >= 2)
