@@ -922,16 +922,9 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 			}
 		}
 	}
-	
-	char szNewDest[512];
-	sprintf(szNewDest, "%s\\%s_%s",
-		fs::path(szDest).parent_path().string().c_str(),
-		(has_anim ? "SKM" : "SM"),		// prefix SKM := Skeleton Mesh, SM := Static Mesh
-		fs::path(szDest).filename().string().c_str()
-	);
 
 	// Save to fbx file
-	SaveScene(lSdkManager, lScene, szNewDest, 0);
+	SaveScene(lSdkManager, lScene, szDest, 0);
 
 	// Must clean up after
 	DestroySdkObjects(lSdkManager, 0);
