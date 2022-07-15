@@ -18,9 +18,11 @@ using namespace std;
 #define FBX_FOLDER				1	// "out\model\model.fbx" vs "out\model.fbx"
 #define FBX_FIND_TEXTURES		1	// find and copy textures required to fbx folder
 #define FBX_CREATE_LINK			1	// grouping by creating Windows .lnk (shortcut) files. Depend on "FbxLinkData.txt"
-//Should disable FBX_RENAME_TEXTURE. It makes unnecessary dupicated textures when importing (same textures but different names)
+// Should disable FBX_RENAME_TEXTURE. It makes unnecessary dupicated textures when importing (same textures but different names)
 #define FBX_RENAME_TEXTURE		0	// rename textures to model name. Ex: "ModelName_T_001.jpg"	
-//Time (in second) between 2 anim keyframes. default = 0.25
+// I believe re-calculating normals on tools / game engine is EASY. Disable to reduce file size.  
+#define FBX_EXPORT_NORMALS		0	// create built-in normals
+// Time (in second) between 2 anim keyframes. default = 0.25
 #define FBX_FRAME_TIME			0.25
 
 //==================================================================================
@@ -34,7 +36,7 @@ using namespace std;
 extern multimap<string, vector<string>> fbx_links_data;
 fs::path fbx_links_dir;
 
-BOOL UnpackBMD(const char* szInputPath, const char* szOutputPath, bool only_unpack = false)
+BOOL UnpackBMD(const char* szInputPath, const char* szOutputPath, bool bDefault = false)
 {
 	unique_ptr<BMD_FBX> bmd_fbx;
 
@@ -43,10 +45,10 @@ BOOL UnpackBMD(const char* szInputPath, const char* szOutputPath, bool only_unpa
 	{
 	case INT_BMD:
 		bmd_fbx = unique_ptr<BMD_FBX>(new BMD_FBX());
-		if(only_unpack)
+		if(bDefault)
 			return bmd_fbx->Unpack(szInputPath, szOutputPath);
 		else
-			return bmd_fbx->Unpack(szInputPath, szOutputPath, FBX_FIND_TEXTURES, FBX_RENAME_TEXTURE);
+			return bmd_fbx->Unpack(szInputPath, szOutputPath, FBX_FIND_TEXTURES, FBX_RENAME_TEXTURE, FBX_EXPORT_NORMALS);
 
 	default:
 		return FALSE;
@@ -94,10 +96,9 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 
 			try
 			{
+				PRINT_DEBUG("Unpacking: " << src.string().c_str());
 				if (UnpackBMD(src.string().c_str(), dest.string().c_str()))
 				{
-					PRINT_DEBUG("Unpacked: " << src.string().c_str());
-
 					if (FBX_CREATE_LINK)
 					{
 						char szTarget[512];
@@ -118,18 +119,18 @@ void FolderProcess(fs::path inputPath, fs::path outputPath)
 									Utls::CreateParentDir(fs::path(szLink));
 
 									CreateLink(szTarget, szLink);
-									PRINT_DEBUG("\tLinked: " << link.c_str());
+									PRINT_DEBUG("\tLink: " << link.c_str() << " <-> " << szTarget);
 								}
 							}
 						}
 					}
 				}
 				else
-					PRINT_DEBUG("\t[FAILED BMD UNPACKING] " << src.string().c_str());
+					PRINT_DEBUG("\t[FAILED BMD UNPACK] " << src.string().c_str());
 			}
 			catch (const exception& e)
 			{
-				PRINT_DEBUG("\t[ERROR BMD UNPACKING] " << e.what());
+				PRINT_DEBUG("\t[ERROR BMD UNPACK] " << e.what());
 			}
 		}
 	);
@@ -157,7 +158,7 @@ int main(int argc, char** argv)
 	if (FBX_CREATE_LINK)
 		LoadFbxLinkData("FbxLinkData.txt");
 
-	const char* szInputPath = NULL;
+	const char* szInputPath = "Item";
 	const char* szOutputPath = NULL;
 
 	if (argc >= 2)
@@ -210,6 +211,7 @@ int main(int argc, char** argv)
 			fbx_links_dir.append("__FbxLinks__");
 		}
 
+		BMD_FBX::SetRootPath(inputPath);
 		FolderProcess(inputPath, outputPath);
 	}
 	else
