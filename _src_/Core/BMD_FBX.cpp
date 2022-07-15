@@ -25,22 +25,29 @@ double BMD_FBX::FRAME_TIME = 0.25;
 void BMD_FBX::SetFrameTime(double frame_time)
 {
 	BMD_FBX::FRAME_TIME = frame_time;
-};
+}
+
+fs::path BMD_FBX::ROOT_PATH = "";
+void BMD_FBX::SetRootPath(fs::path root_path)
+{
+	ROOT_PATH = root_path;
+}
+;
 
 
 //========================================================================================
 
-BOOL BMD_FBX::Unpack(const char* szSrc, const char* szDest, bool find_textures, bool rename_textures)
+BOOL BMD_FBX::Unpack(const char* szSrc, const char* szDest, bool find_textures, bool rename_textures, bool export_normals)
 {
 	if (!szSrc) return FALSE;
 
 	printf("[BMD_FBX] Unpack: %s [FBX_SDK] ", szSrc);
 
-	char szNewDest[256];
+	char szNewDest[512];
 	if (!szDest)
 	{
 		std::string sName = fs::path(szSrc).filename().replace_extension("").string();
-		strcpy_s(szNewDest, 256, fs::path(szSrc).parent_path().append(sName + "_fbx").append(sName + ".fbx").string().c_str());
+		strcpy_s(szNewDest, 512, fs::path(szSrc).parent_path().append(sName + "_fbx").append(sName + ".fbx").string().c_str());
 		szDest = szNewDest;
 	}
 
@@ -48,7 +55,7 @@ BOOL BMD_FBX::Unpack(const char* szSrc, const char* szDest, bool find_textures, 
 	std::unordered_map<std::string, fs::path> textures;
 
 	return LoadBmd(szSrc)
-		&& SaveFbx(szDest, find_textures ? &textures : NULL, rename_textures)
+		&& SaveFbx(szDest, find_textures ? &textures : NULL, rename_textures, export_normals)
 		&& FindTexture(pSrcDir, find_textures ? &textures : NULL);
 }
 
@@ -89,7 +96,6 @@ BOOL BMD_FBX::FixUpBones()
 		// calc true world coord.
 		if (b->Parent >= 0 && b->Parent < m_data.NumBones)
 		{
-			BoneMatrix_t* bm = &b->BoneMatrixes[0];
 			float m[3][4];
 			vec3_t p;
 
@@ -472,7 +478,7 @@ BOOL BMD_FBX::ReadBmd()
 	return TRUE;
 }
 
-BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::path>* textures, bool rename_textures)
+BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::path>* textures, bool rename_textures, bool export_normals)
 {
 	Utls::CreateParentDir(szDest);
 
@@ -545,7 +551,6 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 
 				aClusters.push_back(lClusterToNode);
 				aSkeletonNodes.push_back(lSkeletonNode);
-
 			//}
 			//else
 			//{
@@ -604,9 +609,13 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 	lUVElement->SetReferenceMode(FbxGeometryElement::eIndexToDirect);
 
 	// Normal Element
-	FbxGeometryElementNormal* lNormalElement = lMesh->CreateElementNormal();
-	lNormalElement->SetMappingMode(FbxGeometryElement::eByControlPoint);
-	lNormalElement->SetReferenceMode(FbxGeometryElement::eDirect);
+	FbxGeometryElementNormal* lNormalElement;
+	if (export_normals)
+	{
+		lNormalElement = lMesh->CreateElementNormal();
+		lNormalElement->SetMappingMode(FbxGeometryElement::eByControlPoint);
+		lNormalElement->SetReferenceMode(FbxGeometryElement::eDirect);
+	}
 
 	// Material Element
 	FbxGeometryElementMaterial* lMaterialElement = lMesh->CreateElementMaterial();
@@ -615,40 +624,47 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 
 
 	//==========================================================
-
+	
 	int control_point_idx = 0; int uv_idx = 0;
 	for (int i = 0; i < m_data.NumMeshs; i++)	// Iter through all sub meshes
 	{
 		Mesh_t* m = &m_data.Meshs[i];
 
 		// Material & Texture works
-		char szTextureFilename[256]; 
+		// sTextureExt : ".tga"
+		// sTextureName : "TGA_texture"
+		// szTextureFilename : TGA_texture.tga		//tree_01.jpg vs tree_01.tga will cause name conflict when importing. So CHANGE!
+
+		std::string sTextureExt = fs::path(m_data.Textures[m->Texture].FileName).extension().string();
+		std::transform(sTextureExt.begin(), sTextureExt.end(), sTextureExt.begin(), toupper);
+		std::string sTextureName = sTextureExt.substr(1) + "_" + fs::path(m_data.Textures[m->Texture].FileName).replace_extension("").string();
+		std::transform(sTextureExt.begin(), sTextureExt.end(), sTextureExt.begin(), tolower);
+
+		char szTextureFilename[256];
 		if (rename_textures)
 		{
 			std::ostringstream oss;
 			// "Mesh_T_001.jpg"
 			oss << szMeshName << "_T_"
 				<< std::setfill('0') << std::setw(3) << i
-				<< fs::path(m_data.Textures[m->Texture].FileName).extension().string();
+				<< sTextureExt;
 			strcpy_s(szTextureFilename, 256, oss.str().c_str());
 		}
-		else strcpy_s(szTextureFilename, 256, m_data.Textures[m->Texture].FileName.c_str());
+		else sprintf(szTextureFilename, "%s%s", sTextureName.c_str(), sTextureExt.c_str());
 		
 		if (textures)
 		{
 			std::string texture_key = m_data.Textures[m->Texture].FileName;
-			Utls::ToLowerCaseString(texture_key);
+			std::transform(texture_key.begin(), texture_key.end(), texture_key.begin(), tolower);
 			
 			fs::path texture_dest = fs::path(szDest).parent_path().append(fs::path(szTextureFilename).filename().string());
 			
 			textures->emplace(std::move(texture_key), std::move(texture_dest));
 		}
 
-		std::string sTextureName(szTextureFilename);
-		std::transform(sTextureName.begin(), sTextureName.end(), sTextureName.begin(), [](const char& c) { return (c == '.') ? '_' : c; });
 
 		// New material.
-		FbxString lMaterialName = FbxString(sTextureName.c_str());
+		FbxString lMaterialName = FbxString("MI_") + FbxString(sTextureName.c_str());
 		FbxString lShadingName = "Phong";
 		FbxDouble3 lBlack(0.0, 0.0, 0.0);
 		FbxDouble3 lRed(1.0, 0.0, 0.0);
@@ -662,18 +678,17 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 		}
 
 		// Generate primary and secondary colors.
-		lMaterial->Emissive.Set(lBlack);
-		lMaterial->Ambient.Set(lRed);
-		lMaterial->AmbientFactor.Set(1.);
+		//lMaterial->Emissive.Set(lBlack);
+		//lMaterial->Ambient.Set(lRed);
+		//lMaterial->AmbientFactor.Set(1.);
 		// Add texture for diffuse channel
-		lMaterial->Diffuse.Set(lDiffuseColor);
-		lMaterial->DiffuseFactor.Set(1.);
-		lMaterial->TransparencyFactor.Set(0.4);
+		//lMaterial->Diffuse.Set(lDiffuseColor);
+		//lMaterial->DiffuseFactor.Set(1.);
+		//lMaterial->TransparencyFactor.Set(0.4);
 		lMaterial->ShadingModel.Set(lShadingName);
 		lMaterial->Shininess.Set(0.5);
 		lMaterial->Specular.Set(lBlack);
 		lMaterial->SpecularFactor.Set(0.3);
-
 		// Add it the mesh node
 		lMeshNode->AddMaterial(lMaterial);
 		
@@ -694,6 +709,14 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 		// Don't forget to connect the texture to the corresponding property of the material
 		lMaterial->Diffuse.ConnectSrcObject(lTexture);
 
+		// Alpha channel. For now, only .tga
+		if(sTextureExt == ".tga")
+		{
+			lTexture->SetBlendMode(FbxTexture::eTranslucent);
+			lTexture->SetAlphaSource(FbxTexture::eBlack);
+			lMaterial->TransparentColor.ConnectSrcObject(lTexture);
+		}
+
 		//==========================================================
 		// Mesh works
 		
@@ -710,18 +733,21 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 			lControlPoints[control_point_idx + j] = FbxVector4(p[0], p[1], p[2]);
 
 			// normal vectors
-			vec3_t n = { 0.0f, 0.0f, 0.0f };
-			for (int k = 0; k < m->NumNormals; k++)
+			if (export_normals)
 			{
-				if (m->Normals[k].BindVertex == j && m->Normals[k].Node >= 0 && m->Normals[k].Node < m->NumNormals)
+				vec3_t n = { 0.0f, 0.0f, 0.0f };
+				for (int k = 0; k < m->NumNormals; k++)
 				{
-					VectorTransform(m->Normals[k].Normal, BoneFixup[m->Normals[k].Node].m, n);
-					VectorNormalize(n);
+					if (m->Normals[k].BindVertex == j && m->Normals[k].Node >= 0 && m->Normals[k].Node < m->NumNormals)
+					{
+						VectorTransform(m->Normals[k].Normal, BoneFixup[m->Normals[k].Node].m, n);
+						VectorNormalize(n);
 
-					break;
+						break;
+					}
 				}
+				lNormalElement->GetDirectArray().Add(FbxVector4(n[0], n[1], n[2]));
 			}
-			lNormalElement->GetDirectArray().Add(FbxVector4(n[0], n[1], n[2]));
 
 			// skinning
 			short node = m->Vertices[j].Node;
@@ -881,11 +907,12 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 
 				if (j == 0)
 				{
+					// Always keep this at the origin point
 					AddAnim(lSkeletonRootNode, NULL);
 
 					//https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/RootMotion/
-					if (!a->LockPositions)
-						AddAnim(aSkeletonNodes[0], bm);
+					// Temporary, this works. I want walking/running/flying animations -> root motions
+					AddAnim(aSkeletonNodes[0], a->LockPositions? NULL : bm);
 				}
 				else
 				{
@@ -895,21 +922,24 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 			}
 		}
 	}
+	
+	char szNewDest[512];
+	sprintf(szNewDest, "%s\\%s_%s",
+		fs::path(szDest).parent_path().string().c_str(),
+		(has_anim ? "SKM" : "SM"),		// prefix SKM := Skeleton Mesh, SM := Static Mesh
+		fs::path(szDest).filename().string().c_str()
+	);
 
 	// Save to fbx file
-	SaveScene(lSdkManager, lScene, szDest, 0);
+	SaveScene(lSdkManager, lScene, szNewDest, 0);
 
 	// Must clean up after
 	DestroySdkObjects(lSdkManager, 0);
 	return TRUE;
 }
 
-BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::path>* textures)
+void FindTextureRecursive(fs::path pDir, std::unordered_map<std::string, fs::path>* textures)
 {
-	//assert(fs::is_directory(pDir));
-
-	if (!textures || textures->empty())
-		return TRUE;
 
 	auto ReplaceTextureExt = [](fs::path& pFilename) -> BOOL
 	{
@@ -945,7 +975,7 @@ BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::pat
 		return TRUE;
 	};
 
-	auto UnpackTexture = [](fs::path pInput, fs::path pOutput) -> void
+	auto UnpackTexture = [](fs::path pInput, fs::path pOutput) -> BOOL
 	{
 		OZJ* ozj;
 		OZT* ozt;
@@ -954,35 +984,46 @@ BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::pat
 		OZD* ozd;
 
 		DWORD N = Ext2Int(pInput.extension().string().c_str());
-		char szInput[256]; strcpy_s(szInput,256, pInput.string().c_str());
-		char szOutput[256]; strcpy_s(szOutput, 256, pOutput.string().c_str());
+		char* szInput = new char[512];
+		strcpy_s(szInput, 512, pInput.string().c_str());
+		char* szOutput = new char[512]; 
+		strcpy_s(szOutput, 512, pOutput.string().c_str());
 
+		BOOL result = FALSE;
 		switch (N)
 		{
 		case INT_OZJ:
 			ozj = new OZJ();
-			ozj->Unpack(szInput, szOutput);
+			result = ozj->Unpack(szInput, szOutput);
+			delete ozj;
 			break;
 		case INT_OZT:
 			ozt = new OZT();
-			ozt->Unpack(szInput, szOutput);
+			result = ozt->Unpack(szInput, szOutput);
+			delete ozt;
 			break;
 		case INT_OZB:
 			ozb = new OZB();
-			ozb->Unpack(szInput, szOutput);
+			result = ozb->Unpack(szInput, szOutput);
+			delete ozb;
 			break;
 		case INT_OZP:
 			ozp = new OZP();
-			ozp->Unpack(szInput, szOutput);
+			result = ozp->Unpack(szInput, szOutput);
+			delete ozp;
 			break;
 		case INT_OZD:
 			ozd = new OZD();
-			ozd->Unpack(szInput, szOutput);
+			result = ozd->Unpack(szInput, szOutput);
+			delete ozd;
 			break;
 
 		default:
 			break;
 		}
+		delete[] szInput;
+		delete[] szOutput;
+		return result;
 	};
 
 	fs::directory_iterator iter(pDir);
@@ -994,15 +1035,24 @@ BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::pat
 			if (ReplaceTextureExt(pFilename))
 			{
 				std::string sFilename = pFilename.string();
-				Utls::ToLowerCaseString(sFilename);
+				std::transform(sFilename.begin(), sFilename.end(), sFilename.begin(), tolower);
 
 				if (textures->count(sFilename) > 0)
 				{
-					UnpackTexture(dir_entry.path(), textures->at(sFilename));
+					try
+					{
+						std::cout << "\tTexture: " << dir_entry.path().string().c_str() << std::endl;
+						if (!UnpackTexture(dir_entry.path(), textures->at(sFilename)))
+							std::cout << "\t[UNPACK FAILED]: " << pFilename.string().c_str() << std::endl;
+					}
+					catch (std::exception ex)
+					{
+						std::cout << "\t[UNPACK ERROR]: " << pFilename.string().c_str() << " | " << ex.what() << std::endl;
+					}
 					textures->extract(sFilename);
 
 					if (textures->empty())
-						return TRUE;
+						return;
 				}
 			}
 		}
@@ -1010,17 +1060,40 @@ BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::pat
 
 	std::vector<fs::path> sub_dirs;
 	fs::directory_iterator iter2(pDir);
-	for (auto& dir_entry : iter)
+	for (auto& dir_entry : iter2)
 	{
 		if (dir_entry.is_directory())
 		{
-			FindTexture(dir_entry.path(), textures);
+			FindTextureRecursive(dir_entry.path(), textures);
 
 			if (textures->empty())
-				return TRUE;
+				return;
+		}
+	}
+}
+
+BOOL BMD_FBX::FindTexture(fs::path pDir, std::unordered_map<std::string, fs::path>* textures)
+{
+	if (!textures || textures->empty() || fs::is_directory(pDir))
+	{
+		FindTextureRecursive(pDir, textures);
+
+		if (textures->empty()) return TRUE;
+		for (auto it = textures->begin(); it != textures->end(); it++)
+		{
+			std::cout << "\t[LOCAL TEXTURE NOT FOUND]: " << it->first.c_str() << std::endl;
+		}
+
+		if (fs::is_directory(ROOT_PATH))
+			FindTextureRecursive(ROOT_PATH, textures);
+
+		if (textures->empty()) return TRUE;
+		for (auto it = textures->begin(); it != textures->end(); it++)
+		{
+			std::cout << "\t[GLOBAL TEXTURE NOT FOUND]: " << it->first.c_str() << std::endl;
 		}
 	}
 
-	return TRUE;
+	return TRUE;	//just TRUE
 }
 
