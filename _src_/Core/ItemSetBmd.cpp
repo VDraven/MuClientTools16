@@ -207,6 +207,9 @@ void ItemSetOptionBmd::TxtIn(std::ifstream & is)
 		sscanf(line.substr(a, b - a).c_str(), "%hhd", &id);
 
 		ITEM_SET_OPTION* ptr = (ITEM_SET_OPTION*)&_buf[id * size];
+		
+		a = b+1;
+		b = line.find('\t', a);
 
 		size_t i = 0;
 		do
