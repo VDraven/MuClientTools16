@@ -97,7 +97,7 @@ void ItemSetTypeBmd::TxtIn(std::ifstream & is)
 
 		ITEM_SET_TYPE temp;
 		BYTE item_cat;
-		BYTE item_idx;
+		WORD item_idx;
 
 		sscanf(line.c_str(),
 			"%hhd\t%hd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd\t%hhd"

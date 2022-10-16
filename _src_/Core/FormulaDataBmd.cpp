@@ -29,7 +29,7 @@ BOOL FormulaDataBmd::Decrypt()
 
 			Xor3Byte(&_buf[pos], size);
 			FORMULA_DATA* pData = (FORMULA_DATA*)&_buf[pos];
-			int key = (group_idx << 8) | j;
+			int key = (group_idx << 16) | j;
 			while (_map.find(key) != _map.end())	//check duplicated keys
 			{
 				key = err;
@@ -85,7 +85,7 @@ void FormulaDataBmd::TxtOut(std::ofstream & os)
 	for (auto it = _map.begin(); it != _map.end(); it++)
 	{
 		FORMULA_DATA* ptr = it->second;
-		int group = (it->first >> 8);
+		int group = (it->first >> 16);
 		os << group << '\t';
 		os << ptr->ID << '\t';
 		os << (Utls::IsEmptyCStr(ptr->Text) ? "[NULL]" : ptr->Text) << '\t';

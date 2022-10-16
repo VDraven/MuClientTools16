@@ -466,3 +466,4 @@
 0	player.bmd
 0	Wing06.bmd
 0	Elhaz_Mace.bmd
+2	Monster01.bmd

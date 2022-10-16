@@ -824,6 +824,7 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 	//==========================================================
 	// Animations works
 
+	#define ADD_LAST_FRAME 1
 	bool has_anim = (m_data.NumActions > 1) 
 		|| (m_data.NumActions == 1 && m_data.Actions[0].NumAnimationKeys > 1);
 	if (has_anim)
@@ -845,13 +846,15 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 			FbxAnimLayer* lAnimLayer = FbxAnimLayer::Create(lScene, szAnimLayerName);
 			lAnimStack->AddMember(lAnimLayer);
 
+			bool bAddLastFrame = (i == 0 && ADD_LAST_FRAME);
+
 			FbxTime lTimeStart, lTimeStop;
 			lTimeStart.SetSecondDouble(0.0);
-			lTimeStop.SetSecondDouble(BMD_FBX::FRAME_TIME * (nKeys - 1));
+			lTimeStop.SetSecondDouble(BMD_FBX::FRAME_TIME * (nKeys - 1 + (bAddLastFrame ? 1 : 0)));
 			FbxTimeSpan lTimeSpan(lTimeStart, lTimeStop);
 			lAnimStack->SetLocalTimeSpan(lTimeSpan);
 
-			auto AddAnim = [&](FbxNode* node, BoneMatrix_t* bm)
+			auto AddAnim = [&](FbxNode* node, BoneMatrix_t* bm, bool bAddLastFrame, bool bLock = false)
 			{
 				node->LclTranslation.GetCurveNode(lAnimLayer, true);
 				node->LclRotation.GetCurveNode(lAnimLayer, true);
@@ -864,20 +867,24 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 
 				FbxTime lTime; int lKeyIndex = 0;
 
+
 				lCurveTX->KeyModifyBegin(); lCurveRX->KeyModifyBegin();
 				lCurveTY->KeyModifyBegin(); lCurveRY->KeyModifyBegin();
 				lCurveTZ->KeyModifyBegin(); lCurveRZ->KeyModifyBegin();
-				for (int k = 0; k < nKeys; k++)
+				for (int k = 0; k <= nKeys; k++)
 				{
+					if (k == nKeys && !bAddLastFrame)
+						break;
+
 					FbxVector4 r;
 					FbxVector4 t;
 
-					r[0] = !bm ? 0.0 : bm->Rotation[k][0] * (180.0f / Q_PI);
-					r[1] = !bm ? 0.0 : bm->Rotation[k][1] * (180.0f / Q_PI);
-					r[2] = !bm ? 0.0 : bm->Rotation[k][2] * (180.0f / Q_PI);
-					t[0] = !bm ? 0.0 : bm->Position[k][0];
-					t[1] = !bm ? 0.0 : bm->Position[k][1];
-					t[2] = !bm ? 0.0 : bm->Position[k][2];
+					r[0] = !bm ? 0.0 : bm->Rotation[(k == nKeys || bLock) ? 0 : k][0] * (180.0f / Q_PI);
+					r[1] = !bm ? 0.0 : bm->Rotation[(k == nKeys || bLock) ? 0 : k][1] * (180.0f / Q_PI);
+					r[2] = !bm ? 0.0 : bm->Rotation[(k == nKeys || bLock) ? 0 : k][2] * (180.0f / Q_PI);
+					t[0] = !bm ? 0.0 : bm->Position[(k == nKeys || bLock) ? 0 : k][0];
+					t[1] = !bm ? 0.0 : bm->Position[(k == nKeys || bLock) ? 0 : k][1];
+					t[2] = !bm ? 0.0 : bm->Position[(k == nKeys || bLock) ? 0 : k][2];
 
 					lTime.SetSecondDouble(BMD_FBX::FRAME_TIME * k);
 					lKeyIndex = lCurveTX->KeyAdd(lTime);
@@ -905,26 +912,34 @@ BOOL BMD_FBX::SaveFbx(const char* szDest, std::unordered_map<std::string, fs::pa
 					continue;
 				BoneMatrix_t* bm = &b->BoneMatrixes[i];
 
+				
 				if (j == 0)
 				{
 					// Always keep this at the origin point
-					AddAnim(lSkeletonRootNode, NULL);
+					AddAnim(lSkeletonRootNode, NULL, bAddLastFrame);
 
 					//https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/RootMotion/
 					// Temporary, this works. I want walking/running/flying animations -> root motions
-					AddAnim(aSkeletonNodes[0], a->LockPositions? NULL : bm);
+					AddAnim(aSkeletonNodes[0], bm, bAddLastFrame, a->LockPositions);
 				}
 				else
 				{
-					AddAnim(aSkeletonNodes[j], bm);
+					AddAnim(aSkeletonNodes[j], bm, bAddLastFrame);
 				}
 
 			}
 		}
 	}
+	
+	char szNewDest[512];
+	sprintf(szNewDest, "%s\\%s_%s",
+		fs::path(szDest).parent_path().string().c_str(),
+		(has_anim ? "SKM" : "SM"),
+		fs::path(szDest).filename().string().c_str()
+	);
 
 	// Save to fbx file
-	SaveScene(lSdkManager, lScene, szDest, 0);
+	SaveScene(lSdkManager, lScene, szNewDest, 0);
 
 	// Must clean up after
 	DestroySdkObjects(lSdkManager, 0);
